@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @PietroTy
 - 👀 I’m interested in everything
-- 🌱 I’m currently learning phython
+- 🌱 I’m currently learning python
 - 💞️ I’m looking to collaborate on nothing rn
 - 📫 How to reach me pietro.turcimm@gmail.com
 
