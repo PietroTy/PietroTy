@@ -28,23 +28,14 @@ ul li {
     margin: 10px 0;
 }
 
-ul li a,
-nav ul li a {
+ul li a {
     color: #6A4C9C;
     text-decoration: none;
     font-size: 150%;
-    font-weight: bold;
     transition: color 0.3s ease;
-    min-width: 0;
-    flex-shrink: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 0 2px;
 }
 
-ul li a:hover,
-nav ul li a:hover {
+ul li a:hover {
     color: #E0E0E0;
 }
 
@@ -88,6 +79,7 @@ header {
 
 .language-toggle {
     margin-left: 16px;
+    margin-right: 0;
     align-self: center;
     max-width: 80px;
     min-width: 32px;
@@ -113,6 +105,23 @@ nav ul li {
     margin: 0 10px;
     min-width: 0;
     flex-shrink: 1;
+}
+
+nav ul li a {
+    color: #6A4C9C;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 2px;
+}
+
+nav ul li a:hover {
+    color: #E0E0E0;
 }
 
 /* =========================
@@ -183,36 +192,31 @@ section#about {
 
 .about-image {
     position: relative;
-    width: 25%;
+    width: 100%;
+    max-width: 320px; /* ou o valor que preferir para limitar em telas grandes */
     text-align: center;
-    max-height: 300px;
     margin-left: 20px;
+    margin-right: 0;
+    min-width: 180px;
 }
 
 .about-image .pietro-image,
-.about-image .pietro2-image,
-.about-image .jack-image {
-    max-width: 100%;
+.about-image .pietro2-image {
+    width: 100%;
     height: auto;
     border-radius: 10px;
     transition: opacity 0.3s ease;
-}
-
-.about-image .jack-image {
-    position: absolute;
-    width: 25%;
-    bottom: 10px;
-    left: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .about-image .pietro2-image {
     position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: 0;
+    top: 0;
     left: 0;
     opacity: 0;
+    z-index: 2;
 }
 
 .about-image:hover .pietro-image {
@@ -221,6 +225,44 @@ section#about {
 
 .about-image:hover .pietro2-image {
     opacity: 1;
+}
+
+.about-image .jack-image {
+    position: absolute;
+    width: 25%;
+    min-width: 40px;
+    max-width: 80px;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    border-radius: 12px; /* Apenas cantos arredondados, não círculo nem squircle */
+    object-fit: cover;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    .about-image {
+        max-width: 220px;
+        min-width: 120px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-image {
+        width: 80%;
+        max-width: 140px;
+        min-width: 80px;
+        margin: 0 auto;
+    }
+    .about-image .jack-image {
+        width: 30%;
+        min-width: 24px;
+        max-width: 40px;
+        bottom: 4px;
+        left: 4px;
+    }
 }
 
 /* =========================
@@ -413,11 +455,11 @@ section#contact {
         flex-direction: row;
         align-items: center;
         height: auto;
-        padding: 0 18px;
+        padding: 0 18px; /* aumentado para dar mais espaço lateral */
         justify-content: space-between;
     }
     nav ul {
-        gap: 8px;
+        gap: 8px; /* adiciona espaçamento entre as opções */
     }
     .logo {
         font-size: 110%;
@@ -457,16 +499,15 @@ section#contact {
     .about-image {
         width: 80%;
         max-width: 140px;
+        min-width: 80px;
         margin: 0 auto;
-        display: block;
-        position: relative;
     }
-    .about-image img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+    .about-image .jack-image {
+        width: 30%;
+        min-width: 24px;
+        max-width: 40px;
+        bottom: 4px;
+        left: 4px;
     }
     .progress {
         height: 10px;
@@ -476,6 +517,7 @@ section#contact {
     }
     .language-toggle {
         display: none !important;
+
     }
     nav ul {
         margin-bottom: 0;
