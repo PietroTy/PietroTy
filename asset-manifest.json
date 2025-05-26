@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PietroTy/static/css/main.32cb023c.css",
+    "main.css": "/PietroTy/static/css/main.5944f841.css",
     "main.js": "/PietroTy/static/js/main.1f68e110.js",
     "static/js/453.88f3c331.chunk.js": "/PietroTy/static/js/453.88f3c331.chunk.js",
     "static/media/pietro-image.jpg": "/PietroTy/static/media/pietro-image.e9e420a1546b5fa7a37e.jpg",
@@ -9,12 +9,12 @@
     "static/media/jack-image.jpg": "/PietroTy/static/media/jack-image.791bf0b6f51dd91eddae.jpg",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "index.html": "/PietroTy/index.html",
-    "main.32cb023c.css.map": "/PietroTy/static/css/main.32cb023c.css.map",
+    "main.5944f841.css.map": "/PietroTy/static/css/main.5944f841.css.map",
     "main.1f68e110.js.map": "/PietroTy/static/js/main.1f68e110.js.map",
     "453.88f3c331.chunk.js.map": "/PietroTy/static/js/453.88f3c331.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32cb023c.css",
+    "static/css/main.5944f841.css",
     "static/js/main.1f68e110.js"
   ]
 }
