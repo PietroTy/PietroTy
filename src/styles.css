@@ -56,6 +56,7 @@ header {
     height: 56px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .header-left {
@@ -74,6 +75,17 @@ header {
 
 .ty {
     color: #6A4C9C;
+}
+
+.language-toggle {
+    margin-left: 16px;
+    margin-right: 0;
+    align-self: center;
+    max-width: 100px;
+    min-width: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* =========================
@@ -395,57 +407,14 @@ section#contact {
 ========================= */
 @media (max-width: 900px) {
     header {
-        height: 48px;
+        flex-wrap: wrap;
+        height: auto;
         padding: 0 10px;
     }
-    body {
-        padding-top: 48px;
-    }
-    .logo {
-        font-size: 140%;
-    }
-    nav ul {
-        gap: 10px;
-    }
-    nav ul li {
-        margin: 0 10px;
-    }
-    section {
-        padding: 30px 1%;
-        margin: 10px 1%;
-        font-size: 95%;
-    }
-    .about-content {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-    }
-    .about-image {
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-    }
-    .about-title h2 {
-        font-size: 1.3rem;
-    }
-    .tychat {
-        max-width: 100%;
-        padding: 0.5rem;
-        font-size: 95%;
-    }
-    .progress {
-        height: 14px;
-    }
-    .progress-bar {
-        font-size: 90%;
-    }
     .language-toggle {
-        min-width: 0;
-        max-width: 80px;
-        font-size: 90%;
-        padding: 8px 8px;
+        margin-left: 8px;
+        margin-top: 6px;
+        align-self: flex-end;
     }
 }
 
@@ -455,10 +424,10 @@ section#contact {
         font-size: 85%;
     }
     header {
-        height: 40px;
-        padding: 0 5px;
         flex-direction: column;
         align-items: stretch;
+        height: auto;
+        padding: 0 5px;
     }
     .logo {
         font-size: 110%;
