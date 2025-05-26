@@ -28,14 +28,23 @@ ul li {
     margin: 10px 0;
 }
 
-ul li a {
+ul li a,
+nav ul li a {
     color: #6A4C9C;
     text-decoration: none;
     font-size: 150%;
+    font-weight: bold;
     transition: color 0.3s ease;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 2px;
 }
 
-ul li a:hover {
+ul li a:hover,
+nav ul li a:hover {
     color: #E0E0E0;
 }
 
@@ -79,13 +88,14 @@ header {
 
 .language-toggle {
     margin-left: 16px;
-    margin-right: 0;
     align-self: center;
-    max-width: 100px;
-    min-width: 48px;
+    max-width: 80px;
+    min-width: 32px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 0.85em;
+    padding: 4px 8px;
 }
 
 /* =========================
@@ -103,23 +113,6 @@ nav ul li {
     margin: 0 10px;
     min-width: 0;
     flex-shrink: 1;
-}
-
-nav ul li a {
-    color: #6A4C9C;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 150%;
-    min-width: 0;
-    flex-shrink: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 0 2px;
-}
-
-nav ul li a:hover {
-    color: #E0E0E0;
 }
 
 /* =========================
@@ -328,14 +321,10 @@ section#skills ul li {
 }
 
 .progress-bar {
-    font-weight: bold;
-    line-height: 20px;
-    text-align: center;
+    height: 100%;
     border-radius: 10px 0 0 10px;
     transition: width 0.5s ease-in-out;
     background-color: #6A4C9C !important;
-    color: #E0E0E0;
-    border-right: 2px solid #6A4C9C;
 }
 
 /* =========================
@@ -412,29 +401,30 @@ section#contact {
         padding: 0 10px;
     }
     .language-toggle {
-        margin-left: 8px;
-        margin-top: 6px;
-        align-self: flex-end;
+        max-width: 60px;
+        min-width: 28px;
+        font-size: 0.8em;
+        padding: 3px 6px;
     }
 }
 
 @media (max-width: 600px) {
-    body {
-        padding-top: 40px;
-        font-size: 85%;
-    }
     header {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: center;
         height: auto;
-        padding: 0 5px;
+        padding: 0 18px;
+        justify-content: space-between;
+    }
+    nav ul {
+        gap: 8px;
     }
     .logo {
         font-size: 110%;
     }
     nav ul li a {
         font-size: 100%;
-        padding: 0 1px;
+        padding: 0 2px;
     }
     section {
         padding: 18px 1%;
@@ -485,11 +475,21 @@ section#contact {
         font-size: 80%;
     }
     .language-toggle {
-        width: 100%;
-        min-width: 0;
-        font-size: 90%;
-        margin: 6px 0 0 0;
-        align-self: flex-end;
-        padding: 6px 6px;
+        display: none !important;
+    }
+    nav ul {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .progress-bar {
+        font-size: 0;
+    }
+    .progress-bar::after {
+        content: "";
+    }
+    .language-toggle {
+        display: none !important;
     }
 }

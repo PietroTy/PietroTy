@@ -36,29 +36,31 @@ const Skills = () => {
     <section id="skills" className="skills-section">
       <h2>{content[language].title}</h2>
       <p>{content[language].description}</p>
-      {skills.map((skill, index) => (
-        <div key={index} className="mb-4">
-          <h5 style={{ display: "flex", alignItems: "center" }}>
-            {skill.icon}
-            {skill.name}
-          </h5>
-          <div className="progress" aria-label={`${skill.name} proficiency`}>
-            <div
-              className="progress-bar"
-              role="progressbar"
-              style={{
-                width: `${skill.percentage}%`,
-                backgroundColor: "#6A4C9C",
-              }}
-              aria-valuenow={skill.percentage}
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {skill.percentage}%
+      <ul className="list-unstyled">
+        {skills.map((skill, index) => (
+          <li key={index} className="mb-4">
+            <span className="skill-label" style={{ display: "flex", alignItems: "center" }}>
+              {skill.icon}
+              {skill.name}
+              <span className="skill-percent" style={{ marginLeft: "auto" }}>{skill.percentage}%</span>
+            </span>
+            <div className="progress" aria-label={`${skill.name} proficiency`}>
+              <div
+                className="progress-bar"
+                role="progressbar"
+                style={{
+                  width: `${skill.percentage}%`,
+                  backgroundColor: "#6A4C9C",
+                }}
+                aria-valuenow={skill.percentage}
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              </div>
             </div>
-          </div>
-        </div>
-      ))}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

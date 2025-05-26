@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { LanguageContext } from "../LanguageContext";
 
 const MODEL = "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free";
@@ -22,6 +22,8 @@ function TyChat({ onExit }) {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
+  const chatBoxRef = useRef(null); // Add ref
+  const messageRefs = useRef([]);
 
   useEffect(() => {
     const preprompt = {
@@ -53,7 +55,7 @@ function TyChat({ onExit }) {
         });
 
         const data = await res.json();
-        const reply = data.choices?.[0]?.message?.content || (language === "en" ? "⚠️ Response error." : "⚠️ Erro na resposta.");
+        const reply = data.choices?.[0]?.message?.content || (language === "en" ? "Response error, wait." : "Erro na resposta, aguarde.");
 
         setMessages([preprompt, { role: "assistant", content: reply }]);
       } catch (err) {
@@ -99,7 +101,7 @@ function TyChat({ onExit }) {
       });
 
       const data = await res.json();
-      const reply = data.choices?.[0]?.message?.content || (language === "en" ? "⚠️ Response error." : "⚠️ Erro na resposta.");
+      const reply = data.choices?.[0]?.message?.content || (language === "en" ? "Response error, wait." : "Erro na resposta, espere.");
 
       setMessages([...updated, { role: "assistant", content: reply }]);
     } catch (err) {
@@ -119,18 +121,38 @@ function TyChat({ onExit }) {
     }
   };
 
+  useEffect(() => {
+    if (
+      chatBoxRef.current &&
+      messageRefs.current.length > 0 &&
+      messageRefs.current[messageRefs.current.length - 1]
+    ) {
+      const chatBox = chatBoxRef.current;
+      const lastMsg = messageRefs.current[messageRefs.current.length - 1];
+      chatBox.scrollTop = lastMsg.offsetTop - chatBox.offsetTop;
+    }
+  }, [messages, loading]);
+
   return (
     <div className="tychat">
-      <div className="chat-box">
+      <div className="chat-box" ref={chatBoxRef}>
         {messages
           .filter((m) => m.role !== "system")
           .map((msg, i) => (
-            <div key={i} className={`msg ${msg.role}`}>
+            <div
+              key={i}
+              className={`msg ${msg.role}`}
+              ref={el => messageRefs.current[i] = el}
+            >
               <strong>{msg.role === "user" ? (language === "en" ? "You" : "Você") : "Ty"}:</strong>{" "}
               <span>{msg.content}</span>
             </div>
           ))}
-        {loading && <div className="msg assistant">{language === "en" ? "Ty is typing..." : "Ty está digitando..."}</div>}
+        {loading && (
+          <div className="msg assistant">
+            {language === "en" ? "Ty is typing..." : "Ty está digitando..."}
+          </div>
+        )}
       </div>
       <textarea
         className="chat-input"
