@@ -448,6 +448,10 @@ section#contact {
         font-size: 0.8em;
         padding: 3px 6px;
     }
+    nav ul li a {
+        font-size: 110%;
+        padding: 0 2px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -465,8 +469,8 @@ section#contact {
         font-size: 110%;
     }
     nav ul li a {
-        font-size: 80%;
-        padding: 0 2px;
+        font-size: 65%; /* Ainda menor em celular */
+        padding: 0 1px;
     }
     section {
         padding: 18px 1%;
