@@ -1,0 +1,526 @@
+/* =========================
+    Font Face
+========================= */
+@font-face {
+    font-family: 'Monocraft';
+    src: url('./assets/Monocraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================
+    Base Styles
+========================= */
+body {
+    font-family: 'Monocraft', sans-serif;
+    margin: 0;
+    padding-top: 56px;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #6A4C9C;
+    text-decoration: none;
+    font-size: 150%;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #E0E0E0;
+}
+
+/* =========================
+    Header
+========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 0 20px;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.pietro {
+    color: white;
+}
+
+.ty {
+    color: #6A4C9C;
+}
+
+/* =========================
+    Navigation
+========================= */
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+nav ul li a {
+    color: #6A4C9C;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 2px;
+}
+
+nav ul li a:hover {
+    color: #E0E0E0;
+}
+
+/* =========================
+    Buttons
+========================= */
+button,
+.language-toggle {
+    background-color: #6A4C9C;
+    color: #E0E0E0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 1;
+    min-width: 48px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button:hover,
+.language-toggle:hover {
+    background-color: #E0E0E0;
+    color: #6A4C9C;
+}
+
+/* =========================
+    Sections (General)
+========================= */
+section {
+    padding: 50px 2%;
+    margin: 20px 2%;
+    scroll-margin-top: 80px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    font-size: 100%;
+}
+
+/* =========================
+    About Section
+========================= */
+section#about {
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #6A4C9C;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-title h2 {
+    font-size: 2rem;
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.about-image {
+    position: relative;
+    width: 25%;
+    text-align: center;
+    max-height: 300px;
+    margin-left: 20px;
+}
+
+.about-image .pietro-image,
+.about-image .pietro2-image,
+.about-image .jack-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.about-image .jack-image {
+    position: absolute;
+    width: 25%;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image .pietro2-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.about-image:hover .pietro-image {
+    opacity: 0;
+}
+
+.about-image:hover .pietro2-image {
+    opacity: 1;
+}
+
+/* =========================
+    Chat (Tychat)
+========================= */
+.tychat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #121212;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #E0E0E0;
+    border: 2px solid #6A4C9C;
+    position: relative;
+}
+
+.chat-box {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.msg {
+    margin-bottom: 0.5rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.msg.user {
+    text-align: right;
+    background-color: #6A4C9C;
+    color: white;
+    margin-left: auto;
+}
+
+.msg.assistant {
+    text-align: left;
+    background-color: #1a1a1a;
+    color: #E0E0E0;
+    margin-right: auto;
+}
+
+.chat-input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #6A4C9C;
+    background-color: #1a1a1a;
+    color: #E0E0E0;
+    resize: none;
+    font-family: 'Monocraft', sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    display: block;
+}
+
+.chat-input::placeholder {
+    font-family: 'Monocraft', sans-serif;
+    color: #b9b9b9;
+    opacity: 1;
+}
+
+/* =========================
+    Skills Section
+========================= */
+section#skills {
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #6A4C9C;
+}
+
+.skills-section h2 {
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C;
+    padding-bottom: 10px;
+}
+
+section#skills ul {
+    list-style: none;
+}
+
+section#skills ul li {
+    color: #E0E0E0;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #121212;
+    border: 2px solid #6A4C9C;
+}
+
+.progress-bar {
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.5s ease-in-out;
+    background-color: #6A4C9C !important;
+    color: #E0E0E0;
+    border-right: 2px solid #6A4C9C;
+}
+
+/* =========================
+    Projects Section
+========================= */
+section#projects {
+    border-left: 5px solid #6A4C9C;
+}
+
+.projects-section h2 {
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C;
+    padding-bottom: 10px;
+}
+
+section#projects h3 {
+    color: #6A4C9C;
+}
+
+section#projects li {
+    color: #E0E0E0;
+}
+
+/* =========================
+    Contact Section
+========================= */
+section#contact {
+    border-left: 5px solid #6A4C9C;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.contact-content h2 {
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C;
+    padding-bottom: 10px;
+}
+
+.contact-content p {
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+
+.contact-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact-content li {
+    margin-bottom: 12px;
+}
+
+.contact-content a {
+    display: inline-flex;
+    align-items: center;
+    color: #6A4C9C;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-content a:hover {
+    color: #E0E0E0;
+}
+
+/* =========================
+    Responsive Styles
+========================= */
+@media (max-width: 900px) {
+    header {
+        height: 48px;
+        padding: 0 10px;
+    }
+    body {
+        padding-top: 48px;
+    }
+    .logo {
+        font-size: 140%;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    section {
+        padding: 30px 1%;
+        margin: 10px 1%;
+        font-size: 95%;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .about-image {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+    }
+    .about-title h2 {
+        font-size: 1.3rem;
+    }
+    .tychat {
+        max-width: 100%;
+        padding: 0.5rem;
+        font-size: 95%;
+    }
+    .progress {
+        height: 14px;
+    }
+    .progress-bar {
+        font-size: 90%;
+    }
+    .language-toggle {
+        min-width: 0;
+        max-width: 80px;
+        font-size: 90%;
+        padding: 8px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 40px;
+        font-size: 85%;
+    }
+    header {
+        height: 40px;
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .logo {
+        font-size: 110%;
+    }
+    nav ul li a {
+        font-size: 100%;
+        padding: 0 1px;
+    }
+    section {
+        padding: 18px 1%;
+        margin: 6px 1%;
+        font-size: 90%;
+    }
+    .about-title h2,
+    .skills-section h2,
+    .projects-section h2,
+    .contact-content h2 {
+        font-size: 1.1rem;
+        padding-bottom: 6px;
+    }
+    .about-content {
+        gap: 18px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .chat-container,
+    .tychat {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 90%;
+        padding: 0.3rem;
+        max-height: 180px;
+        height: 180px;
+        box-sizing: border-box;
+    }
+    .about-image {
+        width: 80%;
+        max-width: 140px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .progress {
+        height: 10px;
+    }
+    .progress-bar {
+        font-size: 80%;
+    }
+    .language-toggle {
+        width: 100%;
+        min-width: 0;
+        font-size: 90%;
+        margin: 6px 0 0 0;
+        align-self: flex-end;
+        padding: 6px 6px;
+    }
+}
