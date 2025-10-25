@@ -10,7 +10,7 @@ const content = {
       title: "Projects",
       projects: [
         {
-          name: "WhatsApp Bot With Message Automation",
+          name: "WhatsApp Bot with Message Automation",
           description:
             "A multi-functional JavaScript bot for personal and commercial use. Its main feature is automatic responses to messages, plus commands, an AI chatbot, an automated newspaper, and games.",
           image: "/assets/whatsappbot.png",
@@ -64,7 +64,7 @@ const content = {
       title: "Projetos",
       projects: [
         {
-          name: "WhatsApp Bot With Message Automation",
+          name: "WhatsApp Bot com Automação de Mensagens",
           description:
             "Bot multifuncional em JavaScript para uso pessoal e comercial. Seu destaque é o envio de respostas automáticas a mensagens, além de comandos, IA, jornal automático e jogos.",
           image: "/assets/whatsappbot.png",
