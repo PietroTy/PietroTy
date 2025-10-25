@@ -1,22 +1,7 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import { LanguageContext } from "../LanguageContext";
 import prompts from "../data/tyPrompts.json";
-
-const MODEL = "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free";
-const TOGETHER_API_URL = "https://api.together.xyz/v1/chat/completions";
-
-const ENCODED_API_KEY = "MTI5MzhiMzE1ZDZiMzE1MDQwZjBhNjBmYTlkMTkyNjczZTg5MDU1ZGY1OWI5Zjg0NTY5OGY2ZDI2NzE5ZDI1MQ==";
-
-function decodeBase64(str) {
-  try {
-    return atob(str);
-  } catch (error) {
-    console.error("Erro ao decodificar a chave:", error);
-    return "";
-  }
-}
-
-const TOGETHER_API_KEY = decodeBase64(ENCODED_API_KEY);
+import { perguntarIA } from "../services/aiService";
 
 function TyChat({ onExit }) {
   const { language } = useContext(LanguageContext);
@@ -28,30 +13,12 @@ function TyChat({ onExit }) {
 
   useEffect(() => {
     const preprompt = prompts[language] || prompts["pt"];
-
     setMessages([preprompt]);
 
     const sendInitialMessage = async () => {
       setLoading(true);
-
       try {
-        const res = await fetch(TOGETHER_API_URL, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${TOGETHER_API_KEY}`,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            model: MODEL,
-            messages: [preprompt],
-            temperature: 0.7,
-            max_tokens: 512
-          })
-        });
-
-        const data = await res.json();
-        const reply = data.choices?.[0]?.message?.content || (language === "en" ? "Response error, wait." : "Erro na resposta, aguarde.");
-
+        const reply = await perguntarIA([preprompt]);
         setMessages([preprompt, { role: "assistant", content: reply }]);
       } catch (err) {
         setMessages([
@@ -81,28 +48,18 @@ function TyChat({ onExit }) {
     setLoading(true);
 
     try {
-      const res = await fetch(TOGETHER_API_URL, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${TOGETHER_API_KEY}`,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          model: MODEL,
-          messages: updated,
-          temperature: 0.7,
-          max_tokens: 512
-        })
-      });
-
-      const data = await res.json();
-      const reply = data.choices?.[0]?.message?.content || (language === "en" ? "Response error, wait." : "Erro na resposta, espere.");
-
+      const reply = await perguntarIA(updated);
       setMessages([...updated, { role: "assistant", content: reply }]);
     } catch (err) {
       setMessages([
         ...updated,
-        { role: "assistant", content: language === "en" ? "❌ An error occurred while communicating with Ty." : "❌ Ocorreu um erro ao se comunicar com Ty." }
+        {
+          role: "assistant",
+          content:
+            language === "en"
+              ? "❌ An error occurred while communicating with Ty."
+              : "❌ Ocorreu um erro ao se comunicar com Ty."
+        }
       ]);
     } finally {
       setLoading(false);

@@ -12,7 +12,6 @@ function About() {
 
   const aboutImages = [
     "pietro-image.jpg",
-    "pietro2-image.jpg",
     "jack-image.jpg"
   ];
 
