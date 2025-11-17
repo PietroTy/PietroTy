@@ -4,7 +4,7 @@
  */
 export async function perguntarIA(messages) {
     try {
-        const response = await fetch("https://gain-issue-same-katie.trycloudflare.com/chat", {
+        const response = await fetch("https://ken-serving-hint-pixel.trycloudflare.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages })
