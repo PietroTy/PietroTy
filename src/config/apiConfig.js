@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001',
+    BACKEND_URL: 'https://manual-keen-frequency-est.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
