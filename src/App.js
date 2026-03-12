@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import { LanguageProvider } from './LanguageContext';
-import './styles.css';
+import Header from './components/common/Header';
+import About from './components/sections/About';
+import Skills from './components/sections/Skills';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
+import { LanguageProvider } from './context/LanguageContext';
+import './styles/global.css';
 
 function App() {
     return (

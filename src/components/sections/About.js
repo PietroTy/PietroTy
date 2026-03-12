@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "../LanguageContext";
-import TyChat from "./TyChat";
+import { LanguageContext } from "../../context/LanguageContext";
+import TyChat from "../chat/TyChat";
 
 function About() {
   const { language } = useContext(LanguageContext);
@@ -30,7 +30,7 @@ function About() {
           {aboutImages.map((img, i) => (
             <img
               key={i}
-              src={require(`../assets/${img}`)}
+              src={require(`../../assets/${img}`)}
               className={`${img.split("-")[0]}-image`}
               style={{ cursor: "default" }}
               alt=""

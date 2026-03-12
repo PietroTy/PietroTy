@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "../LanguageContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import { FaPython, FaCuttlefish, FaJs, FaHtml5, FaCss3Alt, FaDatabase, FaJava, FaTerminal, FaPhp } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 

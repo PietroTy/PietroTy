@@ -1,0 +1,12 @@
+
+> backend@1.0.0 start
+> node server.js
+
+[dotenv@17.3.1] injecting env (1) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Backend iniciado
+API URL: https://chat.maritaca.ai/api/chat/completions
+API Key carregada: sim
+Servidor rodando em http://localhost:3001
+Chat endpoint: http://localhost:3001/chat
+Config endpoint: http://localhost:3001/config
+Health endpoint: http://localhost:3001/health
