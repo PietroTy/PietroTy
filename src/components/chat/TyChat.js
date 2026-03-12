@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
-import { LanguageContext } from "../LanguageContext";
-import prompts from "../data/tyPrompts.json";
-import { perguntarIA } from "../services/aiService";
+import { LanguageContext } from "../../context/LanguageContext";
+import prompts from "../../data/tyPrompts.json";
+import { perguntarIA } from "../../services/aiService";
 
 function TyChat({ onExit }) {
   const { language } = useContext(LanguageContext);

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "../LanguageContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
