@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://manual-keen-frequency-est.trycloudflare.com',
+    BACKEND_URL: 'https://likely-remote-towers-misc.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
