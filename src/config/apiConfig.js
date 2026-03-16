@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://specifies-wedding-corn-safari.trycloudflare.com',
+    BACKEND_URL: 'https://legacy-rides-shepherd-arcade.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
