@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://managers-approved-spam-giving.trycloudflare.com',
+    BACKEND_URL: 'https://accountability-coordinates-stones-dns.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
