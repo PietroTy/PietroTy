@@ -5,8 +5,9 @@
  */
 
 export const API_CONFIG = {
-    // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://searches-ash-asks-apart.trycloudflare.com',
+    // URL do backend injetada no build via variável de ambiente 
+    // ou um fallback local para desenvolvimento
+    BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001',
     
     // Endpoints
     ENDPOINTS: {
