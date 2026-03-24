@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://accountability-coordinates-stones-dns.trycloudflare.com',
+    BACKEND_URL: 'https://authentic-slowly-assumed-enhance.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
