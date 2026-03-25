@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://travels-foot-sep-passive.trycloudflare.com',
+    BACKEND_URL: 'https://maintain-texas-beauty-const.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
