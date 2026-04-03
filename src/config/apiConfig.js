@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://counted-shadows-corrections-genius.trycloudflare.com',
+    BACKEND_URL: 'https://mpeg-floating-wages-parameter.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
