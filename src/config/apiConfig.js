@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://mpeg-floating-wages-parameter.trycloudflare.com',
+    BACKEND_URL: 'https://manufactured-phase-full-sudden.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
