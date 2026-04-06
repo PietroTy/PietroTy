@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://manufactured-phase-full-sudden.trycloudflare.com',
+    BACKEND_URL: 'https://guitar-libs-furnishings-varying.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
