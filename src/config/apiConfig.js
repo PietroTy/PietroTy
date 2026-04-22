@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://forget-generations-substances-linking.trycloudflare.com',
+    BACKEND_URL: 'https://stranger-annually-city-circus.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
