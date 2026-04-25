@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://stranger-annually-city-circus.trycloudflare.com',
+    BACKEND_URL: 'https://frog-impacts-gpl-bob.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
