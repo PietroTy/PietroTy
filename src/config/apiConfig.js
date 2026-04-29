@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://subcommittee-time-solving-resolved.trycloudflare.com',
+    BACKEND_URL: 'https://silicon-constructed-wheel-para.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
