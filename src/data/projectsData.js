@@ -42,14 +42,7 @@ export const projectsData = {
           description:
             "A minigame hub inspired by the projects of Prof. Dr. David Buzatto. Developed in C with Raylib, it focuses on performance, simplicity, and cohesive aesthetics.",
           image: "/assets/chub.png",
-          link: "https://github.com/PietroTy/Chub",
-        },
-        {
-          name: "PyHub: Games Made for the Terminal",
-          description:
-            "A Python-based game hub developed for the terminal. The project focuses on the aesthetic design of text-mode interfaces and practicing game development logic.",
-          image: "/assets/pyhub.png",
-          link: "https://github.com/PietroTy/PyHub",
+          link: "https://pietroty.github.io/Chub/",
         },
       ],
     },
@@ -96,14 +89,7 @@ export const projectsData = {
           description:
             "Hub de minijogos inspirado nos projetos do Prof. Dr. David Buzatto. Desenvolvido em C com Raylib, foca em performance, simplicidade e uma estética coesa.",
           image: "/assets/chub.png",
-          link: "https://github.com/PietroTy/Chub",
-        },
-        {
-          name: "PyHub: Jogos Feitos para o Terminal",
-          description:
-            "Hub de jogos em Python desenvolvido para terminal. O projeto foca no design estético de interfaces em modo texto e na prática de lógica de programação de jogos.",
-          image: "/assets/pyhub.png",
-          link: "https://github.com/PietroTy/PyHub",
+          link: "https://pietroty.github.io/Chub/",
         },
       ],
     },

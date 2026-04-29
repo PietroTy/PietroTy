@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
-import prompts from "../../data/tyPrompts.json";
+import { getSystemPrompt } from "../../config/systemPrompt";
 import { perguntarIA } from "../../services/aiService";
 
 function TyChat({ onExit }) {
@@ -12,7 +12,7 @@ function TyChat({ onExit }) {
   const messageRefs = useRef([]);
 
   useEffect(() => {
-    const preprompt = prompts[language] || prompts["pt"];
+    const preprompt = getSystemPrompt(language);
     setMessages([preprompt]);
 
     const sendInitialMessage = async () => {
