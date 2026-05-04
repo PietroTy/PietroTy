@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://salary-season-plant-tue.trycloudflare.com',
+    BACKEND_URL: 'https://mustang-relation-instrumentation-threaded.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
