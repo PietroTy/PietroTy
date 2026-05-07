@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://strand-cheap-succeed-urw.trycloudflare.com',
+    BACKEND_URL: 'https://specified-view-meal-democrats.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
