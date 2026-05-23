@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://area-baptist-eva-adsl.trycloudflare.com',
+    BACKEND_URL: 'https://dealt-brand-sells-daily.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
