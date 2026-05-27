@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://documentary-diverse-breeds-intent.trycloudflare.com',
+    BACKEND_URL: 'https://roughly-coastal-legs-attitude.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
