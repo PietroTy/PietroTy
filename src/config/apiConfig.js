@@ -6,7 +6,7 @@
 
 export const API_CONFIG = {
     // URL do backend - atualizada automaticamente por script
-    BACKEND_URL: 'https://bass-teeth-let-friendship.trycloudflare.com',
+    BACKEND_URL: 'https://brochure-divisions-subjects-ran.trycloudflare.com',
     
     // Endpoints
     ENDPOINTS: {
