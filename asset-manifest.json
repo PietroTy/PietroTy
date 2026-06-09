@@ -1,19 +1,14 @@
 {
   "files": {
-    "main.css": "/PietroTy/static/css/main.114f9128.css",
-    "main.js": "/PietroTy/static/js/main.a58c88a2.js",
-    "static/media/pietro1.jpg": "/PietroTy/static/media/pietro1.e9e420a1546b5fa7a37e.jpg",
-    "static/media/pietro2.jpg": "/PietroTy/static/media/pietro2.a05f2bd913aafe64842c.jpg",
-    "static/media/Monocraft.ttc": "/PietroTy/static/media/Monocraft.5a8c37f2c845957416fd.ttc",
-    "static/media/pietro-image.jpg": "/PietroTy/static/media/pietro-image.e5b59a666c7d5961ba9d.jpg",
-    "static/media/jack-image.jpg": "/PietroTy/static/media/jack-image.791bf0b6f51dd91eddae.jpg",
+    "main.css": "/PietroTy/static/css/main.8cf4ef7e.css",
+    "main.js": "/PietroTy/static/js/main.192c060d.js",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "index.html": "/PietroTy/index.html",
-    "main.114f9128.css.map": "/PietroTy/static/css/main.114f9128.css.map",
-    "main.a58c88a2.js.map": "/PietroTy/static/js/main.a58c88a2.js.map"
+    "main.8cf4ef7e.css.map": "/PietroTy/static/css/main.8cf4ef7e.css.map",
+    "main.192c060d.js.map": "/PietroTy/static/js/main.192c060d.js.map"
   },
   "entrypoints": [
-    "static/css/main.114f9128.css",
-    "static/js/main.a58c88a2.js"
+    "static/css/main.8cf4ef7e.css",
+    "static/js/main.192c060d.js"
   ]
 }
