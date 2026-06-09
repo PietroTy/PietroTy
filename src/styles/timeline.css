@@ -1,0 +1,185 @@
+/* Container and grid wrapper */
+.tl-container {
+  position: relative;
+  width: 100%;
+}
+
+/* On desktop (768px and up) */
+@media (min-width: 768px) {
+  .tl-grid {
+    display: grid;
+    /* Col 1 = Left, Col 2 = Spacer/Rail, Col 3 = Right */
+    grid-template-columns: 1fr 60px 1fr;
+    row-gap: 1.5rem;
+    position: relative;
+  }
+
+  .tl-rail {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, var(--p1) 15%, var(--p3) 85%, transparent 100%);
+    z-index: 1;
+    display: block; /* ensure visible */
+  }
+
+  .tl-item {
+    grid-row: var(--row);
+    grid-column: var(--col);
+    position: relative;
+  }
+
+  /* Left column items */
+  .tl-item[style*="--col: 1"] {
+    margin-right: 30px;
+  }
+
+  .tl-item[style*="--col: 1"] .tl-dot {
+    position: absolute;
+    right: -36px; /* center of the 60px gap */
+    left: auto;
+    top: 1.8rem;
+    z-index: 2;
+  }
+
+  /* Right column items */
+  .tl-item[style*="--col: 3"] {
+    margin-left: 30px;
+  }
+
+  .tl-item[style*="--col: 3"] .tl-dot {
+    position: absolute;
+    left: -36px;
+    right: auto;
+    top: 1.8rem;
+    z-index: 2;
+  }
+}
+
+/* On mobile (smaller than 768px) */
+@media (max-width: 767px) {
+  .tl-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+  }
+
+  .tl-rail {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, var(--p1) 15%, var(--p3) 85%, transparent 100%);
+    z-index: 1;
+  }
+
+  .tl-item {
+    position: relative;
+    margin-left: 1.5rem;
+  }
+
+  .tl-dot {
+    position: absolute;
+    left: -25px; /* align with the left margin */
+    top: 1.4rem;
+    z-index: 2;
+  }
+}
+
+/* Shared/Base timeline item styles - Clickable button-like cards */
+.tl-item {
+  background: rgba(124, 58, 237, 0.02);
+  border: 1px solid var(--border2);
+  padding: 1.2rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.tl-item:hover {
+  border-color: var(--p3);
+  background: rgba(124, 58, 237, 0.06);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+  transform: translateY(-2px);
+}
+
+.tl-item.open {
+  border-color: var(--p2);
+  background: rgba(124, 58, 237, 0.08);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
+}
+
+.tl-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 0;
+  border: 2px solid var(--p2);
+  background: var(--bg);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 0 0 var(--glow);
+}
+
+.tl-item:hover .tl-dot,
+.tl-item.open .tl-dot {
+  background: linear-gradient(135deg, var(--p1), var(--p3));
+  border-color: var(--p3);
+  box-shadow: 0 0 12px var(--glow);
+  transform: scale(1.3);
+}
+
+.tl-year {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--p2);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.06em;
+}
+
+.tl-role {
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tl-place {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted2);
+  margin-bottom: 0;
+}
+
+.tl-expand {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s;
+}
+
+.tl-item.open .tl-expand {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 0.75rem;
+}
+
+.tl-desc {
+  font-size: 0.87rem;
+  color: var(--muted2);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
