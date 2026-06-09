@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://brochure-divisions-subjects-ran.trycloudflare.com',
+    BACKEND_URL: 'https://fusion-pci-trim-clouds.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
