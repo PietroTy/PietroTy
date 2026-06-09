@@ -1,0 +1,125 @@
+/* Responsive overrides */
+
+@media (max-width: 768px) {
+  .projects-grid, .sk-grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    white-space: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .hero-kicker::before {
+    display: none;
+  }
+
+  .hero-desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+
+  .sec-header {
+    text-align: center;
+  }
+  
+  .sec-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clink {
+    text-align: center;
+    align-items: center;
+  }
+
+  .sk-row {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+  }
+
+  .sk-name {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sk-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 0.85rem;
+  }
+
+  .nav-logo {
+    font-size: 0.92rem;
+  }
+
+  .nav-links {
+    gap: 1px;
+  }
+
+  .nav-btn {
+    font-size: 0.65rem;
+    padding: 4px 6px;
+  }
+
+  .nav-lang {
+    font-size: 0.62rem;
+    padding: 3px 6px;
+    margin-left: 0.25rem;
+  }
+
+  .chat-window {
+    width: calc(100vw - 2rem);
+    right: 1rem;
+    bottom: 5rem;
+  }
+
+  .chat-fab-tip {
+    display: none !important;
+  }
+
+  .chat-fab {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-btn {
+    font-size: 0.62rem;
+    padding: 4px 4px;
+  }
+  
+  .nav-logo {
+    display: none; /* Hide logo on extremely narrow screens to ensure menu items fit perfectly */
+  }
+}

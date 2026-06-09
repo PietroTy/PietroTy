@@ -1,0 +1,52 @@
+.hero {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 4rem 2rem; max-width: 920px; margin: 0 auto;
+}
+.hero-kicker {
+  font-family: var(--mono); font-size: 0.6rem; color: var(--p2);
+  letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.75rem;
+  display: flex; align-items: center; gap: 0.75rem; opacity: 0;
+  animation: fadeUp 0.7s 0.1s forwards;
+  white-space: nowrap;
+}
+.hero-kicker::before { content: ''; width: 32px; height: 1px; background: linear-gradient(90deg, transparent, var(--p2)); }
+.hero-h1 {
+  font-family: var(--display); font-size: clamp(2rem, 5.5vw, 4.2rem);
+  font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; margin-bottom: 2rem;
+  opacity: 0; animation: fadeUp 0.7s 0.25s forwards;
+}
+.hero-h1 .line2 {
+  background: linear-gradient(135deg, var(--p2) 0%, var(--p3) 50%, #e9d5ff 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  display: block;
+}
+.hero-desc {
+  font-size: 1rem; color: var(--muted2); max-width: 500px; line-height: 1.75;
+  margin-bottom: 2.5rem; font-weight: 300;
+  opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
+}
+.hero-desc strong { color: var(--p3); font-weight: 500; }
+.hero-actions {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.7s 0.55s forwards;
+}
+.hero-stats {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; margin-top: 4.5rem;
+  background: var(--border);
+  border: 1px solid var(--border); border-radius: 0; overflow: hidden;
+  opacity: 0; animation: fadeUp 0.7s 0.7s forwards;
+}
+.stat {
+  background: var(--bg2); padding: 1.4rem 1.6rem;
+  transition: background 0.2s;
+}
+.stat:hover { background: var(--bg3); }
+.stat-val {
+  font-family: var(--display); font-size: 2rem; font-weight: 800;
+  background: linear-gradient(135deg, var(--p3), var(--p4));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  letter-spacing: -0.03em;
+}
+.stat-label { font-family: var(--mono); font-size: 0.66rem; color: var(--muted); margin-top: 3px; letter-spacing: 0.04em; }

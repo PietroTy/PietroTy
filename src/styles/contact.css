@@ -1,0 +1,18 @@
+.contact-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.75rem; }
+.clink {
+  display: flex; flex-direction: column; gap: 0.35rem;
+  background: rgba(18,18,30,0.6); border: 1px solid var(--border2);
+  border-radius: 0; padding: 1.25rem 1.4rem;
+  text-decoration: none; color: var(--text); backdrop-filter: blur(8px);
+  transition: all 0.25s; position: relative; overflow: hidden;
+}
+.clink::before {
+  content: '';
+  position: absolute; inset: 0; opacity: 0;
+  background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(192,132,252,0.06));
+  transition: opacity 0.25s;
+}
+.clink:hover { border-color: var(--border); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+.clink:hover::before { opacity: 1; }
+.clink-name { font-weight: 600; font-size: 0.88rem; position: relative; }
+.clink-handle { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); position: relative; }
