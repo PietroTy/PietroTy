@@ -1,7 +1,7 @@
 # Pietro Turci Moraes Martins
 
 <p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=a855f7&background=0C081E00&width=550&height=45&lines=AI+Researcher+%26+Data+Engineer;Computer+Science+Undergraduate+%40+IFSP;Creating+Chub%3A+%2B30+C%2FRaylib+games+in+Wasm;Building+large-scale+ETL+pipelines;Yes%2C+I+use+Linux+btw%E2%9C%A8" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=a855f7&background=0C081E00&width=550&height=45&lines=AI+Researcher+%26+Data+Engineer;Computer+Science+Undergraduate+%40+IFSP;Creating+Chub%3A+%2B30+C%2FRaylib+games+in+Wasm;Building+large-scale+ETL+pipelines;Linux+user+btw" alt="Typing SVG" />
 </p>
 
 ```c
