@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://percent-dover-cattle-judgment.trycloudflare.com',
+    BACKEND_URL: 'https://segments-francisco-tribe-entitled.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
