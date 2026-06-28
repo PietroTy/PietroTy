@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://backgrounds-atlanta-occurring-burning.trycloudflare.com',
+    BACKEND_URL: 'https://nobody-filme-comes-posters.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
