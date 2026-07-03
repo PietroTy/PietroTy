@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PietroTy/static/css/main.48d6f7c0.css",
-    "main.js": "/PietroTy/static/js/main.77a37dda.js",
+    "main.css": "/PietroTy/static/css/main.3a8e1c5f.css",
+    "main.js": "/PietroTy/static/js/main.ff9cdafd.js",
     "static/media/home_screenshot_1.jpg": "/PietroTy/static/media/home_screenshot_1.4c161ca1d9632d42f88b.jpg",
     "static/media/home_screenshot_2.jpg": "/PietroTy/static/media/home_screenshot_2.8671a77bd4bbdc1b0929.jpg",
     "static/media/orespawn_2.jpg": "/PietroTy/static/media/orespawn_2.5872a8f128ef26ea13fd.jpg",
@@ -9,11 +9,11 @@
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
-    "main.48d6f7c0.css.map": "/PietroTy/static/css/main.48d6f7c0.css.map",
-    "main.77a37dda.js.map": "/PietroTy/static/js/main.77a37dda.js.map"
+    "main.3a8e1c5f.css.map": "/PietroTy/static/css/main.3a8e1c5f.css.map",
+    "main.ff9cdafd.js.map": "/PietroTy/static/js/main.ff9cdafd.js.map"
   },
   "entrypoints": [
-    "static/css/main.48d6f7c0.css",
-    "static/js/main.77a37dda.js"
+    "static/css/main.3a8e1c5f.css",
+    "static/js/main.ff9cdafd.js"
   ]
 }
