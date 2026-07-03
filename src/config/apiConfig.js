@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://console-glow-area-fur.trycloudflare.com',
+    BACKEND_URL: 'https://helping-teaching-beverages-safer.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
