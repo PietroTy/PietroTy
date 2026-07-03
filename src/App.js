@@ -7,6 +7,7 @@ import ProjectsPage from "./components/sections/ProjectsPage";
 import SkillsPage from "./components/sections/SkillsPage";
 import ContactPage from "./components/sections/ContactPage";
 import PitCraftPage from "./components/sections/PitCraftPage";
+import LaPlayerPage from "./components/sections/LaPlayerPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
@@ -24,6 +25,7 @@ export default function App() {
     skills: <SkillsPage lang={lang} />,
     contact: <ContactPage lang={lang} />,
     pitcraft: <PitCraftPage lang={lang} />,
+    laplayer: <LaPlayerPage lang={lang} setPage={setPage} />,
   };
 
   return (
