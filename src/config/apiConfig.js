@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://bunny-mouth-chess-achieved.trycloudflare.com',
+    BACKEND_URL: 'https://generate-transition-ozone-chapel.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
