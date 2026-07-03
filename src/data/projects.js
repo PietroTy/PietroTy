@@ -64,7 +64,7 @@ export const PROJECTS = [
   },
   {
     id: "drone-autonomo",
-    name: "Drone Autônomo",
+    name: "Game of Drones",
     taglinePt: "Visão computacional e ML embarcado",
     taglineEn: "Computer Vision & Embedded ML",
     descPt: "Algoritmos em Python e OpenCV embarcados em Raspberry Pi para processamento de imagens e navegação autônoma em tempo real, desenvolvido para a equipe competitiva Game of Drones do IFSP.",
