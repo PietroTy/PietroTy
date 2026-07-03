@@ -50,7 +50,7 @@
 .pcard-image-wrapper {
   position: relative;
   width: 100%;
-  height: 140px;
+  height: 200px;
   overflow: hidden;
   border-bottom: 1px solid var(--border2);
 }
@@ -100,7 +100,7 @@
 
 .pcard-name {
   font-family: var(--display);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text);
 }
@@ -120,7 +120,7 @@
 }
 
 .pcard.open .pcard-expand-wrapper {
-  max-height: 500px;
+  max-height: 800px;
   opacity: 1;
   padding: 0 1.25rem 1.25rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.05);
@@ -130,16 +130,16 @@
 
 .pcard-tagline {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   color: var(--p3);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
 }
 
 .pcard-desc {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted2);
-  line-height: 1.65;
-  margin-bottom: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
 }
 
 .pcard-actions {
@@ -159,7 +159,7 @@
     grid-column: span 2;
   }
   .pcard.featured .pcard-image-wrapper {
-    height: 170px;
+    height: 280px;
   }
 }
 
