@@ -2,42 +2,48 @@ import React, { useState, useEffect } from "react";
 import { TIMELINE } from "../../data/timeline";
 
 export default function Timeline({ lang }) {
-  const [openIds, setOpenIds] = useState({});
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [clickedIndex, setClickedIndex] = useState(null);
   const BL = { work: "trabalho", education: "educação", research: "pesquisa", personal: "pessoal" };
   const BE = { work: "work", education: "education", research: "research", personal: "personal" };
 
   const toggleOpen = (index) => {
-    setOpenIds((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
+    if (window.innerWidth <= 768) {
+      setClickedIndex(clickedIndex === index ? null : index);
+    } else {
+      setActiveIndex(index);
+    }
   };
 
   useEffect(() => {
-    // Only on desktop/PC
     if (window.innerWidth <= 768) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = entry.target.getAttribute("data-index");
-          setOpenIds((prev) => ({
-            ...prev,
-            [index]: entry.isIntersecting,
-          }));
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: "-30% 0px -30% 0px", // Active zone is the middle 40% of the screen
-      }
-    );
+    const handleScroll = () => {
+      const items = document.querySelectorAll(".tl-item");
+      let closestIndex = null;
+      let minDistance = Infinity;
+      const centerY = window.innerHeight / 2;
 
-    const items = document.querySelectorAll(".tl-item");
-    items.forEach((item) => observer.observe(item));
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        const itemCenterY = rect.top + rect.height / 2;
+        const distance = Math.abs(itemCenterY - centerY);
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestIndex = parseInt(item.getAttribute("data-index"), 10);
+        }
+      });
+
+      setActiveIndex(closestIndex);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Initial check
+    setTimeout(handleScroll, 100);
 
     return () => {
-      items.forEach((item) => observer.unobserve(item));
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -48,7 +54,7 @@ export default function Timeline({ lang }) {
         {[...TIMELINE].reverse().map((item, i) => {
           const row = i + 1;
           const col = i % 2 === 0 ? 1 : 3;
-          const isOpen = !!openIds[i];
+          const isOpen = activeIndex === i || clickedIndex === i;
           return (
             <div
               key={i}

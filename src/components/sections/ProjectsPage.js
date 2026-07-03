@@ -10,40 +10,46 @@ const getProjectPlaceholder = (color) => {
 
 export default function ProjectsPage({ lang, setPage }) {
   const pt = lang === "pt";
-  const [openIds, setOpenIds] = useState({});
+  const [activeId, setActiveId] = useState(null);
+  const [clickedId, setClickedId] = useState(null);
 
   const toggleOpen = (id) => {
-    setOpenIds((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
+    if (window.innerWidth <= 768) {
+      setClickedId(clickedId === id ? null : id);
+    } else {
+      setActiveId(id);
+    }
   };
 
   useEffect(() => {
-    // Only on desktop/PC
     if (window.innerWidth <= 768) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const id = entry.target.getAttribute("data-id");
-          setOpenIds((prev) => ({
-            ...prev,
-            [id]: entry.isIntersecting,
-          }));
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: "-30% 0px -30% 0px", // Active zone is the middle 40% of the screen
-      }
-    );
+    const handleScroll = () => {
+      const cards = document.querySelectorAll(".pcard");
+      let closestId = null;
+      let minDistance = Infinity;
+      const centerY = window.innerHeight / 2;
 
-    const cards = document.querySelectorAll(".pcard");
-    cards.forEach((card) => observer.observe(card));
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenterY = rect.top + rect.height / 2;
+        const distance = Math.abs(cardCenterY - centerY);
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestId = card.getAttribute("data-id");
+        }
+      });
+
+      setActiveId(closestId);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Initial check
+    setTimeout(handleScroll, 100);
 
     return () => {
-      cards.forEach((card) => observer.unobserve(card));
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -64,7 +70,7 @@ export default function ProjectsPage({ lang, setPage }) {
 
         <div className="projects-grid">
           {PROJECTS.map((p) => {
-            const isOpen = !!openIds[p.id];
+            const isOpen = activeId === p.id || clickedId === p.id;
             return (
               <div
                 key={p.id}
