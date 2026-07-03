@@ -26,3 +26,7 @@ yarn-error.log*
 # Backend (não versionado)
 backend/
 deploy.sh
+.backend.pid
+.backend.log
+.tunnel.pid
+.tunnel.log
