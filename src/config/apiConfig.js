@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://modes-distributor-cakes-spoken.trycloudflare.com',
+    BACKEND_URL: 'https://relay-citizenship-interviews-looks.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
