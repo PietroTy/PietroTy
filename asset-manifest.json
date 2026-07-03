@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/PietroTy/static/css/main.2ebbc7bd.css",
-    "main.js": "/PietroTy/static/js/main.04f37730.js",
+    "main.js": "/PietroTy/static/js/main.08083c7e.js",
     "static/media/magik_tarot.png": "/PietroTy/static/media/magik_tarot.4262716cd053fa72eff3.png",
     "static/media/escriba.png": "/PietroTy/static/media/escriba.edab4b1f68f16967e1d2.png",
-    "static/media/laplayer_2.png": "/PietroTy/static/media/laplayer_2.be12792ff8a53c63152e.png",
     "static/media/game_of_drones.jpg": "/PietroTy/static/media/game_of_drones.51d4da106b38e106cba2.jpg",
-    "static/media/laplayer.png": "/PietroTy/static/media/laplayer.65a25217d0b57584b312.png",
+    "static/media/laplayer.png": "/PietroTy/static/media/laplayer.8ee60687b4bede89ee54.png",
     "static/media/home_screenshot_1.jpg": "/PietroTy/static/media/home_screenshot_1.4c161ca1d9632d42f88b.jpg",
     "static/media/home_screenshot_2.jpg": "/PietroTy/static/media/home_screenshot_2.8671a77bd4bbdc1b0929.jpg",
     "static/media/orespawn_2.jpg": "/PietroTy/static/media/orespawn_2.5872a8f128ef26ea13fd.jpg",
     "static/media/stickers_bot.png": "/PietroTy/static/media/stickers_bot.1fb78eeebc7f37f8b43b.png",
     "static/media/app_logo_clean.png": "/PietroTy/static/media/app_logo_clean.4039f688a12baeea3825.png",
     "static/media/orespawn_3.png": "/PietroTy/static/media/orespawn_3.46e57ad6eecb90821c7d.png",
+    "static/media/laplayer_2.png": "/PietroTy/static/media/laplayer_2.94357474a7588faa0bb3.png",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
     "main.2ebbc7bd.css.map": "/PietroTy/static/css/main.2ebbc7bd.css.map",
-    "main.04f37730.js.map": "/PietroTy/static/js/main.04f37730.js.map"
+    "main.08083c7e.js.map": "/PietroTy/static/js/main.08083c7e.js.map"
   },
   "entrypoints": [
     "static/css/main.2ebbc7bd.css",
-    "static/js/main.04f37730.js"
+    "static/js/main.08083c7e.js"
   ]
 }
