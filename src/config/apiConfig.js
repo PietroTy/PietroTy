@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://generate-transition-ozone-chapel.trycloudflare.com',
+    BACKEND_URL: 'https://console-glow-area-fur.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
