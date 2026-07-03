@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://excel-cigarettes-resident-diane.trycloudflare.com',
+    BACKEND_URL: 'https://pixels-candidate-reaches-cognitive.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
