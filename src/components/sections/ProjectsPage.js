@@ -42,11 +42,6 @@ export default function ProjectsPage({ lang, setPage }) {
                 onClick={() => toggleOpen(p.id)}
               >
                 <div className="pcard-image-wrapper">
-                  {p.featured && (
-                    <span className="featured-tag">
-                      {pt ? "Destaque" : "Featured"}
-                    </span>
-                  )}
                   <img
                     src={
                       p.id === "chub"
