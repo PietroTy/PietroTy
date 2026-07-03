@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://melbourne-prove-veterinary-plc.trycloudflare.com',
+    BACKEND_URL: 'https://modes-distributor-cakes-spoken.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
