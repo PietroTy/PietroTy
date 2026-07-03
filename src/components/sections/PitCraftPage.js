@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import homeScreenshot1 from "../../assets/home_screenshot_1.jpg";
 import homeScreenshot2 from "../../assets/home_screenshot_2.jpg";
 import orespawn1 from "../../assets/orespawn_1.jpg";
@@ -82,22 +82,15 @@ const INSTANCES = [
 
 export default function PitCraftPage({ lang }) {
   const pt = lang === "pt";
-  const [subPage, setSubPage] = useState("hub"); // "hub", "temporadas", "pit"
+  const [subPage, setSubPage] = useState("hub"); // "hub", "temporadas"
   const [selectedSeasonId, setSelectedSeasonId] = useState("aether");
   const [copied, setCopied] = useState(false);
   const ipAddress = "pitcraft.duckdns.org:13377";
-  const tabsRef = useRef(null);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(ipAddress);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-  };
-
-  const handleScroll = (scrollOffset) => {
-    if (tabsRef.current) {
-      tabsRef.current.scrollBy({ left: scrollOffset, behavior: "smooth" });
-    }
   };
 
   const getStatusClass = (status) => {
@@ -109,36 +102,6 @@ export default function PitCraftPage({ lang }) {
   return (
     <div className="page pitcraft-page">
       <div className="container">
-        
-        {/* Sub-Navigation inside the page (replaces the main fixed navbar for PitCraft internal navigation) */}
-        <div style={{
-          display: "flex",
-          gap: "10px",
-          justifyContent: "center",
-          marginBottom: "2.5rem",
-          borderBottom: "1px dashed var(--border)",
-          paddingBottom: "1.2rem",
-          flexWrap: "wrap"
-        }}>
-          <button
-            className={`btn ${subPage === "hub" ? "btn-fill" : "btn-ghost"}`}
-            onClick={() => setSubPage("hub")}
-          >
-            {pt ? "Servidores" : "Servers"}
-          </button>
-          <button
-            className={`btn ${subPage === "temporadas" ? "btn-fill" : "btn-ghost"}`}
-            onClick={() => setSubPage("temporadas")}
-          >
-            {pt ? "Temporadas" : "Seasons"}
-          </button>
-          <button
-            className={`btn ${subPage === "pit" ? "btn-fill" : "btn-ghost"}`}
-            onClick={() => setSubPage("pit")}
-          >
-            {pt ? "Criadores" : "Creators"}
-          </button>
-        </div>
 
         {subPage === "hub" ? (
           <>
@@ -278,9 +241,19 @@ export default function PitCraftPage({ lang }) {
               <img src={homeScreenshot1} alt="Comunidade PitCraft" className="bottom-gallery-image" />
             </div>
           </>
-        ) : subPage === "temporadas" ? (
-          /* Dedicated Seasons Page */
+        ) : (
+          /* Dedicated Seasons Detail Page */
           <section className="pit-page">
+            <div style={{ marginBottom: "1.5rem" }}>
+              <button
+                className="btn btn-ghost btn-sm"
+                onClick={() => setSubPage("hub")}
+                style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                &larr; {pt ? "Voltar para o Hub" : "Back to Hub"}
+              </button>
+            </div>
+
             <div className="pit-header">
               <div className="section-tag">{pt ? "Histórico" : "History"}</div>
               <h2 className="section-title">{pt ? "Temporadas" : "Seasons"}</h2>
@@ -289,29 +262,12 @@ export default function PitCraftPage({ lang }) {
               </p>
             </div>
 
-            {/* Folder Tabs Structure with scroll arrows */}
             <div className="season-tabs-container">
-              <div className="tabs-nav-wrapper">
-                <button className="scroll-arrow-btn" onClick={() => handleScroll(-150)} title={pt ? "Anterior" : "Previous"}>&lt;</button>
-                <div className="season-tabs" ref={tabsRef}>
-                  {INSTANCES.map((inst) => (
-                    <button
-                      key={inst.id}
-                      className={`season-tab-btn ${selectedSeasonId === inst.id ? "active" : ""}`}
-                      onClick={() => setSelectedSeasonId(inst.id)}
-                    >
-                      {inst.name}
-                    </button>
-                  ))}
-                </div>
-                <button className="scroll-arrow-btn" onClick={() => handleScroll(150)} title={pt ? "Próxima" : "Next"}>&gt;</button>
-              </div>
-
               {/* Tab Content Box */}
               {(() => {
                 const inst = INSTANCES.find(i => i.id === selectedSeasonId) || INSTANCES[0];
                 return (
-                  <div className="season-tab-content">
+                  <div className="season-tab-content" style={{ borderTopColor: "var(--border)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
                       <div>
                         <h3 className="instance-title" style={{ fontSize: "1.6rem", margin: 0 }}>{inst.name}</h3>
@@ -361,87 +317,6 @@ export default function PitCraftPage({ lang }) {
                   </div>
                 );
               })()}
-            </div>
-          </section>
-        ) : (
-          /* PietroTy Developer Profile Page */
-          <section className="pit-page">
-            <div className="pit-header">
-              <div className="section-tag">Profile</div>
-              <h2 className="section-title">{pt ? "Sobre os Criadores" : "About the Creators"}</h2>
-              <p className="section-subtitle">
-                {pt ? "A equipe de desenvolvimento, infraestrutura e curadoria do PitCraft." : "The development, infrastructure, and curation team of PitCraft."}
-              </p>
-            </div>
-
-            {/* Pietro's Profile Card */}
-            <div className="pit-card">
-              <h3 className="pit-title">PietroTy</h3>
-              <span className="pit-subtitle">Full Stack Developer & SysAdmin</span>
-              <p className="pit-bio">
-                {pt
-                  ? "Engenheiro de software focado em criar aplicações interativas, seguras e com visual cyberpunk de alta qualidade. Criador da infraestrutura automatizada do PitCraft Hub que sincroniza instâncias de Minecraft e mantém atualizações de IP dinâmico com DuckDNS."
-                  : "Software engineer focused on creating high-quality interactive, secure, and cyberpunk-styled applications. Creator of the automated PitCraft Hub infrastructure that synchronizes Minecraft instances and maintains dynamic IP updates via DuckDNS."}
-              </p>
-
-              <div className="pit-stats">
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Stack Principal" : "Main Stack"}</span>
-                  <div className="stat-val">React, Node, Bash</div>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Servidores Gerenciados" : "Managed Servers"}</span>
-                  <div className="stat-val">6 Instâncias MC</div>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Hobby do Criador" : "Creator's Hobby"}</span>
-                  <div className="stat-val">Modding & Redes</div>
-                </div>
-              </div>
-
-              <a 
-                href="https://pietroty.github.io/PietroTy/" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="btn-portfolio"
-              >
-                [ {pt ? "Acessar Portfólio Principal" : "Visit Main Portfolio"} ]
-              </a>
-            </div>
-
-            {/* Fernando's Profile Card */}
-            <div className="pit-card" style={{ marginTop: "2rem" }}>
-              <h3 className="pit-title" style={{ background: "linear-gradient(135deg, #fff, var(--p2))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>FernandoDG</h3>
-              <span className="pit-subtitle" style={{ color: "var(--p3)" }}>Mod Curator & Lead Designer</span>
-              <p className="pit-bio">
-                {pt
-                  ? "Responsável por toda a curadoria, seleção estratégica e otimização dos pacotes de mods para todas as temporadas do PitCraft. Coordena a compatibilidade, balanço de jogabilidade e experiência imersiva de jogo para a comunidade."
-                  : "Responsible for all curation, strategic selection, and optimization of mod packages for all PitCraft seasons. Coordinates compatibility, gameplay balance, and immersive gaming experiences for the community."}
-              </p>
-
-              <div className="pit-stats">
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Modpacks Curados" : "Curated Modpacks"}</span>
-                  <div className="stat-val">6 Temporadas</div>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Especialidade" : "Specialty"}</span>
-                  <div className="stat-val">Otimização & Balanço</div>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-label">{pt ? "Foco de Contribuição" : "Contribution Focus"}</span>
-                  <div className="stat-val">Experiência Imersiva</div>
-                </div>
-              </div>
-
-              <a 
-                href="https://github.com/FernandoDacanal" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="btn-portfolio"
-              >
-                [ {pt ? "Acessar GitHub" : "Access GitHub"} ]
-              </a>
             </div>
           </section>
         )}
