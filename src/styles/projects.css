@@ -185,36 +185,14 @@
 }
 
 @media (min-width: 769px) {
-  /* On desktop, force cards to be statically expanded and transition styling */
-  .pcard-expand-wrapper {
-    max-height: none !important;
-    opacity: 0.45;
-    padding: 0 1.25rem 1.25rem !important;
-    border-top: 1px dashed rgba(255, 255, 255, 0.05) !important;
-    margin-top: 0.25rem !important;
-    padding-top: 1rem !important;
-    transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
-  
   .pcard {
-    opacity: 0.45;
-    transform: scale(0.97);
-    filter: grayscale(40%);
-    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
   
-  .pcard.open,
-  .pcard:hover {
-    opacity: 1;
+  .pcard.open {
     transform: scale(1.02) translateY(-4px);
-    filter: grayscale(0%);
     border-color: var(--p2);
     box-shadow: 0 12px 35px var(--card-glow);
-  }
-  
-  .pcard.open .pcard-expand-wrapper,
-  .pcard:hover .pcard-expand-wrapper {
-    opacity: 1;
   }
 }
 
