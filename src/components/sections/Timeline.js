@@ -1,10 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TIMELINE } from "../../data/timeline";
 
 export default function Timeline({ lang }) {
-  const [open, setOpen] = useState(null);
+  const [openIds, setOpenIds] = useState({});
   const BL = { work: "trabalho", education: "educação", research: "pesquisa", personal: "pessoal" };
   const BE = { work: "work", education: "education", research: "research", personal: "personal" };
+
+  const toggleOpen = (index) => {
+    setOpenIds((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
+  useEffect(() => {
+    // Only on desktop/PC
+    if (window.innerWidth <= 768) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = entry.target.getAttribute("data-index");
+            setOpenIds((prev) => {
+              if (prev[index]) return prev;
+              return { ...prev, [index]: true };
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.25, // Trigger when 25% of the item is visible
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
+
+    const items = document.querySelectorAll(".tl-item");
+    items.forEach((item) => observer.observe(item));
+
+    return () => {
+      items.forEach((item) => observer.unobserve(item));
+    };
+  }, []);
 
   return (
     <div className="tl-container">
@@ -13,12 +50,14 @@ export default function Timeline({ lang }) {
         {[...TIMELINE].reverse().map((item, i) => {
           const row = i + 1;
           const col = i % 2 === 0 ? 1 : 3;
+          const isOpen = !!openIds[i];
           return (
             <div
               key={i}
-              className={`tl-item${open === i ? " open" : ""}`}
+              data-index={i}
+              className={`tl-item${isOpen ? " open" : ""}`}
               style={{ "--row": row, "--col": col }}
-              onClick={() => setOpen(open === i ? null : i)}
+              onClick={() => toggleOpen(i)}
             >
               <div className="tl-dot" />
               <div className="tl-year">{item.year}</div>
