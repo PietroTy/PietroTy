@@ -16,7 +16,6 @@ export default function Nav({ page, setPage, lang, setLang }) {
           ["home", t.home],
           ["projects", t.projects],
           ["skills", t.skills],
-          ["pitcraft", "PitCraft"],
           ["contact", t.contact],
         ].map(([k, l]) => (
           <button

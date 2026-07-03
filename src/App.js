@@ -20,7 +20,7 @@ export default function App() {
 
   const pages = {
     home: <HomePage lang={lang} setPage={setPage} />,
-    projects: <ProjectsPage lang={lang} />,
+    projects: <ProjectsPage lang={lang} setPage={setPage} />,
     skills: <SkillsPage lang={lang} />,
     contact: <ContactPage lang={lang} />,
     pitcraft: <PitCraftPage lang={lang} />,
