@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://invision-soup-gap-device.trycloudflare.com',
+    BACKEND_URL: 'https://blues-found-bracelet-grab.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
