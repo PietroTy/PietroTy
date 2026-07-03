@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://funeral-jenny-stored-automotive.trycloudflare.com',
+    BACKEND_URL: 'https://invision-soup-gap-device.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
