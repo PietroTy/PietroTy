@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://kitchen-swing-santa-carnival.trycloudflare.com',
+    BACKEND_URL: 'https://models-printing-direction-lead.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
