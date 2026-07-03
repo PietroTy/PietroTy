@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://vermont-licensed-acute-aud.trycloudflare.com',
+    BACKEND_URL: 'https://decide-cultures-tracks-elizabeth.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
