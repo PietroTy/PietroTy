@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://agent-infections-rapids-diving.trycloudflare.com',
+    BACKEND_URL: 'https://technical-modes-with-finish.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
