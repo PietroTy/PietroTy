@@ -106,17 +106,14 @@ export default function LaPlayerPage({ lang, setPage }) {
             <div className="section-tag">{pt ? "Interface" : "UI/UX Showcase"}</div>
             <h2 className="section-title">{pt ? "Demonstração do Aplicativo" : "App Interface Demonstration"}</h2>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginTop: "2rem", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap", marginTop: "2rem" }}>
             <img 
               src={screenshotImg} 
               alt="LaPlayer Screenshot 1" 
               style={{ 
                 maxWidth: "320px", 
                 width: "100%", 
-                aspectRatio: "1/1",
-                objectFit: "cover",
-                objectPosition: "top",
-                borderRadius: "24px", 
+                borderRadius: "40px", 
                 border: "4px solid var(--border)", 
                 boxShadow: "0 20px 50px rgba(0,0,0,0.5)" 
               }} 
@@ -127,10 +124,7 @@ export default function LaPlayerPage({ lang, setPage }) {
               style={{ 
                 maxWidth: "320px", 
                 width: "100%", 
-                aspectRatio: "1/1",
-                objectFit: "cover",
-                objectPosition: "top",
-                borderRadius: "24px", 
+                borderRadius: "40px", 
                 border: "4px solid var(--border)", 
                 boxShadow: "0 20px 50px rgba(0,0,0,0.5)" 
               }} 
