@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PROJECTS } from "../../data/projects";
 import SectionHeader from "../common/SectionHeader";
 import chubImg from "../../assets/chub.png";
@@ -10,11 +10,45 @@ const getProjectPlaceholder = (color) => {
 
 export default function ProjectsPage({ lang, setPage }) {
   const pt = lang === "pt";
-  const [openId, setOpenId] = useState(null);
+  const [openIds, setOpenIds] = useState({});
 
   const toggleOpen = (id) => {
-    setOpenId(openId === id ? null : id);
+    setOpenIds((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
   };
+
+  useEffect(() => {
+    // Only on desktop/PC
+    if (window.innerWidth <= 768) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("data-id");
+            // Set the state to true dynamically when visible
+            setOpenIds((prev) => {
+              if (prev[id]) return prev; // already open
+              return { ...prev, [id]: true };
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -10% 0px", // Trigger when card enters the viewport slightly
+      }
+    );
+
+    const cards = document.querySelectorAll(".pcard");
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      cards.forEach((card) => observer.unobserve(card));
+    };
+  }, []);
 
   return (
     <div className="page">
@@ -33,10 +67,11 @@ export default function ProjectsPage({ lang, setPage }) {
 
         <div className="projects-grid">
           {PROJECTS.map((p) => {
-            const isOpen = openId === p.id;
+            const isOpen = !!openIds[p.id];
             return (
               <div
                 key={p.id}
+                data-id={p.id}
                 className={`pcard${isOpen ? " open" : ""}${p.featured ? " featured" : ""}`}
                 style={{ "--card-glow": `${p.color}20` }}
                 onClick={() => toggleOpen(p.id)}
