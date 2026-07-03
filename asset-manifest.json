@@ -1,19 +1,25 @@
 {
   "files": {
     "main.css": "/PietroTy/static/css/main.b59ed240.css",
-    "main.js": "/PietroTy/static/js/main.2f5bbef2.js",
+    "main.js": "/PietroTy/static/js/main.b5684d25.js",
+    "static/media/magik_tarot.png": "/PietroTy/static/media/magik_tarot.4262716cd053fa72eff3.png",
+    "static/media/escriba.png": "/PietroTy/static/media/escriba.edab4b1f68f16967e1d2.png",
+    "static/media/game_of_drones.jpg": "/PietroTy/static/media/game_of_drones.51d4da106b38e106cba2.jpg",
+    "static/media/laplayer.png": "/PietroTy/static/media/laplayer.8ee60687b4bede89ee54.png",
     "static/media/home_screenshot_1.jpg": "/PietroTy/static/media/home_screenshot_1.4c161ca1d9632d42f88b.jpg",
     "static/media/home_screenshot_2.jpg": "/PietroTy/static/media/home_screenshot_2.8671a77bd4bbdc1b0929.jpg",
     "static/media/orespawn_2.jpg": "/PietroTy/static/media/orespawn_2.5872a8f128ef26ea13fd.jpg",
+    "static/media/stickers_bot.png": "/PietroTy/static/media/stickers_bot.1fb78eeebc7f37f8b43b.png",
+    "static/media/app_logo_clean.png": "/PietroTy/static/media/app_logo_clean.4039f688a12baeea3825.png",
     "static/media/orespawn_3.png": "/PietroTy/static/media/orespawn_3.46e57ad6eecb90821c7d.png",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
     "main.b59ed240.css.map": "/PietroTy/static/css/main.b59ed240.css.map",
-    "main.2f5bbef2.js.map": "/PietroTy/static/js/main.2f5bbef2.js.map"
+    "main.b5684d25.js.map": "/PietroTy/static/js/main.b5684d25.js.map"
   },
   "entrypoints": [
     "static/css/main.b59ed240.css",
-    "static/js/main.2f5bbef2.js"
+    "static/js/main.b5684d25.js"
   ]
 }
