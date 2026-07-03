@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PietroTy/static/css/main.8cf4ef7e.css",
-    "main.js": "/PietroTy/static/js/main.45c15190.js",
+    "main.js": "/PietroTy/static/js/main.c3e673f5.js",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
     "index.html": "/PietroTy/index.html",
     "main.8cf4ef7e.css.map": "/PietroTy/static/css/main.8cf4ef7e.css.map",
-    "main.45c15190.js.map": "/PietroTy/static/js/main.45c15190.js.map"
+    "main.c3e673f5.js.map": "/PietroTy/static/js/main.c3e673f5.js.map"
   },
   "entrypoints": [
     "static/css/main.8cf4ef7e.css",
-    "static/js/main.45c15190.js"
+    "static/js/main.c3e673f5.js"
   ]
 }
