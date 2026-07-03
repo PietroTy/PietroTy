@@ -186,13 +186,31 @@
 
 @media (min-width: 769px) {
   .pcard {
+    height: 430px;
     transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .pcard .pcard-image-wrapper {
+    height: 300px;
+    transition: height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
   
   .pcard.open {
     transform: scale(1.02) translateY(-4px);
     border-color: var(--p2);
     box-shadow: 0 12px 35px var(--card-glow);
+  }
+  
+  .pcard.open .pcard-image-wrapper {
+    height: 180px;
+  }
+  
+  .pcard-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
