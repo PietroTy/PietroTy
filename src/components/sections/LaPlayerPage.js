@@ -1,5 +1,6 @@
 import React from "react";
 import screenshotImg from "../../assets/laplayer.png";
+import screenshotImg2 from "../../assets/laplayer_2.png";
 
 export default function LaPlayerPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -105,14 +106,31 @@ export default function LaPlayerPage({ lang, setPage }) {
             <div className="section-tag">{pt ? "Interface" : "UI/UX Showcase"}</div>
             <h2 className="section-title">{pt ? "Demonstração do Aplicativo" : "App Interface Demonstration"}</h2>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginTop: "2rem", flexWrap: "wrap" }}>
             <img 
               src={screenshotImg} 
-              alt="LaPlayer Screenshot" 
+              alt="LaPlayer Screenshot 1" 
               style={{ 
-                maxWidth: "340px", 
+                maxWidth: "320px", 
                 width: "100%", 
-                borderRadius: "40px", 
+                aspectRatio: "1/1",
+                objectFit: "cover",
+                objectPosition: "top",
+                borderRadius: "24px", 
+                border: "4px solid var(--border)", 
+                boxShadow: "0 20px 50px rgba(0,0,0,0.5)" 
+              }} 
+            />
+            <img 
+              src={screenshotImg2} 
+              alt="LaPlayer Screenshot 2" 
+              style={{ 
+                maxWidth: "320px", 
+                width: "100%", 
+                aspectRatio: "1/1",
+                objectFit: "cover",
+                objectPosition: "top",
+                borderRadius: "24px", 
                 border: "4px solid var(--border)", 
                 boxShadow: "0 20px 50px rgba(0,0,0,0.5)" 
               }} 
