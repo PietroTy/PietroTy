@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { PROJECTS } from "../../data/projects";
 import SectionHeader from "../common/SectionHeader";
 import chubImg from "../../assets/chub.png";
@@ -10,48 +10,11 @@ const getProjectPlaceholder = (color) => {
 
 export default function ProjectsPage({ lang, setPage }) {
   const pt = lang === "pt";
-  const [activeId, setActiveId] = useState(null);
-  const [clickedId, setClickedId] = useState(null);
+  const [openId, setOpenId] = useState(null);
 
   const toggleOpen = (id) => {
-    if (window.innerWidth <= 768) {
-      setClickedId(clickedId === id ? null : id);
-    } else {
-      setActiveId(id);
-    }
+    setOpenId(openId === id ? null : id);
   };
-
-  useEffect(() => {
-    if (window.innerWidth <= 768) return;
-
-    const handleScroll = () => {
-      const cards = document.querySelectorAll(".pcard");
-      let closestId = null;
-      let minDistance = Infinity;
-      const centerY = window.innerHeight / 2;
-
-      cards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        const cardCenterY = rect.top + rect.height / 2;
-        const distance = Math.abs(cardCenterY - centerY);
-
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestId = card.getAttribute("data-id");
-        }
-      });
-
-      setActiveId(closestId);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    // Initial check
-    setTimeout(handleScroll, 100);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="page">
@@ -70,7 +33,7 @@ export default function ProjectsPage({ lang, setPage }) {
 
         <div className="projects-grid">
           {PROJECTS.map((p) => {
-            const isOpen = activeId === p.id || clickedId === p.id;
+            const isOpen = openId === p.id;
             return (
               <div
                 key={p.id}
