@@ -16,6 +16,7 @@ export default function Nav({ page, setPage, lang, setLang }) {
           ["home", t.home],
           ["projects", t.projects],
           ["skills", t.skills],
+          ["pitcraft", "PitCraft"],
           ["contact", t.contact],
         ].map(([k, l]) => (
           <button
@@ -26,6 +27,7 @@ export default function Nav({ page, setPage, lang, setLang }) {
             {l}
           </button>
         ))}
+
         <button
           className="nav-btn nav-lang"
           onClick={() => setLang((l) => (l === "pt" ? "en" : "pt"))}

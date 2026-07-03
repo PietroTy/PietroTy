@@ -6,6 +6,7 @@ import HomePage from "./components/sections/HomePage";
 import ProjectsPage from "./components/sections/ProjectsPage";
 import SkillsPage from "./components/sections/SkillsPage";
 import ContactPage from "./components/sections/ContactPage";
+import PitCraftPage from "./components/sections/PitCraftPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
@@ -22,6 +23,7 @@ export default function App() {
     projects: <ProjectsPage lang={lang} />,
     skills: <SkillsPage lang={lang} />,
     contact: <ContactPage lang={lang} />,
+    pitcraft: <PitCraftPage lang={lang} />,
   };
 
   return (
@@ -34,3 +36,4 @@ export default function App() {
     </>
   );
 }
+
