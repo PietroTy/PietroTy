@@ -1,0 +1,708 @@
+/* PitCraft Page Styles */
+
+.pitcraft-page {
+  position: relative;
+  z-index: 1;
+}
+
+/* Container */
+.pitcraft-page .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero */
+.pitcraft-page .hero-section {
+  padding: 4rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .pitcraft-page .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.pitcraft-page .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pitcraft-page .hero-tag {
+  font-size: 0.72rem; color: var(--p2);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+
+.pitcraft-page .hero-tag::before { content: '//'; color: var(--muted); }
+
+.pitcraft-page .hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.pitcraft-page .gradient-text {
+  background: linear-gradient(135deg, var(--p2), var(--p3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pitcraft-page .hero-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted2);
+  line-height: 1.7;
+}
+
+/* IP Copy box */
+.pitcraft-page .ip-box {
+  display: flex;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.pitcraft-page .ip-box:hover {
+  background: rgba(124,58,237,0.06);
+  border-color: rgba(124,92,252,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px var(--border);
+}
+
+.pitcraft-page .ip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pitcraft-page .ip-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.pitcraft-page .ip-address {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--p4);
+}
+
+.pitcraft-page .copy-icon {
+  font-size: 0.85rem;
+  color: var(--muted2);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.02);
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .ip-box:hover .copy-icon {
+  color: var(--p3);
+  border-color: var(--p2);
+  background: rgba(124,58,237,0.06);
+}
+
+.pitcraft-page .copied-tooltip {
+  position: absolute;
+  right: 1.5rem;
+  background: var(--p1);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 0;
+  border: 1px solid var(--p3);
+}
+
+/* Image Container */
+.pitcraft-page .hero-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pitcraft-page .hero-image {
+  max-width: 100%;
+  border-radius: 0;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .hero-image:hover {
+  transform: scale(1.02);
+  border-color: var(--p2);
+  box-shadow: 0 12px 40px var(--glow);
+}
+
+/* Status bar */
+.pitcraft-page .status-bar {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .pitcraft-page .status-bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+.pitcraft-page .status-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pitcraft-page .status-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #10b981;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.pitcraft-page .status-indicator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+.pitcraft-page .status-title {
+  font-size: 0.88rem;
+}
+
+.pitcraft-page .status-server-name {
+  color: var(--p3);
+}
+
+.pitcraft-page .status-players {
+  font-size: 0.78rem;
+  color: var(--muted2);
+}
+
+/* Instances grid */
+.pitcraft-page .section-header {
+  margin-bottom: 2.5rem;
+}
+
+.pitcraft-page .section-tag {
+  font-size: 0.68rem; color: var(--p2);
+  text-transform: uppercase; letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.pitcraft-page .section-tag::before { content: '//'; color: var(--muted); }
+
+.pitcraft-page .section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.pitcraft-page .section-subtitle {
+  font-size: 0.85rem;
+  color: var(--muted2);
+}
+
+.pitcraft-page .instances-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.pitcraft-page .instance-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.pitcraft-page .instance-card.active {
+  border-color: rgba(124,92,252,0.4);
+  box-shadow: 0 4px 20px var(--border);
+}
+
+.pitcraft-page .instance-card:hover {
+  transform: translateY(-4px);
+  background: rgba(18, 18, 30, 0.95);
+  border-color: var(--p2);
+  box-shadow: 0 8px 30px var(--glow2);
+}
+
+.pitcraft-page .instance-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pitcraft-page .instance-icon {
+  font-size: 1.8rem;
+}
+
+.pitcraft-page .instance-badge {
+  font-size: 0.58rem;
+  padding: 2px 7px;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted2);
+}
+
+.pitcraft-page .instance-badge.active {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.08);
+  color: #34d399;
+}
+
+.pitcraft-page .instance-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pitcraft-page .instance-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.pitcraft-page .meta-tag {
+  font-size: 0.6rem;
+  padding: 3px 7px;
+  border-radius: 0;
+  border: 1px solid var(--border2);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted2);
+}
+
+.pitcraft-page .meta-tag.version { color: var(--p3); }
+.pitcraft-page .meta-tag.loader { color: #58a6ff; }
+
+.pitcraft-page .instance-description {
+  font-size: 0.78rem;
+  color: var(--muted2);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.pitcraft-page .instance-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--border2);
+}
+
+.pitcraft-page .mods-count {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.pitcraft-page .mods-count strong {
+  color: var(--muted2);
+}
+
+.pitcraft-page .status-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pitcraft-page .status-tag.active {
+  color: #34d399;
+}
+
+.pitcraft-page .status-tag.inactive {
+  color: var(--muted);
+}
+
+/* Features Grid */
+.pitcraft-page .features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--border);
+}
+
+.pitcraft-page .feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.pitcraft-page .feature-icon-wrapper {
+  font-size: 1.5rem;
+  color: var(--p3);
+}
+
+.pitcraft-page .feature-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pitcraft-page .feature-description {
+  font-size: 0.78rem;
+  color: var(--muted2);
+  line-height: 1.6;
+}
+
+/* Pit Profile Page */
+.pitcraft-page .pit-page {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pitcraft-page .pit-header {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 1.5rem;
+}
+
+.pitcraft-page .pit-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pitcraft-page .pit-card::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--p1), var(--p3));
+}
+
+.pitcraft-page .pit-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fff, var(--p3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pitcraft-page .pit-subtitle {
+  font-size: 0.85rem;
+  color: var(--p2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: -0.5rem;
+}
+
+.pitcraft-page .pit-bio {
+  font-size: 0.88rem;
+  color: var(--muted2);
+  line-height: 1.7;
+}
+
+.pitcraft-page .pit-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.pitcraft-page .stat-item {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border2);
+  padding: 1rem;
+}
+
+.pitcraft-page .stat-label {
+  font-size: 0.63rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pitcraft-page .stat-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 4px;
+}
+
+.pitcraft-page .btn-portfolio {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--p1), var(--p2));
+  color: #fff;
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 20px var(--glow);
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .btn-portfolio:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--glow);
+  filter: brightness(1.1);
+}
+
+/* OreSpawn Gallery */
+.pitcraft-page .orespawn-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pitcraft-page .gallery-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .gallery-item:hover {
+  border-color: var(--p2);
+  transform: translateY(-2px);
+}
+
+.pitcraft-page .gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid var(--border2);
+}
+
+/* Season status styles */
+.pitcraft-page .season-status {
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid currentColor;
+}
+
+.pitcraft-page .status-closed {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.pitcraft-page .status-launching {
+  color: #60a5fa;
+  background: rgba(96, 165, 250, 0.05);
+}
+
+.pitcraft-page .status-soon {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Credits styling */
+.pitcraft-page .credits-box {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--border);
+}
+
+.pitcraft-page .credits-title {
+  font-size: 0.72rem;
+  color: var(--p2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.pitcraft-page .credits-text {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.6;
+}
+
+/* Bottom Full-Width Image styling */
+.pitcraft-page .bottom-gallery-section {
+  margin-top: 4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 0.6rem;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .bottom-gallery-section:hover {
+  border-color: var(--p2);
+  box-shadow: 0 12px 40px var(--glow);
+}
+
+.pitcraft-page .bottom-gallery-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border: 1px solid var(--border2);
+  display: block;
+}
+
+/* Season Tabs in File Folder Shape */
+.pitcraft-page .season-tabs-container {
+  margin-top: 2rem;
+}
+
+.pitcraft-page .tabs-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.pitcraft-page .season-tabs {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 6px;
+  flex-grow: 1;
+  position: relative;
+  z-index: 10;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  scroll-behavior: smooth;
+}
+
+.pitcraft-page .season-tabs::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.pitcraft-page .season-tab-btn {
+  font-family: var(--body);
+  font-size: 0.85rem;
+  padding: 12px 24px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  color: var(--muted2);
+  cursor: pointer;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+  flex-shrink: 0;
+}
+
+.pitcraft-page .season-tab-btn:hover {
+  color: var(--text);
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.pitcraft-page .season-tab-btn.active {
+  color: var(--p3);
+  background: var(--card);
+  border-color: var(--p2) var(--p2) transparent;
+  border-bottom: 2px solid var(--bg); /* hide the bottom border line of the tab */
+  z-index: 12;
+  font-weight: 600;
+}
+
+.pitcraft-page .scroll-arrow-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--p3);
+  padding: 12px 18px;
+  font-family: var(--body);
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 15;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.pitcraft-page .scroll-arrow-btn:hover {
+  background: var(--p2);
+  color: #fff;
+  border-color: var(--p3);
+}
+
+.pitcraft-page .season-tab-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top-color: var(--p2);
+  padding: 2.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.pitcraft-page .btn-mods-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--p3);
+  font-family: var(--body);
+  font-size: 0.75rem;
+  padding: 8px 18px;
+  margin-top: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.pitcraft-page .btn-mods-link:hover {
+  border-color: var(--p3);
+  color: #fff;
+  background: rgba(124, 58, 237, 0.08);
+  box-shadow: 0 4px 15px var(--glow2);
+}
