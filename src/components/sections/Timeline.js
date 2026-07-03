@@ -20,18 +20,16 @@ export default function Timeline({ lang }) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = entry.target.getAttribute("data-index");
-            setOpenIds((prev) => {
-              if (prev[index]) return prev;
-              return { ...prev, [index]: true };
-            });
-          }
+          const index = entry.target.getAttribute("data-index");
+          setOpenIds((prev) => ({
+            ...prev,
+            [index]: entry.isIntersecting,
+          }));
         });
       },
       {
-        threshold: 0.25, // Trigger when 25% of the item is visible
-        rootMargin: "0px 0px -10% 0px",
+        threshold: 0,
+        rootMargin: "-30% 0px -30% 0px", // Active zone is the middle 40% of the screen
       }
     );
 

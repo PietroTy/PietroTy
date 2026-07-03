@@ -26,19 +26,16 @@ export default function ProjectsPage({ lang, setPage }) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("data-id");
-            // Set the state to true dynamically when visible
-            setOpenIds((prev) => {
-              if (prev[id]) return prev; // already open
-              return { ...prev, [id]: true };
-            });
-          }
+          const id = entry.target.getAttribute("data-id");
+          setOpenIds((prev) => ({
+            ...prev,
+            [id]: entry.isIntersecting,
+          }));
         });
       },
       {
-        threshold: 0.15,
-        rootMargin: "0px 0px -10% 0px", // Trigger when card enters the viewport slightly
+        threshold: 0,
+        rootMargin: "-30% 0px -30% 0px", // Active zone is the middle 40% of the screen
       }
     );
 
