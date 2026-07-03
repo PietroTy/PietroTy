@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://blues-found-bracelet-grab.trycloudflare.com',
+    BACKEND_URL: 'https://laugh-traffic-specialties-trademark.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
