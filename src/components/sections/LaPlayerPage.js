@@ -83,7 +83,7 @@ export default function LaPlayerPage({ lang, setPage }) {
               src={process.env.PUBLIC_URL + "/app_logo_clean.png"} 
               alt="LaPlayer Logo" 
               className="hero-image" 
-              style={{ maxWidth: "220px", borderRadius: "32px", boxShadow: "0 10px 40px rgba(29, 185, 84, 0.2)" }}
+              style={{ maxWidth: "220px", borderRadius: "32px", boxShadow: "0 10px 40px rgba(255, 255, 255, 0.05)" }}
             />
           </div>
         </section>
@@ -92,7 +92,7 @@ export default function LaPlayerPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper" style={{ color: "#1db954" }}>{f.icon}</div>
+              <div className="feature-icon-wrapper">{f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
