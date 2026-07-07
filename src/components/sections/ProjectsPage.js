@@ -6,7 +6,6 @@ import pitcraftImg from "../../assets/home_screenshot_1.jpg";
 import appLogoClean from "../../assets/app_logo_clean.png";
 import magiktarotImg from "../../assets/magik_tarot.png";
 import stickersbotImg from "../../assets/stickers_bot.png";
-import escribaImg from "../../assets/escriba.png";
 import gameOfDronesImg from "../../assets/game_of_drones.jpg";
 import bleachcoImg from "../../assets/bleach_co_logo.png";
 
@@ -61,8 +60,6 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? magiktarotImg
                         : p.id === "bot-figurinhas"
                         ? stickersbotImg
-                        : p.id === "escriba"
-                        ? escribaImg
                         : p.id === "drone-autonomo"
                         ? gameOfDronesImg
                         : p.id === "bleach-co"
