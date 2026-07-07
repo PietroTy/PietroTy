@@ -25,7 +25,7 @@ const INSTANCES = [
     version: "1.21.1",
     loader: "NeoForge",
     status: "launching",
-    statusText: "Estreia em 10 de Julho",
+    statusText: "Estreia em 11 de Julho",
     modsCount: 0,
     description: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
     modsLink: "#",
@@ -142,7 +142,7 @@ export default function PitCraftPage({ lang }) {
             <div className="status-bar">
               <div className="status-left">
                 <div className="status-title">
-                  {pt ? "Próxima temporada:" : "Next season:"} <span className="status-server-name">Aether & Twilight ({pt ? "Estreia em 10 de Julho" : "Starts July 10th"})</span>
+                  {pt ? "Próxima temporada:" : "Next season:"} <span className="status-server-name">Aether & Twilight ({pt ? "Estreia em 11 de Julho" : "Starts July 11th"})</span>
                 </div>
               </div>
               <div className="status-players">
