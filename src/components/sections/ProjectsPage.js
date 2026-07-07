@@ -98,6 +98,48 @@ export default function ProjectsPage({ lang, setPage }) {
                       >
                         {pt ? "Ver Detalhes" : "View Details"} &rarr;
                       </button>
+                    ) : p.id === "bot-figurinhas" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("stickerbot")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
+                    ) : p.id === "whatsapp-bot" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("whatsappbot")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
+                    ) : p.id === "drone-autonomo" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("gameofdrones")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
+                    ) : p.id === "etl-cnpj" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("etl")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
+                    ) : p.id === "discord-bot" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("discordbot")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
+                    ) : p.id === "portfolio" ? (
+                      <button
+                        className="btn btn-fill btn-sm"
+                        onClick={() => setPage("portfolio")}
+                      >
+                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                      </button>
                     ) : (
                       p.link && (
                         <a

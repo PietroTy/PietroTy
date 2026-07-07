@@ -8,6 +8,12 @@ import SkillsPage from "./components/sections/SkillsPage";
 import ContactPage from "./components/sections/ContactPage";
 import PitCraftPage from "./components/sections/PitCraftPage";
 import LaPlayerPage from "./components/sections/LaPlayerPage";
+import StickersBotPage from "./components/sections/StickersBotPage";
+import WhatsAppBotPage from "./components/sections/WhatsAppBotPage";
+import GameOfDronesPage from "./components/sections/GameOfDronesPage";
+import EtlCnpjPage from "./components/sections/EtlCnpjPage";
+import DiscordBotPage from "./components/sections/DiscordBotPage";
+import PortfolioPage from "./components/sections/PortfolioPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
@@ -26,6 +32,12 @@ export default function App() {
     contact: <ContactPage lang={lang} />,
     pitcraft: <PitCraftPage lang={lang} />,
     laplayer: <LaPlayerPage lang={lang} setPage={setPage} />,
+    stickerbot: <StickersBotPage lang={lang} setPage={setPage} />,
+    whatsappbot: <WhatsAppBotPage lang={lang} setPage={setPage} />,
+    gameofdrones: <GameOfDronesPage lang={lang} setPage={setPage} />,
+    etl: <EtlCnpjPage lang={lang} setPage={setPage} />,
+    discordbot: <DiscordBotPage lang={lang} setPage={setPage} />,
+    portfolio: <PortfolioPage lang={lang} setPage={setPage} />,
   };
 
   return (
