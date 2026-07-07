@@ -141,7 +141,6 @@ export default function PitCraftPage({ lang }) {
             {/* Status Bar */}
             <div className="status-bar">
               <div className="status-left">
-                <div className="status-indicator" style={{ backgroundColor: "#60a5fa", boxShadow: "0 0 10px #60a5fa" }}></div>
                 <div className="status-title">
                   {pt ? "Próxima temporada:" : "Next season:"} <span className="status-server-name">Aether & Twilight ({pt ? "Estreia em 10 de Julho" : "Starts July 10th"})</span>
                 </div>
