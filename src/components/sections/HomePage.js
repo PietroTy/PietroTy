@@ -1,5 +1,4 @@
 import React from "react";
-import { LINKS } from "../../data/links";
 import SectionHeader from "../common/SectionHeader";
 import Timeline from "./Timeline";
 
@@ -33,12 +32,6 @@ export default function HomePage({ lang, setPage }) {
           <button className="btn btn-fill" onClick={() => setPage("projects")}>
             {pt ? "Ver projetos" : "View projects"} &rarr;
           </button>
-          <a className="btn btn-outline" href={LINKS.chub} target="_blank" rel="noreferrer">
-            Chub
-          </a>
-          <a className="btn btn-ghost" href={LINKS.github} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
         </div>
         <div className="hero-stats">
           {[
