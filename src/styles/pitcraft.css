@@ -40,11 +40,12 @@
 .pitcraft-page .hero-logo-container {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .pitcraft-page .hero-logo {
-  max-width: 280px;
+  max-width: 380px;
   height: auto;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(124, 58, 237, 0.2));
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;

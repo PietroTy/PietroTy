@@ -109,14 +109,10 @@ export default function PitCraftPage({ lang }) {
             {/* Hero Section */}
             <section className="hero-section">
               <div className="hero-content">
+                <div className="hero-tag">Minecraft Hub</div>
                 <div className="hero-logo-container">
                   <img src={pitcraftLogo} alt="PitCraft Logo" className="hero-logo" />
                 </div>
-                <div className="hero-tag">Minecraft Hub</div>
-                <h1 className="hero-title">
-                  Central de <br />
-                  <span className="gradient-text">Minecraft Servers</span>
-                </h1>
                 <p className="hero-subtitle">
                   Alterne entre temporadas de mods e vanilla em segundos. Ping otimizado, sincronização inteligente de pacotes e chat de voz nativo.
                 </p>
