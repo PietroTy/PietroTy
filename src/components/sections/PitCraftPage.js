@@ -14,9 +14,11 @@ const INSTANCES = [
     version: "1.7.10",
     loader: "Forge",
     status: "closed",
-    statusText: "Fechado",
+    statusTextPt: "Fechado",
+    statusTextEn: "Closed",
     modsCount: 23,
-    description: "A primeira grande temporada de aventura. Sobrevivência hardcore repleta de chefes colossais, masmorras misteriosas, pets funcionais e armas lendárias.",
+    descriptionPt: "A primeira grande temporada de aventura. Sobrevivência hardcore repleta de chefes colossais, masmorras misteriosas, pets funcionais e armas lendárias.",
+    descriptionEn: "The first major adventure season. Hardcore survival filled with colossal bosses, mysterious dungeons, functional pets, and legendary weapons.",
     modsLink: "https://drive.google.com/drive/u/1/folders/1IRBQ9uNuiTkICuKvzyfgUjGemQ5gFrBn",
   },
   {
@@ -26,9 +28,11 @@ const INSTANCES = [
     version: "1.21.1",
     loader: "NeoForge",
     status: "launching",
-    statusText: "Estreia em 11 de Julho",
+    statusTextPt: "Estreia em 11 de Julho",
+    statusTextEn: "Starts July 11th",
     modsCount: 24,
-    description: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
+    descriptionPt: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
+    descriptionEn: "Exploration of two incredible dimensions: the floating realms of the Aether and the mystical twilight forest in Twilight Forest.",
     modsLink: "https://drive.google.com/drive/u/1/folders/1izohzR-etTH2K6xLLPvd1Zpo_wOsXdVT",
   },
   {
@@ -38,9 +42,11 @@ const INSTANCES = [
     version: "1.21.1",
     loader: "Spigot",
     status: "soon",
-    statusText: "Em breve",
+    statusTextPt: "Em breve",
+    statusTextEn: "Soon",
     modsCount: 0,
-    description: "A experiência pura do Minecraft vanilla rodando em Spigot com suporte a crossplay (Java e Bedrock) via Geyser, ideal para jogar em qualquer plataforma.",
+    descriptionPt: "A experiência pura do Minecraft vanilla rodando em Spigot com suporte a crossplay (Java e Bedrock) via Geyser, ideal para jogar em qualquer plataforma.",
+    descriptionEn: "The pure vanilla Minecraft experience running on Spigot with crossplay support (Java & Bedrock) via Geyser, ideal for playing on any platform.",
     modsLink: "#",
   },
   {
@@ -50,9 +56,11 @@ const INSTANCES = [
     version: "1.16.5",
     loader: "Forge",
     status: "soon",
-    statusText: "Em breve",
+    statusTextPt: "Em breve",
+    statusTextEn: "Soon",
     modsCount: 0,
-    description: "Sobrevivência apocalíptica extrema. O mundo está infestado por hordas de mortos-vivos inteligentes. Coopere ou pereça.",
+    descriptionPt: "Sobrevivência apocalíptica extrema. O mundo está infestado por hordas de mortos-vivos inteligentes. Coopere ou pereça.",
+    descriptionEn: "Extreme apocalyptical survival. The world is infested by hordes of intelligent undead. Cooperate or perish.",
     modsLink: "#",
   },
   {
@@ -62,9 +70,11 @@ const INSTANCES = [
     version: "1.12.2",
     loader: "Forge",
     status: "soon",
-    statusText: "Em breve",
+    statusTextPt: "Em breve",
+    statusTextEn: "Soon",
     modsCount: 0,
-    description: "O modpack de sobrevivência mais cruel e realista já feito. Dragões, climas extremos, sede e mecânicas brutais de combate.",
+    descriptionPt: "O modpack de sobrevivência mais cruel e realista já feito. Dragões, climas extremos, sede e mecânicas brutais de combate.",
+    descriptionEn: "The most unforgiving and realistic survival modpack ever made. Dragons, extreme weather, thirst, and brutal combat mechanics.",
     modsLink: "#",
   },
   {
@@ -74,9 +84,11 @@ const INSTANCES = [
     version: "1.7.10",
     loader: "Forge",
     status: "soon",
-    statusText: "Em breve",
+    statusTextPt: "Em breve",
+    statusTextEn: "Soon",
     modsCount: 0,
-    description: "Desafio focado em crafting extremo de fim de jogo. Crie ferramentas e armaduras divinas com materiais ultra complexos.",
+    descriptionPt: "Desafio focado em crafting extremo de fim de jogo. Crie ferramentas e armaduras divinas com materiais ultra complexos.",
+    descriptionEn: "Challenge focused on extreme end-game crafting. Create god-like tools and armor with ultra-complex materials.",
     modsLink: "#",
   }
 ];
@@ -152,7 +164,11 @@ export default function PitCraftPage({
                   <img src={pitcraftLogo} alt="PitCraft Logo" className="hero-logo" />
                 </div>
                 <p className="hero-subtitle">
-                  Alterne entre temporadas de mods e vanilla em segundos. Ping otimizado, sincronização inteligente de pacotes e chat de voz nativo.
+                  {pt ? (
+                    "Alterne entre temporadas de mods e vanilla em segundos. Ping otimizado, sincronização inteligente de pacotes e chat de voz nativo."
+                  ) : (
+                    "Switch between modded and vanilla seasons in seconds. Optimized ping, smart packet synchronization, and native voice chat."
+                  )}
                 </p>
 
                 {/* Click to Copy IP */}
@@ -208,7 +224,7 @@ export default function PitCraftPage({
                   >
                     <div className="instance-card-header" style={{ justifyContent: "flex-end" }}>
                       <span className={`season-status ${getStatusClass(inst.status)}`}>
-                        {inst.statusText}
+                        {pt ? inst.statusTextPt : inst.statusTextEn}
                       </span>
                     </div>
                     <div>
@@ -218,7 +234,7 @@ export default function PitCraftPage({
                         <span className="meta-tag loader">{inst.loader}</span>
                       </div>
                     </div>
-                    <p className="instance-description">{inst.description}</p>
+                    <p className="instance-description">{pt ? inst.descriptionPt : inst.descriptionEn}</p>
                     
                     {/* Mods link button */}
                     {inst.modsLink && inst.modsLink !== "#" && (
@@ -334,12 +350,12 @@ export default function PitCraftPage({
                         </div>
                       </div>
                       <span className={`season-status ${getStatusClass(inst.status)}`}>
-                        {inst.statusText}
+                        {pt ? inst.statusTextPt : inst.statusTextEn}
                       </span>
                     </div>
 
                     <p className="pit-bio" style={{ marginTop: "1.5rem", fontSize: "0.88rem", lineHeight: "1.8" }}>
-                      {inst.description}
+                      {pt ? inst.descriptionPt : inst.descriptionEn}
                     </p>
 
                     <div style={{ marginTop: "1rem", fontSize: "0.8rem", color: "var(--muted)" }}>
