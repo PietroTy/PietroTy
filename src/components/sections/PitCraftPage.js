@@ -17,7 +17,7 @@ const INSTANCES = [
     statusText: "Fechado",
     modsCount: 23,
     description: "A primeira grande temporada de aventura. Sobrevivência hardcore repleta de chefes colossais, masmorras misteriosas, pets funcionais e armas lendárias.",
-    modsLink: "#",
+    modsLink: "https://drive.google.com/drive/u/1/folders/1IRBQ9uNuiTkICuKvzyfgUjGemQ5gFrBn",
   },
   {
     id: "aether",
@@ -29,7 +29,7 @@ const INSTANCES = [
     statusText: "Estreia em 11 de Julho",
     modsCount: 24,
     description: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
-    modsLink: "/PietroTy/aether_mods.zip",
+    modsLink: "https://drive.google.com/drive/u/1/folders/1izohzR-etTH2K6xLLPvd1Zpo_wOsXdVT",
   },
   {
     id: "vanilla",
@@ -93,9 +93,43 @@ export default function PitCraftPage({
   const ipAddress = "pitcraft.duckdns.org:13377";
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(ipAddress);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(ipAddress)
+        .then(() => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000);
+        })
+        .catch((err) => {
+          console.error("Failed to copy using navigator.clipboard: ", err);
+          fallbackCopyText(ipAddress);
+        });
+    } else {
+      fallbackCopyText(ipAddress);
+    }
+  };
+
+  const fallbackCopyText = (text) => {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      const successful = document.execCommand("copy");
+      if (successful) {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } else {
+        console.error("Fallback: Copying text command was unsuccessful");
+      }
+    } catch (err) {
+      console.error("Fallback: Oops, unable to copy", err);
+    }
+    document.body.removeChild(textArea);
   };
 
   const getStatusClass = (status) => {
@@ -127,12 +161,8 @@ export default function PitCraftPage({
                     <span className="ip-label">{pt ? "Endereço IP de Conexão" : "Connection IP Address"}</span>
                     <span className="ip-address">{ipAddress}</span>
                   </div>
-                  <button className="copy-icon">
-                    {copied ? (
-                      <span className="copied-tooltip">{pt ? "Copiado" : "Copied"}</span>
-                    ) : (
-                      <span>{pt ? "Copiar" : "Copy"}</span>
-                    )}
+                  <button className="copy-icon" type="button" style={copied ? { borderColor: "var(--p2)", color: "var(--p3)", background: "rgba(124,58,237,0.06)" } : {}}>
+                    {copied ? (pt ? "Copiado!" : "Copied!") : (pt ? "Copiar" : "Copy")}
                   </button>
                 </div>
               </div>
@@ -191,11 +221,13 @@ export default function PitCraftPage({
                     <p className="instance-description">{inst.description}</p>
                     
                     {/* Mods link button */}
-                    <div>
-                      <a href={inst.modsLink} className="btn-mods-link" onClick={(e) => e.stopPropagation()} target="_blank" rel="noreferrer">
-                        [ {pt ? "Baixar Mods" : "Download Mods"} ]
-                      </a>
-                    </div>
+                    {inst.modsLink && inst.modsLink !== "#" && (
+                      <div>
+                        <a href={inst.modsLink} className="btn-mods-link" onClick={(e) => e.stopPropagation()} target="_blank" rel="noreferrer">
+                          [ {pt ? "Baixar Mods" : "Download Mods"} ]
+                        </a>
+                      </div>
+                    )}
 
                     <div className="instance-footer">
                       {inst.modsCount > 0 ? (
@@ -328,11 +360,13 @@ export default function PitCraftPage({
                     </div>
 
                     {/* Download mods button for specific season page */}
-                    <div style={{ marginTop: "1.2rem" }}>
-                      <a href={inst.modsLink} className="btn-mods-link" target="_blank" rel="noreferrer">
-                        [ {pt ? "Acessar Mods no Drive" : "Access Mods on Drive"} ]
-                      </a>
-                    </div>
+                    {inst.modsLink && inst.modsLink !== "#" && (
+                      <div style={{ marginTop: "1.2rem" }}>
+                        <a href={inst.modsLink} className="btn-mods-link" target="_blank" rel="noreferrer">
+                          [ {pt ? "Acessar Mods no Drive" : "Access Mods on Drive"} ]
+                        </a>
+                      </div>
+                    )}
 
                     {/* Render Gallery specifically for OreSpawn */}
                     {inst.id === "orespawn" && (
