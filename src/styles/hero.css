@@ -2,6 +2,7 @@
   min-height: calc(100vh - var(--nav-h));
   display: flex; flex-direction: column; justify-content: center;
   padding: 4rem 2rem; max-width: 920px; margin: 0 auto;
+  position: relative;
 }
 .hero-kicker {
   font-family: var(--mono); font-size: 0.6rem; color: var(--p2);
@@ -9,12 +10,14 @@
   display: flex; align-items: center; gap: 0.75rem; opacity: 0;
   animation: fadeUp 0.7s 0.1s forwards;
   white-space: nowrap;
+  position: relative; z-index: 1;
 }
 .hero-kicker::before { content: ''; width: 32px; height: 1px; background: linear-gradient(90deg, transparent, var(--p2)); }
 .hero-h1 {
   font-family: var(--display); font-size: clamp(2rem, 5.5vw, 4.2rem);
   font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; margin-bottom: 2rem;
   opacity: 0; animation: fadeUp 0.7s 0.25s forwards;
+  position: relative; z-index: 1;
 }
 .hero-h1 .line2 {
   background: linear-gradient(135deg, var(--p2) 0%, var(--p3) 50%, #e9d5ff 100%);
@@ -25,11 +28,13 @@
   font-size: 1rem; color: var(--muted2); max-width: 500px; line-height: 1.75;
   margin-bottom: 2.5rem; font-weight: 300;
   opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
+  position: relative; z-index: 1;
 }
 .hero-desc strong { color: var(--p3); font-weight: 500; }
 .hero-actions {
   display: flex; gap: 0.75rem; flex-wrap: wrap;
   opacity: 0; animation: fadeUp 0.7s 0.55s forwards;
+  position: relative; z-index: 1;
 }
 .hero-stats {
   display: grid; grid-template-columns: repeat(3,1fr);
@@ -37,6 +42,7 @@
   background: var(--border);
   border: 1px solid var(--border); border-radius: 0; overflow: hidden;
   opacity: 0; animation: fadeUp 0.7s 0.7s forwards;
+  position: relative; z-index: 1;
 }
 .stat {
   background: var(--bg2); padding: 1.4rem 1.6rem;
@@ -50,3 +56,75 @@
   letter-spacing: -0.03em;
 }
 .stat-label { font-family: var(--mono); font-size: 0.66rem; color: var(--muted); margin-top: 3px; letter-spacing: 0.04em; }
+
+.hero-image-wrapper {
+  position: absolute;
+  right: -15%;
+  top: 0;
+  bottom: 0;
+  width: 72%;
+  padding-top: 3rem;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  animation: heroImgFade 0.9s 0.3s forwards;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0) 100%
+  );
+}
+@keyframes heroImgFade {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 0.42; transform: translateY(0); }
+}
+.hero-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right top;
+  background: transparent;
+  filter: drop-shadow(-30px 0 80px rgba(124, 58, 237, 0.18));
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 2rem;
+  }
+  .hero-stats {
+    margin-top: 34rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-image-wrapper {
+    width: 110%;
+    right: -5%;
+    top: auto;
+    bottom: 0;
+    height: 65%;
+    padding-top: 0;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.7) 15%,
+      rgba(0,0,0,1) 45%,
+      rgba(0,0,0,0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.7) 15%,
+      rgba(0,0,0,1) 45%,
+      rgba(0,0,0,0) 100%
+    );
+  }
+  .hero-avatar {
+    object-position: center top;
+  }
+}

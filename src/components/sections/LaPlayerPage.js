@@ -33,16 +33,7 @@ export default function LaPlayerPage({ lang, setPage }) {
     <div className="page pitcraft-page">
       <div className="container">
         
-        {/* Back Button */}
-        <div style={{ marginBottom: "1.5rem" }}>
-          <button
-            className="btn btn-ghost btn-sm"
-            onClick={() => setPage("projects")}
-            style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
-          >
-            &larr; {pt ? "Voltar para Projetos" : "Back to Projects"}
-          </button>
-        </div>
+
 
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>

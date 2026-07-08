@@ -25,6 +25,48 @@
   background: linear-gradient(135deg, var(--p2), var(--p3));
   -webkit-background-clip: text; background-clip: text;
 }
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.nav-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  color: var(--muted2);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--body);
+  font-size: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-back-btn.disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+.nav-back-btn.active:hover {
+  color: var(--p3);
+  background: rgba(124, 58, 237, 0.08);
+  border-color: var(--p2);
+  transform: translateX(-2px);
+}
+.nav-back-icon {
+  font-size: 0.9rem;
+  transition: transform 0.25s;
+}
+.nav-back-btn.active:hover .nav-back-icon {
+  transform: translateX(-2px);
+}
+.nav-back-text {
+  font-weight: 500;
+}
 .nav-links { display: flex; gap: 2px; align-items: center; }
 .nav-btn {
   background: none; border: none; color: var(--muted2); font-family: var(--body);
@@ -48,3 +90,32 @@
   margin-left: 0.5rem; letter-spacing: 0.05em;
 }
 .nav-lang:hover { border-color: var(--p2); color: var(--p3); background: rgba(124,58,237,0.08); }
+
+@media (min-width: 1280px) {
+  .nav {
+    height: 70px;
+    padding: 0 3rem;
+  }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+  .nav-lang {
+    font-size: 0.76rem;
+    padding: 6px 13px;
+    margin-left: 0.75rem;
+  }
+  .nav-back-btn {
+    font-size: 0.84rem;
+    padding: 7px 14px;
+  }
+  .nav-back-icon {
+    font-size: 1rem;
+  }
+  .nav-left {
+    gap: 1.5rem;
+  }
+}

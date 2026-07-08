@@ -39,10 +39,23 @@
 
   .tl-item[style*="--col: 1"] .tl-dot {
     position: absolute;
-    right: -36px; /* center of the 60px gap */
+    right: -55px; /* rail is 60px away, dot is 11px wide: 60 - 5.5 ≈ 55px */
     left: auto;
     top: 1.8rem;
     z-index: 2;
+  }
+
+  /* Connector card edge → rail, left items */
+  .tl-item[style*="--col: 1"]::after {
+    content: '';
+    position: absolute;
+    right: -54px;
+    top: calc(1.8rem + 5px);
+    width: 54px;
+    height: 1px;
+    background: var(--p1);
+    opacity: 0.4;
+    z-index: 1;
   }
 
   /* Right column items */
@@ -52,10 +65,23 @@
 
   .tl-item[style*="--col: 3"] .tl-dot {
     position: absolute;
-    left: -36px;
+    left: -55px;
     right: auto;
     top: 1.8rem;
     z-index: 2;
+  }
+
+  /* Connector card edge → rail, right items */
+  .tl-item[style*="--col: 3"]::after {
+    content: '';
+    position: absolute;
+    left: -54px;
+    top: calc(1.8rem + 5px);
+    width: 54px;
+    height: 1px;
+    background: var(--p1);
+    opacity: 0.4;
+    z-index: 1;
   }
 }
 
@@ -83,9 +109,21 @@
     margin-left: 1.5rem;
   }
 
+  /* Horizontal connector line — mobile */
+  .tl-item::after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: calc(1.4rem + 4px);
+    width: 18px;
+    height: 1px;
+    background: linear-gradient(to left, var(--border), var(--p2));
+    z-index: 1;
+  }
+
   .tl-dot {
     position: absolute;
-    left: -25px; /* align with the left margin */
+    left: -25px;
     top: 1.4rem;
     z-index: 2;
   }
@@ -99,6 +137,7 @@
   cursor: pointer;
   text-align: left;
   transition: all 0.2s ease-in-out;
+  overflow: visible;
 }
 
 .tl-item:hover {

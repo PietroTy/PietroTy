@@ -18,12 +18,29 @@ import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
 export default function App() {
-  const [page, setPage] = useState("home");
+  const [pageHistory, setPageHistory] = useState(["home"]);
+  const page = pageHistory[pageHistory.length - 1] || "home";
   const [lang, setLang] = useState("pt");
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [page]);
+
+  const setPage = (nextPage) => {
+    setPageHistory((prev) => {
+      if (prev[prev.length - 1] === nextPage) return prev;
+      return [...prev, nextPage];
+    });
+  };
+
+  const handleBack = () => {
+    setPageHistory((prev) => {
+      if (prev.length <= 1) return ["home"];
+      return prev.slice(0, -1);
+    });
+  };
+
+  const canGoBack = pageHistory.length > 1;
 
   const pages = {
     home: <HomePage lang={lang} setPage={setPage} />,
@@ -43,7 +60,7 @@ export default function App() {
   return (
     <>
       <Ambient />
-      <Nav page={page} setPage={setPage} lang={lang} setLang={setLang} />
+      <Nav page={page} setPage={setPage} lang={lang} setLang={setLang} handleBack={handleBack} canGoBack={canGoBack} />
       {pages[page]}
       <Footer lang={lang} />
       <TyChat lang={lang} />

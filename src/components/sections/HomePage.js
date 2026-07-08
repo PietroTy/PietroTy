@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../common/SectionHeader";
 import Timeline from "./Timeline";
+import pitImg from "../../assets/pit.png";
 
 export default function HomePage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -8,12 +9,15 @@ export default function HomePage({ lang, setPage }) {
   return (
     <div className="page">
       <div className="hero">
+        <div className="hero-image-wrapper">
+          <img src={pitImg} alt="Pietro Ty" className="hero-avatar" />
+        </div>
         <div className="hero-kicker">
           AI Researcher &amp; Data Engineer | Full-Stack Developer | Python &middot; Machine Learning &middot; LLMs
         </div>
         <h1 className="hero-h1">
-          {pt ? "Olá, sou" : "Hi, I'm"}
-          <span className="line2">Pietro Ty.</span>
+          {pt ? "Oi, sou o" : "Hi, I'm"}
+          <span className="line2">Pietro!</span>
         </h1>
         <p className="hero-desc">
           {pt ? (
@@ -23,7 +27,7 @@ export default function HomePage({ lang, setPage }) {
             </>
           ) : (
             <>
-              <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and
+              <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and 
               <strong>AI</strong> Researcher. Specialized in intelligent automations, large-scale ETL pipelines, and LLM solutions.
             </>
           )}
@@ -39,7 +43,12 @@ export default function HomePage({ lang, setPage }) {
             ["3+", pt ? "anos desenvolvendo" : "years developing"],
             ["2+", pt ? "anos na área de dados" : "years in data"],
           ].map(([v, l]) => (
-            <div key={l} className="stat">
+            <div
+              key={l}
+              className="stat"
+              style={{ cursor: "pointer" }}
+              onClick={() => document.getElementById("timeline-section")?.scrollIntoView({ behavior: "smooth" })}
+            >
               <div className="stat-val">{v}</div>
               <div className="stat-label">{l}</div>
             </div>
@@ -47,15 +56,15 @@ export default function HomePage({ lang, setPage }) {
         </div>
       </div>
 
-      <div className="section">
+      <div id="timeline-section" className="section">
         <div className="rule" />
         <SectionHeader
           tag={pt ? "trajetória" : "experience"}
           title={
             pt ? (
-              <>O que já <em>construí</em></>
+              <>Minha <em>carreira</em></>
             ) : (
-              <>What I've <em>built</em></>
+              <>My <em>career</em></>
             )
           }
           sub={pt ? "Clique em cada item para expandir." : "Click each item to expand."}
