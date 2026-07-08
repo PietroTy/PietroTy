@@ -98,7 +98,7 @@
     padding-bottom: 2rem;
   }
   .hero-stats {
-    margin-top: 34rem;
+    margin-top: 24rem;
     position: relative;
     z-index: 1;
   }
@@ -125,6 +125,6 @@
     );
   }
   .hero-avatar {
-    object-position: center top;
+    object-position: center bottom;
   }
 }
