@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/PietroTy/static/css/main.e1830f62.css",
-    "main.js": "/PietroTy/static/js/main.e125654c.js",
+    "main.js": "/PietroTy/static/js/main.b80946e6.js",
     "static/media/magik_tarot.png": "/PietroTy/static/media/magik_tarot.4262716cd053fa72eff3.png",
     "static/media/pit.png": "/PietroTy/static/media/pit.7941cf8c2bf496c5e17f.png",
     "static/media/game_of_drones.jpg": "/PietroTy/static/media/game_of_drones.51d4da106b38e106cba2.jpg",
     "static/media/laplayer_2.png": "/PietroTy/static/media/laplayer_2.8ee60687b4bede89ee54.png",
     "static/media/laplayer.png": "/PietroTy/static/media/laplayer.d0301e1b06b0339fd9f4.png",
+    "static/media/app_logo_clean.png": "/PietroTy/static/media/app_logo_clean.e006a8f3452d8e100283.png",
     "static/media/home_screenshot_1.jpg": "/PietroTy/static/media/home_screenshot_1.4c161ca1d9632d42f88b.jpg",
     "static/media/home_screenshot_2.jpg": "/PietroTy/static/media/home_screenshot_2.8671a77bd4bbdc1b0929.jpg",
     "static/media/orespawn_2.jpg": "/PietroTy/static/media/orespawn_2.5872a8f128ef26ea13fd.jpg",
     "static/media/stickers_bot.png": "/PietroTy/static/media/stickers_bot.1fb78eeebc7f37f8b43b.png",
-    "static/media/app_logo_clean.png": "/PietroTy/static/media/app_logo_clean.4039f688a12baeea3825.png",
     "static/media/pitcraft.png": "/PietroTy/static/media/pitcraft.2f126554da8ac48960d3.png",
     "static/media/orespawn_3.png": "/PietroTy/static/media/orespawn_3.46e57ad6eecb90821c7d.png",
     "static/media/Monocraft.woff": "/PietroTy/static/media/Monocraft.2c9422fce540c8229fc0.woff",
@@ -19,10 +19,10 @@
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
     "main.e1830f62.css.map": "/PietroTy/static/css/main.e1830f62.css.map",
-    "main.e125654c.js.map": "/PietroTy/static/js/main.e125654c.js.map"
+    "main.b80946e6.js.map": "/PietroTy/static/js/main.b80946e6.js.map"
   },
   "entrypoints": [
     "static/css/main.e1830f62.css",
-    "static/js/main.e125654c.js"
+    "static/js/main.b80946e6.js"
   ]
 }
