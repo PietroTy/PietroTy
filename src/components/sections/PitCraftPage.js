@@ -4,6 +4,7 @@ import homeScreenshot2 from "../../assets/home_screenshot_2.jpg";
 import orespawn1 from "../../assets/orespawn_1.jpg";
 import orespawn2 from "../../assets/orespawn_2.jpg";
 import orespawn3 from "../../assets/orespawn_3.png";
+import pitcraftLogo from "../../assets/pitcraft.png";
 
 const INSTANCES = [
   {
@@ -26,9 +27,9 @@ const INSTANCES = [
     loader: "NeoForge",
     status: "launching",
     statusText: "Estreia em 11 de Julho",
-    modsCount: 0,
+    modsCount: 24,
     description: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
-    modsLink: "#",
+    modsLink: "/PietroTy/aether_mods.zip",
   },
   {
     id: "vanilla",
@@ -108,6 +109,9 @@ export default function PitCraftPage({ lang }) {
             {/* Hero Section */}
             <section className="hero-section">
               <div className="hero-content">
+                <div className="hero-logo-container">
+                  <img src={pitcraftLogo} alt="PitCraft Logo" className="hero-logo" />
+                </div>
                 <div className="hero-tag">Minecraft Hub</div>
                 <h1 className="hero-title">
                   Central de <br />
@@ -253,12 +257,17 @@ export default function PitCraftPage({ lang }) {
               </button>
             </div>
 
-            <div className="pit-header">
-              <div className="section-tag">{pt ? "Histórico" : "History"}</div>
-              <h2 className="section-title">{pt ? "Temporadas" : "Seasons"}</h2>
-              <p className="section-subtitle">
-                {pt ? "Acompanhe as fases ativas, encerradas e os próximos lançamentos do PitCraft." : "Follow active, closed, and upcoming PitCraft releases."}
-              </p>
+            <div className="pit-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
+              <div>
+                <div className="section-tag">{pt ? "Histórico" : "History"}</div>
+                <h2 className="section-title">{pt ? "Temporadas" : "Seasons"}</h2>
+                <p className="section-subtitle">
+                  {pt ? "Acompanhe as fases ativas, encerradas e os próximos lançamentos do PitCraft." : "Follow active, closed, and upcoming PitCraft releases."}
+                </p>
+              </div>
+              <div className="pit-header-logo-container">
+                <img src={pitcraftLogo} alt="PitCraft Logo" className="pit-header-logo" />
+              </div>
             </div>
 
             <div className="season-tabs-container">

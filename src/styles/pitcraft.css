@@ -37,6 +37,30 @@
   gap: 1.5rem;
 }
 
+.pitcraft-page .hero-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.pitcraft-page .hero-logo {
+  max-width: 280px;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(124, 58, 237, 0.2));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+}
+
+.pitcraft-page .hero-logo:hover {
+  transform: scale(1.05) translateY(-2px);
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(124, 58, 237, 0.5));
+}
+
+@media (max-width: 900px) {
+  .pitcraft-page .hero-logo-container {
+    justify-content: center;
+  }
+}
+
 .pitcraft-page .hero-tag {
   font-size: 0.72rem; color: var(--p2);
   text-transform: uppercase; letter-spacing: 0.15em;
@@ -405,6 +429,23 @@
 .pitcraft-page .pit-header {
   border-bottom: 1px dashed var(--border);
   padding-bottom: 1.5rem;
+}
+
+.pitcraft-page .pit-header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.pitcraft-page .pit-header-logo {
+  max-height: 48px;
+  width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 4px rgba(124, 58, 237, 0.15));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+}
+
+.pitcraft-page .pit-header-logo:hover {
+  transform: scale(1.05) translateY(-1px);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(124, 58, 237, 0.3));
 }
 
 .pitcraft-page .pit-card {
