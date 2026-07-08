@@ -81,10 +81,14 @@ const INSTANCES = [
   }
 ];
 
-export default function PitCraftPage({ lang }) {
+export default function PitCraftPage({
+  lang,
+  subPage = "hub",
+  setSubPage,
+  selectedSeasonId = "aether",
+  setSelectedSeasonId
+}) {
   const pt = lang === "pt";
-  const [subPage, setSubPage] = useState("hub"); // "hub", "temporadas"
-  const [selectedSeasonId, setSelectedSeasonId] = useState("aether");
   const [copied, setCopied] = useState(false);
   const ipAddress = "pitcraft.duckdns.org:13377";
 
@@ -239,19 +243,45 @@ export default function PitCraftPage({ lang }) {
             <div className="bottom-gallery-section">
               <img src={homeScreenshot1} alt="Comunidade PitCraft" className="bottom-gallery-image" />
             </div>
+
+            {/* Collaborator Credit */}
+            <div style={{
+              marginTop: "3rem",
+              paddingTop: "2rem",
+              paddingBottom: "3rem",
+              borderTop: "1px solid var(--border)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.6rem",
+              opacity: 0.75,
+              fontFamily: "var(--mono)",
+              fontSize: "0.85rem",
+              color: "var(--muted2)",
+              letterSpacing: "0.04em",
+            }}>
+              <span>{pt ? "Com apoio de" : "With support from"}</span>
+              <a
+                href="https://github.com/FernandoDacanal"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: "var(--p3)",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  transition: "color 0.2s",
+                }}
+                onMouseOver={e => e.target.style.color = "var(--p2)"}
+                onMouseOut={e => e.target.style.color = "var(--p3)"}
+              >
+                FernandoDG
+              </a>
+            </div>
           </>
         ) : (
           /* Dedicated Seasons Detail Page */
           <section className="pit-page">
-            <div style={{ marginBottom: "1.5rem" }}>
-              <button
-                className="btn btn-ghost btn-sm"
-                onClick={() => setSubPage("hub")}
-                style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
-              >
-                &larr; {pt ? "Voltar para o Hub" : "Back to Hub"}
-              </button>
-            </div>
+
 
             <div className="pit-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
               <div>
