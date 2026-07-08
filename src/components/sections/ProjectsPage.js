@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { PROJECTS } from "../../data/projects";
 import SectionHeader from "../common/SectionHeader";
 import chubImg from "../../assets/chub.png";
-import pitcraftImg from "../../assets/pitcraft.png";
+import pitcraftImg from "../../assets/home_screenshot_1.jpg";
 import appLogoClean from "../../assets/app_logo_clean.png";
 import magiktarotImg from "../../assets/magik_tarot.png";
 import stickersbotImg from "../../assets/stickers_bot.png";
