@@ -83,7 +83,7 @@
 }
 @keyframes heroImgFade {
   from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 0.42; transform: translateY(0); }
+  to   { opacity: 0.7; transform: translateY(0); }
 }
 .hero-avatar {
   width: 100%;
