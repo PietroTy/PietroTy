@@ -229,16 +229,7 @@ export default function PitCraftPage({
                       </div>
                     )}
 
-                    <div className="instance-footer">
-                      {inst.modsCount > 0 ? (
-                        <span className="mods-count">{pt ? "Mods:" : "Mods:"} <strong>{inst.modsCount} jars</strong></span>
-                      ) : (
-                        <span className="mods-count">{pt ? "Fase de Setup" : "Setup Stage"}</span>
-                      )}
-                      <span className="status-tag inactive">
-                        {inst.status === "launching" ? (pt ? "Estreia" : "Debut") : inst.status === "closed" ? (pt ? "Fechado" : "Closed") : (pt ? "Em breve" : "Soon")}
-                      </span>
-                    </div>
+
                   </div>
                 ))}
               </div>
