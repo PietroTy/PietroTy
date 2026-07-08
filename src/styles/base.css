@@ -76,7 +76,7 @@ body::before {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.page { min-height: 100vh; padding-top: var(--nav-h); position: relative; z-index: 1; }
+.page { min-height: 100vh; padding-top: var(--nav-h); position: relative; z-index: 1; overflow-x: hidden; }
 .section { max-width: 920px; margin: 0 auto; padding: 5rem 2rem; }
 
 .sec-tag {

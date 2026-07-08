@@ -3,6 +3,7 @@
   display: flex; flex-direction: column; justify-content: center;
   padding: 4rem 2rem; max-width: 920px; margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 }
 .hero-kicker {
   font-family: var(--mono); font-size: 0.6rem; color: var(--p2);
@@ -98,7 +99,7 @@
     padding-bottom: 2rem;
   }
   .hero-stats {
-    margin-top: 24rem;
+    margin-top: 34rem;
     position: relative;
     z-index: 1;
   }
@@ -125,6 +126,6 @@
     );
   }
   .hero-avatar {
-    object-position: center bottom;
+    object-position: center top;
   }
 }
