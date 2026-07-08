@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://culture-joshua-agree-clan.trycloudflare.com',
+    BACKEND_URL: 'https://hearings-impose-snowboard-greater.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
