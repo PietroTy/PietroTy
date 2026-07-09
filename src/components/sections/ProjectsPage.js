@@ -3,10 +3,10 @@ import { PROJECTS } from "../../data/projects";
 import SectionHeader from "../common/SectionHeader";
 import chubImg from "../../assets/chub.png";
 import pitcraftImg from "../../assets/home_screenshot_1.jpg";
-import laplayerImg from "../../assets/laplayer.png";
+import appLogoClean from "../../assets/app_logo_clean.png";
 import magiktarotImg from "../../assets/magik_tarot.png";
 import stickersbotImg from "../../assets/stickers_bot.png";
-import gameOfDronesImg from "../../assets/game_of_drones.jpg";
+import gameOfDronesImg from "../../assets/game_of_drones.png";
 import bleachcoImg from "../../assets/bleach_co_logo.png";
 
 const getProjectPlaceholder = (color) => {
@@ -55,7 +55,7 @@ export default function ProjectsPage({ lang, setPage }) {
                         : p.id === "pitcraft"
                         ? pitcraftImg
                         : p.id === "laplayer"
-                        ? laplayerImg
+                        ? appLogoClean
                         : p.id === "magik-tarot"
                         ? magiktarotImg
                         : p.id === "bot-figurinhas"

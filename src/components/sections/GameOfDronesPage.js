@@ -1,5 +1,5 @@
 import React from "react";
-import screenshotImg from "../../assets/game_of_drones.jpg";
+import screenshotImg from "../../assets/game_of_drones.png";
 
 export default function GameOfDronesPage({ lang, setPage }) {
   const pt = lang === "pt";
