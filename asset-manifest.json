@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PietroTy/static/css/main.06cef595.css",
+    "main.css": "/PietroTy/static/css/main.224ddbbe.css",
     "main.js": "/PietroTy/static/js/main.efcee418.js",
     "static/media/magik_tarot.png": "/PietroTy/static/media/magik_tarot.4262716cd053fa72eff3.png",
     "static/media/pit.png": "/PietroTy/static/media/pit.7941cf8c2bf496c5e17f.png",
@@ -18,11 +18,11 @@
     "static/media/bleach_co_logo.png": "/PietroTy/static/media/bleach_co_logo.ba3811e293ff640e2c05.png",
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
-    "main.06cef595.css.map": "/PietroTy/static/css/main.06cef595.css.map",
+    "main.224ddbbe.css.map": "/PietroTy/static/css/main.224ddbbe.css.map",
     "main.efcee418.js.map": "/PietroTy/static/js/main.efcee418.js.map"
   },
   "entrypoints": [
-    "static/css/main.06cef595.css",
+    "static/css/main.224ddbbe.css",
     "static/js/main.efcee418.js"
   ]
 }
