@@ -6,7 +6,7 @@ import pitImg from "../../assets/pit.png";
 export default function HomePage({ lang, setPage }) {
   const pt = lang === "pt";
   const currentYear = new Date().getFullYear();
-  const devYears = currentYear - 2020;
+  const devYears = currentYear - 2021;
   const dataYears = currentYear - 2024;
 
   return (
