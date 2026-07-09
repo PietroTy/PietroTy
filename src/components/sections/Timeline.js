@@ -12,8 +12,8 @@ export default function Timeline({ lang }) {
 
   return (
     <div className="tl-container">
-      <div className="tl-rail" />
       <div className="tl-grid">
+        <div className="tl-rail" />
         {[...TIMELINE].reverse().map((item, i) => {
           const row = i + 1;
           const col = i % 2 === 0 ? 1 : 3;
