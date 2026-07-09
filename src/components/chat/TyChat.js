@@ -132,13 +132,7 @@ export default function TyChat({ lang }) {
       )}
 
       <button className="chat-fab" onClick={() => setOpen((o) => !o)} aria-label="Chat com Ty">
-        {open ? (
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" shapeRendering="crispEdges" style={{ width: "22px", height: "22px" }}>
-            <path d="M3,3 L13,13 M13,3 L3,13" />
-          </svg>
-        ) : (
-          <BunnyIcon style={{ width: "34px", height: "34px", color: "white" }} />
-        )}
+        <BunnyIcon style={{ width: "40px", height: "40px", color: "white", transform: open ? "rotate(12deg) scale(0.95)" : "none", transition: "transform 0.25s" }} />
       </button>
 
       <div className={`chat-window ${open ? "open" : "closed"}`}>
