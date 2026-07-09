@@ -12,7 +12,7 @@ export default function Timeline({ lang }) {
 
   return (
     <div className="tl-container">
-      <div className="tl-grid">
+      <div className="tl-grid" style={{ "--total-rows": TIMELINE.length }}>
         <div className="tl-rail" />
         {[...TIMELINE].reverse().map((item, i) => {
           const row = i + 1;
