@@ -8,6 +8,7 @@ import magiktarotImg from "../../assets/magik_tarot.png";
 import stickersbotImg from "../../assets/stickers_bot.png";
 import gameOfDronesImg from "../../assets/game_of_drones.png";
 import bleachcoImg from "../../assets/bleach_co_logo.png";
+import agentTyImg from "../../assets/agent_ty.png";
 
 const getProjectPlaceholder = (color) => {
   return `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350" height="180" viewBox="0 0 350 180"><rect width="100%" height="100%" fill="%230c081e"/><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="${encodeURIComponent(color)}20" stroke-width="1"/></pattern><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${encodeURIComponent(color)}35"/><stop offset="100%" stop-color="%230c081e"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23grid)"/><rect width="100%" height="100%" fill="url(%23grad)"/><circle cx="175" cy="90" r="45" fill="none" stroke="${encodeURIComponent(color)}30" stroke-width="1.5" stroke-dasharray="5,5"/><circle cx="175" cy="90" r="28" fill="none" stroke="${encodeURIComponent(color)}b3" stroke-width="2"/></svg>`;
@@ -64,6 +65,8 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? gameOfDronesImg
                         : p.id === "bleach-co"
                         ? bleachcoImg
+                        : p.id === "portfolio"
+                        ? agentTyImg
                         : getProjectPlaceholder(p.color)
                     }
                     alt={p.name}
