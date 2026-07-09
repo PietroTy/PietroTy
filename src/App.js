@@ -273,13 +273,13 @@ export default function App() {
   };
 
   return (
-    <>
+    <div className="app-wrapper">
       <Ambient />
       <Nav page={page} setPage={setPage} lang={lang} setLang={setLang} handleBack={handleBack} canGoBack={canGoBack} />
       {pages[page]}
       <Footer lang={lang} />
       <TyChat lang={lang} />
-    </>
+    </div>
   );
 }
 
