@@ -1,5 +1,4 @@
 import React from "react";
-import screenshotImg from "../../assets/home_screenshot_1.jpg";
 
 export default function PortfolioPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -51,10 +50,10 @@ export default function PortfolioPage({ lang, setPage }) {
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <img 
-              src={screenshotImg} 
-              alt="Portfolio Screenshot" 
-              className="hero-image" 
-              style={{ maxWidth: "400px", borderRadius: "16px", boxShadow: "0 10px 40px rgba(0,0,0,0.3)", border: "2px solid var(--border)" }}
+              src={process.env.PUBLIC_URL + "/agent_ty_clean.png"} 
+              alt="Agent Ty Logo" 
+              className="hero-logo" 
+              style={{ maxWidth: "260px", display: "block" }}
             />
           </div>
         </section>
@@ -68,6 +67,25 @@ export default function PortfolioPage({ lang, setPage }) {
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
           ))}
+        </section>
+
+        {/* Project Story Section */}
+        <section style={{ marginTop: "4rem", borderTop: "1px dashed var(--border)", paddingTop: "3rem" }}>
+          <h2 style={{ fontSize: "1.8rem", fontWeight: "800", marginBottom: "1.5rem" }}>
+            {pt ? "A História do Projeto" : "The Project's Story"}
+          </h2>
+          <p style={{ color: "var(--muted2)", lineHeight: "1.8", fontSize: "0.95rem", marginBottom: "1.5rem" }}>
+            {pt 
+              ? "O portfólio nasceu com a missão de unificar a presença digital do Pietro, servindo como uma central para todos os seus projetos e experimentos técnicos. Mais do que um simples currículo visual, o objetivo era construir uma experiência cyberpunk interativa e imersiva."
+              : "This portfolio was born with the mission of unifying Pietro's digital presence, serving as a hub for all his technical projects and experiments. More than a simple visual resume, the goal was to build an interactive and immersive cyberpunk experience."
+            }
+          </p>
+          <p style={{ color: "var(--muted2)", lineHeight: "1.8", fontSize: "0.95rem" }}>
+            {pt
+              ? "Durante o desenvolvimento, surgiu a ideia de criar o Ty: um assistente virtual inteligente capaz de conversar com visitantes e recrutadores sobre a trajetória profissional do Pietro. Representado pelo mascote de coelho em pixel-art, o Ty evoluiu de um simples bot de chat para se tornar a própria identidade visual e alma interativa deste portfólio."
+              : "During development, the idea of creating Ty was born: a smart virtual assistant capable of chatting with visitors and recruiters about Pietro's professional journey. Represented by the pixel-art bunny mascot, Ty evolved from a simple chatbot to become the visual identity and interactive soul of this portfolio."
+            }
+          </p>
         </section>
 
         {/* Tech Stack Footer */}
