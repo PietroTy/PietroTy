@@ -3,7 +3,6 @@
   display: flex; flex-direction: column; justify-content: center;
   padding: 4rem 2rem; max-width: 920px; margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
 }
 .hero-kicker {
   font-family: var(--mono); font-size: 0.6rem; color: var(--p2);
