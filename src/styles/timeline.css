@@ -33,11 +33,11 @@
   }
 
   /* Left column items */
-  .tl-item[style*="--col: 1"] {
+  .tl-item.tl-left {
     margin-right: 30px;
   }
 
-  .tl-item[style*="--col: 1"] .tl-dot {
+  .tl-item.tl-left .tl-dot {
     position: absolute;
     right: -55px; /* rail is 60px away, dot is 11px wide: 60 - 5.5 ≈ 55px */
     left: auto;
@@ -46,7 +46,7 @@
   }
 
   /* Connector card edge → rail, left items */
-  .tl-item[style*="--col: 1"]::after {
+  .tl-item.tl-left::after {
     content: '';
     position: absolute;
     right: -54px;
@@ -59,11 +59,11 @@
   }
 
   /* Right column items */
-  .tl-item[style*="--col: 3"] {
+  .tl-item.tl-right {
     margin-left: 30px;
   }
 
-  .tl-item[style*="--col: 3"] .tl-dot {
+  .tl-item.tl-right .tl-dot {
     position: absolute;
     left: -55px;
     right: auto;
@@ -72,7 +72,7 @@
   }
 
   /* Connector card edge → rail, right items */
-  .tl-item[style*="--col: 3"]::after {
+  .tl-item.tl-right::after {
     content: '';
     position: absolute;
     left: -54px;
