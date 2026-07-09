@@ -1,17 +1,17 @@
 .chat-fab {
   position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 300;
-  width: 54px; height: 54px; border-radius: 0;
+  width: 64px; height: 64px; border-radius: 0;
   background: linear-gradient(135deg, var(--p1), var(--p2));
   border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 24px var(--glow), 0 0 0 0 var(--glow);
   transition: transform 0.25s, box-shadow 0.25s;
-  animation: pulse-ring 3s ease-in-out infinite;
+  animation: pulse-ring 5s ease-in-out infinite;
 }
 .chat-fab:hover { transform: scale(1.08); box-shadow: 0 8px 40px var(--glow); }
 .chat-fab svg { width: 22px; height: 22px; color: white; transition: opacity 0.2s; }
 @keyframes pulse-ring {
-  0%,100% { box-shadow: 0 4px 24px var(--glow), 0 0 0 0 rgba(124,58,237,0.4); }
-  50%      { box-shadow: 0 4px 24px var(--glow), 0 0 0 12px rgba(124,58,237,0); }
+  0%,100% { box-shadow: 0 4px 24px var(--glow), 0 0 0 0 rgba(124,58,237,0.25); }
+  50%      { box-shadow: 0 4px 24px var(--glow), 0 0 0 6px rgba(124,58,237,0); }
 }
 
 .chat-window {
@@ -119,8 +119,8 @@
 /* Floating tip for closed FAB */
 .chat-fab-tip {
   position: fixed;
-  bottom: 43px;
-  right: 100px;
+  bottom: 48px;
+  right: 110px;
   background: rgba(124, 58, 237, 0.15);
   border: 1px solid rgba(124, 92, 252, 0.25);
   backdrop-filter: blur(8px);
