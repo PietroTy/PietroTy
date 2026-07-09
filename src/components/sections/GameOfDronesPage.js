@@ -1,5 +1,4 @@
 import React from "react";
-import screenshotImg from "../../assets/game_of_drones.png";
 
 export default function GameOfDronesPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -51,10 +50,10 @@ export default function GameOfDronesPage({ lang, setPage }) {
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <img 
-              src={screenshotImg} 
-              alt="Game of Drones Preview" 
-              className="hero-image" 
-              style={{ maxWidth: "400px", borderRadius: "16px", boxShadow: "0 10px 40px rgba(0,0,0,0.3)", border: "2px solid var(--border)" }}
+              src={process.env.PUBLIC_URL + "/game_of_drones_clean.png"} 
+              alt="Game of Drones Logo" 
+              className="hero-logo"
+              style={{ maxWidth: "380px", display: "block" }}
             />
           </div>
         </section>

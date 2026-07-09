@@ -74,8 +74,8 @@ export default function LaPlayerPage({ lang, setPage }) {
             <img 
               src={process.env.PUBLIC_URL + "/app_logo_clean.png"} 
               alt="LaPlayer Logo" 
-              className="hero-image" 
-              style={{ maxWidth: "220px", borderRadius: "32px", boxShadow: "0 10px 40px rgba(255, 255, 255, 0.05)" }}
+              className="hero-logo"
+              style={{ maxWidth: "280px", display: "block" }}
             />
           </div>
         </section>
