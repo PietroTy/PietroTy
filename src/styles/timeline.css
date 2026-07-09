@@ -24,7 +24,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, transparent 0%, var(--p1) 15%, var(--p3) 85%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, var(--p2) 15%, var(--p2) 85%, transparent 100%);
     z-index: 1;
     display: block; /* ensure visible */
   }
@@ -56,7 +56,7 @@
     top: calc(1.8rem + 4.5px);
     width: 55px;
     height: 2px; /* 2px prevents subpixel rounding down to 0 in Firefox */
-    background: var(--p1);
+    background: var(--p2);
     opacity: 0.4;
     z-index: 1;
   }
@@ -82,7 +82,7 @@
     top: calc(1.8rem + 4.5px);
     width: 55px;
     height: 2px; /* 2px prevents subpixel rounding down to 0 in Firefox */
-    background: var(--p1);
+    background: var(--p2);
     opacity: 0.4;
     z-index: 1;
   }
@@ -103,7 +103,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, transparent 0%, var(--p1) 15%, var(--p3) 85%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, var(--p2) 15%, var(--p2) 85%, transparent 100%);
     z-index: 1;
   }
 
@@ -168,8 +168,8 @@
 
 .tl-item:hover .tl-dot,
 .tl-item.open .tl-dot {
-  background: linear-gradient(135deg, var(--p1), var(--p3));
-  border-color: var(--p3);
+  background: var(--p2);
+  border-color: var(--p2);
   box-shadow: 0 0 12px var(--glow);
   transform: scale(1.3);
 }
