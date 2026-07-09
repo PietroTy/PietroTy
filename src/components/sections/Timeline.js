@@ -17,12 +17,13 @@ export default function Timeline({ lang }) {
         {[...TIMELINE].reverse().map((item, i) => {
           const row = i + 1;
           const col = i % 2 === 0 ? 1 : 3;
+          const side = i % 2 === 0 ? "left" : "right";
           const isOpen = openIndex === i;
           return (
             <div
               key={i}
               data-index={i}
-              className={`tl-item${isOpen ? " open" : ""}`}
+              className={`tl-item tl-${side}${isOpen ? " open" : ""}`}
               style={{ "--row": row, "--col": col }}
               onClick={() => toggleOpen(i)}
             >
