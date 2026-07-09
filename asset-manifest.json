@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PietroTy/static/css/main.2928662a.css",
-    "main.js": "/PietroTy/static/js/main.bdb2b860.js",
+    "main.css": "/PietroTy/static/css/main.db888cca.css",
+    "main.js": "/PietroTy/static/js/main.df89b9de.js",
     "static/media/magik_tarot.png": "/PietroTy/static/media/magik_tarot.4262716cd053fa72eff3.png",
     "static/media/pit.png": "/PietroTy/static/media/pit.78eff56bc14850ca674a.png",
     "static/media/game_of_drones.jpg": "/PietroTy/static/media/game_of_drones.51d4da106b38e106cba2.jpg",
@@ -18,11 +18,11 @@
     "static/media/bleach_co_logo.png": "/PietroTy/static/media/bleach_co_logo.ba3811e293ff640e2c05.png",
     "static/media/orespawn_1.jpg": "/PietroTy/static/media/orespawn_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
-    "main.2928662a.css.map": "/PietroTy/static/css/main.2928662a.css.map",
-    "main.bdb2b860.js.map": "/PietroTy/static/js/main.bdb2b860.js.map"
+    "main.db888cca.css.map": "/PietroTy/static/css/main.db888cca.css.map",
+    "main.df89b9de.js.map": "/PietroTy/static/js/main.df89b9de.js.map"
   },
   "entrypoints": [
-    "static/css/main.2928662a.css",
-    "static/js/main.bdb2b860.js"
+    "static/css/main.db888cca.css",
+    "static/js/main.df89b9de.js"
   ]
 }
