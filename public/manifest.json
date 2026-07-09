@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "app_logo_clean.png",
+      "src": "agent_ty_clean.png",
       "type": "image/png",
       "sizes": "192x192 512x512"
     }
