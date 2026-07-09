@@ -5,6 +5,9 @@ import pitImg from "../../assets/pit.png";
 
 export default function HomePage({ lang, setPage }) {
   const pt = lang === "pt";
+  const currentYear = new Date().getFullYear();
+  const devYears = currentYear - 2020;
+  const dataYears = currentYear - 2024;
 
   return (
     <div className="page">
@@ -40,8 +43,8 @@ export default function HomePage({ lang, setPage }) {
         <div className="hero-stats">
           {[
             ["12+", pt ? "projetos open source" : "open source projects"],
-            ["3+", pt ? "anos desenvolvendo" : "years developing"],
-            ["2+", pt ? "anos na área de dados" : "years in data"],
+            [`${devYears}+`, pt ? "anos desenvolvendo" : "years developing"],
+            [`${dataYears}+`, pt ? "anos na área de dados" : "years in data"],
           ].map(([v, l]) => (
             <div
               key={l}
