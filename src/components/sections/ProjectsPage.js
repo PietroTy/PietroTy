@@ -3,7 +3,7 @@ import { PROJECTS } from "../../data/projects";
 import SectionHeader from "../common/SectionHeader";
 import chubImg from "../../assets/chub.png";
 import pitcraftImg from "../../assets/home_screenshot_1.jpg";
-import appLogoClean from "../../assets/app_logo_clean.png";
+import laplayerImg from "../../assets/laplayer.png";
 import magiktarotImg from "../../assets/magik_tarot.png";
 import stickersbotImg from "../../assets/stickers_bot.png";
 import gameOfDronesImg from "../../assets/game_of_drones.jpg";
@@ -55,7 +55,7 @@ export default function ProjectsPage({ lang, setPage }) {
                         : p.id === "pitcraft"
                         ? pitcraftImg
                         : p.id === "laplayer"
-                        ? appLogoClean
+                        ? laplayerImg
                         : p.id === "magik-tarot"
                         ? magiktarotImg
                         : p.id === "bot-figurinhas"
