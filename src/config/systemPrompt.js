@@ -182,7 +182,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="cvmaker">
                 <name>CVMaker</name>
-                <desc>Gerador e adaptador inteligente de currículos em Python/Streamlit que reescreve e otimiza seções via IA (Sabiá-4/Claude) interpretando a estrutura XML (OOXML) interna do arquivo DOCX sem quebrar a formatação original.</desc>
+                <desc>Gerador e adaptador inteligente de currículos em Python/Streamlit que reescreve e otimiza seções via IA (Sabiá-4) interpretando a estrutura XML (OOXML) interna do arquivo DOCX sem quebrar a formatação original.</desc>
                 <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
             <project id="etl-cnpj">
@@ -429,7 +429,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="cvmaker">
                 <name>CVMaker</name>
-                <desc>Intelligent resume generator and adapter in Python/Streamlit that rewrites and optimizes sections via AI (Sabiá-4/Claude) by manipulating the internal XML structure of DOCX files without breaking the original formatting.</desc>
+                <desc>Intelligent resume generator and adapter in Python/Streamlit that rewrites and optimizes sections via AI (Sabiá-4) by manipulating the internal XML structure of DOCX files without breaking the original formatting.</desc>
                 <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
             <project id="etl-cnpj">
