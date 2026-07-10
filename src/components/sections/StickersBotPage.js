@@ -1,5 +1,5 @@
 import React from "react";
-import screenshotImg from "../../assets/stickers_bot.png";
+import screenshotImg from "../../assets/stickers_bot_logo.png";
 
 export default function StickersBotPage({ lang, setPage }) {
   const pt = lang === "pt";

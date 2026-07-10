@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import homeScreenshot1 from "../../assets/home_screenshot_1.jpg";
-import homeScreenshot2 from "../../assets/home_screenshot_2.jpg";
-import orespawn1 from "../../assets/orespawn_1.jpg";
-import orespawn2 from "../../assets/orespawn_2.jpg";
-import orespawn3 from "../../assets/orespawn_3.png";
-import pitcraftLogo from "../../assets/pitcraft.png";
+import homeScreenshot1 from "../../assets/pitcraft_screenshot_1.jpg";
+import homeScreenshot2 from "../../assets/pitcraft_screenshot_2.jpg";
+import orespawn1 from "../../assets/orespawn_screenshot_1.jpg";
+import orespawn2 from "../../assets/orespawn_screenshot_2.jpg";
+import orespawn3 from "../../assets/orespawn_screenshot_3.png";
+import pitcraftLogo from "../../assets/pitcraft_logo.png";
 
 const INSTANCES = [
   {
