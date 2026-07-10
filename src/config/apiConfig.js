@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://winning-paintball-benefit-duties.trycloudflare.com',
+    BACKEND_URL: 'https://hosting-deny-experiment-distributor.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
