@@ -180,9 +180,10 @@ const SYSTEM_PROMPT_PT = `
                 <name>LaPlayer</name>
                 <desc>Clone móvel completo do Spotify desenvolvido em Flutter, com suporte a download local via yt-dlp, metadados da Spotify API e self-hosting.</desc>
             </project>
-            <project id="cv-adapter">
-                <name>CV Adapter</name>
-                <desc>Sistema Python/Streamlit que adapta cirurgicamente currículos DOCX modificando o XML OOXML interno sem quebrar a formatação original.</desc>
+            <project id="cvmaker">
+                <name>CVMaker</name>
+                <desc>Gerador e adaptador inteligente de currículos em Python/Streamlit que reescreve e otimiza seções via IA (Sabiá-4/Claude) interpretando a estrutura XML (OOXML) interna do arquivo DOCX sem quebrar a formatação original.</desc>
+                <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
             <project id="etl-cnpj">
                 <name>Pipeline ETL de CNPJs Públicos</name>
@@ -426,9 +427,10 @@ const SYSTEM_PROMPT_EN = `
                 <name>LaPlayer</name>
                 <desc>Self-hosted Spotify Clone mobile application built with Flutter, Spotify API for metadata, and yt-dlp for audio caching to local private servers.</desc>
             </project>
-            <project id="cv-adapter">
-                <name>CV Adapter</name>
-                <desc>Python/Streamlit app that surgically re-writes DOCX resumes using LLMs by parsing the document's internal OOXML structure directly without breaking formatting.</desc>
+            <project id="cvmaker">
+                <name>CVMaker</name>
+                <desc>Intelligent resume generator and adapter in Python/Streamlit that rewrites and optimizes sections via AI (Sabiá-4/Claude) by manipulating the internal XML structure of DOCX files without breaking the original formatting.</desc>
+                <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
             <project id="etl-cnpj">
                 <name>Public Registry ETL Engine</name>

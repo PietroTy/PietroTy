@@ -67,6 +67,8 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? bleachcoImg
                         : p.id === "portfolio"
                         ? agentTyImg
+                        : p.id === "cvmaker"
+                        ? `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350" height="180" viewBox="0 0 350 180"><rect width="100%" height="100%" fill="%232c2c30"/><text x="175" y="105" font-family="sans-serif" font-size="55" text-anchor="middle">🎯</text></svg>`
                         : getProjectPlaceholder(p.color)
                     }
                     alt={p.name}
