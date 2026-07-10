@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../common/SectionHeader";
 import Timeline from "./Timeline";
-import pitImg from "../../assets/pit.png";
+import pitImg from "../../assets/pit_avatar.png";
 
 export default function HomePage({ lang, setPage }) {
   const pt = lang === "pt";

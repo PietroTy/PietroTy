@@ -169,7 +169,7 @@ const SYSTEM_PROMPT_PT = `
             <project id="escriba">
                 <name>Escriba AI</name>
                 <desc>Sistema de geração de textos acadêmicos sem alucinação e com formatação ABNT estrita para papers de doutorado, usando múltiplos LLMs (Maritaca AI/Sabiá-4). Em produção para doutorandos da PUC.</desc>
-                <url>https://github.com/PietroTy/Escriba</url>
+                <url>https://escriba.streamlit.app/</url>
             </project>
             <project id="whatsapp-bot">
                 <name>Bot de WhatsApp</name>
@@ -416,7 +416,7 @@ const SYSTEM_PROMPT_EN = `
             <project id="escriba">
                 <name>Escriba AI</name>
                 <desc>Academic text generator using multiple LLMs (Maritaca AI/Sabiá-4) with strict ABNT formatting and anti-hallucination verification. In production for PUC doctoral students.</desc>
-                <url>https://github.com/PietroTy/Escriba</url>
+                <url>https://escriba.streamlit.app/</url>
             </project>
             <project id="whatsapp-bot">
                 <name>WhatsApp Bot</name>

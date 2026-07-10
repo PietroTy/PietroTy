@@ -1,6 +1,6 @@
 import React from "react";
-import screenshotImg from "../../assets/laplayer.png";
-import screenshotImg2 from "../../assets/laplayer_2.png";
+import screenshotImg from "../../assets/laplayer_screenshot_1.png";
+import screenshotImg2 from "../../assets/laplayer_screenshot_2.png";
 
 export default function LaPlayerPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -52,7 +52,7 @@ export default function LaPlayerPage({ lang, setPage }) {
             {/* Download APK Button */}
             <div style={{ marginTop: "2rem" }}>
               <a
-                href={process.env.PUBLIC_URL + "/app-release.apk"}
+                href={process.env.PUBLIC_URL + "/app_release.apk"}
                 download
                 className="btn btn-fill"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
@@ -72,7 +72,7 @@ export default function LaPlayerPage({ lang, setPage }) {
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <img 
-              src={process.env.PUBLIC_URL + "/app_logo_clean.png"} 
+              src={process.env.PUBLIC_URL + "/laplayer_logo.png"} 
               alt="LaPlayer Logo" 
               className="hero-logo"
               style={{ maxWidth: "280px", display: "block" }}
