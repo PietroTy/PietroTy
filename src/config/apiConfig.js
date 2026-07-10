@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://frame-processors-quarters-andreas.trycloudflare.com',
+    BACKEND_URL: 'https://expressed-planning-niagara-law.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
