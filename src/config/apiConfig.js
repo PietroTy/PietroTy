@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://meetings-believed-yeast-distributed.trycloudflare.com',
+    BACKEND_URL: 'https://switches-rest-flooring-beam.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
