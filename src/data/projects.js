@@ -170,4 +170,16 @@ export const PROJECTS = [
     featured: false,
     color: "#7c5cfc",
   },
+  {
+    id: "erium",
+    name: "Erium",
+    taglinePt: "Toolkit full-stack de auxílio a viagens aéreas",
+    taglineEn: "Full-stack air travel assistance toolkit",
+    descPt: "TCC técnico na ETEC. Toolkit full-stack para auxílio a passageiros de viagens aéreas contendo pesagem virtual de bagagem, verificação de passaporte e normativas de voo.",
+    descEn: "ETEC technical graduation project. Full-stack travel service toolkit for air passengers, covering baggage weight limits, passport checks, and flight regulations.",
+    tags: ["Java", "React", "SQL", "Spring Boot"],
+    link: null,
+    featured: false,
+    color: "#10b981",
+  },
 ];

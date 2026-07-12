@@ -213,6 +213,21 @@ const SYSTEM_PROMPT_PT = `
                 <desc>Servidores self-hosted (PitCraft) com gerenciamento de temporadas (como OreSpawn e Aether & Twilight), chat de voz nativo por proximidade UDP, backups automatizados e plugins customizados.</desc>
                 <url>https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh</url>
             </project>
+            <project id="magik-tarot">
+                <name>MagikTarot</name>
+                <desc>Plataforma automatizada de consultas de Tarot online com integração ao Mercado Pago, painel administrativo e geração dinâmica de PDFs com resultados das leituras. Otimizada para SEO.</desc>
+                <url>https://magiktarot.com.br/</url>
+            </project>
+            <project id="tv2">
+                <name>TV2</name>
+                <desc>Servidor Node.js para assistir TV sincronizadamente em tempo real via Socket.io com chat integrado e autenticação Google OAuth.</desc>
+                <url>https://github.com/PietroTy/tv2</url>
+            </project>
+            <project id="bleach-co">
+                <name>Bleach.co</name>
+                <desc>E-commerce e site institucional para a marca de roupas streetwear Bleach.co desenvolvido em React/Next.js com foco em design minimalista e transições fluidas.</desc>
+                <url>https://github.com/PietroTy/site-bleach.co</url>
+            </project>
             <project id="portfolio">
                 <name>Portfólio Web Interativo</name>
                 <desc>Este site em React com chatbot Ty integrado, suporte bilíngue e deploy CI/CD via GitHub Actions.</desc>
@@ -460,6 +475,21 @@ const SYSTEM_PROMPT_EN = `
                 <name>Minecraft Java Servers (PitCraft)</name>
                 <desc>Self-hosted game servers (PitCraft) with season management (such as OreSpawn and Aether & Twilight), native proximity voice chat over UDP, automated backups, and custom plugins.</desc>
                 <url>https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh</url>
+            </project>
+            <project id="magik-tarot">
+                <name>MagikTarot</name>
+                <desc>Automated Tarot reading platform integrated with Mercado Pago. Features an admin dashboard, background ambient audio, and dynamic PDF generation of reading results. Built for high SEO indexing.</desc>
+                <url>https://magiktarot.com.br/</url>
+            </project>
+            <project id="tv2">
+                <name>TV2</name>
+                <desc>Node.js server for synchronized, shared TV stream watching with real-time video playback sync via Socket.io, interactive chat, and Google OAuth.</desc>
+                <url>https://github.com/PietroTy/tv2</url>
+            </project>
+            <project id="bleach-co">
+                <name>Bleach.co</name>
+                <desc>Institutional website and custom e-commerce store for the clothing brand Bleach.co. Developed using React/Next.js with a minimalist design and seamless transitions.</desc>
+                <url>https://github.com/PietroTy/site-bleach.co</url>
             </project>
             <project id="portfolio">
                 <name>Interactive Web Portfolio</name>

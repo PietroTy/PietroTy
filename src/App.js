@@ -13,13 +13,14 @@ import WhatsAppBotPage from "./components/sections/WhatsAppBotPage";
 import GameOfDronesPage from "./components/sections/GameOfDronesPage";
 import DiscordBotPage from "./components/sections/DiscordBotPage";
 import PortfolioPage from "./components/sections/PortfolioPage";
+import EriumPage from "./components/sections/EriumPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
 const PAGE_KEYS = [
   "home", "projects", "skills", "contact", "pitcraft", 
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
-  "gameofdrones", "discordbot", "portfolio"
+  "gameofdrones", "discordbot", "portfolio", "erium"
 ];
 
 const PAGE_METADATA = {
@@ -143,6 +144,16 @@ const PAGE_METADATA = {
       title: "Portfolio | Pietro Ty",
       desc: "Professional showcase and career trajectory of Pietro Ty."
     }
+  },
+  erium: {
+    pt: {
+      title: "Erium | Pietro Ty",
+      desc: "Conheça o Erium - Toolkit de auxílio a viagens aéreas desenvolvido por Pietro Ty como TCC técnico."
+    },
+    en: {
+      title: "Erium | Pietro Ty",
+      desc: "Meet Erium - A flight passenger assistance toolkit developed by Pietro Ty for his ETEC technical degree."
+    }
   }
 };
 
@@ -260,6 +271,7 @@ export default function App() {
 
     discordbot: <DiscordBotPage lang={lang} setPage={setPage} />,
     portfolio: <PortfolioPage lang={lang} setPage={setPage} />,
+    erium: <EriumPage lang={lang} setPage={setPage} />,
   };
 
   return (
