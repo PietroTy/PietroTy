@@ -5,6 +5,7 @@ import orespawn1 from "../../assets/orespawn_screenshot_1.jpg";
 import orespawn2 from "../../assets/orespawn_screenshot_2.jpg";
 import orespawn3 from "../../assets/orespawn_screenshot_3.png";
 import pitcraftLogo from "../../assets/pitcraft_logo.png";
+import aether1 from "../../assets/aether_screenshot_1.png";
 
 const INSTANCES = [
   {
@@ -386,6 +387,15 @@ export default function PitCraftPage({
                         </div>
                         <div className="gallery-item">
                           <img src={orespawn3} alt="Gameplay OreSpawn 3" className="gallery-img" />
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Render Gallery specifically for Aether */}
+                    {inst.id === "aether" && (
+                      <div className="orespawn-gallery">
+                        <div className="gallery-item">
+                          <img src={aether1} alt="Gameplay Aether 1" className="gallery-img" />
                         </div>
                       </div>
                     )}
