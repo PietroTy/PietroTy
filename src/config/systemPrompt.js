@@ -185,9 +185,10 @@ const SYSTEM_PROMPT_PT = `
                 <desc>Gerador e adaptador inteligente de currículos em Python/Streamlit que reescreve e otimiza seções via IA (Sabiá-4) interpretando a estrutura XML (OOXML) interna do arquivo DOCX sem quebrar a formatação original.</desc>
                 <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
-            <project id="etl-cnpj">
-                <name>Pipeline ETL de CNPJs Públicos</name>
-                <desc>Engine robusta de dados em Python para extração, limpeza, cruzamento e carga da base completa de CNPJs da Receita Federal em PostgreSQL.</desc>
+            <project id="dshub">
+                <name>Data Science Hub</name>
+                <desc>Portal de portfólio robusto com soluções escaláveis em Business Intelligence, Big Data e Machine Learning (Fintech, Growth Marketing e Predictive Health) em Streamlit.</desc>
+                <url>https://datascienceh.streamlit.app/</url>
             </project>
             <project id="erium">
                 <name>Erium</name>
@@ -432,9 +433,10 @@ const SYSTEM_PROMPT_EN = `
                 <desc>Intelligent resume generator and adapter in Python/Streamlit that rewrites and optimizes sections via AI (Sabiá-4) by manipulating the internal XML structure of DOCX files without breaking the original formatting.</desc>
                 <url>https://cvmaker-ty.streamlit.app/</url>
             </project>
-            <project id="etl-cnpj">
-                <name>Public Registry ETL Engine</name>
-                <desc>Robust Python data engine that extracts, cleans, maps, and loads millions of official company records into PostgreSQL.</desc>
+            <project id="dshub">
+                <name>Data Science Hub</name>
+                <desc>Robust portfolio hub showing scalable solutions in Business Intelligence, Big Data, and Machine Learning (Fintech, Growth Marketing, and Predictive Health) in Streamlit.</desc>
+                <url>https://datascienceh.streamlit.app/</url>
             </project>
             <project id="erium">
                 <name>Erium</name>
