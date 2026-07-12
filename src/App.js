@@ -11,7 +11,6 @@ import LaPlayerPage from "./components/sections/LaPlayerPage";
 import StickersBotPage from "./components/sections/StickersBotPage";
 import WhatsAppBotPage from "./components/sections/WhatsAppBotPage";
 import GameOfDronesPage from "./components/sections/GameOfDronesPage";
-import EtlCnpjPage from "./components/sections/EtlCnpjPage";
 import DiscordBotPage from "./components/sections/DiscordBotPage";
 import PortfolioPage from "./components/sections/PortfolioPage";
 import TyChat from "./components/chat/TyChat";
@@ -20,7 +19,7 @@ import "./styles/index.css";
 const PAGE_KEYS = [
   "home", "projects", "skills", "contact", "pitcraft", 
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
-  "gameofdrones", "etl", "discordbot", "portfolio"
+  "gameofdrones", "discordbot", "portfolio"
 ];
 
 const PAGE_METADATA = {
@@ -124,16 +123,7 @@ const PAGE_METADATA = {
       desc: "Interactive drone simulation/game developed by Pietro Ty."
     }
   },
-  etl: {
-    pt: {
-      title: "ETL CNPJ | Pietro Ty",
-      desc: "Pipeline de ETL em larga escala desenvolvido para processamento e análise dos dados públicos de CNPJ da Receita Federal."
-    },
-    en: {
-      title: "ETL CNPJ | Pietro Ty",
-      desc: "Large-scale ETL pipeline developed for processing and analyzing public CNPJ data from the Brazilian Federal Revenue."
-    }
-  },
+
   discordbot: {
     pt: {
       title: "Discord Bot | Pietro Ty",
@@ -267,7 +257,7 @@ export default function App() {
     stickerbot: <StickersBotPage lang={lang} setPage={setPage} />,
     whatsappbot: <WhatsAppBotPage lang={lang} setPage={setPage} />,
     gameofdrones: <GameOfDronesPage lang={lang} setPage={setPage} />,
-    etl: <EtlCnpjPage lang={lang} setPage={setPage} />,
+
     discordbot: <DiscordBotPage lang={lang} setPage={setPage} />,
     portfolio: <PortfolioPage lang={lang} setPage={setPage} />,
   };
