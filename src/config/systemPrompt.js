@@ -47,7 +47,7 @@ const SYSTEM_PROMPT_PT = `
         <location>São João da Boa Vista, SP (residência oficial em São Paulo - Capital, com total mobilidade para atuação presencial na capital)</location>
         
         <resumo>
-            Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA com experiência sólida em arquitetura de sistemas, automação inteligente e processamento de dados em larga escala. Graduando em Ciência da Computação pelo IFSP (nota máxima 5 no MEC) com formação técnica pela ETEC. Combina base teórica analítica (IC na USP/IME, OBMEP) com atuação prática em engenharia de software: pipelines de ETL complexos com dados reais de CNPJs, soluções de IA Generativa (LLMs, agentes n8n), e desenvolvimento corporativo (CRM corporativo completo integrado a PowerBI de uso corporativo). Portfólio de 12+ projetos de destaque. Inglês fluente.
+            Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA com experiência sólida em arquitetura de sistemas, automação inteligente e processamento de dados em larga escala. Graduando em Ciência da Computação pelo IFSP (nota máxima 5 no MEC) com formação técnica pela ETEC. Combina base teórica analítica (IC na USP/IME, OBMEP) com atuação prática em engenharia de software: portfólio e soluções de ciência de dados no Data Science Hub (Fintech, modelagem de risco e marketing analytics), soluções de IA Generativa (LLMs, agentes n8n), e desenvolvimento corporativo (CRM corporativo completo integrado a PowerBI de uso corporativo). Portfólio de 12+ projetos de destaque. Inglês fluente.
         </resumo>
 
         <experience>
@@ -156,7 +156,7 @@ const SYSTEM_PROMPT_PT = `
 
         <skills>
             <dev_ia>Python (Pandas, NumPy, Scikit-Learn), Java, C/C++, C#, JavaScript/TypeScript, Dart, PHP, Shell Script, HTML5/CSS3, SQL (PostgreSQL, Oracle, MySQL, SQLite), Spring Boot, JPA (Hibernate), JSP, React, React Native, Next.js, Angular, jQuery, Flutter, Node.js, APIs REST, Prompt Engineering, LLMs (Sabiá-4, GPT), Agentes de IA (LangChain, CrewAI), n8n (RPA), Machine Learning, Visão Computacional (OpenCV/CV2), WebAssembly, Streamlit, FFmpeg, Microserviços e MVC.</dev_ia>
-            <tools>ETL, Pipelines de Dados, Data Wrangling, Análise de Dados Públicos (CNPJs Receita Federal), Git/GitHub, CI/CD (GitHub Actions), AWS, GCP, Docker, PowerBI, Scrum/Kanban, Backlog Management, Testes E2E (Playwright), Testes de Segurança (OWASP), Usabilidade/UX, Figma/Design Systems, Acessibilidade Digital (WCAG, DEIA), Sistemas Embarcados (Raspberry Pi, Arduino), Self-Hosting, Google Tag Manager, Stripe API, Evolution API, Chatwoot, yt-dlp.</tools>
+            <tools>ETL, Pipelines de Dados, Data Wrangling, Data Science (XGBoost, Random Forest, Modelagem de Risco, Growth & Marketing Analytics), Git/GitHub, CI/CD (GitHub Actions), AWS, GCP, Docker, PowerBI, Scrum/Kanban, Backlog Management, Testes E2E (Playwright), Testes de Segurança (OWASP), Usabilidade/UX, Figma/Design Systems, Acessibilidade Digital (WCAG, DEIA), Sistemas Embarcados (Raspberry Pi, Arduino), Self-Hosting, Google Tag Manager, Stripe API, Evolution API, Chatwoot, yt-dlp.</tools>
             <others>Liderança Técnica, Tomada de Decisão, Design Educacional (ADDIE), Metodologia Científica, Análise Crítica, Automação de Processos.</others>
         </skills>
 
@@ -173,7 +173,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="whatsapp-bot">
                 <name>Bot de WhatsApp</name>
-                <desc>Agente conversacional multifuncional com Maritaca LLM, histórico persistente, jogos integrados (Termo/Dueto), criação de figurinhas via FFmpeg/sharp e jornal automático.</desc>
+                <desc>Agente conversacional de IA integrado ao WhatsApp via Evolution API e Maritaca LLM. Atua como agente de SDR inteligente, alimenta vários grupos com jornal diário personalizado automatizado, possui histórico persistente e minijogos integrados (Termo/Dueto).</desc>
                 <url>https://github.com/PietroTy/bot-whatsapp</url>
             </project>
             <project id="laplayer">
@@ -205,12 +205,12 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="bot-figurinhas">
                 <name>Bot de Figurinhas</name>
-                <desc>Serviço WhatsApp de figurinhas de fotos, GIFs e vídeos via FFmpeg em JavaScript.</desc>
+                <desc>Serviço WhatsApp de conversão de fotos, GIFs e vídeos em figurinhas em tempo real. Possui uma comunidade ativa com mais de 100 usuários ativos gerando stickers diariamente.</desc>
                 <url>https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8</url>
             </project>
             <project id="minecraft-server">
-                <name>Minecraft Servidores Java</name>
-                <desc>Servidores self-hosted em Linux com administração própria, Java plugins e controle via Discord.</desc>
+                <name>Minecraft Servidores Java (PitCraft)</name>
+                <desc>Servidores self-hosted (PitCraft) com gerenciamento de temporadas (como OreSpawn e Aether & Twilight), chat de voz nativo por proximidade UDP, backups automatizados e plugins customizados.</desc>
                 <url>https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh</url>
             </project>
             <project id="portfolio">
@@ -295,7 +295,7 @@ const SYSTEM_PROMPT_EN = `
         <location>São João da Boa Vista, SP (official residence in São Paulo - Capital, with total mobility for face-to-face work in the capital)</location>
         
         <resumo>
-            Full-Stack Developer, Data Engineer, and AI Researcher with solid experience in systems architecture, intelligent automation, and large-scale data processing. Computer Science undergraduate at IFSP (top rating 5/5 by MEC) with a technical degree from ETEC. Combines an analytical theoretical base (Scientific Initiation at USP/IME, OBMEP math prize) with practical software engineering: complex ETL pipelines on public datasets, Generative AI solutions (LLMs, n8n agents), and enterprise full-stack development (designed and built a custom corporate CRM integrated with PowerBI for corporate use). Portfolio of 12+ projects. Fluent English.
+            Full-Stack Developer, Data Engineer, and AI Researcher with solid experience in systems architecture, intelligent automation, and large-scale data processing. Computer Science undergraduate at IFSP (top rating 5/5 by MEC) with a technical degree from ETEC. Combines an analytical theoretical base (Scientific Initiation at USP/IME, OBMEP math prize) with practical software engineering: portfolio and data science solutions in the Data Science Hub (Fintech, risk modeling, and marketing analytics), Generative AI solutions (LLMs, n8n agents), and enterprise full-stack development (designed and built a custom corporate CRM integrated with PowerBI for corporate use). Portfolio of 12+ projects. Fluent English.
         </resumo>
 
         <experience>
@@ -404,7 +404,7 @@ const SYSTEM_PROMPT_EN = `
 
         <skills>
             <dev_ia>Python (Pandas, NumPy, Scikit-Learn), Java, C/C++, C#, JavaScript/TypeScript, Dart, PHP, Shell Script, HTML5/CSS3, SQL (PostgreSQL, Oracle, MySQL, SQLite), Spring Boot, JPA (Hibernate), JSP, React, React Native, Next.js, Angular, jQuery, Flutter, Node.js, REST APIs, Prompt Engineering, LLMs (Sabiá-4, GPT), AI Agents (LangChain, CrewAI), n8n (RPA), Machine Learning, Computer Vision (OpenCV/CV2), WebAssembly, Streamlit, FFmpeg, Microservices and MVC.</dev_ia>
-            <tools>ETL, Data Pipelines, Data Wrangling, Public Data Analysis (Brazilian Companies Registry), Git/GitHub, CI/CD (GitHub Actions), AWS, GCP, Docker, PowerBI, Scrum/Kanban, Backlog Management, E2E Testing (Playwright), Security Testing (OWASP), Usability/UX, Figma/Design Systems, Digital Accessibility (WCAG, DEIA), Embedded Systems (Raspberry Pi, Arduino), Self-Hosting, Google Tag Manager, Stripe API, Evolution API, Chatwoot, yt-dlp.</tools>
+            <tools>ETL, Data Pipelines, Data Wrangling, Data Science (XGBoost, Random Forest, Risk Modeling, Growth & Marketing Analytics), Git/GitHub, CI/CD (GitHub Actions), AWS, GCP, Docker, PowerBI, Scrum/Kanban, Backlog Management, E2E Testing (Playwright), Security Testing (OWASP), Usability/UX, Figma/Design Systems, Digital Accessibility (WCAG, DEIA), Embedded Systems (Raspberry Pi, Arduino), Self-Hosting, Google Tag Manager, Stripe API, Evolution API, Chatwoot, yt-dlp.</tools>
             <others>Technical Leadership, Decision Making, Instructional Design (ADDIE), Scientific Methodology, Critical Analysis, Process Automation.</others>
         </skills>
 
@@ -421,7 +421,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="whatsapp-bot">
                 <name>WhatsApp Bot</name>
-                <desc>Conversational AI agent running via Maritaca LLM. Features persistent chat history, interactive games, custom sticker generation with FFmpeg/sharp, and auto summary feeds.</desc>
+                <desc>Conversational AI agent integrated into WhatsApp via Evolution API and Maritaca LLM. Acts as an intelligent SDR agent, feeds multiple groups with automated custom daily news feeds, and features persistent memory with interactive games.</desc>
                 <url>https://github.com/PietroTy/bot-whatsapp</url>
             </project>
             <project id="laplayer">
@@ -453,12 +453,12 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="bot-figurinhas">
                 <name>Sticker Bot</name>
-                <desc>WhatsApp sticker generation service converting images, GIFs, and videos via FFmpeg in JavaScript.</desc>
+                <desc>WhatsApp sticker generation service converting images, GIFs, and videos via FFmpeg in real-time. Features an active community of over 100 users generating stickers daily.</desc>
                 <url>https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8</url>
             </project>
             <project id="minecraft-server">
-                <name>Minecraft Java Servers</name>
-                <desc>Self-hosted Linux game servers with custom Java plugins, network tuning, and Discord bot automation.</desc>
+                <name>Minecraft Java Servers (PitCraft)</name>
+                <desc>Self-hosted game servers (PitCraft) with season management (such as OreSpawn and Aether & Twilight), native proximity voice chat over UDP, automated backups, and custom plugins.</desc>
                 <url>https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh</url>
             </project>
             <project id="portfolio">
