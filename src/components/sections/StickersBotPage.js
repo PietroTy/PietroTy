@@ -25,6 +25,13 @@ export default function StickersBotPage({ lang, setPage }) {
       descPt: "Algoritmos de redução de ruído e redimensionamento automático para garantir compatibilidade com os limites do WhatsApp.",
       descEn: "Automated resizing and noise reduction algorithms to guarantee strict compliance with WhatsApp file size limits.",
       icon: "// COMPRESS"
+    },
+    {
+      titlePt: "Comunidade Ativa",
+      titleEn: "Active Community",
+      descPt: "Possui uma comunidade engajada de mais de 100 usuários ativos que utilizam e compartilham figurinhas diariamente.",
+      descEn: "Features an active community of over 100 users who create and share stickers every single day.",
+      icon: "// COMMUNITY"
     }
   ];
 

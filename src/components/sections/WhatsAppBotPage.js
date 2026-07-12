@@ -25,6 +25,13 @@ export default function WhatsAppBotPage({ lang, setPage }) {
       descPt: "Possui minijogos de adivinhação de palavras como 'Termo' e 'Dueto' embutidos diretamente no fluxo de conversas.",
       descEn: "Features built-in word-guessing games like 'Termo' and 'Dueto' directly playable in your WhatsApp chat.",
       icon: "// PLAY"
+    },
+    {
+      titlePt: "Automação SDR & Jornal",
+      titleEn: "SDR & News Automation",
+      descPt: "Atua como agente inteligente de SDR e alimenta vários grupos com uma automação de jornal diário personalizado.",
+      descEn: "Acts as an intelligent SDR agent and feeds multiple groups with a customized daily news automation.",
+      icon: "// AUTOMATION"
     }
   ];
 
