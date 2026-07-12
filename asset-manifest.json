@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PietroTy/static/css/main.1f80a9f8.css",
-    "main.js": "/PietroTy/static/js/main.457224e2.js",
+    "main.js": "/PietroTy/static/js/main.3c1fd85a.js",
     "static/media/game_of_drones_logo.png": "/PietroTy/static/media/game_of_drones_logo.cbe3cf9d88c05271b03e.png",
     "static/media/laplayer_logo.png": "/PietroTy/static/media/laplayer_logo.8ca2d9e859d635024ad8.png",
     "static/media/magik_tarot_logo.png": "/PietroTy/static/media/magik_tarot_logo.4262716cd053fa72eff3.png",
     "static/media/bleach_co_logo.png": "/PietroTy/static/media/bleach_co_logo.5ebde5d56fa6817241fa.png",
-    "static/media/ds_logo.png": "/PietroTy/static/media/ds_logo.87a393a8133862cf63db.png",
     "static/media/escriba_logo.png": "/PietroTy/static/media/escriba_logo.e458eafca5326b75278e.png",
+    "static/media/ds_logo.png": "/PietroTy/static/media/ds_logo.9ee853258b4d43e3069e.png",
     "static/media/pit_avatar.png": "/PietroTy/static/media/pit_avatar.78eff56bc14850ca674a.png",
     "static/media/laplayer_screenshot_2.png": "/PietroTy/static/media/laplayer_screenshot_2.8ee60687b4bede89ee54.png",
     "static/media/laplayer_screenshot_1.png": "/PietroTy/static/media/laplayer_screenshot_1.d0301e1b06b0339fd9f4.png",
@@ -21,10 +21,10 @@
     "static/media/orespawn_screenshot_1.jpg": "/PietroTy/static/media/orespawn_screenshot_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/PietroTy/index.html",
     "main.1f80a9f8.css.map": "/PietroTy/static/css/main.1f80a9f8.css.map",
-    "main.457224e2.js.map": "/PietroTy/static/js/main.457224e2.js.map"
+    "main.3c1fd85a.js.map": "/PietroTy/static/js/main.3c1fd85a.js.map"
   },
   "entrypoints": [
     "static/css/main.1f80a9f8.css",
-    "static/js/main.457224e2.js"
+    "static/js/main.3c1fd85a.js"
   ]
 }
