@@ -75,8 +75,6 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? dsLogoImg
                         : p.id === "escriba"
                         ? escribaImg
-                        : p.id === "erium"
-                        ? `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="%23059669"/><text x="90" y="95" font-family="sans-serif" font-size="95" text-anchor="middle" dominant-baseline="central">✈️</text></svg>`
                         : getProjectPlaceholder(p.color)
                     }
                     alt={p.name}
