@@ -187,7 +187,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="dshub">
                 <name>Data Science Hub</name>
-                <desc>Portal de portfólio robusto com soluções escaláveis em Business Intelligence, Big Data e Machine Learning (Fintech, Growth Marketing e Predictive Health) em Streamlit.</desc>
+                <desc>Portal de portfólio pessoal com soluções escaláveis em Business Intelligence, Big Data e Machine Learning (Fintech, Growth Marketing e Predictive Health) desenvolvidas inteiramente por mim em Streamlit.</desc>
                 <url>https://datascienceh.streamlit.app/</url>
             </project>
             <project id="erium">
@@ -435,7 +435,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="dshub">
                 <name>Data Science Hub</name>
-                <desc>Robust portfolio hub showing scalable solutions in Business Intelligence, Big Data, and Machine Learning (Fintech, Growth Marketing, and Predictive Health) in Streamlit.</desc>
+                <desc>My personal portfolio hub showing scalable solutions in Business Intelligence, Big Data, and Machine Learning (Fintech, Growth Marketing, and Predictive Health) developed entirely by me in Streamlit.</desc>
                 <url>https://datascienceh.streamlit.app/</url>
             </project>
             <project id="erium">
