@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://inspired-stopping-charming-rain.trycloudflare.com',
+    BACKEND_URL: 'https://updated-basis-demand-twin.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
