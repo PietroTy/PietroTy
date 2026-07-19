@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://updated-basis-demand-twin.trycloudflare.com',
+    BACKEND_URL: 'https://ear-fence-distributions-theaters.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
