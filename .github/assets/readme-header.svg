@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080810"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </linearGradient>
+
+    <!-- Purple title gradient -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9d5cfc"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Ambient blobs blur -->
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+
+    <!-- Subtle noise texture -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(124,58,237,0)"/>
+      <stop offset="30%" stop-color="rgba(124,58,237,0.25)"/>
+      <stop offset="70%" stop-color="rgba(192,132,252,0.2)"/>
+      <stop offset="100%" stop-color="rgba(192,132,252,0)"/>
+    </linearGradient>
+
+    <clipPath id="roundedClip">
+      <rect width="1200" height="280" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <!-- Ambient blobs -->
+  <ellipse cx="180" cy="80" rx="280" ry="200" fill="rgba(124,58,237,0.14)" filter="url(#glow1)"/>
+  <ellipse cx="1050" cy="220" rx="250" ry="180" fill="rgba(192,132,252,0.09)" filter="url(#glow2)"/>
+  <ellipse cx="620" cy="260" rx="200" ry="150" fill="rgba(109,40,217,0.07)" filter="url(#glow2)"/>
+
+  <!-- Noise overlay -->
+  <rect width="1200" height="280" opacity="0.025" filter="url(#noise)" fill="#fff"/>
+
+  <!-- Top border line -->
+  <rect x="0" y="0" width="1200" height="1" fill="url(#borderGrad)"/>
+  <!-- Bottom border line -->
+  <rect x="0" y="279" width="1200" height="1" fill="url(#borderGrad)"/>
+
+  <!-- Monospace tag -->
+  <text x="600" y="62" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" letter-spacing="5"
+    fill="rgba(157,92,252,0.7)"
+    text-transform="uppercase">// PIETROTY</text>
+
+  <!-- Main name -->
+  <text x="600" y="140" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="62" font-weight="bold" letter-spacing="-1"
+    fill="url(#titleGrad)">Pietro</text>
+
+  <!-- Last name (dim white) -->
+  <text x="810" y="140" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="62" font-weight="bold" letter-spacing="-1"
+    fill="rgba(237,233,248,0.92)">Ty</text>
+
+  <!-- Role tags row -->
+  <!-- Tag 1: AI Researcher -->
+  <rect x="246" y="162" width="160" height="26" rx="0"
+    fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="326" y="179" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10.5" letter-spacing="1.5"
+    fill="rgba(192,132,252,0.9)">AI RESEARCHER</text>
+
+  <!-- Tag 2: Data Engineer -->
+  <rect x="422" y="162" width="160" height="26" rx="0"
+    fill="rgba(109,40,217,0.12)" stroke="rgba(109,40,217,0.3)" stroke-width="1"/>
+  <text x="502" y="179" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10.5" letter-spacing="1.5"
+    fill="rgba(167,139,250,0.9)">DATA ENGINEER</text>
+
+  <!-- Tag 3: Full-Stack Dev -->
+  <rect x="598" y="162" width="186" height="26" rx="0"
+    fill="rgba(91,33,182,0.12)" stroke="rgba(91,33,182,0.3)" stroke-width="1"/>
+  <text x="691" y="179" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10.5" letter-spacing="1.5"
+    fill="rgba(139,92,246,0.9)">FULL-STACK DEV</text>
+
+  <!-- Tag 4: IFSP -->
+  <rect x="800" y="162" width="154" height="26" rx="0"
+    fill="rgba(76,29,149,0.12)" stroke="rgba(76,29,149,0.3)" stroke-width="1"/>
+  <text x="877" y="179" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="10.5" letter-spacing="1.5"
+    fill="rgba(124,92,252,0.8)">B.S. CS @ IFSP</text>
+
+  <!-- Bottom terminal line -->
+  <text x="600" y="228" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="11" letter-spacing="1"
+    fill="rgba(107,100,144,0.6)">python · javascript · c/c++ · sql · llms · react · docker · linux</text>
+
+  <!-- Cursor blink block -->
+  <rect x="871" y="213" width="8" height="14" rx="0"
+    fill="rgba(157,92,252,0.6)">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
