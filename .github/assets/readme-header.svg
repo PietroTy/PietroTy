@@ -46,16 +46,10 @@
     font-size="10" letter-spacing="5"
     fill="rgba(157,92,252,0.65)">// PIETROTY</text>
 
-  <!-- Logo: Pietro (white) + Ty (purple gradient via rect mask trick) -->
-  <text x="490" y="148" text-anchor="middle"
+  <!-- Logo: PietroTy unified -->
+  <text x="600" y="148" text-anchor="middle"
     font-family="'Monocraft', 'Courier New', monospace"
-    font-size="68" font-weight="bold"
-    fill="rgba(237,233,248,0.95)">Pietro</text>
-
-  <text x="756" y="148" text-anchor="middle"
-    font-family="'Monocraft', 'Courier New', monospace"
-    font-size="68" font-weight="bold"
-    fill="url(#tyGrad)">Ty</text>
+    font-size="68" font-weight="bold"><tspan fill="rgba(237,233,248,0.95)">Pietro</tspan><tspan fill="url(#tyGrad)">Ty</tspan></text>
 
   <!-- Role badges -->
   <rect x="232" y="168" width="158" height="24" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.28)" stroke-width="1"/>
