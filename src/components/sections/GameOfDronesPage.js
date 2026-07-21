@@ -5,10 +5,17 @@ export default function GameOfDronesPage({ lang, setPage }) {
 
   const features = [
     {
+      titlePt: "Competição EletroQuad SAE BRASIL",
+      titleEn: "EletroQuad SAE BRASIL Competition",
+      descPt: "Competição universitária multidisciplinar de concepção, documentação, construção e voo autônomo de drones quadricópteros, com missões que envolvem inteligência embarcada, visão computacional e telemetria.",
+      descEn: "A multidisciplinary university competition involving the design, documentation, construction, and autonomous flight of quadrotor drones in missions requiring embedded intelligence, computer vision, and telemetry.",
+      icon: "// COMPETITION"
+    },
+    {
       titlePt: "Processamento com OpenCV",
       titleEn: "OpenCV Processing",
-      descPt: "Filtros de cor, detecção de contornos e transformações espaciais aplicadas em tempo real a 30 FPS.",
-      descEn: "Color filtering, contour detection, and spatial transformations computed in real-time at 30 FPS.",
+      descPt: "Filtros de cor, detecção de contornos e transformações espaciais aplicadas em tempo real para leitura de trajetória e apoio à tomada de decisão autônoma.",
+      descEn: "Real-time color filtering, contour detection, and spatial transformations for track reading and autonomous decision support.",
       icon: "// VISION"
     },
     {
@@ -36,16 +43,25 @@ export default function GameOfDronesPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Computer Vision & ML</div>
+            <div className="hero-tag">EletroQuad SAE BRASIL · Computer Vision & ML</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Game of Drones
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Algoritmos de visão computacional embarcados em Raspberry Pi para detecção de trajetórias e desvio de obstáculos, desenvolvido para a equipe competitiva Game of Drones do IFSP."
-                : "Computer vision and machine learning algorithms embedded in a Raspberry Pi for real-time track following and obstacle avoidance, built for the IFSP Game of Drones competition team."
+                ? "Software de visão computacional, inteligência embarcada e Machine Learning desenvolvido pela equipe oficial Game of Drones do IFSP para um quadricóptero autônomo na Competição EletroQuad SAE BRASIL."
+                : "Computer vision, embedded intelligence, and machine learning software developed by IFSP's official Game of Drones team for an autonomous quadrotor in the EletroQuad SAE BRASIL competition."
               }
             </p>
+            <a
+              href="https://saebrasil.org.br/programas-estudantis/eletroquad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+              style={{ display: "inline-flex", marginTop: "1rem" }}
+            >
+              {pt ? "Página oficial da EletroQuad" : "Official EletroQuad page"}
+            </a>
           </div>
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>

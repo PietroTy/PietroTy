@@ -26,12 +26,12 @@ const PAGE_KEYS = [
 const PAGE_METADATA = {
   home: {
     pt: {
-      title: "Pietro Ty | Data Engineer & Pesquisador em IA",
-      desc: "Portfólio de Pietro Ty - Engenheiro de Dados, Desenvolvedor Full-Stack e Pesquisador em Inteligência Artificial. Especializado em automações inteligentes, pipelines de ETL em larga escala e soluções com LLMs."
+      title: "PietroTy | Consultor em Desenvolvimento de Dados",
+      desc: "Portfólio de Pietro Turci Moraes Martins — Consultor em Desenvolvimento de Dados, Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA. Experiência com PostgreSQL, Power BI, ETL, automações e LLMs."
     },
     en: {
-      title: "Pietro Ty | Data Engineer & AI Researcher",
-      desc: "Pietro Ty's Portfolio - Data Engineer, Full-Stack Developer, and AI Researcher. Specialized in intelligent automations, large-scale ETL pipelines, and LLM solutions."
+      title: "PietroTy | Data Development Consultant",
+      desc: "Pietro Turci Moraes Martins' portfolio — Data Development Consultant, Full-Stack Developer, Data Engineer, and AI Researcher experienced with PostgreSQL, Power BI, ETL, automation, and LLMs."
     }
   },
   projects: {
@@ -117,11 +117,11 @@ const PAGE_METADATA = {
   gameofdrones: {
     pt: {
       title: "Game of Drones | Pietro Ty",
-      desc: "Jogo/simulação interativa de drones desenvolvido por Pietro Ty."
+      desc: "Projeto de software, visão computacional e inteligência embarcada da equipe Game of Drones do IFSP para a Competição EletroQuad SAE BRASIL."
     },
     en: {
       title: "Game of Drones | Pietro Ty",
-      desc: "Interactive drone simulation/game developed by Pietro Ty."
+      desc: "Software, computer vision, and embedded intelligence project by IFSP's Game of Drones team for the EletroQuad SAE BRASIL competition."
     }
   },
 

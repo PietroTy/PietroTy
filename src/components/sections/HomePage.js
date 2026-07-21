@@ -16,7 +16,7 @@ export default function HomePage({ lang, setPage }) {
           <img src={pitImg} alt="Pietro Ty" className="hero-avatar" />
         </div>
         <div className="hero-kicker">
-          AI Researcher &amp; Data Engineer | Full-Stack Developer | Python &middot; Machine Learning &middot; LLMs
+          Consultor em Desenvolvimento de Dados | Full-Stack | Data Engineering | AI
         </div>
         <h1 className="hero-h1">
           {pt ? "Oi, sou o" : "Hi, I'm"}
@@ -25,13 +25,11 @@ export default function HomePage({ lang, setPage }) {
         <p className="hero-desc">
           {pt ? (
             <>
-              Desenvolvedor <strong>Full-Stack</strong>, Engenheiro de <strong>Dados</strong> e
-              Pesquisador em <strong>IA</strong>. Especializado em automações inteligentes, pipelines de ETL em larga escala, e soluções com LLMs.
+              Consultor em <strong>Desenvolvimento de Dados</strong> na Engaja, Desenvolvedor <strong>Full-Stack</strong>, Engenheiro de <strong>Dados</strong> e Pesquisador em <strong>IA</strong>. Atua com PostgreSQL, Power BI, ETL, automações e produtos digitais de ponta a ponta.
             </>
           ) : (
             <>
-              <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and 
-              <strong>AI</strong> Researcher. Specialized in intelligent automations, large-scale ETL pipelines, and LLM solutions.
+              <strong>Data Development Consultant</strong> at Engaja, <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and <strong>AI</strong> Researcher. Works with PostgreSQL, Power BI, ETL, automation, and end-to-end digital products.
             </>
           )}
         </p>
@@ -42,7 +40,7 @@ export default function HomePage({ lang, setPage }) {
         </div>
         <div className="hero-stats">
           {[
-            ["12+", pt ? "projetos open source" : "open source projects"],
+            ["17+", pt ? "projetos e soluções" : "projects and solutions"],
             [`${devYears}+`, pt ? "anos desenvolvendo" : "years developing"],
             [`${dataYears}+`, pt ? "anos na área de dados" : "years in data"],
           ].map(([v, l]) => (
