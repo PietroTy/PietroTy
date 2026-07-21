@@ -206,6 +206,11 @@ export default function App() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
+  // Scroll to top on initial load (even if URL has a hash)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
   // Sync hash and scroll on page change
   useEffect(() => {
     const currentHash = window.location.hash.replace("#", "");

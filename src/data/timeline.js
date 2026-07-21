@@ -111,6 +111,22 @@ export const TIMELINE = [
     "type": "research"
   },
   {
+    "year": "Mar – Jun 2026",
+    "rolePt": "Estagiário em Automações de IA",
+    "roleEn": "AI Automation Intern",
+    "placePt": "Engaja Soluções Corporativas",
+    "placeEn": "Engaja Soluções Corporativas",
+    "descPt": "Atuou no ciclo completo de produtos digitais, da concepção estratégica ao deploy em produção, com foco em automações inteligentes, IA generativa e desenvolvimento full-stack. Arquitetou, desenvolveu e implantou um CRM corporativo customizado integrado ao Power BI para dashboards executivos e fluxos de dados em tempo real. Projetou pipelines de automação baseados em LLMs, agentes de IA, n8n e Python, reduzindo trabalho manual em rotinas administrativas e de atendimento. Construiu integrações entre PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe e APIs internas/externas. Implantou agentes conversacionais de IA para atendimento via WhatsApp, com gestão de múltiplos clientes e suporte técnico/consultivo.",
+    "descEn": "Worked across the full digital product lifecycle, from strategy to production deployment, focusing on intelligent automation, generative AI, and full-stack development. Architected, built, and deployed a custom corporate CRM integrated with Power BI for executive dashboards and real-time data flows. Designed automation pipelines based on LLMs, AI agents, n8n, and Python, reducing manual work in administrative and customer-service routines. Built integrations among PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe, and internal/external APIs. Deployed conversational AI agents for WhatsApp service, supporting multiple clients and providing technical consulting.",
+    "tags": [
+      "n8n",
+      "Python",
+      "PostgreSQL",
+      "Power BI"
+    ],
+    "type": "work"
+  },
+  {
     "year": "2026 – Atualmente",
     "rolePt": "QA Tester e Revisor de Código",
     "roleEn": "QA Tester and Code Reviewer",
@@ -138,22 +154,6 @@ export const TIMELINE = [
       "LLMs",
       "ABNT",
       "Prompt Engineering"
-    ],
-    "type": "work"
-  },
-  {
-    "year": "Mar – Jun 2026",
-    "rolePt": "Estagiário em Automações de IA",
-    "roleEn": "AI Automation Intern",
-    "placePt": "Engaja Soluções Corporativas",
-    "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Atuou no ciclo completo de produtos digitais, da concepção estratégica ao deploy em produção, com foco em automações inteligentes, IA generativa e desenvolvimento full-stack. Arquitetou, desenvolveu e implantou um CRM corporativo customizado integrado ao Power BI para dashboards executivos e fluxos de dados em tempo real. Projetou pipelines de automação baseados em LLMs, agentes de IA, n8n e Python, reduzindo trabalho manual em rotinas administrativas e de atendimento. Construiu integrações entre PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe e APIs internas/externas. Implantou agentes conversacionais de IA para atendimento via WhatsApp, com gestão de múltiplos clientes e suporte técnico/consultivo.",
-    "descEn": "Worked across the full digital product lifecycle, from strategy to production deployment, focusing on intelligent automation, generative AI, and full-stack development. Architected, built, and deployed a custom corporate CRM integrated with Power BI for executive dashboards and real-time data flows. Designed automation pipelines based on LLMs, AI agents, n8n, and Python, reducing manual work in administrative and customer-service routines. Built integrations among PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe, and internal/external APIs. Deployed conversational AI agents for WhatsApp service, supporting multiple clients and providing technical consulting.",
-    "tags": [
-      "n8n",
-      "Python",
-      "PostgreSQL",
-      "Power BI"
     ],
     "type": "work"
   },

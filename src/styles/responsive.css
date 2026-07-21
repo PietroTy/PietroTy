@@ -45,16 +45,16 @@
   }
 
   .sec-header {
-    text-align: center;
+    text-align: left;
   }
   
   .sec-sub {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 
   .clink {
-    text-align: center;
+    text-align: left;
     align-items: center;
   }
 

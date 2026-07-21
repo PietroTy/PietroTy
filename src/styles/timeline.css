@@ -9,7 +9,7 @@
   .tl-grid {
     display: grid;
     /* Col 1 = Left, Col 2 = Spacer/Rail, Col 3 = Right */
-    grid-template-columns: 1fr 60px 1fr;
+    grid-template-columns: minmax(0, 1fr) 60px minmax(0, 1fr);
     row-gap: 1.5rem;
     position: relative;
   }
@@ -33,16 +33,23 @@
     grid-row: var(--row);
     grid-column: var(--col);
     position: relative;
+    width: 100%;
+    /* Smooth transition for dimensions and placement to animate expanding/collapsing */
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                margin 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
   }
 
   /* Left column items */
   .tl-item.tl-left {
+    width: calc(100% - 30px);
     margin-right: 30px;
+    margin-left: 0;
   }
 
   .tl-item.tl-left .tl-dot {
     position: absolute;
-    right: -55px; /* rail is 60px away, dot is 11px wide: 60 - 5.5 ≈ 55px */
+    right: -65.5px; /* aligned to center of rail (60px margin + half of 11px dot width) */
     left: auto;
     top: 1.8rem;
     z-index: 2;
@@ -52,9 +59,9 @@
   .tl-item.tl-left::after {
     content: '';
     position: absolute;
-    right: -55px;
+    right: -60px; /* reaches the center of the rail */
     top: calc(1.8rem + 4.5px);
-    width: 55px;
+    width: 60px;
     height: 2px; /* 2px prevents subpixel rounding down to 0 in Firefox */
     background: var(--p2);
     opacity: 0.4;
@@ -63,12 +70,14 @@
 
   /* Right column items */
   .tl-item.tl-right {
+    width: calc(100% - 30px);
     margin-left: 30px;
+    margin-right: 0;
   }
 
   .tl-item.tl-right .tl-dot {
     position: absolute;
-    left: -55px;
+    left: -65.5px; /* aligned to center of rail (60px margin + half of 11px dot width) */
     right: auto;
     top: 1.8rem;
     z-index: 2;
@@ -78,13 +87,35 @@
   .tl-item.tl-right::after {
     content: '';
     position: absolute;
-    left: -55px;
+    left: -60px; /* reaches the center of the rail */
     top: calc(1.8rem + 4.5px);
-    width: 55px;
+    width: 60px;
     height: 2px; /* 2px prevents subpixel rounding down to 0 in Firefox */
     background: var(--p2);
     opacity: 0.4;
     z-index: 1;
+  }
+
+  /* Expand open cards to full width smoothly on desktop without jumping grid tracks */
+  .tl-item.tl-left.open {
+    width: calc(200% + 60px);
+    margin-right: 0 !important;
+    z-index: 10;
+  }
+
+  .tl-item.tl-right.open {
+    width: calc(200% + 60px);
+    margin-left: calc(-100% - 60px) !important;
+    margin-right: 0 !important;
+    z-index: 10;
+  }
+
+  .tl-item.open::after {
+    display: none !important;
+  }
+
+  .tl-item.open .tl-dot {
+    display: none !important;
   }
 }
 
@@ -152,7 +183,7 @@
 
 .tl-item.open {
   border-color: var(--p2);
-  background: rgba(124, 58, 237, 0.08);
+  background: var(--bg2);
   box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
 }
 
@@ -204,13 +235,16 @@
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s;
+  /* When closing: collapse max-height and fade out opacity quickly to prevent height bump */
+  transition: max-height 0.25s ease-out, opacity 0.15s ease-out, margin-top 0.25s ease-out;
 }
 
 .tl-item.open .tl-expand {
-  max-height: 600px;
+  max-height: 500px; /* matched to actual maximum content height to feel more responsive */
   opacity: 1;
   margin-top: 0.75rem;
+  /* When opening: expand smoothly */
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out, margin-top 0.3s ease-out;
 }
 
 .tl-desc {
