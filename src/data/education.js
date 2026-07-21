@@ -1,29 +1,10 @@
 export const BCC_CURRICULUM = {
-  "instituicao": "IFSP — Campus São João da Boa Vista",
-  "curso": "Bacharelado em Ciência da Computação",
-  "base_legal": [
-    "Resolução CNE/CES nº 5, de 16 de novembro de 2016",
-    "Resolução IFSP nº 87/2018 — autorização do curso",
-    "Resolução IFSP nº 70/2022 — reformulação do curso",
-    "Currículo de Referência do Bacharelado em Ciência da Computação do IFSP — Resolução nº 18/2021"
-  ],
-  "duracao": "8 semestres",
-  "regime": "Integral",
   "carga_horaria_minima_horas": 3205.8,
   "carga_horaria_obrigatoria_horas": 2935.8,
   "carga_horaria_extensao_horas": 338.2,
   "percentual_extensao_aproximado": 10.5,
   "atividades_complementares_horas": 120,
   "tcc_horas": 150,
-  "estagio": "Optativo",
-  "observacao_status": "A matriz completa representa o percurso formativo do curso. Em currículo profissional, declarar como adquiridas apenas as disciplinas efetivamente concluídas e como em desenvolvimento as disciplinas em curso.",
-  "eixos_oficiais": [
-    "Fundamentos da Computação",
-    "Tecnologia da Computação",
-    "Matemática",
-    "Contexto Social e Profissional",
-    "Curricularização da Extensão"
-  ],
   "competencias_integradas_pt": [
     "Resolver problemas complexos com pensamento computacional, modelagem matemática e análise algorítmica.",
     "Especificar, projetar, implementar, testar, implantar e manter sistemas de software.",
@@ -49,8 +30,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Algoritmos e Programação de Computadores",
       "componente_en": "Algorithms and Computer Programming",
       "carga_horaria_horas": 85.5,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Decompor problemas em entradas, processamento, saídas e casos de borda.",
         "Construir algoritmos com sequência, decisão, repetição, funções, vetores, matrizes e registros.",
@@ -64,7 +43,11 @@ export const BCC_CURRICULUM = {
         "Translate logical solutions into readable, modular, and testable procedural code.",
         "Debug programs, interpret errors, and validate results with test cases.",
         "Perform an introductory analysis of correctness, cost, and clarity."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -72,8 +55,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Cálculo Diferencial e Integral 1",
       "componente_en": "Differential and Integral Calculus I",
       "carga_horaria_horas": 85.5,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar variação por meio de funções, limites e continuidade.",
         "Calcular e interpretar derivadas como taxas de variação e ferramentas de otimização.",
@@ -87,7 +68,11 @@ export const BCC_CURRICULUM = {
         "Apply integrals to accumulation, area, and modelling problems.",
         "Develop quantitative reasoning, abstraction, and graph interpretation.",
         "Build foundations for optimization, graphics, data science, and machine learning."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -95,8 +80,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Circuitos Digitais",
       "componente_en": "Digital Circuits",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Representar informação em sistemas binários e realizar conversões entre bases.",
         "Aplicar álgebra booleana e simplificação de expressões lógicas.",
@@ -110,7 +93,11 @@ export const BCC_CURRICULUM = {
         "Design and analyse combinational and sequential circuits.",
         "Understand logic gates, registers, counters, memory, and timing.",
         "Connect software abstractions to physical hardware operation."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -118,8 +105,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Comunicação e Expressão",
       "componente_en": "Communication and Writing",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Produzir textos claros, coesos e adequados a diferentes públicos e finalidades.",
         "Estruturar argumentação, síntese, relatórios e apresentações orais.",
@@ -133,7 +118,11 @@ export const BCC_CURRICULUM = {
         "Critically interpret technical, scientific, and institutional texts.",
         "Communicate technical decisions and results accurately.",
         "Improve collaboration, listening, revision, and professional documentation."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -141,8 +130,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Geometria Analítica e Vetores",
       "componente_en": "Analytic Geometry and Vectors",
       "carga_horaria_horas": 42.8,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Operar vetores, matrizes, retas, planos e sistemas de coordenadas.",
         "Modelar posição, direção, distância, projeção e transformação no espaço.",
@@ -156,7 +143,11 @@ export const BCC_CURRICULUM = {
         "Apply dot and cross products to geometric problems.",
         "Build foundations for graphics, computer vision, robotics, and simulation.",
         "Interpret algebraic and geometric representations of the same problem."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -164,8 +155,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Introdução aos Sistemas de Informação",
       "componente_en": "Introduction to Information Systems",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Compreender sistemas de informação como integração de pessoas, processos, dados e tecnologia.",
         "Identificar tipos de sistemas, fluxos organizacionais e necessidades de informação.",
@@ -179,7 +168,11 @@ export const BCC_CURRICULUM = {
         "Connect computing solutions to strategic and operational goals.",
         "Analyse initial requirements, stakeholders, risks, and adoption impacts.",
         "Develop a systemic view of organisations and digital products."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -187,8 +180,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Responsabilidade Social e Sustentabilidade",
       "componente_en": "Social Responsibility and Sustainability",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Avaliar impactos sociais, ambientais e econômicos de tecnologias e produtos digitais.",
         "Incorporar ética, inclusão, acessibilidade e sustentabilidade à tomada de decisão.",
@@ -202,7 +193,11 @@ export const BCC_CURRICULUM = {
         "Recognise professional responsibility in data, automation, and infrastructure.",
         "Connect innovation with sustainable development and the public interest.",
         "Propose more responsible and efficient technology practices."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 1,
@@ -210,8 +205,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 1",
       "componente_en": "Extension Project I",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Diagnosticar demandas reais da comunidade externa.",
         "Planejar uma intervenção tecnológica com objetivos, público, escopo e indicadores.",
@@ -225,7 +218,11 @@ export const BCC_CURRICULUM = {
         "Work in teams and communicate with non-technical stakeholders.",
         "Document activities, decisions, outcomes, and social impact.",
         "Connect early academic knowledge to concrete problems."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -233,8 +230,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Álgebra Linear",
       "componente_en": "Linear Algebra",
       "carga_horaria_horas": 42.8,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Resolver sistemas lineares e operar matrizes e transformações lineares.",
         "Compreender espaços vetoriais, bases, independência, autovalores e autovetores.",
@@ -248,7 +243,11 @@ export const BCC_CURRICULUM = {
         "Model geometric transformations and dimensionality reduction.",
         "Build mathematical foundations for ML, graphics, vision, and optimization.",
         "Reason about compact representations of multidimensional data."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -256,8 +255,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Arquitetura e Organização de Computadores",
       "componente_en": "Computer Architecture and Organisation",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Compreender processador, memória, barramentos, entrada/saída e hierarquia de armazenamento.",
         "Analisar ciclo de instrução, conjunto de instruções e representação interna de dados.",
@@ -271,7 +268,11 @@ export const BCC_CURRICULUM = {
         "Relate software performance to cache, parallelism, latency, and architecture.",
         "Interpret trade-offs among cost, energy use, and performance.",
         "Build foundations for operating systems, embedded systems, and low-level optimization."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -279,8 +280,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Cálculo Diferencial e Integral 2",
       "componente_en": "Differential and Integral Calculus II",
       "carga_horaria_horas": 71.3,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Trabalhar com integrais avançadas, sequências, séries e funções de várias variáveis.",
         "Aplicar derivadas parciais e gradientes a otimização multivariável.",
@@ -294,7 +293,11 @@ export const BCC_CURRICULUM = {
         "Model continuous phenomena and higher-dimensional accumulation.",
         "Evaluate convergence and mathematical approximations.",
         "Deepen foundations for numerical methods, statistics, AI, and simulation."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -302,8 +305,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Inglês para Fins Específicos",
       "componente_en": "English for Specific Purposes",
       "carga_horaria_horas": 57.0,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Ler documentação, artigos, manuais e especificações técnicas em inglês.",
         "Ampliar vocabulário de computação, ciência e ambiente corporativo.",
@@ -317,7 +318,11 @@ export const BCC_CURRICULUM = {
         "Write technical communications, summaries, presentations, and professional messages.",
         "Interpret ambiguity and conventions in international documentation.",
         "Access current knowledge without relying on translation."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -325,8 +330,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Matemática Discreta",
       "componente_en": "Discrete Mathematics",
       "carga_horaria_horas": 57.0,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Aplicar lógica proposicional e de predicados na formalização de problemas.",
         "Trabalhar com conjuntos, relações, funções, indução, recorrência e combinatória.",
@@ -340,7 +343,11 @@ export const BCC_CURRICULUM = {
         "Use graphs and trees to model networks, dependencies, and paths.",
         "Produce and verify mathematical proofs.",
         "Support algorithms, data structures, databases, automata, and security."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -348,8 +355,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Programação Orientada a Objetos",
       "componente_en": "Object-Oriented Programming",
       "carga_horaria_horas": 85.5,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar domínios por classes, objetos, interfaces e relações entre entidades.",
         "Aplicar encapsulamento, herança, polimorfismo, composição e abstração.",
@@ -363,7 +368,11 @@ export const BCC_CURRICULUM = {
         "Design modular, extensible, reusable code with clear responsibilities.",
         "Use exceptions, collections, persistence, and layered organisation.",
         "Recognise low coupling, high cohesion, and introductory design patterns."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 2,
@@ -371,8 +380,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 2",
       "componente_en": "Extension Project II",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Aprofundar levantamento de requisitos com usuários e instituições parceiras.",
         "Transformar necessidades sociais em entregas técnicas viáveis.",
@@ -386,7 +393,11 @@ export const BCC_CURRICULUM = {
         "Distribute responsibilities, manage schedules, and monitor risks.",
         "Test solutions with the audience and incorporate feedback.",
         "Evaluate technical and social outcomes."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -394,8 +405,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Banco de Dados",
       "componente_en": "Databases",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar dados por abordagens conceitual, lógica e relacional.",
         "Aplicar entidades, relacionamentos, chaves, restrições e normalização.",
@@ -409,7 +418,11 @@ export const BCC_CURRICULUM = {
         "Write SQL queries and data definition/manipulation operations.",
         "Understand transactions, integrity, concurrency, indexes, and basic security.",
         "Design databases aligned with business requirements and data quality."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -417,8 +430,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Ciência, Tecnologia e Sociedade",
       "componente_en": "Science, Technology and Society",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Analisar relações entre inovação, poder, economia, cultura e sociedade.",
         "Avaliar benefícios, riscos e externalidades de tecnologias emergentes.",
@@ -432,7 +443,11 @@ export const BCC_CURRICULUM = {
         "Discuss digital inequality, work, privacy, and scientific responsibility.",
         "Contextualise technical decisions historically and socially.",
         "Develop a critical and ethically grounded position."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -440,8 +455,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Interação Humano-Computador",
       "componente_en": "Human-Computer Interaction",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Investigar necessidades, contexto e comportamento de usuários.",
         "Projetar fluxos, arquitetura de informação, protótipos e interfaces centradas no usuário.",
@@ -455,7 +468,11 @@ export const BCC_CURRICULUM = {
         "Apply usability, accessibility, consistency, and feedback principles.",
         "Plan and execute heuristic evaluations and user tests.",
         "Turn usage evidence into product and experience improvements."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -463,8 +480,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Noções de Direito Digital",
       "componente_en": "Foundations of Digital Law",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Reconhecer princípios jurídicos aplicáveis a software, internet e dados.",
         "Compreender privacidade, proteção de dados, responsabilidade civil e contratos digitais.",
@@ -478,7 +493,11 @@ export const BCC_CURRICULUM = {
         "Identify intellectual-property, licensing, and content-use issues.",
         "Assess digital evidence, cybercrime, and provider responsibilities.",
         "Include compliance and legal risk in the development lifecycle."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -486,8 +505,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Paradigmas de Linguagens de Programação",
       "componente_en": "Programming Language Paradigms",
       "carga_horaria_horas": 85.5,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Comparar paradigmas imperativo, orientado a objetos, funcional, lógico e concorrente.",
         "Selecionar abstrações e estilos de programação adequados ao problema.",
@@ -501,7 +518,11 @@ export const BCC_CURRICULUM = {
         "Understand scope, types, evaluation, higher-order functions, and immutability.",
         "Read and adapt to languages with different mental models.",
         "Analyse trade-offs in expressiveness, safety, performance, and maintenance."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -509,8 +530,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto e Análise de Algoritmos",
       "componente_en": "Algorithm Design and Analysis",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Projetar algoritmos por força bruta, divisão e conquista, guloso, programação dinâmica e backtracking.",
         "Avaliar complexidade de tempo e espaço com notação assintótica.",
@@ -524,7 +543,11 @@ export const BCC_CURRICULUM = {
         "Prove correctness and justify algorithmic choices.",
         "Recognise computational limits and tractable/intractable problems.",
         "Choose efficient solutions according to scale, constraints, and use cases."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -532,8 +555,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Sistemas Operacionais",
       "componente_en": "Operating Systems",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Compreender processos, threads, escalonamento, sincronização e deadlocks.",
         "Analisar gerenciamento de memória, paginação, sistemas de arquivos e entrada/saída.",
@@ -547,7 +568,11 @@ export const BCC_CURRICULUM = {
         "Connect system calls, privileges, and kernel abstractions to software.",
         "Administer and diagnose operating-system resources.",
         "Build foundations for concurrency, security, servers, containers, and embedded systems."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 3,
@@ -555,8 +580,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 3",
       "componente_en": "Extension Project III",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Integrar programação, banco de dados, UX e fundamentos sociais em um projeto aplicado.",
         "Negociar escopo e prioridades com stakeholders externos.",
@@ -570,7 +593,11 @@ export const BCC_CURRICULUM = {
         "Produce technical documentation and user/training materials.",
         "Collect adoption, satisfaction, and impact indicators.",
         "Reflect on ethics, accessibility, and solution sustainability."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -578,8 +605,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Cálculo Numérico",
       "componente_en": "Numerical Methods",
       "carga_horaria_horas": 42.8,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Implementar métodos aproximados para raízes, sistemas lineares, interpolação e integração.",
         "Analisar erro numérico, estabilidade, convergência e condicionamento.",
@@ -593,7 +618,11 @@ export const BCC_CURRICULUM = {
         "Choose methods according to precision, computational cost, and data characteristics.",
         "Translate mathematical models into numerical algorithms.",
         "Apply computational approximation to science, engineering, graphics, and data."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -601,8 +630,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Estruturas de Dados",
       "componente_en": "Data Structures",
       "carga_horaria_horas": 85.5,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Implementar e utilizar listas, pilhas, filas, árvores, tabelas hash, heaps e grafos.",
         "Selecionar estruturas conforme padrões de acesso, memória e complexidade.",
@@ -616,7 +643,11 @@ export const BCC_CURRICULUM = {
         "Build search, insertion, deletion, sorting, and traversal operations.",
         "Evaluate the performance impact of representation and allocation.",
         "Design foundational components for systems, databases, and advanced algorithms."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -624,8 +655,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Laboratório de Banco de Dados",
       "componente_en": "Database Laboratory",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Construir bancos relacionais completos a partir de modelos e requisitos.",
         "Criar consultas analíticas, views, índices, procedures, triggers e transações.",
@@ -639,7 +668,11 @@ export const BCC_CURRICULUM = {
         "Import, clean, validate, and integrate data from different sources.",
         "Optimise queries through execution plans and indexing strategies.",
         "Manage users, permissions, backup, recovery, and integrity."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -647,8 +680,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Linguagens Formais e Autômatos",
       "componente_en": "Formal Languages and Automata",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar linguagens com gramáticas, expressões regulares e autômatos.",
         "Construir e analisar autômatos finitos, de pilha e modelos de computação.",
@@ -662,7 +693,11 @@ export const BCC_CURRICULUM = {
         "Understand language recognition, generation, and classification.",
         "Reason about decidability, computability, and formal limits.",
         "Build foundations for compilers, validation, text processing, and theory of computation."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -670,8 +705,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Probabilidade e Estatística",
       "componente_en": "Probability and Statistics",
       "carga_horaria_horas": 42.8,
-      "eixo": "Matemática",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar incerteza com probabilidade, variáveis aleatórias e distribuições.",
         "Resumir dados por medidas descritivas, visualizações e análise de dispersão.",
@@ -685,7 +718,11 @@ export const BCC_CURRICULUM = {
         "Perform estimation, confidence intervals, and hypothesis tests.",
         "Interpret correlation, sampling, bias, and statistical significance.",
         "Support data science, experimentation, forecasting, and model evaluation."
-      ]
+      ],
+      "eixo_pt": "Matemática",
+      "eixo_en": "Mathematics",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -693,8 +730,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto e Análise de Software",
       "componente_en": "Software Design and Analysis",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Elicitar, documentar, priorizar e validar requisitos funcionais e não funcionais.",
         "Modelar processos, casos de uso, domínio, componentes e interações.",
@@ -708,7 +743,11 @@ export const BCC_CURRICULUM = {
         "Evaluate architectural alternatives and quality trade-offs.",
         "Plan prototypes, interface contracts, and requirements traceability.",
         "Turn business problems into implementable and testable specifications."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 4,
@@ -716,8 +755,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 4",
       "componente_en": "Extension Project IV",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Conduzir projeto aplicado com planejamento, requisitos, dados e arquitetura mais maduros.",
         "Gerir mudanças de escopo, riscos e comunicação com parceiros.",
@@ -731,7 +768,11 @@ export const BCC_CURRICULUM = {
         "Validate usability, quality, and social fit.",
         "Measure impact and document lessons learned.",
         "Practise technical responsibility and accountability."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -739,8 +780,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Construção de Compiladores",
       "componente_en": "Compiler Construction",
       "carga_horaria_horas": 85.5,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Construir analisadores léxicos, sintáticos e semânticos.",
         "Projetar gramáticas, árvores sintáticas, tabelas de símbolos e verificação de tipos.",
@@ -754,7 +793,11 @@ export const BCC_CURRICULUM = {
         "Generate intermediate representations, code, and useful error messages.",
         "Apply automata, formal languages, and data structures in a complete system.",
         "Understand how high-level languages are translated and optimised."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -762,8 +805,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Engenharia de Software",
       "componente_en": "Software Engineering",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Gerir o ciclo de vida de software da concepção à manutenção.",
         "Aplicar processos ágeis e tradicionais conforme contexto, risco e equipe.",
@@ -777,7 +818,11 @@ export const BCC_CURRICULUM = {
         "Define architecture, patterns, documentation, versioning, and continuous integration.",
         "Estimate effort, organise backlogs, and monitor quality and evolution.",
         "Coordinate people, requirements, testing, delivery, and maintenance."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -785,8 +830,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Inteligência Artificial",
       "componente_en": "Artificial Intelligence",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar problemas por agentes, estados, objetivos, busca e heurísticas.",
         "Aplicar representação de conhecimento, inferência e raciocínio sob incerteza.",
@@ -800,7 +843,11 @@ export const BCC_CURRICULUM = {
         "Understand machine-learning foundations and intelligent-solution evaluation.",
         "Choose AI techniques according to data, constraints, explainability, and risk.",
         "Discuss bias, ethics, safety, and the impact of automated systems."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -808,8 +855,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Marcação e Layout para Web",
       "componente_en": "Web Markup and Layout",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Estruturar páginas com marcação semântica e conteúdo acessível.",
         "Criar layouts responsivos com CSS, tipografia, hierarquia e sistemas de componentes.",
@@ -823,7 +868,11 @@ export const BCC_CURRICULUM = {
         "Apply accessibility, compatibility, and technical SEO practices.",
         "Translate designs into consistent interfaces.",
         "Optimise visual experience, maintenance, and device adaptation."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -831,8 +880,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Organização e Recuperação da Informação",
       "componente_en": "Information Organisation and Retrieval",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Organizar coleções documentais por metadados, índices e estruturas de acesso.",
         "Implementar busca textual, índices invertidos, tokenização e ranking.",
@@ -846,7 +893,11 @@ export const BCC_CURRICULUM = {
         "Evaluate precision, recall, relevance, and result quality.",
         "Handle representation, classification, and retrieval at scale.",
         "Build foundations for search engines, recommendation, NLP, and knowledge management."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -854,8 +905,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Visão Computacional",
       "componente_en": "Computer Vision",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Representar e processar imagens digitais, cores, filtros e transformações.",
         "Aplicar segmentação, detecção de bordas, contornos, características e reconhecimento.",
@@ -869,7 +918,11 @@ export const BCC_CURRICULUM = {
         "Calibrate and evaluate vision pipelines under lighting, noise, and perspective changes.",
         "Integrate computer vision with machine learning and real-time systems.",
         "Develop solutions for automation, inspection, robotics, and autonomous navigation."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 5,
@@ -877,8 +930,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 5",
       "componente_en": "Extension Project V",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Aplicar IA, web, recuperação de informação ou engenharia de software a demanda comunitária.",
         "Projetar solução inclusiva com governança de dados e avaliação de riscos.",
@@ -892,7 +943,11 @@ export const BCC_CURRICULUM = {
         "Run prototyping, testing, deployment, and training cycles.",
         "Coordinate a multidisciplinary team and institutional partners.",
         "Produce evidence of impact, sustainability, and continuity."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -900,8 +955,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Ciência de Dados",
       "componente_en": "Data Science",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Definir perguntas analíticas e traduzir problemas de negócio ou pesquisa em hipóteses.",
         "Coletar, limpar, integrar, explorar e visualizar dados.",
@@ -915,7 +968,11 @@ export const BCC_CURRICULUM = {
         "Build, validate, and compare statistical and machine-learning models.",
         "Prevent leakage, bias, and misleading evaluation through sound experimental design.",
         "Communicate insights, uncertainty, limitations, and recommendations."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -923,8 +980,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Computação Gráfica",
       "componente_en": "Computer Graphics",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Modelar objetos, cenas e transformações em duas e três dimensões.",
         "Aplicar projeção, recorte, rasterização, iluminação, textura e animação.",
@@ -938,7 +993,11 @@ export const BCC_CURRICULUM = {
         "Understand the graphics pipeline and relationships among geometry, camera, and image.",
         "Optimise rendering for visual quality and performance.",
         "Build foundations for games, scientific visualisation, interfaces, and simulation."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -946,8 +1005,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Introdução ao Desenvolvimento de Software para Web",
       "componente_en": "Introduction to Web Software Development",
       "carga_horaria_horas": 85.5,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Construir aplicações web integrando cliente, servidor, banco de dados e APIs.",
         "Compreender HTTP, rotas, sessões, autenticação, validação e persistência.",
@@ -961,7 +1018,11 @@ export const BCC_CURRICULUM = {
         "Apply layered architecture, separation of concerns, and web patterns.",
         "Address security, accessibility, responsiveness, and user experience.",
         "Deploy and diagnose applications in real execution environments."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -969,8 +1030,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Produção de Textos Científicos",
       "componente_en": "Scientific Writing",
       "carga_horaria_horas": 57.0,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Definir problema, objetivos, justificativa, método e estrutura de pesquisa.",
         "Buscar, selecionar e avaliar criticamente literatura científica.",
@@ -984,7 +1043,11 @@ export const BCC_CURRICULUM = {
         "Write papers, reports, and proposals with proper citation and references.",
         "Argue from evidence, distinguish results from interpretation, and state limitations.",
         "Prepare presentations, peer review, and methodological foundations for the capstone."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -992,8 +1055,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Qualidade e Teste de Software",
       "componente_en": "Software Quality and Testing",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Definir critérios de qualidade e estratégias de verificação e validação.",
         "Projetar testes unitários, integração, sistema, aceitação, regressão e exploratórios.",
@@ -1007,7 +1068,11 @@ export const BCC_CURRICULUM = {
         "Apply black-box, white-box, coverage, and automation techniques.",
         "Manage defects, evidence, traceability, and release risks.",
         "Integrate testing, review, and metrics with CI/CD and continuous improvement."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -1015,8 +1080,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Redes de Computadores",
       "componente_en": "Computer Networks",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Compreender modelos em camadas, protocolos, endereçamento, roteamento e transporte.",
         "Configurar e diagnosticar comunicação em redes locais e internet.",
@@ -1030,7 +1093,11 @@ export const BCC_CURRICULUM = {
         "Analyse latency, loss, throughput, congestion, and reliability.",
         "Use tools and concepts related to DNS, HTTP, TCP/UDP, and network services.",
         "Design integrations and distributed applications with infrastructure awareness."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 6,
@@ -1038,8 +1105,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto de Extensão 6",
       "componente_en": "Extension Project VI",
       "carga_horaria_horas": 28.5,
-      "eixo": "Curricularização da Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Entregar solução computacional completa para uma demanda externa.",
         "Integrar desenvolvimento, dados, testes, documentação, implantação e suporte.",
@@ -1053,7 +1118,11 @@ export const BCC_CURRICULUM = {
         "Train users and transfer knowledge for solution continuity.",
         "Evaluate outcomes through technical and social metrics.",
         "Consolidate autonomy, leadership, communication, and professional responsibility."
-      ]
+      ],
+      "eixo_pt": "Curricularização da Extensão",
+      "eixo_en": "Curricularization of Extension",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1061,8 +1130,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Administração e Segurança de Redes de Computadores",
       "componente_en": "Network Administration and Security",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Administrar serviços, usuários, permissões, monitoramento e disponibilidade de redes.",
         "Aplicar segmentação, firewall, criptografia, autenticação e políticas de acesso.",
@@ -1076,7 +1143,11 @@ export const BCC_CURRICULUM = {
         "Identify vulnerabilities, threats, and infrastructure incidents.",
         "Plan backup, continuity, incident response, and hardening.",
         "Balance security, performance, usability, cost, and compliance."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1084,8 +1155,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Desenvolvimento para Dispositivos Móveis",
       "componente_en": "Mobile Application Development",
       "carga_horaria_horas": 85.5,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Projetar interfaces e fluxos adequados a dispositivos móveis e diferentes telas.",
         "Trabalhar com ciclo de vida, estado, navegação, persistência e consumo de APIs.",
@@ -1099,7 +1168,11 @@ export const BCC_CURRICULUM = {
         "Integrate device features, notifications, sensors, and permissions.",
         "Apply architecture, testing, performance, accessibility, and publishing practices.",
         "Build consistent experiences under battery, network, and hardware constraints."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1107,8 +1180,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Empreendedorismo",
       "componente_en": "Entrepreneurship",
       "carga_horaria_horas": 42.8,
-      "eixo": "Contexto Social, Profissional e Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Identificar problemas, oportunidades, públicos e propostas de valor.",
         "Validar hipóteses de produto, mercado, canais, receita e custos.",
@@ -1122,7 +1193,11 @@ export const BCC_CURRICULUM = {
         "Build business models, pitches, feasibility analyses, and execution plans.",
         "Understand innovation, intellectual property, risk, and fundraising.",
         "Develop leadership, negotiation, communication, and results orientation."
-      ]
+      ],
+      "eixo_pt": "Contexto Social, Profissional e Extensão",
+      "eixo_en": "Contexto Social, Profissional e Extensão",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1130,8 +1205,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto Integrador em Desenvolvimento de Software 1",
       "componente_en": "Integrated Software Development Project I",
       "carga_horaria_horas": 57.0,
-      "eixo": "Projeto Integrador / Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Conceber produto de software interdisciplinar a partir de um problema real.",
         "Integrar requisitos, UX, arquitetura, dados, segurança, testes e gestão de projeto.",
@@ -1145,7 +1218,11 @@ export const BCC_CURRICULUM = {
         "Organise teams, backlogs, version control, reviews, and incremental deliveries.",
         "Build a prototype or MVP with validation evidence.",
         "Present technical decisions, risks, metrics, and outcomes to reviewers or stakeholders."
-      ]
+      ],
+      "eixo_pt": "Projeto Integrador / Extensão",
+      "eixo_en": "Projeto Integrador / Extensão",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1153,8 +1230,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Sistemas Distribuídos",
       "componente_en": "Distributed Systems",
       "carga_horaria_horas": 57.0,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Projetar sistemas compostos por processos e serviços em múltiplos nós.",
         "Compreender comunicação, concorrência, relógios, coordenação e consenso.",
@@ -1168,7 +1243,11 @@ export const BCC_CURRICULUM = {
         "Handle replication, consistency, partitioning, fault tolerance, and scalability.",
         "Apply APIs, messaging, and distributed-integration patterns.",
         "Analyse trade-offs in availability, latency, reliability, and operational complexity."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 7,
@@ -1176,8 +1255,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Tecnologias para Desenvolvimento de Software para Web",
       "componente_en": "Web Software Development Technologies",
       "carga_horaria_horas": 85.5,
-      "eixo": "Tecnologia da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Construir aplicações web modernas com frameworks, componentes e gerenciamento de estado.",
         "Projetar backends, APIs, autenticação, autorização e integração com bancos e serviços.",
@@ -1191,7 +1268,11 @@ export const BCC_CURRICULUM = {
         "Apply testing, observability, security, performance, and accessibility.",
         "Automate builds, versioning, deployment, and continuous integration.",
         "Select technologies according to requirements, team, maintenance, and scale."
-      ]
+      ],
+      "eixo_pt": "Tecnologia da Computação",
+      "eixo_en": "Computer Technology",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 8,
@@ -1199,8 +1280,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Ciências do Ambiente",
       "componente_en": "Environmental Sciences",
       "carga_horaria_horas": 57.0,
-      "eixo": "Contexto Social, Profissional e Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Compreender ecossistemas, recursos, impactos ambientais e desenvolvimento sustentável.",
         "Avaliar ciclo de vida, consumo energético, resíduos eletrônicos e pegada de infraestrutura digital.",
@@ -1214,7 +1293,11 @@ export const BCC_CURRICULUM = {
         "Relate IT decisions to environmental responsibility and regulation.",
         "Propose sustainable-computing solutions and practices.",
         "Communicate environmental risks and benefits to stakeholders."
-      ]
+      ],
+      "eixo_pt": "Contexto Social, Profissional e Extensão",
+      "eixo_en": "Contexto Social, Profissional e Extensão",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 8,
@@ -1222,8 +1305,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Governança de TI",
       "componente_en": "IT Governance",
       "carga_horaria_horas": 28.5,
-      "eixo": "Contexto Social e Profissional",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Alinhar tecnologia, dados e projetos aos objetivos organizacionais.",
         "Definir papéis, políticas, controles, indicadores e prestação de contas.",
@@ -1237,7 +1318,11 @@ export const BCC_CURRICULUM = {
         "Manage portfolios, services, risk, compliance, continuity, and suppliers.",
         "Prioritise investments based on value, cost, and risk exposure.",
         "Monitor performance and maturity through metrics and continuous improvement."
-      ]
+      ],
+      "eixo_pt": "Contexto Social e Profissional",
+      "eixo_en": "Social and Professional Context",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 8,
@@ -1245,8 +1330,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Projeto Integrador em Desenvolvimento de Software 2",
       "componente_en": "Integrated Software Development Project II",
       "carga_horaria_horas": 57.0,
-      "eixo": "Projeto Integrador / Extensão",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Evoluir o projeto integrador até uma entrega estável, implantável e documentada.",
         "Validar requisitos, qualidade, segurança, desempenho e experiência com evidências.",
@@ -1260,7 +1343,11 @@ export const BCC_CURRICULUM = {
         "Plan operations, maintenance, support, continuity, and knowledge transfer.",
         "Measure product impact, adoption, and outcomes.",
         "Defend decisions and results in a technical, critical, and professional manner."
-      ]
+      ],
+      "eixo_pt": "Projeto Integrador / Extensão",
+      "eixo_en": "Projeto Integrador / Extensão",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": 8,
@@ -1268,8 +1355,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Sistemas Embarcados",
       "componente_en": "Embedded Systems",
       "carga_horaria_horas": 57.0,
-      "eixo": "Fundamentos da Computação",
-      "tipo": "obrigatoria",
       "competencias_pt": [
         "Integrar software a microcontroladores, sensores, atuadores e interfaces de comunicação.",
         "Programar sob restrições de memória, processamento, energia e tempo.",
@@ -1283,7 +1368,11 @@ export const BCC_CURRICULUM = {
         "Understand interrupts, timing, signal acquisition, and control.",
         "Design prototypes and diagnose hardware-software interaction.",
         "Apply reliability and security to IoT, automation, robotics, and smart devices."
-      ]
+      ],
+      "eixo_pt": "Fundamentos da Computação",
+      "eixo_en": "Foundations of Computing",
+      "tipo_pt": "obrigatoria",
+      "tipo_en": "compulsory"
     },
     {
       "semestre": "Optativa",
@@ -1291,8 +1380,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Libras",
       "componente_en": "Brazilian Sign Language",
       "carga_horaria_horas": 28.5,
-      "eixo": "Optativa — Comunicação e Inclusão",
-      "tipo": "optativa",
       "competencias_pt": [
         "Desenvolver comunicação introdutória em Libras e compreender aspectos da cultura surda.",
         "Reconhecer barreiras comunicacionais e necessidades de acessibilidade.",
@@ -1304,7 +1391,11 @@ export const BCC_CURRICULUM = {
         "Recognise communication barriers and accessibility needs.",
         "Design more inclusive digital interactions, content, and services.",
         "Strengthen empathy, non-verbal communication, and social responsibility."
-      ]
+      ],
+      "eixo_pt": "Optativa — Comunicação e Inclusão",
+      "eixo_en": "Optativa — Comunicação e Inclusão",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     },
     {
       "semestre": "Optativa",
@@ -1312,8 +1403,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Administração e Gestão",
       "componente_en": "Administration and Management",
       "carga_horaria_horas": 28.5,
-      "eixo": "Optativa — Gestão",
-      "tipo": "optativa",
       "competencias_pt": [
         "Compreender planejamento, organização, direção e controle.",
         "Analisar estruturas organizacionais, processos e tomada de decisão.",
@@ -1325,7 +1414,11 @@ export const BCC_CURRICULUM = {
         "Analyse organisational structures, processes, and decision-making.",
         "Manage resources, people, priorities, and indicators.",
         "Connect business management with technology projects and operations."
-      ]
+      ],
+      "eixo_pt": "Optativa — Gestão",
+      "eixo_en": "Optativa — Gestão",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     },
     {
       "semestre": "Optativa",
@@ -1333,8 +1426,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Economia",
       "componente_en": "Economics",
       "carga_horaria_horas": 28.5,
-      "eixo": "Optativa — Gestão",
-      "tipo": "optativa",
       "competencias_pt": [
         "Compreender oferta, demanda, custos, incentivos e estruturas de mercado.",
         "Analisar indicadores econômicos e impactos sobre negócios e tecnologia.",
@@ -1346,7 +1437,11 @@ export const BCC_CURRICULUM = {
         "Analyse economic indicators and their impact on business and technology.",
         "Evaluate feasibility, trade-offs, and resource allocation.",
         "Support product, pricing, investment, and scaling decisions."
-      ]
+      ],
+      "eixo_pt": "Optativa — Gestão",
+      "eixo_en": "Optativa — Gestão",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     },
     {
       "semestre": "Optativa",
@@ -1354,8 +1449,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Gestão de Qualidade",
       "componente_en": "Quality Management",
       "carga_horaria_horas": 42.8,
-      "eixo": "Optativa — Gestão",
-      "tipo": "optativa",
       "competencias_pt": [
         "Definir processos, padrões, indicadores e ciclos de melhoria contínua.",
         "Aplicar análise de causa, prevenção de falhas e gestão por evidências.",
@@ -1367,7 +1460,11 @@ export const BCC_CURRICULUM = {
         "Apply root-cause analysis, failure prevention, and evidence-based management.",
         "Structure audits, documentation, and non-conformity control.",
         "Connect organisational quality with software and service quality."
-      ]
+      ],
+      "eixo_pt": "Optativa — Gestão",
+      "eixo_en": "Optativa — Gestão",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     },
     {
       "semestre": "Optativa",
@@ -1375,8 +1472,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Gestão de Projetos",
       "componente_en": "Project Management",
       "carga_horaria_horas": 28.5,
-      "eixo": "Optativa — Gestão",
-      "tipo": "optativa",
       "competencias_pt": [
         "Definir escopo, cronograma, orçamento, recursos, riscos e comunicação.",
         "Planejar entregas e acompanhar progresso por métricas e marcos.",
@@ -1388,7 +1483,11 @@ export const BCC_CURRICULUM = {
         "Plan deliveries and monitor progress through metrics and milestones.",
         "Manage stakeholders, changes, dependencies, and quality.",
         "Combine predictive and agile approaches according to the project."
-      ]
+      ],
+      "eixo_pt": "Optativa — Gestão",
+      "eixo_en": "Optativa — Gestão",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     },
     {
       "semestre": "Optativa",
@@ -1396,8 +1495,6 @@ export const BCC_CURRICULUM = {
       "componente_pt": "Marketing Digital",
       "componente_en": "Digital Marketing",
       "carga_horaria_horas": 28.5,
-      "eixo": "Optativa — Produto e Mercado",
-      "tipo": "optativa",
       "competencias_pt": [
         "Planejar presença digital, conteúdo, aquisição e relacionamento com comunidades.",
         "Compreender funil, segmentação, posicionamento, mídia paga e canais orgânicos.",
@@ -1409,7 +1506,11 @@ export const BCC_CURRICULUM = {
         "Understand funnels, segmentation, positioning, paid media, and organic channels.",
         "Configure metrics, events, attribution, and performance analysis.",
         "Run experiments and optimise campaigns and journeys using data."
-      ]
+      ],
+      "eixo_pt": "Optativa — Produto e Mercado",
+      "eixo_en": "Optativa — Produto e Mercado",
+      "tipo_pt": "optativa",
+      "tipo_en": "elective"
     }
   ],
   "componentes_adicionais": [
@@ -1463,5 +1564,43 @@ export const BCC_CURRICULUM = {
         "Receive feedback and consolidate technical and interpersonal skills."
       ]
     }
+  ],
+  "instituicao_pt": "IFSP — Campus São João da Boa Vista",
+  "instituicao_en": "IFSP — São João da Boa Vista Campus",
+  "curso_pt": "Bacharelado em Ciência da Computação",
+  "curso_en": "Bachelor of Science in Computer Science",
+  "base_legal_pt": [
+    "Resolução CNE/CES nº 5, de 16 de novembro de 2016",
+    "Resolução IFSP nº 87/2018 — autorização do curso",
+    "Resolução IFSP nº 70/2022 — reformulação do curso",
+    "Currículo de Referência do Bacharelado em Ciência da Computação do IFSP — Resolução nº 18/2021"
+  ],
+  "base_legal_en": [
+    "CNE/CES Resolution No. 5, of November 16, 2016",
+    "IFSP Resolution No. 87/2018 — program authorization",
+    "IFSP Resolution No. 70/2022 — program reformulation",
+    "IFSP Bachelor of Science in Computer Science Reference Curriculum — Resolution No. 18/2021"
+  ],
+  "duracao_pt": "8 semestres",
+  "duracao_en": "8 semesters",
+  "regime_pt": "Integral",
+  "regime_en": "Full-time",
+  "estagio_pt": "Optativo",
+  "estagio_en": "Elective",
+  "observacao_status_pt": "A matriz completa representa o percurso formativo do curso. Em currículo profissional, declarar como adquiridas apenas as disciplinas efetivamente concluídas e como em desenvolvimento as disciplinas em curso.",
+  "observacao_status_en": "The complete curriculum represents the program's academic pathway. In professional CVs, only declare courses actually completed as completed, and ongoing courses as in progress.",
+  "eixos_oficiais_pt": [
+    "Fundamentos da Computação",
+    "Tecnologia da Computação",
+    "Matemática",
+    "Contexto Social e Profissional",
+    "Curricularização da Extensão"
+  ],
+  "eixos_oficiais_en": [
+    "Foundations of Computing",
+    "Computer Technology",
+    "Mathematics",
+    "Social and Professional Context",
+    "Curricularization of Extension"
   ]
 };

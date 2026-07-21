@@ -16,7 +16,9 @@ export default function HomePage({ lang, setPage }) {
           <img src={pitImg} alt="Pietro Ty" className="hero-avatar" />
         </div>
         <div className="hero-kicker">
-          Consultor em Desenvolvimento de Dados | Full-Stack | Data Engineering | AI
+          {pt
+            ? "Consultor em Desenvolvimento de Dados | Full-Stack | Data Engineering | AI"
+            : "Data Development Consultant | Full-Stack | Data Engineering | AI"}
         </div>
         <h1 className="hero-h1">
           {pt ? "Oi, sou o" : "Hi, I'm"}

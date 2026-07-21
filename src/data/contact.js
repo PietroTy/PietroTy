@@ -9,8 +9,8 @@ export const CONTACT_LINKS = [
     url: "mailto:pietro.turcimm@gmail.com",
   },
   {
-    namePt: "Telefone / WhatsApp",
-    nameEn: "Phone / WhatsApp",
+    namePt: "WhatsApp",
+    nameEn: "WhatsApp",
     handlePt: "(11) 99884-8997",
     handleEn: "(11) 99884-8997",
     url: "https://wa.me/5511998848997",
