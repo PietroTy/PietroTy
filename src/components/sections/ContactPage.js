@@ -19,8 +19,8 @@ export default function ContactPage({ lang }) {
           }
           sub={
             pt
-              ? "Full-Stack Developer, AI Researcher & Eng. de Dados. Aberto a projetos, automações e colaborações corporativas."
-              : "Full-Stack Developer, AI Researcher & Data Eng. Open to projects, automations, and corporate collaborations."
+              ? "Consultor em Desenvolvimento de Dados, Full-Stack Developer, Engenheiro de Dados e Pesquisador em IA. Aberto a projetos e colaborações corporativas."
+              : "Data Development Consultant, Full-Stack Developer, Data Engineer, and AI Researcher. Open to projects and corporate collaborations."
           }
         />
         <div className="contact-grid">

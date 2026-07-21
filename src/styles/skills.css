@@ -32,3 +32,17 @@
 }
 .extras-title { font-family: var(--mono); font-size: 0.68rem; color: var(--p2); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
 .extras-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+
+/* BCC curriculum */
+.bcc-summary { color: var(--muted); max-width: 900px; line-height: 1.7; margin: .75rem 0 1.5rem; }
+.bcc-semesters { display: grid; gap: .8rem; }
+.bcc-semester { border: 1px solid var(--border); background: rgba(255,255,255,.015); }
+.bcc-semester > summary { cursor: pointer; padding: 1rem 1.1rem; font-family: var(--mono); color: var(--p2); text-transform: uppercase; letter-spacing: .04em; }
+.bcc-components { display: grid; gap: 1rem; padding: 0 1rem 1rem; }
+.bcc-component { border-top: 1px solid var(--border); padding-top: 1rem; }
+.bcc-component-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1rem; }
+.bcc-component-head strong { color: var(--text); }
+.bcc-component-head span { color: var(--muted); font-family: var(--mono); font-size: .78rem; }
+.bcc-component ul { margin: .75rem 0 0 1.1rem; color: var(--muted); line-height: 1.65; }
+.bcc-component li + li { margin-top: .35rem; }
