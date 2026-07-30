@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://deposit-outer-disk-cheaper.trycloudflare.com',
+    BACKEND_URL: 'https://folders-inter-gold-named.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
