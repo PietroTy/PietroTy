@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://prints-persons-exclusively-staff.trycloudflare.com',
+    BACKEND_URL: 'https://linking-challenge-legitimate-crop.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
