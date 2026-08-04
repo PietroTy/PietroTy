@@ -16,6 +16,8 @@ export async function perguntarIA(messages) {
         });
 
         if (!response.ok) {
+            const errData = await response.json().catch(() => null);
+            console.error("❌ Erro retornado pelo backend:", response.status, errData);
             throw new Error(`HTTP Error: ${response.status}`);
         }
 
