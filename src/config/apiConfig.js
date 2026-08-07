@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://fitness-sure-honor-auctions.trycloudflare.com',
+    BACKEND_URL: 'https://textbook-spoken-horn-shareware.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
