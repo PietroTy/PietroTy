@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://gourmet-checkout-renewal-reach.trycloudflare.com',
+    BACKEND_URL: 'https://patch-media-kim-adams.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
