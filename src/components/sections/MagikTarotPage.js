@@ -79,7 +79,7 @@ export default function MagikTarotPage({ lang, setPage }) {
                 src={screenshotImg} 
                 alt="MagikTarot Preview" 
                 className="hero-image" 
-                style={{ maxWidth: "340px", borderRadius: "16px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "2px solid var(--border)" }}
+                style={{ maxWidth: "340px", borderRadius: "16px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "1px solid var(--border)" }}
               />
             </div>
           </div>
@@ -89,17 +89,17 @@ export default function MagikTarotPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(124, 58, 237, 0.06)",
-            border: "1px solid rgba(124, 58, 237, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// E-COMMERCE & TRÁFEGO PAGO" : "// E-COMMERCE & PAID TRAFFIC"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <p>
                 Semelhante ao escopo do <i>Bleach.co</i>, o <strong>MagikTarot</strong> foi projetado e desenvolvido integralmente por Pietro. Toda a identidade artística e ilustrações de cartas foram produzidas via <strong>Inteligência Artificial Generativa</strong>. Além do código frontend/backend, Pietro configurou toda a estrutura de tráfego pago, incluindo criação de campanhas no <strong>Google Ads</strong> e implementação avançada de tagueamento de eventos via <strong>Google Tag Manager (GTM)</strong>.

@@ -98,17 +98,17 @@ export default function CHubPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(168, 85, 247, 0.06)",
-            border: "1px solid rgba(168, 85, 247, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#a855f7", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// HISTÓRIA DO PROJETO & HOMENAGEM ACADÊMICA" : "// PROJECT STORY & ACADEMIC DEDICATION"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
@@ -117,7 +117,7 @@ export default function CHubPage({ lang, setPage }) {
                     href="https://github.com/davidbuzatto" 
                     target="_blank" 
                     rel="noreferrer" 
-                    style={{ color: "#a855f7", textDecoration: "underline", fontWeight: "600" }}
+                    style={{ color: "var(--p2)", textDecoration: "underline", fontWeight: "600" }}
                   >
                     Professor Doutor David Buzatto
                   </a>
@@ -141,7 +141,7 @@ export default function CHubPage({ lang, setPage }) {
                     href="https://github.com/davidbuzatto" 
                     target="_blank" 
                     rel="noreferrer" 
-                    style={{ color: "#a855f7", textDecoration: "underline", fontWeight: "600" }}
+                    style={{ color: "var(--p2)", textDecoration: "underline", fontWeight: "600" }}
                   >
                     Professor David Buzatto, PhD
                   </a>

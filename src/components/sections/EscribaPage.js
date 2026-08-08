@@ -89,17 +89,17 @@ export default function EscribaPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(245, 158, 11, 0.06)",
-            border: "1px solid rgba(245, 158, 11, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#f59e0b", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// INICIAÇÃO CIENTÍFICA, ORIENTAÇÃO & ARTIGO ACADÊMICO" : "// RESEARCH INITIATION, MENTORSHIP & PAPER"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
@@ -111,7 +111,7 @@ export default function EscribaPage({ lang, setPage }) {
                     href="https://www.linkedin.com/in/cristiane-freire-de-s%C3%A1-phd-ba36a7254/" 
                     target="_blank" 
                     rel="noreferrer" 
-                    style={{ color: "#f59e0b", textDecoration: "underline", fontWeight: "600" }}
+                    style={{ color: "var(--p2)", textDecoration: "underline", fontWeight: "600" }}
                   >
                     Dra. Cristiane Freire de Sá, PhD
                   </a>
@@ -135,7 +135,7 @@ export default function EscribaPage({ lang, setPage }) {
                     href="https://www.linkedin.com/in/cristiane-freire-de-s%C3%A1-phd-ba36a7254/" 
                     target="_blank" 
                     rel="noreferrer" 
-                    style={{ color: "#f59e0b", textDecoration: "underline", fontWeight: "600" }}
+                    style={{ color: "var(--p2)", textDecoration: "underline", fontWeight: "600" }}
                   >
                     Dr. Cristiane Freire de Sá, PhD
                   </a>

@@ -89,17 +89,17 @@ export default function DSHubPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(14, 165, 233, 0.06)",
-            border: "1px solid rgba(14, 165, 233, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#0ea5e9", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// PROPÓSITO DO DATA SCIENCE HUB" : "// PURPOSE OF DATA SCIENCE HUB"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <p>
                 O <strong>Data Science Hub</strong> foi construído com o objetivo de centralizar e expor publicamente em um único lugar todas as análises de dados mais pontuais desenvolvidas ao longo de estudos e projetos. O portal agrupa desde <strong>demonstrações dinâmicas e interativas</strong> (com simulação de parâmetros em tempo real) até <strong>estudos de caso demonstrativos e teóricos</strong> (explicando a matemática, validação e métricas dos modelos), atestando a capacidade de transformar dados brutos em decisões estratégicas.
