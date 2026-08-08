@@ -7,36 +7,36 @@ export default function GameOfDronesPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Competição EletroQuad SAE BRASIL",
-      titleEn: "EletroQuad SAE BRASIL Competition",
-      descPt: "Competição universitária multidisciplinar de concepção, documentação, construção e voo autônomo de drones quadricópteros, com missões que envolvem inteligência embarcada, visão computacional e telemetria.",
-      descEn: "A multidisciplinary university competition involving the design, documentation, construction, and autonomous flight of quadrotor drones in missions requiring embedded intelligence, computer vision, and telemetry.",
-      iconPt: "// COMPETIÇÃO",
-      iconEn: "// COMPETITION"
+      titlePt: "Capitania de Software & Liderança de 15+ Alunos",
+      titleEn: "Software Captain & 15+ Student Leadership",
+      descPt: "Pietro atua como atual Capitão da área de Software na liga acadêmica do IFSP, liderando uma equipe multidisciplinar de mais de 15 alunos.",
+      descEn: "Pietro serves as the current Software Captain at IFSP academic league, leading a multidisciplinary team of 15+ students.",
+      iconPt: "// CAPITANIA & LIDERANÇA",
+      iconEn: "// CAPTAIN & LEADERSHIP"
     },
     {
-      titlePt: "Processamento com OpenCV",
-      titleEn: "OpenCV Processing",
-      descPt: "Filtros de cor, detecção de contornos e transformações espaciais aplicadas em tempo real para leitura de trajetória e apoio à tomada de decisão autônoma.",
-      descEn: "Real-time color filtering, contour detection, and spatial transformations for track reading and autonomous decision support.",
-      iconPt: "// VISÃO COMPUTACIONAL",
-      iconEn: "// VISION"
+      titlePt: "Treinamento & Integração do YOLOv8n",
+      titleEn: "YOLOv8n Training & Integration",
+      descPt: "Treinamento de modelos neurais YOLOv8n customizados para tomada de decisão autônoma de voo conforme as regras das provas da EletroQuad.",
+      descEn: "Training and integrating custom YOLOv8n neural models for autonomous flight decisions in specific competition mission stages.",
+      iconPt: "// YOLOv8n & IA EMBARCADA",
+      iconEn: "// EMBEDDED AI"
     },
     {
-      titlePt: "Navegação Autônoma",
-      titleEn: "Autonomous Navigation",
-      descPt: "Algoritmos de controle proporcional, integral e derivativo (PID) para centralização e alinhamento em trajetórias.",
-      descEn: "Proportional, integral, and derivative (PID) control loops for centring and track alignment.",
-      iconPt: "// NAVEGAÇÃO",
-      iconEn: "// NAVIGATION"
+      titlePt: "Controles do Drone via Raspberry Pi",
+      titleEn: "Raspberry Pi Drone Controls",
+      descPt: "Desenvolvimento de todo o sistema de controle de voo, leitura de telemetria, alinhamento PID e acionamentos embarcados em Raspberry Pi.",
+      descEn: "Development of flight control routines, telemetry reading, PID alignment, and embedded hardware triggers on Raspberry Pi.",
+      iconPt: "// RASPBERRY PI & EMBARCADOS",
+      iconEn: "// EMBEDDED HARDWARE"
     },
     {
-      titlePt: "Hardware Embarcado",
-      titleEn: "Embedded Hardware",
-      descPt: "Otimização extrema para execução fluida em Raspberry Pi com consumo de bateria e peso reduzidos.",
-      descEn: "Extreme code optimizations to achieve smooth execution on Raspberry Pi with minimal weight and power drain.",
-      iconPt: "// HARDWARE",
-      iconEn: "// HARDWARE"
+      titlePt: "2º Ano Consecutivo de Classificação",
+      titleEn: "2nd Consecutive Year Qualification",
+      descPt: "Conquista da classificação nacional da equipe pelo 2º ano consecutivo na prestigiada competição universitária EletroQuad SAE BRASIL.",
+      descEn: "Securing national competition qualification for the 2nd consecutive year in the prestigious EletroQuad SAE BRASIL league.",
+      iconPt: "// CLASSIFICAÇÃO SAE",
+      iconEn: "// SAE QUALIFICATION"
     }
   ];
 
@@ -46,14 +46,14 @@ export default function GameOfDronesPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">EletroQuad SAE BRASIL · Computer Vision & ML</div>
+            <div className="hero-tag">Liga Acadêmica IFSP • Capitania de Software • YOLOv8n • Raspberry Pi</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Game of Drones
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Software de visão computacional, inteligência embarcada e Machine Learning desenvolvido pela equipe oficial Game of Drones do IFSP para um quadricóptero autônomo na Competição EletroQuad SAE BRASIL."
-                : "Computer vision, embedded intelligence, and machine learning software developed by IFSP's official Game of Drones team for an autonomous quadrotor in the EletroQuad SAE BRASIL competition."
+                ? "Liga acadêmica extracurricular do IFSP participante da Competição EletroQuad SAE BRASIL. Liderada por Pietro na capitania de software, projeta o sistema de controle autônomo, visão computacional e inteligência embarcada do drone."
+                : "IFSP extracurricular academic league participating in the EletroQuad SAE BRASIL competition. Led by Pietro as Software Captain, designing the drone's autonomous flight control, computer vision, and embedded AI."
               }
             </p>
             <a
@@ -63,7 +63,7 @@ export default function GameOfDronesPage({ lang, setPage }) {
               className="btn btn-outline"
               style={{ display: "inline-flex", marginTop: "1rem" }}
             >
-              {pt ? "Página oficial da EletroQuad" : "Official EletroQuad page"}
+              {pt ? "Página oficial da EletroQuad SAE" : "Official EletroQuad SAE page"}
             </a>
           </div>
 
@@ -79,6 +79,49 @@ export default function GameOfDronesPage({ lang, setPage }) {
                 style={{ maxWidth: "380px", display: "block" }}
               />
             </div>
+          </div>
+        </section>
+
+        {/* Captaincy & Team Story Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(16, 185, 129, 0.06)",
+            border: "1px solid rgba(16, 185, 129, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#10b981", marginBottom: "1rem" }}>
+            {pt ? "🛸 Capitania de Software, Treinamento do YOLOv8n & Bi-Classificação" : "🛸 Software Captaincy, YOLOv8n Training & Bi-Qualification"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  No <strong>Game of Drones</strong> (liga acadêmica oficial do IFSP), Pietro exerce o papel de <strong>Capitão da equipe de Software</strong>, liderando um time multidisciplinar de mais de 15 alunos entre engenharia, computação e eletrônica.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Sob sua liderança técnica, a equipe desenvolveu todos os controles de voo embarcados em <strong>Raspberry Pi</strong>, além de treinar e integrar redes neurais <strong>YOLOv8n</strong> para tomada de decisão autônoma de voo e leitura de alvos durante missões específicas da competição.
+                </p>
+                <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
+                  🏆 <i>Pelo 2º ano consecutivo, a equipe obteve a classificação oficial para a fase nacional da Competição EletroQuad SAE BRASIL, consolidando uma trajetória marcante de gestão técnica, trabalho em equipe e inovação embarcada.</i>
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  In the <strong>Game of Drones</strong> (IFSP official academic league), Pietro serves as the <strong>Software Captain</strong>, directing a multidisciplinary team of over 15 students across computer science, engineering, and electronics.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Under his technical leadership, the team engineered all flight control algorithms on <strong>Raspberry Pi</strong>, alongside training and deploying custom <strong>YOLOv8n</strong> neural networks for autonomous target detection and flight maneuvers.
+                </p>
+                <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
+                  🏆 <i>For the 2nd consecutive year, the team earned national qualification in the EletroQuad SAE BRASIL competition, validating excellence in team leadership, embedded systems, and computer vision.</i>
+                </p>
+              </>
+            )}
           </div>
         </section>
 
@@ -98,26 +141,34 @@ export default function GameOfDronesPage({ lang, setPage }) {
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2rem" }}>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Linguagem" : "Language"}
+                {pt ? "Liderança" : "Leadership"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Python 3
+                Capitão de Software (15+ alunos)
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Processamento" : "Processing"}
+                {pt ? "Visão & IA" : "Vision & AI"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                OpenCV & NumPy
+                YOLOv8n & OpenCV
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Embarcado" : "Embedded"}
+                {pt ? "Embarcado" : "Embedded System"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Raspberry Pi / Linux OS
+                Raspberry Pi / Linux / PID
+              </p>
+            </div>
+            <div>
+              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
+                {pt ? "Conquista" : "Achievement"}
+              </h4>
+              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
+                Bi-Classificado SAE BRASIL
               </p>
             </div>
           </div>
@@ -161,27 +212,6 @@ export default function GameOfDronesPage({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={() => setModalData(null)}
-                style={{
-                  position: "absolute",
-                  top: "12px",
-                  right: "12px",
-                  width: "36px",
-                  height: "36px",
-                  borderRadius: "50%",
-                  background: "rgba(255,255,255,0.1)",
-                  color: "#fff",
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  fontSize: "1.1rem",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}
-              >
-                ✕
-              </button>
               <img 
                 src={typeof modalData === "string" ? modalData : modalData.img} 
                 alt="Enlarged preview"

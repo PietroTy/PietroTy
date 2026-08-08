@@ -7,59 +7,57 @@ export default function WhatsAppBotPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Modelo Maritaca LLM",
-      titleEn: "Maritaca LLM Integration",
-      descPt: "Respostas conversacionais de alto nível em português brasileiro por meio do LLM Maritaca integrado nativamente.",
-      descEn: "High-quality conversational responses in Brazilian Portuguese powered by the native Maritaca LLM integration.",
-      iconPt: "// INTELIGÊNCIA ARTIFICIAL",
-      iconEn: "// BRAIN"
+      titlePt: "Primeira Experiência com APIs & LLMs em JS",
+      titleEn: "First LLM & API Milestone in JS",
+      descPt: "Projeto marco onde Pietro implementou suas primeiras integrações com modelos de linguagem (Maritaca AI) e gateways de API via JavaScript.",
+      descEn: "Key milestone project where Pietro built his first LLM integrations (Maritaca AI) and API gateways using JavaScript.",
+      iconPt: "// MARCO DE CARREIRA",
+      iconEn: "// CAREER MILESTONE"
     },
     {
-      titlePt: "Memória Persistente",
-      titleEn: "Persistent Memory",
-      descPt: "O bot mantém o contexto e histórico completo das conversas anteriores de cada usuário, garantindo diálogos fluidos.",
-      descEn: "Maintains full contextual memory and conversation history for each user, allowing fluid and continuous dialogues.",
-      iconPt: "// MEMÓRIA",
-      iconEn: "// MEMORY"
+      titlePt: "Porta de Entrada para a Engaja Soluções",
+      titleEn: "Gateway to Engaja Soluções",
+      descPt: "O sucesso desta arquitetura abriu as portas para a contratação de Pietro na Engaja, atuando na estrutura e manutenção de agentes de IA.",
+      descEn: "The success of this architecture directly landed Pietro his job at Engaja Soluções Corporativas building AI agent infrastructure.",
+      iconPt: "// OPORTUNIDADE ENGAJA",
+      iconEn: "// ENGAJA OPPORTUNITY"
     },
     {
-      titlePt: "Jogos Interativos",
-      titleEn: "Interactive Word Games",
-      descPt: "Possui minijogos de adivinhação de palavras como 'Termo' e 'Dueto' embutidos diretamente no fluxo de conversas.",
-      descEn: "Features built-in word-guessing games like 'Termo' and 'Dueto' directly playable in your WhatsApp chat.",
-      iconPt: "// JOGOS",
-      iconEn: "// PLAY"
+      titlePt: "Automação de Jornal Diário em Grupos",
+      titleEn: "Daily News Feed Automation",
+      descPt: "Disparo diário automatizado de resumos de notícias personalizados e boletins informativos em múltiplos grupos do WhatsApp.",
+      descEn: "Automated daily dispatch of custom news summaries and newsletters to multiple WhatsApp communities.",
+      iconPt: "// AUTOMAÇÃO DIÁRIA",
+      iconEn: "// DAILY NEWS FEED"
     },
     {
-      titlePt: "Automação SDR & Jornal",
-      titleEn: "SDR & News Automation",
-      descPt: "Atua como agente inteligente de SDR e alimenta vários grupos com uma automação de jornal diário personalizado.",
-      descEn: "Acts as an intelligent SDR agent and feeds multiple groups with a customized daily news automation.",
-      iconPt: "// AUTOMAÇÃO",
-      iconEn: "// AUTOMATION"
+      titlePt: "Memória Persistente & Jogos (Termo/Dueto)",
+      titleEn: "Persistent Memory & Word Games",
+      descPt: "Manutenção do contexto de conversa por usuário e integração de jogos interativos de adivinhação de palavras diretamente no chat.",
+      descEn: "Maintains full contextual memory per user with built-in interactive word games directly playable in WhatsApp.",
+      iconPt: "// MEMÓRIA & JOGOS",
+      iconEn: "// MEMORY & GAMES"
     }
   ];
 
   return (
     <div className="page pitcraft-page">
       <div className="container">
-        
-
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Artificial Intelligence</div>
+            <div className="hero-tag">JavaScript • Node.js • Evolution API • LLMs (Maritaca)</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
-              WhatsApp Bot
+              Bot de WhatsApp
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Um agente inteligente conversacional integrado ao WhatsApp via Evolution API. Oferece memória persistente, resumos diários de notícias e jogos de texto interativos."
-                : "An intelligent conversational agent integrated with WhatsApp via Evolution API, featuring persistent memory, daily news summaries, and interactive text games."
+                ? "Ecossistema de IA e automação para WhatsApp. Representou a primeira experiência de Pietro integrando LLMs e APIs em JavaScript — projeto determinante para a sua contratação na Engaja Soluções Corporativas."
+                : "AI & automation ecosystem for WhatsApp. Marked Pietro's first hands-on experience integrating LLMs and APIs in JavaScript — the pivotal project that secured his position at Engaja Soluções Corporativas."
               }
             </p>
 
-            <div style={{ marginTop: "2rem" }}>
+            <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
                 href="https://github.com/PietroTy/bot-whatsapp"
                 target="_blank"
@@ -87,6 +85,49 @@ export default function WhatsAppBotPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Career Milestone Story Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(34, 197, 94, 0.06)",
+            border: "1px solid rgba(34, 197, 94, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#22c55e", marginBottom: "1rem" }}>
+            {pt ? "🚀 O Projeto que Abriu as Portas da Minha Carreira" : "🚀 The Project that Launched My Career"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  O <strong>Bot de WhatsApp</strong> foi a minha primeira grande experiência prática integrando APIs REST e modelos de linguagem (LLMs) via JavaScript. Ele serviu como laboratório para dominar gestão de estado conversacional, tratamento de dados em tempo real e webhooks.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  A proficiência técnica demonstrada neste projeto foi o diferencial que me <strong>conseguiu o primeiro emprego na Engaja Soluções Corporativas</strong>, onde fui contratado para projetar a estrutura, arquitetura e manutenção de agentes de IA para clientes enterprise.
+                </p>
+                <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
+                  📰 <i>Atualmente, o bot continua 100% ativo, realizando disparos automáticos diários de jornais e resumos de notícias personalizados em diversos grupos do WhatsApp.</i>
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  The <strong>WhatsApp Bot</strong> was my very first hands-on experience building REST API integrations and Large Language Models (LLMs) with JavaScript. It served as a real-world playground for mastering conversational state, data handling, and webhooks.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  The technical expertise showcased in this project was the exact catalyst that <strong>landed my job at Engaja Soluções Corporativas</strong>, where I was brought on to architect and maintain enterprise AI agent infrastructure.
+                </p>
+                <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
+                  📰 <i>Today, the bot remains 100% active, dispatching automated daily news feeds and custom newsletters to multiple WhatsApp communities.</i>
+                </p>
+              </>
+            )}
+          </div>
+        </section>
+
         {/* Feature Grid */}
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
@@ -96,6 +137,44 @@ export default function WhatsAppBotPage({ lang, setPage }) {
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
           ))}
+        </section>
+
+        {/* Tech Stack Footer */}
+        <section style={{ marginTop: "4rem", borderTop: "1px solid var(--border)", paddingTop: "3rem", paddingBottom: "2rem" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2rem" }}>
+            <div>
+              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
+                {pt ? "Linguagem" : "Language"}
+              </h4>
+              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
+                Node.js & JavaScript (ES6+)
+              </p>
+            </div>
+            <div>
+              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
+                {pt ? "Modelos de IA" : "AI Models"}
+              </h4>
+              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
+                Maritaca LLM API (Sabiá)
+              </p>
+            </div>
+            <div>
+              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
+                {pt ? "Gateway API" : "API Gateway"}
+              </h4>
+              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
+                Evolution API & Webhooks
+              </p>
+            </div>
+            <div>
+              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
+                {pt ? "Impacto na Carreira" : "Career Impact"}
+              </h4>
+              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
+                Contratação na Engaja Soluções
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Lightbox Image Modal */}
@@ -137,51 +216,20 @@ export default function WhatsAppBotPage({ lang, setPage }) {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={modalData} 
-                alt="WhatsApp Bot Screenshot"
+                src={typeof modalData === "string" ? modalData : modalData.img} 
+                alt="Enlarged preview"
                 style={{
-                  maxHeight: "80vh",
-                  maxWidth: "100%",
+                  maxHeight: "75vh",
+                  maxWidth: "80vw",
+                  width: "auto",
+                  height: "auto",
                   objectFit: "contain",
-                  borderRadius: "28px",
-                  boxShadow: "0 25px 60px rgba(0, 0, 0, 0.9)",
-                  border: "3px solid rgba(255,255,255,0.2)"
+                  borderRadius: "12px"
                 }}
               />
             </div>
           </div>
         )}
-
-        {/* Tech Stack Footer */}
-        <section style={{ marginTop: "4rem", borderTop: "1px solid var(--border)", paddingTop: "3rem", paddingBottom: "2rem" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2rem" }}>
-            <div>
-              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Linguagem" : "Language"}
-              </h4>
-              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Node.js & JavaScript
-              </p>
-            </div>
-            <div>
-              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Modelos de IA" : "AI Models"}
-              </h4>
-              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Maritaca LLM API (Sabiá-2)
-              </p>
-            </div>
-            <div>
-              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Integração WhatsApp" : "WhatsApp Integration"}
-              </h4>
-              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Evolution API gateway
-              </p>
-            </div>
-          </div>
-        </section>
-
       </div>
     </div>
   );

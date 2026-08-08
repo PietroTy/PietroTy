@@ -7,12 +7,28 @@ export default function MagikTarotPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Integração Mercado Pago",
-      titleEn: "Mercado Pago Integration",
+      titlePt: "Assets Visuais Gerados por IA",
+      titleEn: "AI-Generated Visual Assets",
+      descPt: "Toda a direção de arte, ilustrações das cartas e elementos visuais da plataforma foram gerados via Inteligência Artificial.",
+      descEn: "Complete art direction, card illustrations, and platform visual elements generated via Generative AI.",
+      iconPt: "// ARTES GERADAS POR IA",
+      iconEn: "// AI GENERATED ART"
+    },
+    {
+      titlePt: "Google Ads & Tag Manager (GTM)",
+      titleEn: "Google Ads & Tag Manager (GTM)",
+      descPt: "Configuração completa de tagueamento avançado com Google Tag Manager, pixels de conversão e gestão de campanhas de tráfego no Google Ads.",
+      descEn: "Advanced tagging setup with Google Tag Manager, conversion tracking pixels, and paid traffic campaign management in Google Ads.",
+      iconPt: "// GOOGLE ADS & GTM",
+      iconEn: "// ADS & TRACKING"
+    },
+    {
+      titlePt: "Checkout Mercado Pago & Webhooks",
+      titleEn: "Mercado Pago Checkout & Webhooks",
       descPt: "Checkout transparente automatizado com webhooks de confirmação instantânea para liberação automática de tiragens de Tarot.",
       descEn: "Transparent automated checkout with instant confirmation webhooks for automated Tarot reading delivery.",
-      iconPt: "// PAGAMENTOS",
-      iconEn: "// PAYMENT"
+      iconPt: "// CHECKOUT TRANSPARENTE",
+      iconEn: "// PAYMENT GATEWAY"
     },
     {
       titlePt: "Áudio Ambiente & Relatórios PDF",
@@ -21,22 +37,6 @@ export default function MagikTarotPage({ lang, setPage }) {
       descEn: "Immersive experience with ambient audio tracks and automatic export of detailed Tarot reading reports in PDF format.",
       iconPt: "// ÁUDIO & PDF",
       iconEn: "// AUDIO & PDF"
-    },
-    {
-      titlePt: "Painel Administrativo & Métricas",
-      titleEn: "Admin Dashboard & Metrics",
-      descPt: "Painel completo para gestão de consultas, controle financeiro, métricas de vendas e administração do catálogo de leituras.",
-      descEn: "Complete dashboard for managing readings, financial metrics, sales reports, and consultation catalog administration.",
-      iconPt: "// PAINEL ADMIN",
-      iconEn: "// DASHBOARD"
-    },
-    {
-      titlePt: "Otimização SEO & Performance",
-      titleEn: "SEO Optimization & Performance",
-      descPt: "Rotas estáticas estruturadas para mecanismos de busca, metadados OpenGraph ricos e tempos de carregamento otimizados.",
-      descEn: "Static routes optimized for search engines, rich OpenGraph metadata, and tuned load performance.",
-      iconPt: "// SEO & PERFORMANCE",
-      iconEn: "// SEO & PERF"
     }
   ];
 
@@ -46,14 +46,14 @@ export default function MagikTarotPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">React • Node.js • E-Commerce</div>
+            <div className="hero-tag">React • Node.js • E-Commerce • AI Art Assets • Google Ads</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               MagikTarot
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Plataforma comercial automatizada de consultas de Tarot. Conta com pagamentos via Mercado Pago, áudio imersivo, geração de relatórios em PDF e painel administrativo."
-                : "Automated commercial Tarot consultation platform featuring Mercado Pago payments, ambient audio, PDF report generation, and an administrative dashboard."
+                ? "Plataforma comercial de Tarot com ecossistema digital completo. Desenvolvida 100% por Pietro, com assets visuais gerados por IA, campanhas no Google Ads, tagueamento com Google Tag Manager e Mercado Pago."
+                : "Commercial Tarot platform with a full digital ecosystem. Built 100% by Pietro, featuring AI-generated visual assets, Google Ads campaigns, Google Tag Manager tracking, and Mercado Pago checkout."
               }
             </p>
 
@@ -85,6 +85,33 @@ export default function MagikTarotPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Story Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(124, 58, 237, 0.06)",
+            border: "1px solid rgba(124, 58, 237, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem" }}>
+            {pt ? "🔮 Plataforma E-Commerce & Tráfego Pago" : "🔮 Full E-Commerce Platform & Paid Traffic"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <p>
+                Semelhante ao escopo do <i>Bleach.co</i>, o <strong>MagikTarot</strong> foi projetado e desenvolvido integralmente por Pietro. Toda a identidade artística e ilustrações de cartas foram produzidas via <strong>Inteligência Artificial Generativa</strong>. Além do código frontend/backend, Pietro configurou toda a estrutura de tráfego pago, incluindo criação de campanhas no <strong>Google Ads</strong> e implementação avançada de tagueamento de eventos via <strong>Google Tag Manager (GTM)</strong>.
+              </p>
+            ) : (
+              <p>
+                Similar in scope to <i>Bleach.co</i>, <strong>MagikTarot</strong> was architected and built end-to-end by Pietro. All visual assets and card art were created using <strong>Generative AI</strong>. Beyond frontend and backend engineering, Pietro managed paid acquisition by building <strong>Google Ads</strong> campaigns and implementing event tracking via <strong>Google Tag Manager (GTM)</strong>.
+              </p>
+            )}
+          </div>
+        </section>
+
         {/* Feature Grid */}
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
@@ -101,34 +128,26 @@ export default function MagikTarotPage({ lang, setPage }) {
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2rem" }}>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Frontend" : "Frontend"}
+                {pt ? "Frontend & Node.js" : "Frontend & Node.js"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                React & Modern CSS
+                React & Node.js API
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Backend & APIs" : "Backend & APIs"}
+                {pt ? "Assets Visuals" : "Visual Assets"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Node.js & Express
+                Generative AI Art
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Gateway de Pagamento" : "Payment Gateway"}
+                {pt ? "Tráfego & Analytics" : "Traffic & Analytics"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Mercado Pago API
-              </p>
-            </div>
-            <div>
-              <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Geração & SEO" : "Generation & SEO"}
-              </h4>
-              <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                PDF Engine & Static SEO
+                Google Ads & Google Tag Manager
               </p>
             </div>
           </div>
