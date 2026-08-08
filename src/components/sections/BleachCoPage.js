@@ -7,36 +7,36 @@ export default function BleachCoPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Design Minimalista Streetwear",
-      titleEn: "Minimalist Streetwear Aesthetic",
-      descPt: "Identidade visual conceitual com tipografia contemporânea, paleta de cores monocromática e composição limpa inspirada na cultura urbana.",
-      descEn: "Conceptual visual identity featuring contemporary typography, monochrome palette, and clean urban streetwear compositions.",
-      iconPt: "// DESIGN CONCEITUAL",
-      iconEn: "// STREETWEAR DESIGN"
+      titlePt: "Processos de Pagamento & Frete",
+      titleEn: "Payment Gateways & Freight Engine",
+      descPt: "Integração nativa de checkout para pagamentos via PIX/Cartão e calculador de frete em tempo real com regras de envio.",
+      descEn: "Native checkout integration for instant PIX/Credit payments and real-time shipping cost calculator with custom rules.",
+      iconPt: "// CHECKOUT & FRETE",
+      iconEn: "// CHECKOUT & SHIPPING"
+    },
+    {
+      titlePt: "Identidade Visual & Direção de Fotografia",
+      titleEn: "Visual Identity & Photography Direction",
+      descPt: "Concepção completa da marca, criação de logo, escolha tipográfica e fotografia autoral para assets do site e propagandas.",
+      descEn: "Complete brand conceptualization, logo creation, typography, and original photography for website assets and ad campaigns.",
+      iconPt: "// FOTOGRAFIA & ASSETS",
+      iconEn: "// BRANDING & PHOTOS"
+    },
+    {
+      titlePt: "Produção, SEO & Marketing",
+      titleEn: "Apparel Production, SEO & Marketing",
+      descPt: "Acompanhamento do processo fabril das camisetas, otimização de SEO para busca orgânica e estratégia de tráfego.",
+      descEn: "Hands-on garment manufacturing pipeline supervision, SEO search engine optimization, and performance marketing.",
+      iconPt: "// PRODUÇÃO & SEO",
+      iconEn: "// PRODUCTION & SEO"
     },
     {
       titlePt: "Arquitetura React & Next.js",
       titleEn: "React & Next.js Architecture",
-      descPt: "Desenvolvimento com Server-Side Rendering (SSR) e otimização dinâmica para carregamento instantâneo de coleções e produtos.",
+      descPt: "Desenvolvimento com Server-Side Rendering (SSR) e otimização dinâmica para navegação tátil e fluida.",
       descEn: "Built with Server-Side Rendering (SSR) and dynamic optimizations for instant catalog and product page loads.",
       iconPt: "// REACT & NEXT.JS",
       iconEn: "// NEXT.JS ENGINE"
-    },
-    {
-      titlePt: "Micro-interações & Animações Fluidas",
-      titleEn: "Micro-interactions & Smooth Motion",
-      descPt: "Efeitos interativos de hover, transições de imagem suaves e navegação tátil projetada para elevar a experiência da marca.",
-      descEn: "Interactive hover states, fluid image crossfades, and tactile navigation designed to elevate brand engagement.",
-      iconPt: "// INTERAÇÃO & ANIMAÇÃO",
-      iconEn: "// MOTION UX"
-    },
-    {
-      titlePt: "Catálogo & Experiência de E-Commerce",
-      titleEn: "Catalog & E-Commerce Flow",
-      descPt: "Layout fluido para vitrine de peças, visualização de detalhes de produtos, seleção de tamanhos e fluxo conceitual de checkout.",
-      descEn: "Fluid showcase layouts for streetwear apparel, product detail viewports, size selection, and conceptual checkout.",
-      iconPt: "// E-COMMERCE",
-      iconEn: "// SHOPPING FLOW"
     }
   ];
 
@@ -46,14 +46,14 @@ export default function BleachCoPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">React • Next.js • E-Commerce Conceitual • Streetwear</div>
+            <div className="hero-tag">React • Next.js • E-Commerce • Marca Própria de Streetwear</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Bleach.co
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Plataforma institucional e e-commerce conceitual desenvolvido para marca de streetwear. Apresenta design minimalista, transições de imagem de alta fidelidade e arquitetura em Next.js com alto desempenho."
-                : "Conceptual institutional website and e-commerce platform built for a streetwear brand. Features minimalist aesthetics, high-fidelity visual transitions, and high-performance Next.js architecture."
+                ? "Marca autoral de camisetas e e-commerce de streetwear desenvolvido integralmente do zero. Cobertura completa: idealização de marca, identidade visual, pagamentos, frete, fotografia de assets, marketing e SEO."
+                : "Own streetwear t-shirt brand and e-commerce platform built from scratch. End-to-end coverage: brand conceptualization, visual identity, payments, freight, photography, marketing, and SEO."
               }
             </p>
 
@@ -85,6 +85,43 @@ export default function BleachCoPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Dedicated Story & Concept Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(255, 255, 255, 0.04)",
+            border: "1px solid rgba(255, 255, 255, 0.15)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#fff", marginBottom: "1rem" }}>
+            {pt ? "👕 Marca Autoral & Ecossistema de E-Commerce Completo" : "👕 Own Streetwear Brand & Full E-Commerce Ecosystem"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  A <strong>Bleach.co</strong> é a minha marca própria de camisetas streetwear, projetada do conceito inicial à operação final. Todo o site e a estrutura tecnológica foram desenvolvidos inteiramente por mim — incluindo os processos de pagamento (checkout transparente), cálculo automatizado de frete, estratégias de SEO e marketing.
+                </p>
+                <p style={{ margin: 0 }}>
+                  Além do desenvolvimento de software em React/Next.js, atuei diretamente na idealização da marca, identidade visual, acompanhamento dos processos de produção têxtil e na <strong>direção de fotografia autoral</strong> para a produção de assets visuais e campanhas publicitárias do site, sempre com o objetivo de entregar uma estética marcante e uma experiência de compra completamente sem fricção (<i>seamless</i>).
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  <strong>Bleach.co</strong> is my own streetwear apparel brand, built from initial concept to live operations. The entire website and tech stack were built single-handedly — including payment gateways, automated shipping cost calculation, SEO strategy, and marketing pipelines.
+                </p>
+                <p style={{ margin: 0 }}>
+                  Beyond software engineering with React/Next.js, I handled brand conceptualization, visual identity, garment manufacturing supervision, and <strong>original photography direction</strong> for website assets and ad campaigns — with the core goal of delivering a bold visual identity and a <i>seamless</i> client experience.
+                </p>
+              </>
+            )}
+          </div>
+        </section>
+
         {/* Feature Grid */}
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
@@ -109,18 +146,18 @@ export default function BleachCoPage({ lang, setPage }) {
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Estilização" : "Styling System"}
+                {pt ? "Pagamentos & Frete" : "Payments & Shipping"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                CSS Modules & Flexbox/Grid
+                PIX, Cartão & Calculador de Frete
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Estilo Visual" : "Visual Identity"}
+                {pt ? "Assets & Fotografia" : "Assets & Media"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Minimalist Monochromatic Streetwear
+                Direção de Fotografia & SEO
               </p>
             </div>
           </div>
