@@ -86,17 +86,17 @@ export default function GameOfDronesPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(16, 185, 129, 0.06)",
-            border: "1px solid rgba(16, 185, 129, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#10b981", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// CAPITANIA DE SOFTWARE, YOLOv8n & BI-CLASSIFICAÇÃO SAE" : "// SOFTWARE CAPTAINCY, YOLOv8n & SAE BI-QUALIFICATION"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>

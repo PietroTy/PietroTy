@@ -89,17 +89,17 @@ export default function BleachCoPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(255, 255, 255, 0.04)",
-            border: "1px solid rgba(255, 255, 255, 0.15)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#fff", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// MARCA AUTORAL & ECOSSISTEMA E-COMMERCE" : "// OWN BRAND & E-COMMERCE ECOSYSTEM"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>

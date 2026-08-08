@@ -74,14 +74,14 @@ export default function CVMakerPage({ lang, setPage }) {
               style={{
                 width: "260px",
                 height: "200px",
-                background: "linear-gradient(135deg, #1e40af, #3b82f6)",
+                background: "linear-gradient(135deg, var(--p1), var(--p2))",
                 borderRadius: "20px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "10px",
-                border: "2px solid var(--border)",
+                border: "1px solid var(--border)",
                 boxShadow: "0 15px 40px rgba(0,0,0,0.4)",
                 cursor: "pointer"
               }}
@@ -97,17 +97,17 @@ export default function CVMakerPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(59, 130, 246, 0.06)",
-            border: "1px solid rgba(59, 130, 246, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#3b82f6", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// OTIMIZAÇÃO DE PROCESSO & ALGORITMOS ATS" : "// WORKFLOW OPTIMIZATION & ATS ALGORITHMS"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
@@ -196,8 +196,8 @@ export default function CVMakerPage({ lang, setPage }) {
                 position: "relative",
                 maxWidth: "500px",
                 padding: "2.5rem",
-                background: "linear-gradient(135deg, #1e40af, var(--card))",
-                border: "2px solid var(--border)",
+                background: "linear-gradient(135deg, var(--p1), var(--card))",
+                border: "1px solid var(--border)",
                 borderRadius: "24px",
                 textAlign: "center",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",

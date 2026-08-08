@@ -79,7 +79,7 @@ export default function WhatsAppBotPage({ lang, setPage }) {
                 src={screenshotImg} 
                 alt="WhatsApp Bot Preview" 
                 className="hero-image" 
-                style={{ maxWidth: "300px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "2px solid var(--border)" }}
+                style={{ maxWidth: "300px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "1px solid var(--border)" }}
               />
             </div>
           </div>
@@ -89,17 +89,17 @@ export default function WhatsAppBotPage({ lang, setPage }) {
         <section 
           style={{
             marginTop: "3.5rem",
-            background: "rgba(34, 197, 94, 0.06)",
-            border: "1px solid rgba(34, 197, 94, 0.25)",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
             borderRadius: "20px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#22c55e", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
             {pt ? "// MARCO NA CARREIRA & OPORTUNIDADE ENGAJA" : "// CAREER MILESTONE & ENGAJA OPPORTUNITY"}
           </h2>
-          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+          <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
