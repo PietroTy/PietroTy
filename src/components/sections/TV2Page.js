@@ -238,27 +238,6 @@ export default function TV2Page({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={() => setModalData(null)}
-                style={{
-                  position: "absolute",
-                  top: "12px",
-                  right: "12px",
-                  width: "36px",
-                  height: "36px",
-                  borderRadius: "50%",
-                  background: "rgba(255,255,255,0.1)",
-                  color: "#fff",
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  fontSize: "1.1rem",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}
-              >
-                ✕
-              </button>
               <img 
                 src={typeof modalData === "string" ? modalData : modalData.img} 
                 alt="Enlarged preview"

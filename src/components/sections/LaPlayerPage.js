@@ -305,31 +305,6 @@ export default function LaPlayerPage({ lang, setPage }) {
                 alignItems: "center"
               }}
             >
-              <button
-                onClick={() => setModalData(null)}
-                style={{
-                  position: "absolute",
-                  top: "-50px",
-                  right: "0",
-                  background: "rgba(255,255,255,0.2)",
-                  border: "none",
-                  color: "#fff",
-                  fontSize: "1.5rem",
-                  width: "42px",
-                  height: "42px",
-                  borderRadius: "50%",
-                  background: "rgba(255,255,255,0.1)",
-                  color: "#fff",
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  fontSize: "1.1rem",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}
-              >
-                ✕
-              </button>
               <img 
                 src={typeof modalData === "string" ? modalData : modalData.img} 
                 alt={typeof modalData === "string" ? "LaPlayer Preview" : (pt ? modalData.titlePt : modalData.titleEn)}
