@@ -2,6 +2,7 @@ import React from "react";
 
 export default function DiscordBotPage({ lang, setPage }) {
   const pt = lang === "pt";
+  const [modalData, setModalData] = React.useState(null);
 
   const features = [
     {
@@ -30,9 +31,6 @@ export default function DiscordBotPage({ lang, setPage }) {
   return (
     <div className="page pitcraft-page">
       <div className="container">
-        
-
-
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
@@ -73,8 +71,10 @@ export default function DiscordBotPage({ lang, setPage }) {
                 alignItems: "center",
                 gap: "10px",
                 border: "2px solid var(--border)",
-                boxShadow: "0 10px 40px rgba(0,0,0,0.3)"
+                boxShadow: "0 10px 40px rgba(0,0,0,0.3)",
+                cursor: "pointer"
               }}
+              onClick={() => setModalData("card")}
             >
               <div style={{ fontFamily: "var(--mono)", color: "#fff", fontSize: "1.2rem", fontWeight: "bold" }}>[DISCORD BOT]</div>
               <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Node.js / Discord.js</div>
@@ -123,6 +123,46 @@ export default function DiscordBotPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Lightbox Image Modal */}
+        {modalData && (
+          <div 
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0,0,0,0.85)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "2rem"
+            }}
+            onClick={() => setModalData(null)}
+          >
+            <div 
+              style={{
+                maxWidth: "500px",
+                width: "90vw",
+                padding: "3rem",
+                background: "linear-gradient(135deg, #5865f2, var(--card))",
+                borderRadius: "24px",
+                border: "2px solid var(--border)",
+                textAlign: "center",
+                boxShadow: "0 20px 60px rgba(0,0,0,0.6)"
+              }}
+            >
+              <h2 style={{ fontSize: "2rem", color: "#fff", marginBottom: "1rem", fontFamily: "var(--mono)" }}>[DISCORD BOT API]</h2>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", lineHeight: 1.6 }}>
+                {pt 
+                  ? "Bot multifuncional de Discord desenvolvido em Node.js com Discord.js v14, moderação inteligente, jogos de economia e integração de dados."
+                  : "Multifunctional Discord bot built in Node.js with Discord.js v14, intelligent moderation, virtual economy mini-games, and data integration."
+                }
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
