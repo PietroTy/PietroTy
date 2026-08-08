@@ -52,8 +52,8 @@ export default function DSHubPage({ lang, setPage }) {
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Portal centralizado de soluções de Inteligência de Dados, Machine Learning e Business Intelligence. Reúne cases práticos de fintech, crédito, growth analytics e saúde preditiva."
-                : "Centralized Data Intelligence, Machine Learning, and Business Intelligence solutions portal. Features real-world fintech, credit scoring, growth analytics, and predictive health cases."
+                ? "Portal centralizado criado para expor publicamente análises de dados pontuais e estudos de caso — combinando demonstrações dinâmicas interativas e modelos teóricos para atestar a proficiência prática em Data Science."
+                : "Centralized hub designed to publicly showcase specialized data analyses and case studies — combining interactive dynamic demos and theoretical models to validate practical Data Science expertise."
               }
             </p>
 
@@ -82,6 +82,33 @@ export default function DSHubPage({ lang, setPage }) {
                 style={{ maxWidth: "340px", display: "block" }}
               />
             </div>
+          </div>
+        </section>
+
+        {/* Dedicated Purpose Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(14, 165, 233, 0.06)",
+            border: "1px solid rgba(14, 165, 233, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#0ea5e9", marginBottom: "1rem" }}>
+            {pt ? "📊 Propósito do Data Science Hub" : "📊 Purpose of Data Science Hub"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <p>
+                O <strong>Data Science Hub</strong> foi construído com o objetivo de centralizar e expor publicamente em um único lugar todas as análises de dados mais pontuais desenvolvidas ao longo de estudos e projetos. O portal agrupa desde <strong>demonstrações dinâmicas e interativas</strong> (com simulação de parâmetros em tempo real) até <strong>estudos de caso demonstrativos e teóricos</strong> (explicando a matemática, validação e métricas dos modelos), atestando a capacidade de transformar dados brutos em decisões estratégicas.
+              </p>
+            ) : (
+              <p>
+                The <strong>Data Science Hub</strong> was built to unify and publicly display specialized data analyses developed across research and business projects in a single location. The portal aggregates everything from <strong>dynamic, interactive demonstrations</strong> (with real-time parameter tuning) to <strong>explanatory and theoretical case studies</strong> (detailing mathematical foundations, model validation, and metrics), validating the end-to-end ability to turn raw data into strategic decisions.
+              </p>
+            )}
           </div>
         </section>
 
