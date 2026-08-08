@@ -185,7 +185,7 @@ const SYSTEM_PROMPT_PT = `
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM Corporativo, BI e Integrações — Engaja</name>
+                <name>CRM Corporativo, BI e Integrações</name>
                 <type>Solução corporativa privada</type>
                 <description>CRM corporativo customizado arquitetado, desenvolvido, implantado e posteriormente comercializado para novos clientes. Integra bancos PostgreSQL, dashboards e relatórios executivos no Power BI, automações com n8n/Python e integrações com Evolution API, Chatwoot, Cloudfy, Stripe e APIs de negócio.</description>
                 <technologies>PostgreSQL, Power BI, DAX, Power Query, n8n, Python, Evolution API, Chatwoot, Cloudfy, Stripe, REST APIs</technologies>
@@ -803,7 +803,7 @@ const SYSTEM_PROMPT_EN = `
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM Corporativo, BI e Integrações — Engaja</name>
+                <name>CRM Corporativo, BI e Integrações</name>
                 <type>Solução corporativa privada</type>
                 <description>Custom corporate CRM architected, developed, deployed, and later commercialized to new clients. It integrates PostgreSQL databases, Power BI executive dashboards and reports, n8n/Python automation, and business integrations using Evolution API, Chatwoot, Cloudfy, Stripe, and APIs.</description>
                 <technologies>PostgreSQL, Power BI, DAX, Power Query, n8n, Python, Evolution API, Chatwoot, Cloudfy, Stripe, REST APIs</technologies>
