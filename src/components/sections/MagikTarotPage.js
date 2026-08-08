@@ -96,8 +96,8 @@ export default function MagikTarotPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem" }}>
-            {pt ? "🔮 Plataforma E-Commerce & Tráfego Pago" : "🔮 Full E-Commerce Platform & Paid Traffic"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// E-COMMERCE & TRÁFEGO PAGO" : "// E-COMMERCE & PAID TRAFFIC"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (

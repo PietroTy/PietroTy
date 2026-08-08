@@ -96,8 +96,8 @@ export default function StickersBotPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#14b8a6", marginBottom: "1rem" }}>
-            {pt ? "📦 De Módulo Interno a Produto Independente com Escala" : "📦 From Internal Module to Standalone Scaled Product"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#14b8a6", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// SPIN-OFF INDEPENDENTE & ESCALA DE USUÁRIOS" : "// INDEPENDENT SPIN-OFF & USER SCALE"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (

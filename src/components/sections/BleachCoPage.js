@@ -96,8 +96,8 @@ export default function BleachCoPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#fff", marginBottom: "1rem" }}>
-            {pt ? "👕 Marca Autoral & Ecossistema de E-Commerce Completo" : "👕 Own Streetwear Brand & Full E-Commerce Ecosystem"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#fff", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// MARCA AUTORAL & ECOSSISTEMA E-COMMERCE" : "// OWN BRAND & E-COMMERCE ECOSYSTEM"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (

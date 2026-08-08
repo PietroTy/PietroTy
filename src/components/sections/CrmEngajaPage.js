@@ -57,8 +57,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
             </p>
 
             <div style={{ marginTop: "2rem" }}>
-              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9 }}>
-                🔒 {pt ? "Em Uso em Produção por Empresa Privada (NDA)" : "Active Production Use by Private Enterprise (NDA)"}
+              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
+                // {pt ? "EM OPERAÇÃO PRIVADA (NDA)" : "ACTIVE PRIVATE PRODUCTION (NDA)"}
               </span>
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
               }}
               onClick={() => setModalData("crm_card")}
             >
-              <div style={{ fontSize: "3.5rem" }}>📊</div>
-              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.1rem" }}>CRM & BI System</div>
+              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.8rem" }}>CRM</div>
+              <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.8)", fontWeight: "bold", fontSize: "0.9rem" }}>CRM & BI System</div>
             </div>
           </div>
         </section>
@@ -98,8 +98,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem" }}>
-            {pt ? "🔒 Operação Comercial em Produção & Sigilo de Arquitetura" : "🔒 Active Corporate Operation & Confidentiality"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// OPERAÇÃO COMERCIAL EM PRODUÇÃO & SIGILO CORPORATIVO" : "// ACTIVE CORPORATE OPERATION & CONFIDENTIALITY"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -207,7 +207,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div style={{ fontSize: "5rem", marginBottom: "1rem" }}>📊</div>
+              <div style={{ fontFamily: "var(--mono)", fontSize: "3rem", fontWeight: "bold", color: "#fff", marginBottom: "1rem" }}>CRM</div>
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>CRM & BI System</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 
