@@ -11,21 +11,24 @@ export default function EriumPage({ lang, setPage }) {
       titleEn: "Baggage Calculator",
       descPt: "Módulo interativo para pesagem, dimensões e cálculo de taxas adicionais com base em diretrizes reais da ANAC.",
       descEn: "Interactive module for weighing, dimension check, and fee calculations based on real ANAC guidelines.",
-      icon: "// BAGGAGE"
+      iconPt: "// BAGAGEM",
+      iconEn: "// BAGGAGE"
     },
     {
       titlePt: "Controle de Passaporte",
       titleEn: "Passport Validation",
       descPt: "Checklist inteligente e simulador de requisitos para emissão e validade de documentos internacionais de viagem.",
       descEn: "Smart checklist and requirements simulator for the issuance and validity of international travel documents.",
-      icon: "// PASSPORT"
+      iconPt: "// PASSAPORTE",
+      iconEn: "// PASSPORT"
     },
     {
       titlePt: "Normas de Voo",
       titleEn: "Flight Regulations",
       descPt: "Biblioteca centralizada de regras de conduta, direitos do passageiro e regulamentos de segurança de aviação.",
       descEn: "Centralized library of conduct rules, passenger rights, and aviation safety regulations.",
-      icon: "// RULES"
+      iconPt: "// NORMAS E REGRAS",
+      iconEn: "// RULES"
     }
   ];
 
@@ -39,13 +42,13 @@ export default function EriumPage({ lang, setPage }) {
             <div className="hero-tag">
               {pt ? "TCC • Ensino Técnico em Desenvolvimento de Sistemas (CPS / ETEC)" : "Capstone • Systems Development Tech Degree (CPS / ETEC)"}
             </div>
-            <h1 className="hero-title">
+            <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Erium TCC
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Trabalho de Conclusão de Curso (TCC) do Ensino Técnico em Desenvolvimento de Sistemas no Centro Paula Souza (ETEC). Um toolkit full-stack completo para auxílio a passageiros de viagens aéreas, com frontend em TypeScript/Vite/React e backend em Node.js/Express na Vercel."
-                : "Capstone Project (TCC) for the Systems Development Tech Degree at Centro Paula Souza (ETEC). A full-stack air travel passenger toolkit with a TypeScript/Vite/React frontend and Node.js/Express backend on Vercel."
+                ? "Toolkit digital de apoio ao passageiro aéreo. Desenvolvido como Trabalho de Conclusão de Curso (TCC) no curso Técnico em Desenvolvimento de Sistemas da ETEC / Centro Paula Souza."
+                : "Digital flight passenger support toolkit. Developed as the final capstone project for the Systems Development technical degree at ETEC / Centro Paula Souza."
               }
             </p>
 
@@ -90,7 +93,7 @@ export default function EriumPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

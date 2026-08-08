@@ -11,28 +11,32 @@ export default function MagikTarotPage({ lang, setPage }) {
       titleEn: "Mercado Pago Integration",
       descPt: "Checkout transparente automatizado com webhooks de confirmação instantânea para liberação automática de tiragens de Tarot.",
       descEn: "Transparent automated checkout with instant confirmation webhooks for automated Tarot reading delivery.",
-      icon: "// PAYMENT"
+      iconPt: "// PAGAMENTOS",
+      iconEn: "// PAYMENT"
     },
     {
       titlePt: "Áudio Ambiente & Relatórios PDF",
       titleEn: "Ambient Audio & PDF Reports",
       descPt: "Experiência imersiva com áudio ambiente e geração de relatórios detalhados em PDF para download ao final da consulta.",
       descEn: "Immersive experience with ambient audio tracks and automatic export of detailed Tarot reading reports in PDF format.",
-      icon: "// AUDIO & PDF"
+      iconPt: "// ÁUDIO & PDF",
+      iconEn: "// AUDIO & PDF"
     },
     {
       titlePt: "Painel Administrativo & Métricas",
       titleEn: "Admin Dashboard & Metrics",
       descPt: "Painel completo para gestão de consultas, controle financeiro, métricas de vendas e administração do catálogo de leituras.",
       descEn: "Complete dashboard for managing readings, financial metrics, sales reports, and consultation catalog administration.",
-      icon: "// DASHBOARD"
+      iconPt: "// PAINEL ADMIN",
+      iconEn: "// DASHBOARD"
     },
     {
       titlePt: "Otimização SEO & Performance",
       titleEn: "SEO Optimization & Performance",
       descPt: "Rotas estáticas estruturadas para mecanismos de busca, metadados OpenGraph ricos e tempos de carregamento otimizados.",
       descEn: "Static routes optimized for search engines, rich OpenGraph metadata, and tuned load performance.",
-      icon: "// SEO & PERF"
+      iconPt: "// SEO & PERFORMANCE",
+      iconEn: "// SEO & PERF"
     }
   ];
 
@@ -85,7 +89,7 @@ export default function MagikTarotPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

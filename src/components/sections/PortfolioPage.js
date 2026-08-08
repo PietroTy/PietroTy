@@ -11,21 +11,24 @@ export default function PortfolioPage({ lang, setPage }) {
       titleEn: "Biographical AI Chatbot",
       descPt: "Um agente conversacional de inteligência artificial alimentado por dados biográficos para responder a recrutadores e visitantes.",
       descEn: "A biographical AI-powered chatbot designed to answer recruiter and visitor questions in real-time.",
-      icon: "// CHATBOT"
+      iconPt: "// CHATBOT IA",
+      iconEn: "// CHATBOT"
     },
     {
       titlePt: "Suporte Bilíngue Nativo",
       titleEn: "Native Bilingual Support",
       descPt: "Alternância fluida e instantânea entre os idiomas Português e Inglês em todas as seções e descrições.",
       descEn: "Seamless and instant language toggle between Portuguese and English across all pages and content.",
-      icon: "// GLOBAL"
+      iconPt: "// IDIOMAS",
+      iconEn: "// GLOBAL"
     },
     {
       titlePt: "Pipeline de CI/CD",
       titleEn: "CI/CD Pipeline",
       descPt: "Integração contínua e deploy automatizado para GitHub Pages via workflows estruturados de GitHub Actions.",
       descEn: "Continuous integration and automated delivery to GitHub Pages via structured GitHub Actions workflows.",
-      icon: "// AUTOMATION"
+      iconPt: "// AUTOMAÇÃO",
+      iconEn: "// AUTOMATION"
     }
   ];
 
@@ -66,7 +69,7 @@ export default function PortfolioPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

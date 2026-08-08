@@ -11,28 +11,32 @@ export default function GameOfDronesPage({ lang, setPage }) {
       titleEn: "EletroQuad SAE BRASIL Competition",
       descPt: "Competição universitária multidisciplinar de concepção, documentação, construção e voo autônomo de drones quadricópteros, com missões que envolvem inteligência embarcada, visão computacional e telemetria.",
       descEn: "A multidisciplinary university competition involving the design, documentation, construction, and autonomous flight of quadrotor drones in missions requiring embedded intelligence, computer vision, and telemetry.",
-      icon: "// COMPETITION"
+      iconPt: "// COMPETIÇÃO",
+      iconEn: "// COMPETITION"
     },
     {
       titlePt: "Processamento com OpenCV",
       titleEn: "OpenCV Processing",
       descPt: "Filtros de cor, detecção de contornos e transformações espaciais aplicadas em tempo real para leitura de trajetória e apoio à tomada de decisão autônoma.",
       descEn: "Real-time color filtering, contour detection, and spatial transformations for track reading and autonomous decision support.",
-      icon: "// VISION"
+      iconPt: "// VISÃO COMPUTACIONAL",
+      iconEn: "// VISION"
     },
     {
       titlePt: "Navegação Autônoma",
       titleEn: "Autonomous Navigation",
       descPt: "Algoritmos de controle proporcional, integral e derivativo (PID) para centralização e alinhamento em trajetórias.",
       descEn: "Proportional, integral, and derivative (PID) control loops for centring and track alignment.",
-      icon: "// NAVIGATION"
+      iconPt: "// NAVEGAÇÃO",
+      iconEn: "// NAVIGATION"
     },
     {
       titlePt: "Hardware Embarcado",
       titleEn: "Embedded Hardware",
       descPt: "Otimização extrema para execução fluida em Raspberry Pi com consumo de bateria e peso reduzidos.",
       descEn: "Extreme code optimizations to achieve smooth execution on Raspberry Pi with minimal weight and power drain.",
-      icon: "// HARDWARE"
+      iconPt: "// HARDWARE",
+      iconEn: "// HARDWARE"
     }
   ];
 
@@ -82,7 +86,7 @@ export default function GameOfDronesPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

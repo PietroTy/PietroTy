@@ -103,6 +103,7 @@ export default function PitCraftPage({
 }) {
   const pt = lang === "pt";
   const [copied, setCopied] = useState(false);
+  const [modalData, setModalData] = useState(null);
   const ipAddress = "pitcraft.duckdns.org:13377";
 
   const handleCopy = () => {
@@ -162,7 +163,7 @@ export default function PitCraftPage({
             <section className="hero-section">
               <div className="hero-content">
                 <div className="hero-tag">Minecraft Hub</div>
-                <div className="hero-logo-container">
+                <div className="hero-logo-container" style={{ cursor: "pointer" }} onClick={() => setModalData(pitcraftLogo)}>
                   <img src={pitcraftLogo} alt="PitCraft Logo" className="hero-logo" />
                 </div>
                 <p className="hero-subtitle">
@@ -380,13 +381,13 @@ export default function PitCraftPage({
                     {/* Render Gallery specifically for OreSpawn */}
                     {inst.id === "orespawn" && (
                       <div className="orespawn-gallery">
-                        <div className="gallery-item">
+                        <div className="gallery-item" style={{ cursor: "pointer" }} onClick={() => setModalData(orespawn1)}>
                           <img src={orespawn1} alt="Gameplay OreSpawn 1" className="gallery-img" />
                         </div>
-                        <div className="gallery-item">
+                        <div className="gallery-item" style={{ cursor: "pointer" }} onClick={() => setModalData(orespawn2)}>
                           <img src={orespawn2} alt="Gameplay OreSpawn 2" className="gallery-img" />
                         </div>
-                        <div className="gallery-item">
+                        <div className="gallery-item" style={{ cursor: "pointer" }} onClick={() => setModalData(orespawn3)}>
                           <img src={orespawn3} alt="Gameplay OreSpawn 3" className="gallery-img" />
                         </div>
                       </div>
@@ -395,7 +396,7 @@ export default function PitCraftPage({
                     {/* Render Gallery specifically for Aether */}
                     {inst.id === "aether" && (
                       <div className="orespawn-gallery">
-                        <div className="gallery-item">
+                        <div className="gallery-item" style={{ cursor: "pointer" }} onClick={() => setModalData(aether1)}>
                           <img src={aether1} alt="Gameplay Aether 1" className="gallery-img" />
                         </div>
                       </div>
@@ -405,6 +406,34 @@ export default function PitCraftPage({
               })()}
             </div>
           </section>
+        )}
+
+        {/* Lightbox Image Modal */}
+        {modalData && (
+          <div 
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0,0,0,0.85)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "2rem"
+            }}
+            onClick={() => setModalData(null)}
+          >
+            <div style={{ relative: "relative", maxWidth: "90vw", maxHeight: "90vh" }}>
+              <img 
+                src={modalData} 
+                alt="Enlarged preview" 
+                style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "12px", border: "1px solid var(--border)" }}
+              />
+            </div>
+          </div>
         )}
 
       </div>
