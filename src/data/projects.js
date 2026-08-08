@@ -39,19 +39,21 @@ export const PROJECTS = [
     "id": "laplayer",
     "namePt": "LaPlayer",
     "nameEn": "LaPlayer",
-    "taglinePt": "Aplicativo mobile self-hosted",
-    "taglineEn": "Self-hosted mobile application",
-    "descPt": "Cliente de música em Dart/Flutter com interface inspirada no Spotify, biblioteca hospedada em servidor próprio, metadados via Spotify API, extração com yt-dlp, backend Python, cache local, modo offline e armazenamento de metadados/cache criptografado.",
-    "descEn": "Dart/Flutter music client inspired by Spotify, with a self-hosted library, Spotify API metadata, yt-dlp extraction, Python backend, local caching, offline mode, and encrypted metadata/cache storage.",
+    "taglinePt": "Aplicativo mobile serverless",
+    "taglineEn": "Serverless mobile application",
+    "descPt": "Cliente de música em Dart/Flutter com interface inspirada no Spotify. Arquitetura 100% Serverless (client-side), rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.",
+    "descEn": "Dart/Flutter music client inspired by Spotify with 100% Serverless (client-side) architecture. Refactored with the music-tracker engine (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.",
     "tags": [
       "Dart",
       "Flutter",
+      "Serverless",
       "Python",
+      "librespot",
       "Spotify API"
     ],
     "link": null,
     "featured": false,
-    "color": "#1db954",
+    "color": "#8b5cf6",
     "apk": "app_release.apk"
   },
   {
@@ -128,19 +130,23 @@ export const PROJECTS = [
   },
   {
     "id": "erium",
-    "namePt": "Erium",
-    "nameEn": "Erium",
-    "taglinePt": "TCC técnico",
-    "taglineEn": "Technical capstone project",
-    "descPt": "Toolkit full-stack para passageiros de viagens aéreas, com cálculo de bagagem, validação de passaporte, consulta de normas de voo, banco SQL, consumo de APIs externas e API própria desenvolvida pela equipe.",
-    "descEn": "Full-stack toolkit for air passengers, including baggage calculations, passport validation, flight regulations, a SQL database, external API consumption, and a custom team-built API.",
+    "namePt": "Erium TCC",
+    "nameEn": "Erium TCC",
+    "taglinePt": "TCC - Técnico em Desenvolvimento de Sistemas (CPS / ETEC)",
+    "taglineEn": "Capstone - Systems Development Tech Degree (CPS / ETEC)",
+    "descPt": "Trabalho de Conclusão de Curso (TCC) do Ensino Técnico em Desenvolvimento de Sistemas no Centro Paula Souza (ETEC). Toolkit full-stack para auxílio a passageiros de viagens aéreas (cálculo de bagagem, validação de passaporte e normas de voo), com frontend em TypeScript/Vite/React e backend API em Node.js/Express hospedado na Vercel (erium-api.vercel.app), desenvolvido em equipe com Anthony Chukwudi.",
+    "descEn": "Capstone project (TCC) for the Systems Development Tech Degree at Centro Paula Souza (ETEC). Full-stack air travel passenger toolkit with a TypeScript/Vite/React frontend and a Node.js/Express API backend hosted on Vercel (erium-api.vercel.app), developed in a team with Anthony Chukwudi.",
     "tags": [
-      "Java",
-      "Spring Boot",
+      "TypeScript",
+      "Vite",
       "React",
-      "JavaScript"
+      "Node.js",
+      "Express",
+      "Vercel",
+      "TCC",
+      "ETEC"
     ],
-    "link": null,
+    "link": "https://erium-api.vercel.app",
     "featured": false,
     "color": "#10b981"
   },
@@ -214,7 +220,7 @@ export const PROJECTS = [
       "JavaScript",
       "Google OAuth"
     ],
-    "link": "https://github.com/PietroTy/tv2",
+    "link": "https://pietroty.github.io/tv2/",
     "featured": false,
     "color": "#0ea5e9"
   },
