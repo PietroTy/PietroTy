@@ -3,6 +3,7 @@ import screenshotImg from "../../assets/stickers_bot_logo.png";
 
 export default function StickersBotPage({ lang, setPage }) {
   const pt = lang === "pt";
+  const [modalData, setModalData] = React.useState(null);
 
   const features = [
     {
@@ -38,9 +39,6 @@ export default function StickersBotPage({ lang, setPage }) {
   return (
     <div className="page pitcraft-page">
       <div className="container">
-        
-
-
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
@@ -69,12 +67,17 @@ export default function StickersBotPage({ lang, setPage }) {
           </div>
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <img 
-              src={screenshotImg} 
-              alt="Stickers Bot Preview" 
-              className="hero-image" 
-              style={{ maxWidth: "320px", borderRadius: "16px", boxShadow: "0 10px 40px rgba(0, 0, 0, 0.3)", border: "2px solid var(--border)" }}
-            />
+            <div 
+              style={{ cursor: "pointer", display: "inline-block" }}
+              onClick={() => setModalData(screenshotImg)}
+            >
+              <img 
+                src={screenshotImg} 
+                alt="Stickers Bot Preview" 
+                className="hero-image" 
+                style={{ maxWidth: "320px", borderRadius: "16px", boxShadow: "0 10px 40px rgba(0, 0, 0, 0.3)", border: "2px solid var(--border)" }}
+              />
+            </div>
           </div>
         </section>
 
@@ -119,6 +122,33 @@ export default function StickersBotPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Lightbox Image Modal */}
+        {modalData && (
+          <div 
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0,0,0,0.85)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "2rem"
+            }}
+            onClick={() => setModalData(null)}
+          >
+            <div style={{ relative: "relative", maxWidth: "90vw", maxHeight: "90vh" }}>
+              <img 
+                src={modalData} 
+                alt="Enlarged preview" 
+                style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "12px", border: "1px solid var(--border)" }}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
