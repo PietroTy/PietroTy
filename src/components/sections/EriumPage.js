@@ -51,15 +51,6 @@ export default function EriumPage({ lang, setPage }) {
 
             <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <a
-                href="https://erium-api.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-fill"
-                style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 24px" }}
-              >
-                <span>{pt ? "Acessar API na Vercel" : "Access Vercel API"} &rarr;</span>
-              </a>
-              <a
                 href="https://github.com/anthonyDev01/TCC--Erium"
                 target="_blank"
                 rel="noreferrer"
