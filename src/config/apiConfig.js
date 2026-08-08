@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://updating-pension-incorporated-oriental.trycloudflare.com',
+    BACKEND_URL: 'https://davidson-airports-columbus-exciting.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
