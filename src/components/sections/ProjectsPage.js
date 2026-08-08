@@ -105,108 +105,32 @@ export default function ProjectsPage({ lang, setPage }) {
                   <p className="pcard-desc">{pt ? p.descPt : p.descEn}</p>
                   
                   <div className="pcard-actions" onClick={(e) => e.stopPropagation()}>
-                    {p.id === "pitcraft" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("pitcraft")}
+                    <button
+                      className="btn btn-fill btn-sm"
+                      onClick={() => {
+                        const targetKey = 
+                          p.id === "whatsapp-bot" ? "whatsappbot" :
+                          p.id === "drone-autonomo" ? "gameofdrones" :
+                          p.id === "bot-figurinhas" ? "stickerbot" :
+                          p.id === "discord-bot" ? "discordbot" :
+                          p.id === "magik-tarot" ? "magiktarot" :
+                          p.id;
+                        setPage(targetKey);
+                      }}
+                    >
+                      {p.id === "pitcraft" ? (pt ? "Acessar Hub" : "Access Hub") : (pt ? "Ver Detalhes" : "View Details")} &rarr;
+                    </button>
+                    {p.link && (
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-outline btn-sm"
                       >
-                        {pt ? "Acessar Hub" : "Access Hub"} &rarr;
-                      </button>
-                    ) : p.id === "laplayer" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("laplayer")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "bot-figurinhas" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("stickerbot")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "whatsapp-bot" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("whatsappbot")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "drone-autonomo" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("gameofdrones")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "discord-bot" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("discordbot")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "portfolio" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("portfolio")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "erium" ? (
-                      <button
-                        className="btn btn-fill btn-sm"
-                        onClick={() => setPage("erium")}
-                      >
-                        {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                      </button>
-                    ) : p.id === "magik-tarot" ? (
-                      <>
-                        <button
-                          className="btn btn-fill btn-sm"
-                          onClick={() => setPage("magiktarot")}
-                        >
-                          {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                        </button>
-                        <a
-                          href="https://magiktarot.com.br/"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-outline btn-sm"
-                        >
-                          {pt ? "Acessar Aplicação" : "Open App"} &rarr;
-                        </a>
-                      </>
-                    ) : p.id === "tv2" ? (
-                      <>
-                        <button
-                          className="btn btn-fill btn-sm"
-                          onClick={() => setPage("tv2")}
-                        >
-                          {pt ? "Ver Detalhes" : "View Details"} &rarr;
-                        </button>
-                        <a
-                          href="https://pietroty.github.io/tv2/"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-outline btn-sm"
-                        >
-                          {pt ? "Acessar Aplicação" : "Open App"} &rarr;
-                        </a>
-                      </>
-                    ) : (
-                      p.link && (
-                        <a
-                          href={p.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-fill btn-sm"
-                        >
-                          {pt ? "Acessar Projeto" : "Visit Project"} &rarr;
-                        </a>
-                      )
+                        {p.link.includes("github.com") ? (pt ? "Repositório" : "Repository") : (pt ? "Acessar Aplicação" : "Open App")} &rarr;
+                      </a>
                     )}
+                  </div>
                     {p.apk && p.id !== "laplayer" && (
                       <a
                         href={p.apk}

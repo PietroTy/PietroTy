@@ -16,13 +16,21 @@ import PortfolioPage from "./components/sections/PortfolioPage";
 import EriumPage from "./components/sections/EriumPage";
 import TV2Page from "./components/sections/TV2Page";
 import MagikTarotPage from "./components/sections/MagikTarotPage";
+import CHubPage from "./components/sections/CHubPage";
+import EscribaPage from "./components/sections/EscribaPage";
+import DSHubPage from "./components/sections/DSHubPage";
+import CVMakerPage from "./components/sections/CVMakerPage";
+import BleachCoPage from "./components/sections/BleachCoPage";
+import CrmEngajaPage from "./components/sections/CrmEngajaPage";
+import EtlCnpjPage from "./components/sections/EtlCnpjPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
 const PAGE_KEYS = [
   "home", "projects", "skills", "contact", "pitcraft", 
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
-  "gameofdrones", "discordbot", "portfolio", "erium", "tv2", "magiktarot", "magik-tarot"
+  "gameofdrones", "discordbot", "portfolio", "erium", "tv2", "magiktarot", "magik-tarot",
+  "chub", "escriba", "dshub", "cvmaker", "bleach-co", "bleachco", "crm-engaja", "crmengaja", "etl-cnpj", "etlcnpj"
 ];
 
 const PAGE_METADATA = {
@@ -312,6 +320,16 @@ export default function App() {
     tv2: <TV2Page lang={lang} setPage={setPage} />,
     magiktarot: <MagikTarotPage lang={lang} setPage={setPage} />,
     "magik-tarot": <MagikTarotPage lang={lang} setPage={setPage} />,
+    chub: <CHubPage lang={lang} setPage={setPage} />,
+    escriba: <EscribaPage lang={lang} setPage={setPage} />,
+    dshub: <DSHubPage lang={lang} setPage={setPage} />,
+    cvmaker: <CVMakerPage lang={lang} setPage={setPage} />,
+    "bleach-co": <BleachCoPage lang={lang} setPage={setPage} />,
+    bleachco: <BleachCoPage lang={lang} setPage={setPage} />,
+    "crm-engaja": <CrmEngajaPage lang={lang} setPage={setPage} />,
+    crmengaja: <CrmEngajaPage lang={lang} setPage={setPage} />,
+    "etl-cnpj": <EtlCnpjPage lang={lang} setPage={setPage} />,
+    etlcnpj: <EtlCnpjPage lang={lang} setPage={setPage} />,
   };
 
   return (
