@@ -6,36 +6,36 @@ export default function CVMakerPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Análise Estrutural OOXML (.docx)",
-      titleEn: "OOXML Document Parsing (.docx)",
-      descPt: "Leitura profunda e manipulação da estrutura interna de arquivos do Microsoft Word sem perder o layout original.",
-      descEn: "Deep parsing and XML manipulation of Microsoft Word files preserving original document layouts and styling.",
-      iconPt: "// ANÁLISE OOXML",
-      iconEn: "// OOXML PARSER"
+      titlePt: "Técnica de 'Ilhas de Palavras' & ATS",
+      titleEn: "'Word Islands' Technique & ATS Keywords",
+      descPt: "Identificação e extração inteligente de termos-chave e ilhas semânticas na descrição da vaga para maximizar a pontuação em algoritmos de triagem (ATS).",
+      descEn: "Intelligent extraction of semantic keyword islands from job descriptions to maximize match scores in candidate screening algorithms (ATS).",
+      iconPt: "// ILHAS DE PALAVRAS",
+      iconEn: "// ATS KEYWORDS"
     },
     {
-      titlePt: "Adaptação por IA Sabiá-4",
-      titleEn: "Sabiá-4 AI Resume Adaptation",
-      descPt: "Reescrita e otimização de experiências e qualificações com foco nos requisitos e palavras-chave de uma vaga específica.",
-      descEn: "Targeted rewriting and enhancement of resume achievements aligned with specific job post requirements.",
+      titlePt: "Adaptação de Expertises via IA (Sabiá-4)",
+      titleEn: "Expertise Adaptation via Sabiá-4 AI",
+      descPt: "Reescrita contextual de conquistas e projetos do profissional para destacar as competências mais relevantes para cada oportunidade.",
+      descEn: "Contextual rewriting of professional achievements and skills to highlight maximum relevance for every specific opportunity.",
       iconPt: "// REESCRITA COM IA",
       iconEn: "// SABIÁ-4 AI"
     },
     {
-      titlePt: "Exportação em PDF Headless",
-      titleEn: "Headless LibreOffice PDF Export",
-      descPt: "Conversão serverless automatizada para PDF via LibreOffice em modo headless, mantendo fidelidade de tipografia.",
-      descEn: "Automated serverless conversion to crisp PDF format via headless LibreOffice engine with exact typography.",
-      iconPt: "// CONVERSÃO PDF",
-      iconEn: "// PDF EXPORT"
+      titlePt: "Análise Estrutural OOXML & Templates",
+      titleEn: "OOXML Parsing & Formatting Templates",
+      descPt: "Manipulação profunda de arquivos .docx preservando fontes, margens e a identidade visual original do currículo sem quebras.",
+      descEn: "Deep XML manipulation of .docx documents preserving fonts, margins, and original visual styling without broken elements.",
+      iconPt: "// ANÁLISE OOXML",
+      iconEn: "// OOXML TEMPLATES"
     },
     {
-      titlePt: "Interface Simples em Streamlit",
-      titleEn: "Streamlit Web Interface",
-      descPt: "Upload intuitivo do arquivo DOCX original, colagem da descrição da vaga desejada e download imediato do currículo final.",
-      descEn: "Seamless workflow: upload DOCX, paste target job description, and download your tailored PDF resume.",
-      iconPt: "// INTERFACE STREAMLIT",
-      iconEn: "// STREAMLIT UI"
+      titlePt: "Exportação em PDF via LibreOffice Headless",
+      titleEn: "PDF Export via Headless LibreOffice",
+      descPt: "Conversão serverless automatizada para PDF em alta definição, garantindo leitura perfeita por robôs e recrutadores.",
+      descEn: "Automated serverless conversion to crisp PDF format ensuring perfect readability by both ATS parsers and human recruiters.",
+      iconPt: "// EXPORTAÇÃO PDF",
+      iconEn: "// PDF EXPORT"
     }
   ];
 
@@ -51,8 +51,8 @@ export default function CVMakerPage({ lang, setPage }) {
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Gerador e otimizador inteligente de currículos em Python. Analisa a estrutura de arquivos DOCX, reescreve experiências usando o LLM Sabiá-4 para adequá-las a vagas específicas e exporta para PDF sem alterar a formatação."
-                : "Intelligent resume generator and tailored adapter in Python. Parses DOCX OOXML structures, rewrites career sections with Sabiá-4 LLM for target job roles, and exports to PDF preserving original formatting."
+                ? "Ferramenta desenvolvida para desmistificar e simplificar o exaustivo processo de candidatura a vagas. Centraliza dados profissionais, aplica técnicas de 'ilhas de palavras' para algoritmos ATS e adapta expertises via IA."
+                : "A tool created to streamline the exhausting job application process. Centralizes candidate data, applies 'word islands' techniques for ATS search algorithms, and adapts professional expertise using Sabiá-4 AI."
               }
             </p>
 
@@ -90,6 +90,43 @@ export default function CVMakerPage({ lang, setPage }) {
               <div style={{ fontSize: "4rem" }}>🎯</div>
               <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.1rem" }}>CVMaker AI</div>
             </div>
+          </div>
+        </section>
+
+        {/* Dedicated Purpose Section */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(59, 130, 246, 0.06)",
+            border: "1px solid rgba(59, 130, 246, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#3b82f6", marginBottom: "1rem" }}>
+            {pt ? "🎯 Otimização de Processo & Ranqueamento em Algoritmos ATS" : "🎯 Workflow Optimization & ATS Ranking"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  O <strong>CVMaker</strong> foi criado especificamente para solucionar a frustração do exaustivo processo manual de envio de currículos. A aplicação unifica todo o histórico profissional em uma base centralizada e utiliza templates automatizados para fácil exportação.
+                </p>
+                <p style={{ margin: 0 }}>
+                  A solução emprega técnicas avançadas como <strong>"ilhas de palavras"</strong> para mapear termos-chave essenciais na descrição de uma vaga e adaptar a apresentação das expertises do candidato com o apoio da IA <i>Sabiá-4</i>, garantindo melhor desempenho e compatibilidade com os algoritmos de busca e triagem (ATS) de recrutadores.
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  <strong>CVMaker</strong> was built to eliminate the tedious friction of manual job applications. It consolidates all candidate experience records into a single database and leverages automated templates for seamless document rendering.
+                </p>
+                <p style={{ margin: 0 }}>
+                  The engine utilizes advanced <strong>"word islands"</strong> techniques to identify key semantic concepts in job requirements and adapt candidate achievements via <i>Sabiá-4 AI</i>, maximizing search ranking and compatibility with Applicant Tracking System (ATS) algorithms.
+                </p>
+              </>
+            )}
           </div>
         </section>
 
@@ -172,8 +209,8 @@ export default function CVMakerPage({ lang, setPage }) {
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>CVMaker AI</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 
-                  ? "Gerador inteligente de currículos em Python com adaptação de experiências via IA Sabiá-4 e exportação para PDF via LibreOffice headless."
-                  : "Intelligent Python resume generator with Sabiá-4 AI experience adaptation and headless LibreOffice PDF export."
+                  ? "Gerador inteligente de currículos em Python com técnica de 'ilhas de palavras', otimização para algoritmos ATS e adaptação de expertises via IA Sabiá-4."
+                  : "Intelligent Python resume generator with 'word islands' technique, ATS search optimization, and Sabiá-4 AI experience adaptation."
                 }
               </p>
             </div>
