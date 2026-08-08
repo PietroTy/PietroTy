@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://discovery-petition-isp-environment.trycloudflare.com',
+    BACKEND_URL: 'https://democrats-suggest-playback-webster.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
