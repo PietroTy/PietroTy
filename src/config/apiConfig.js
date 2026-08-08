@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://value-liberal-symbol-den.trycloudflare.com',
+    BACKEND_URL: 'https://value-width-myth-skilled.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
