@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://alleged-jewellery-ent-mold.trycloudflare.com',
+    BACKEND_URL: 'https://glen-ross-ridge-throws.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
