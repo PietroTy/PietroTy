@@ -14,21 +14,24 @@ export default function LaPlayerPage({ lang, setPage }) {
       titleEn: "100% Serverless Architecture",
       descPt: "Todo o processamento de busca, extração e banco de dados roda diretamente dentro do app no seu smartphone. Zero dependência de servidores domésticos ou VPS.",
       descEn: "All search, stream extraction, and database management runs directly on your smartphone. Zero external server or VPS dependency.",
-      icon: "// SERVERLESS"
+      iconPt: "// SEM SERVIDOR",
+      iconEn: "// SERVERLESS"
     },
     {
       titlePt: "Engine Direta Spotify (librespot)",
       titleEn: "Direct Spotify Engine (librespot)",
       descPt: "Executado via client-side librespot (inspirado na arquitetura music-tracker de Vitor Cordeiro de Souza), garantindo áudio .ogg Vorbis em alta qualidade e metadados exatos.",
       descEn: "Executed via client-side librespot (inspired by Vitor Cordeiro de Souza's music-tracker architecture), delivering high-quality .ogg Vorbis audio and exact metadata.",
-      icon: "// LIBRESPOT"
+      iconPt: "// ENGINE LIBRESPOT",
+      iconEn: "// LIBRESPOT"
     },
     {
       titlePt: "Narração Vocaloid TTS & Offline",
       titleEn: "Vocaloid TTS Narration & Offline",
       descPt: "Narração de áudio por Vocaloid TTS (Android Text-to-Speech), banco de dados SQLite otimizado, cache criptografado e modo 100% offline.",
       descEn: "Audio narration powered by Android Vocaloid TTS, optimized SQLite database, encrypted cache, and full 100% offline playback.",
-      icon: "// VOCALOID"
+      iconPt: "// VOCALOID & OFFLINE",
+      iconEn: "// VOCALOID"
     }
   ];
 
@@ -108,12 +111,17 @@ export default function LaPlayerPage({ lang, setPage }) {
           </div>
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <img 
-              src={process.env.PUBLIC_URL + "/laplayer_logo.png"} 
-              alt="LaPlayer Logo" 
-              className="hero-logo"
-              style={{ maxWidth: "280px", display: "block" }}
-            />
+            <div 
+              style={{ cursor: "pointer", display: "inline-block" }}
+              onClick={() => setModalData(process.env.PUBLIC_URL + "/laplayer_logo.png")}
+            >
+              <img 
+                src={process.env.PUBLIC_URL + "/laplayer_logo.png"} 
+                alt="LaPlayer Logo" 
+                className="hero-logo"
+                style={{ maxWidth: "280px", display: "block" }}
+              />
+            </div>
           </div>
         </section>
 
@@ -121,7 +129,7 @@ export default function LaPlayerPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

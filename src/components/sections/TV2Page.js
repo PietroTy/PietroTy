@@ -13,35 +13,40 @@ export default function TV2Page({ lang, setPage }) {
       titleEn: "Alternative Showcase & Collaborative Curation",
       descPt: "Idealizada como uma vitrine cultural alternativa para arte, música, videoclipes, animações e desenhos (novos e clássicos) que possuem grande valor visual e estético no YouTube, tudo curado por amigos apaixonados por arte.",
       descEn: "Designed as an alternative cultural showcase for visual art, music, classic & modern cartoons from YouTube with rich aesthetic value, collaboratively curated by a community of art enthusiasts.",
-      icon: "// ART & CURATION"
+      iconPt: "// ARTE & CURATORIA",
+      iconEn: "// ART & CURATION"
     },
     {
       titlePt: "Transmissão Sincronizada em Tempo Real",
       titleEn: "Real-Time Synced Broadcast",
       descPt: "Todos os espectadores assistem exatamente ao mesmo segundo do mesmo vídeo ou episódio em tempo real por meio de um agendador determinístico.",
       descEn: "All viewers watch the exact same second of the video or episode simultaneously in real time powered by a deterministic schedule engine.",
-      icon: "// SYNCHRONIZED"
+      iconPt: "// SINCRONIZADO",
+      iconEn: "// SYNCHRONIZED"
     },
     {
       titlePt: "Interface Retro CRT & Efeitos Analógicos",
       titleEn: "Retro CRT Interface & Analog Effects",
       descPt: "Simula uma TV de tubo vintage com linhas de varredura (scanlines), curvatura de vidro, ruído/chiado gerado via Canvas na troca de canal e OSD.",
       descEn: "Simulates a vintage CRT television complete with CSS scanlines, tube glass curvature, HTML5 Canvas static noise on channel change, and custom OSD.",
-      icon: "// CRT SHADERS"
+      iconPt: "// EFEITOS CRT",
+      iconEn: "// CRT SHADERS"
     },
     {
       titlePt: "Painel de Controle Físico",
       titleEn: "Physical Control Panel",
       descPt: "Controles analógicos interativos com botões giratórios (scroll para volume, clique para canais), botão Power funcional e chave seletora do chat.",
       descEn: "Interactive physical controls featuring rotary knobs (mouse scroll for volume, click for channels), responsive Power toggle button, and chat drawer switch.",
-      icon: "// CONTROLS"
+      iconPt: "// CONTROLES",
+      iconEn: "// CONTROLS"
     },
     {
       titlePt: "Chat Retro Flip-Phone & OAuth",
       titleEn: "Retro Flip-Phone Chat & OAuth",
       descPt: "Chat ao vivo integrado na carcaça de um celular anos 2000 com contador de espectadores online em tempo real e login com Google OAuth.",
       descEn: "Live chat system embedded inside a 2000s flip phone mobile chassis with live spectator counter and Google OAuth authentication.",
-      icon: "// CHAT & OAUTH"
+      iconPt: "// CHAT & AUTENTICAÇÃO",
+      iconEn: "// CHAT & OAUTH"
     }
   ];
 
@@ -115,7 +120,7 @@ export default function TV2Page({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
@@ -147,7 +152,7 @@ export default function TV2Page({ lang, setPage }) {
                   style={{ width: "100%", height: "220px", objectFit: "cover", display: "block" }}
                 />
                 <div style={{ padding: "1.2rem" }}>
-                  <h4 style={{ fontSize: "1.1rem", fontWeight: 600, color: "var(--fg)" }}>{pt ? item.titlePt : item.titleEn}</h4>
+                  <h4 style={{ fontSize: "1.1rem", fontWeight: "600", color: "var(--fg)" }}>{pt ? item.titlePt : item.titleEn}</h4>
                   <p style={{ fontSize: "0.88rem", color: "var(--muted2)", marginTop: "0.4rem", lineHeight: 1.5 }}>
                     {pt ? item.descPt : item.descEn}
                   </p>

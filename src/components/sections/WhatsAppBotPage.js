@@ -11,28 +11,32 @@ export default function WhatsAppBotPage({ lang, setPage }) {
       titleEn: "Maritaca LLM Integration",
       descPt: "Respostas conversacionais de alto nível em português brasileiro por meio do LLM Maritaca integrado nativamente.",
       descEn: "High-quality conversational responses in Brazilian Portuguese powered by the native Maritaca LLM integration.",
-      icon: "// BRAIN"
+      iconPt: "// INTELIGÊNCIA ARTIFICIAL",
+      iconEn: "// BRAIN"
     },
     {
       titlePt: "Memória Persistente",
       titleEn: "Persistent Memory",
       descPt: "O bot mantém o contexto e histórico completo das conversas anteriores de cada usuário, garantindo diálogos fluidos.",
       descEn: "Maintains full contextual memory and conversation history for each user, allowing fluid and continuous dialogues.",
-      icon: "// MEMORY"
+      iconPt: "// MEMÓRIA",
+      iconEn: "// MEMORY"
     },
     {
       titlePt: "Jogos Interativos",
       titleEn: "Interactive Word Games",
       descPt: "Possui minijogos de adivinhação de palavras como 'Termo' e 'Dueto' embutidos diretamente no fluxo de conversas.",
       descEn: "Features built-in word-guessing games like 'Termo' and 'Dueto' directly playable in your WhatsApp chat.",
-      icon: "// PLAY"
+      iconPt: "// JOGOS",
+      iconEn: "// PLAY"
     },
     {
       titlePt: "Automação SDR & Jornal",
       titleEn: "SDR & News Automation",
       descPt: "Atua como agente inteligente de SDR e alimenta vários grupos com uma automação de jornal diário personalizado.",
       descEn: "Acts as an intelligent SDR agent and feeds multiple groups with a customized daily news automation.",
-      icon: "// AUTOMATION"
+      iconPt: "// AUTOMAÇÃO",
+      iconEn: "// AUTOMATION"
     }
   ];
 
@@ -87,7 +91,7 @@ export default function WhatsAppBotPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

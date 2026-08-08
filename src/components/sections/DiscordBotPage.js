@@ -10,21 +10,24 @@ export default function DiscordBotPage({ lang, setPage }) {
       titleEn: "Automated Moderation",
       descPt: "Controle automático de spam, filtragem de palavras e gerenciamento de permissões de usuários.",
       descEn: "Automatic spam prevention, custom word filters, and advanced user permission management.",
-      icon: "// SHIELD"
+      iconPt: "// MODERAÇÃO",
+      iconEn: "// SHIELD"
     },
     {
       titlePt: "Economia Virtual",
       titleEn: "Virtual Economy",
       descPt: "Sistema completo de moedas virtuais, recompensas diárias, apostas e loja de itens customizados.",
       descEn: "Complete economy system featuring custom server coins, daily rewards, mini-games, and shop systems.",
-      icon: "// COINS"
+      iconPt: "// ECONOMIA",
+      iconEn: "// COINS"
     },
     {
       titlePt: "Entretenimento",
       titleEn: "Entertainment",
       descPt: "Comandos divertidos de meme, enquetes, curiosidades e minijogos interativos para engajamento.",
       descEn: "Fun meme generation commands, automated server polls, trivia, and interactive mini-games.",
-      icon: "// GAMES"
+      iconPt: "// JOGOS",
+      iconEn: "// GAMES"
     }
   ];
 
@@ -86,7 +89,7 @@ export default function DiscordBotPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>

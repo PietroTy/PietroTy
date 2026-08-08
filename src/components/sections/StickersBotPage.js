@@ -11,28 +11,32 @@ export default function StickersBotPage({ lang, setPage }) {
       titleEn: "Instant Conversion",
       descPt: "Envie imagens, vídeos ou GIFs e receba figurinhas prontas em segundos diretamente no seu chat do WhatsApp.",
       descEn: "Send images, videos, or GIFs and receive WhatsApp-ready stickers in seconds directly in your chat.",
-      icon: "// INSTANT"
+      iconPt: "// INSTANTÂNEO",
+      iconEn: "// INSTANT"
     },
     {
       titlePt: "Figurinhas Animadas",
       titleEn: "Animated Stickers",
       descPt: "Suporte completo para conversão de vídeos curtos e GIFs em figurinhas animadas fluidas com peso otimizado.",
       descEn: "Full support for converting short video clips and GIFs into smooth, lightweight animated stickers.",
-      icon: "// ANIMATED"
+      iconPt: "// ANIMADO",
+      iconEn: "// ANIMATED"
     },
     {
       titlePt: "Compressão Inteligente",
       titleEn: "Smart Compression",
       descPt: "Algoritmos de redução de ruído e redimensionamento automático para garantir compatibilidade com os limites do WhatsApp.",
       descEn: "Automated resizing and noise reduction algorithms to guarantee strict compliance with WhatsApp file size limits.",
-      icon: "// COMPRESS"
+      iconPt: "// COMPRESSÃO",
+      iconEn: "// COMPRESS"
     },
     {
       titlePt: "Comunidade Ativa",
       titleEn: "Active Community",
       descPt: "Possui uma comunidade engajada de mais de 100 usuários ativos que utilizam e compartilham figurinhas diariamente.",
       descEn: "Features an active community of over 100 users who create and share stickers every single day.",
-      icon: "// COMMUNITY"
+      iconPt: "// COMUNIDADE",
+      iconEn: "// COMMUNITY"
     }
   ];
 
@@ -85,7 +89,7 @@ export default function StickersBotPage({ lang, setPage }) {
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{f.icon}</div>
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
               <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
