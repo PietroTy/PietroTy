@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://hats-coordinate-translations-dame.trycloudflare.com',
+    BACKEND_URL: 'https://manhattan-discounts-messaging-subscribe.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
