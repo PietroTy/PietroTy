@@ -6,36 +6,36 @@ export default function CrmEngajaPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Modelagem Relacional & Banco PostgreSQL",
+      titlePt: "Desenvolvimento 100% do Zero",
+      titleEn: "Built 100% From Scratch",
+      descPt: "Arquitetura customizada projetada especificamente para atender a complexidade de processos, regras de negócio e fluxos de atendimento corporativo.",
+      descEn: "Custom software architecture engineered from the ground up to solve complex enterprise business rules and operational workflows.",
+      iconPt: "// DESENVOLVIMENTO PROPRÍETÁRIO",
+      iconEn: "// CUSTOM ARCHITECTURE"
+    },
+    {
+      titlePt: "Integração Nativa com Power BI & DAX",
+      titleEn: "Native Power BI Integration & DAX",
+      descPt: "Modelagem de dados otimizada para alimentar dashboards executivos em Power BI em tempo real com relatórios de performance, conversão e receita.",
+      descEn: "Optimized data modeling feeding real-time Power BI executive dashboards for performance, conversion, and revenue analytics.",
+      iconPt: "// INTEGRADO COM POWER BI",
+      iconEn: "// NATIVE POWER BI"
+    },
+    {
+      titlePt: "Modelagem Relacional & PostgreSQL",
       titleEn: "Relational Modeling & PostgreSQL Engine",
-      descPt: "Estruturação de banco de dados relacional de alto desempenho para gestão de leads, carteira de clientes, oportunidades e pipelines de vendas.",
-      descEn: "High-performance relational database modeling engineered for managing leads, customer accounts, sales opportunities, and pipelines.",
-      iconPt: "// BANCO DE DADOS",
+      descPt: "Estrutura relacional robusta em PostgreSQL para alta disponibilidade, rastreabilidade de conversas, gestão de leads e histórico de clientes.",
+      descEn: "Robust PostgreSQL relational schema for high availability, interaction history, lead scoring, and account management.",
+      iconPt: "// BANCO POSTGRESQL",
       iconEn: "// POSTGRESQL DB"
     },
     {
-      titlePt: "Dashboards Executivos em Power BI & DAX",
-      titleEn: "Executive Power BI Dashboards & DAX",
-      descPt: "Relatórios analíticos interativos com fórmulas DAX complexas para métricas de conversão, ticket médio, MRR, retenção e projeção de receita.",
-      descEn: "Interactive executive BI dashboards with complex DAX formulas for conversion rates, average ticket, MRR, retention, and revenue forecasting.",
-      iconPt: "// BUSINESS INTELLIGENCE",
-      iconEn: "// POWER BI & DAX"
-    },
-    {
-      titlePt: "Automação de Processos com n8n & Python",
-      titleEn: "Process Automation via n8n & Python",
-      descPt: "Fluxos inteligentes de disparo de mensagens, qualificação automática de contatos, sincronização de tarefas e alertas em tempo real.",
-      descEn: "Intelligent messaging workflows, automatic contact qualification, task syncing, and real-time operational notifications.",
-      iconPt: "// AUTOMAÇÃO N8N",
-      iconEn: "// N8N AUTOMATION"
-    },
-    {
-      titlePt: "Integrações Multicanal & Pagamentos",
-      titleEn: "Multichannel & Payment API Integrations",
-      descPt: "Conexão nativa via API com WhatsApp (Evolution API / Chatwoot), gateways de pagamento (Stripe), telefonia (Cloudfy) e sistemas de gestão.",
-      descEn: "Native API integration with WhatsApp (Evolution API / Chatwoot), payment gateways (Stripe), VoIP telephony (Cloudfy), and ERP systems.",
-      iconPt: "// API & ECOSSISTEMA",
-      iconEn: "// API ECOSYSTEM"
+      titlePt: "Automação Multicanal & APIs (n8n / Evolution)",
+      titleEn: "Multichannel Automation & APIs",
+      descPt: "Conexão nativa com n8n, WhatsApp API, gateways de pagamento e telefonia VoIP para automação de tarefas repetitivas.",
+      descEn: "Native integration with n8n pipelines, WhatsApp API, payment gateways, and VoIP telephony to automate manual tasks.",
+      iconPt: "// AUTOMAÇÃO & APIS",
+      iconEn: "// WORKFLOW APIS"
     }
   ];
 
@@ -45,20 +45,20 @@ export default function CrmEngajaPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">PostgreSQL • Power BI • DAX • n8n • Python • Evolution API • Stripe</div>
+            <div className="hero-tag">Solução Corporativa • PostgreSQL • Power BI Nativo • n8n • APIs</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
-              CRM Corporativo, BI & Integrações
+              CRM Corporativo & BI
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Solução corporativa privada customizada. Arquitetada, desenvolvida, implantada e posteriormente comercializada para clientes. Une banco de dados PostgreSQL, relatórios em Power BI, automação n8n e integrações multicanal via API."
-                : "Custom corporate CRM & Business Intelligence platform. Architected, built, deployed, and commercialized for enterprises. Combines PostgreSQL DB, Power BI dashboards, n8n automations, and multichannel API integrations."
+                ? "Sistema de CRM e inteligência de negócios desenvolvido 100% do zero para ambiente empresarial. Conta com integração nativa com o Power BI, banco PostgreSQL e ecossistema de automações multicanal."
+                : "Corporate CRM and Business Intelligence platform built 100% from scratch for enterprise operation. Features native Power BI integration, PostgreSQL DB, and multichannel automation workflows."
               }
             </p>
 
             <div style={{ marginTop: "2rem" }}>
-              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.85 }}>
-                🔒 {pt ? "Solução Corporativa Privada / Comercializada" : "Private Corporate / Commercialized Solution"}
+              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9 }}>
+                🔒 {pt ? "Em Uso em Produção por Empresa Privada (NDA)" : "Active Production Use by Private Enterprise (NDA)"}
               </span>
             </div>
           </div>
@@ -87,18 +87,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
           </div>
         </section>
 
-        {/* Feature Grid */}
-        <section className="features-section" style={{ marginTop: "3rem" }}>
-          {features.map((f, idx) => (
-            <div key={idx} className="feature-item">
-              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
-              <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
-              <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
-            </div>
-          ))}
-        </section>
-
-        {/* Commercial & Corporate Context */}
+        {/* Confidentiality & Corporate Production Notice */}
         <section 
           style={{
             marginTop: "3.5rem",
@@ -110,14 +99,40 @@ export default function CrmEngajaPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#7c3aed", marginBottom: "1rem" }}>
-            {pt ? "💼 Desenvolvimento sob Medida & Comercialização" : "💼 Tailored Development & Commercialization"}
+            {pt ? "🔒 Operação Comercial em Produção & Sigilo de Arquitetura" : "🔒 Active Corporate Operation & Confidentiality"}
           </h2>
-          <p style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
-            {pt 
-              ? "Esta arquitetura foi desenvolvida como uma solução corporativa completa para centralizar dados de vendas, atendimento e métricas de desempenho. Devido aos resultados de produtividade e previsibilidade alcançados, o sistema foi estruturado como produto e posteriormente comercializado para novos clientes do setor."
-              : "This architecture was engineered as a comprehensive corporate solution to centralize sales data, customer service, and performance metrics. Following significant gains in team productivity and revenue forecasting, the platform was packaged and commercialized for new enterprise clients."
-            }
-          </p>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  Este CRM corporativo foi concebido e construído <strong>100% do zero</strong> para solucionar gargalos operacionais e integrar em tempo real os dados de atendimento, vendas e pós-venda.
+                </p>
+                <p style={{ margin: 0 }}>
+                  Como a aplicação se encontra atualmente em <strong>operação ativa por uma empresa privada</strong>, a especificação detalhada da arquitetura interna, esquemas de tabelas e códigos-fonte proprietários são mantidos sob sigilo corporativo. O projeto atesta a capacidade de entregar sistemas de missão crítica customizados com inteligência analítica em Power BI.
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  This enterprise CRM was architected and built <strong>100% from scratch</strong> to eliminate operational bottlenecks and streamline customer support, sales, and analytics data in real time.
+                </p>
+                <p style={{ margin: 0 }}>
+                  Because the platform is currently in <strong>active commercial production by a private enterprise</strong>, detailed internal database schemas and proprietary source code are protected under corporate NDA. The project demonstrates the capacity to deliver mission-critical software with native Power BI analytics.
+                </p>
+              </>
+            )}
+          </div>
+        </section>
+
+        {/* Feature Grid */}
+        <section className="features-section" style={{ marginTop: "3rem" }}>
+          {features.map((f, idx) => (
+            <div key={idx} className="feature-item">
+              <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
+              <h3 className="feature-title">{pt ? f.titlePt : f.titleEn}</h3>
+              <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
+            </div>
+          ))}
         </section>
 
         {/* Tech Stack Footer */}
@@ -128,31 +143,31 @@ export default function CrmEngajaPage({ lang, setPage }) {
                 {pt ? "Banco de Dados" : "Database Engine"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                PostgreSQL
+                PostgreSQL Relacional
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Analytics & BI" : "Analytics & BI"}
+                {pt ? "Analytics Executivo" : "Executive Analytics"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Power BI & DAX Formulas
+                Power BI & Fórmulas DAX
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Automação" : "Automation Engine"}
+                {pt ? "Automação & APIs" : "Automation & APIs"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                n8n & Python Scripts
+                n8n, Python & Evolution API
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Integrações" : "Integrations"}
+                {pt ? "Status do Projeto" : "Project Status"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Evolution API, Chatwoot, Stripe, Cloudfy
+                {pt ? "Em Operação Privada" : "Active Private Production"}
               </p>
             </div>
           </div>
@@ -196,8 +211,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>CRM & BI System</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 
-                  ? "Solução corporativa customizada com banco PostgreSQL, dashboards Power BI/DAX, automações n8n e integração multicanal via API."
-                  : "Custom corporate solution combining PostgreSQL DB, Power BI/DAX dashboards, n8n automations, and multichannel API integrations."
+                  ? "Solução corporativa desenvolvida 100% do zero com banco PostgreSQL, dashboards executivos em Power BI e automação n8n."
+                  : "Custom corporate solution built 100% from scratch combining PostgreSQL DB, Power BI executive dashboards, and n8n automations."
                 }
               </p>
             </div>
