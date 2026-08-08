@@ -11,6 +11,9 @@ import bleachcoImg from "../../assets/bleach_co_logo.png";
 import agentTyImg from "../../assets/agent_ty.png";
 import escribaImg from "../../assets/escriba_logo.png";
 import dsLogoImg from "../../assets/ds_logo.png";
+import eriumImg from "../../assets/erium_logo.jpg";
+import whatsappbotImg from "../../assets/whatsapp_bot_screenshot.jpg";
+import tv2Img from "../../assets/tv2_logo.png";
 
 const getProjectPlaceholder = (color) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="350" height="180" viewBox="0 0 350 180"><rect width="100%" height="100%" fill="#0c081e"/><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="${color}20" stroke-width="1"/></pattern><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${color}35"/><stop offset="100%" stop-color="#0c081e"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#grid)"/><rect width="100%" height="100%" fill="url(#grad)"/><circle cx="175" cy="90" r="45" fill="none" stroke="${color}30" stroke-width="1.5" stroke-dasharray="5,5"/><circle cx="175" cy="90" r="28" fill="none" stroke="${color}b3" stroke-width="2"/></svg>`;
@@ -64,6 +67,12 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? magiktarotImg
                         : p.id === "bot-figurinhas"
                         ? stickersbotImg
+                        : p.id === "whatsapp-bot"
+                        ? whatsappbotImg
+                        : p.id === "erium"
+                        ? eriumImg
+                        : p.id === "tv2"
+                        ? tv2Img
                         : p.id === "drone-autonomo"
                         ? gameOfDronesImg
                         : p.id === "bleach-co"
@@ -152,6 +161,40 @@ export default function ProjectsPage({ lang, setPage }) {
                       >
                         {pt ? "Ver Detalhes" : "View Details"} &rarr;
                       </button>
+                    ) : p.id === "magik-tarot" ? (
+                      <>
+                        <button
+                          className="btn btn-fill btn-sm"
+                          onClick={() => setPage("magiktarot")}
+                        >
+                          {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                        </button>
+                        <a
+                          href="https://magiktarot.com.br/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-outline btn-sm"
+                        >
+                          {pt ? "Acessar Aplicação" : "Open App"} &rarr;
+                        </a>
+                      </>
+                    ) : p.id === "tv2" ? (
+                      <>
+                        <button
+                          className="btn btn-fill btn-sm"
+                          onClick={() => setPage("tv2")}
+                        >
+                          {pt ? "Ver Detalhes" : "View Details"} &rarr;
+                        </button>
+                        <a
+                          href="https://pietroty.github.io/tv2/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-outline btn-sm"
+                        >
+                          {pt ? "Acessar Aplicação" : "Open App"} &rarr;
+                        </a>
+                      </>
                     ) : (
                       p.link && (
                         <a

@@ -14,13 +14,15 @@ import GameOfDronesPage from "./components/sections/GameOfDronesPage";
 import DiscordBotPage from "./components/sections/DiscordBotPage";
 import PortfolioPage from "./components/sections/PortfolioPage";
 import EriumPage from "./components/sections/EriumPage";
+import TV2Page from "./components/sections/TV2Page";
+import MagikTarotPage from "./components/sections/MagikTarotPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
 const PAGE_KEYS = [
   "home", "projects", "skills", "contact", "pitcraft", 
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
-  "gameofdrones", "discordbot", "portfolio", "erium"
+  "gameofdrones", "discordbot", "portfolio", "erium", "tv2", "magiktarot", "magik-tarot"
 ];
 
 const PAGE_METADATA = {
@@ -147,12 +149,42 @@ const PAGE_METADATA = {
   },
   erium: {
     pt: {
-      title: "Erium | Pietro Ty",
-      desc: "Conheça o Erium - Toolkit de auxílio a viagens aéreas desenvolvido por Pietro Ty como TCC técnico."
+      title: "Erium TCC | Pietro Ty",
+      desc: "Conheça o Erium TCC - Toolkit de auxílio a viagens aéreas desenvolvido como Trabalho de Conclusão de Curso do curso Técnico em Desenvolvimento de Sistemas na ETEC."
     },
     en: {
-      title: "Erium | Pietro Ty",
-      desc: "Meet Erium - A flight passenger assistance toolkit developed by Pietro Ty for his ETEC technical degree."
+      title: "Erium TCC | Pietro Ty",
+      desc: "Meet Erium TCC - A flight passenger assistance toolkit developed for the Systems Development technical degree at ETEC."
+    }
+  },
+  tv2: {
+    pt: {
+      title: "TV2 | Pietro Ty",
+      desc: "Conheça a TV2 - Plataforma de streaming/televisão sincronizada em tempo real com estética vintage CRT, controles rotativos analógicos e chat embutido em celular flip."
+    },
+    en: {
+      title: "TV2 | Pietro Ty",
+      desc: "Meet TV2 - A real-time synchronized TV and streaming platform featuring vintage CRT aesthetics, analog rotary knobs, and a retro flip-phone chat."
+    }
+  },
+  magiktarot: {
+    pt: {
+      title: "MagikTarot | Pietro Ty",
+      desc: "Conheça o MagikTarot - Plataforma automatizada de consultas de Tarot com Mercado Pago, áudio ambiente, relatórios em PDF e painel administrativo."
+    },
+    en: {
+      title: "MagikTarot | Pietro Ty",
+      desc: "Meet MagikTarot - Automated Tarot consultation platform featuring Mercado Pago payments, ambient audio, PDF report generation, and admin dashboard."
+    }
+  },
+  "magik-tarot": {
+    pt: {
+      title: "MagikTarot | Pietro Ty",
+      desc: "Conheça o MagikTarot - Plataforma automatizada de consultas de Tarot com Mercado Pago, áudio ambiente, relatórios em PDF e painel administrativo."
+    },
+    en: {
+      title: "MagikTarot | Pietro Ty",
+      desc: "Meet MagikTarot - Automated Tarot consultation platform featuring Mercado Pago payments, ambient audio, PDF report generation, and admin dashboard."
     }
   }
 };
@@ -277,6 +309,9 @@ export default function App() {
     discordbot: <DiscordBotPage lang={lang} setPage={setPage} />,
     portfolio: <PortfolioPage lang={lang} setPage={setPage} />,
     erium: <EriumPage lang={lang} setPage={setPage} />,
+    tv2: <TV2Page lang={lang} setPage={setPage} />,
+    magiktarot: <MagikTarotPage lang={lang} setPage={setPage} />,
+    "magik-tarot": <MagikTarotPage lang={lang} setPage={setPage} />,
   };
 
   return (

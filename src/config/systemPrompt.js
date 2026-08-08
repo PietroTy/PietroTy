@@ -219,8 +219,8 @@ const SYSTEM_PROMPT_PT = `
             <project id="p05">
                 <name>LaPlayer</name>
                 <type>Aplicativo mobile self-hosted</type>
-                <description>Cliente de música em Dart/Flutter com interface inspirada no Spotify, biblioteca hospedada em servidor próprio, metadados via Spotify API, extração com yt-dlp, backend Python, cache local, modo offline e armazenamento de metadados/cache criptografado.</description>
-                <technologies>Dart, Flutter, Python, Spotify API, yt-dlp, Self-Hosting</technologies>
+                <description>Cliente de música em Dart/Flutter com interface inspirada no Spotify. Rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.</description>
+                <technologies>Dart, Flutter, Python, Spotify API, librespot, Vocaloid TTS, Self-Hosting</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
@@ -257,12 +257,12 @@ const SYSTEM_PROMPT_PT = `
                 <repo>não disponível / not available</repo>
             </project>
             <project id="p10">
-                <name>Erium</name>
-                <type>TCC técnico</type>
-                <description>Toolkit full-stack para passageiros de viagens aéreas, com cálculo de bagagem, validação de passaporte, consulta de normas de voo, banco SQL, consumo de APIs externas e API própria desenvolvida pela equipe.</description>
-                <technologies>Java, Spring Boot, React, JavaScript, Node.js, SQL, REST APIs</technologies>
-                <url>não disponível / not available</url>
-                <repo>não disponível / not available</repo>
+                <name>Erium TCC</name>
+                <type>TCC - Técnico em Desenvolvimento de Sistemas (CPS / ETEC)</type>
+                <description>Trabalho de Conclusão de Curso (TCC) do Ensino Técnico em Desenvolvimento de Sistemas no Centro Paula Souza (ETEC). Toolkit full-stack para auxílio a passageiros de viagens aéreas (cálculo de bagagem, validação de passaporte e normas de voo), desenvolvido em equipe com desenvolvedores como Anthony Chukwudi (@anthonyDev01).</description>
+                <technologies>TCC, Java, Spring Boot, React, JavaScript, Node.js, SQL, REST APIs</technologies>
+                <url>https://github.com/anthonyDev01/TCC--Erium</url>
+                <repo>https://github.com/anthonyDev01/TCC--Erium e https://github.com/anthonyDev01/Erium-api</repo>
             </project>
             <project id="p11">
                 <name>Stickers Bot</name>
@@ -291,8 +291,8 @@ const SYSTEM_PROMPT_PT = `
             <project id="p14">
                 <name>TV2</name>
                 <type>Aplicação web em tempo real</type>
-                <description>Plataforma Node.js de TV/streaming com extensa curadoria de programação e um sistema robusto de sincronização de reprodução entre usuários. Usa Socket.io para manter estado, posição e comandos de mídia consistentes em tempo real, além de chat integrado e autenticação Google OAuth via Passport.</description>
-                <technologies>Node.js, Socket.io, JavaScript, Google OAuth, Passport</technologies>
+                <description>Plataforma Node.js de TV/streaming sincronizada em tempo real com gabinete retro de TV de tubo (CRT), efeito de varredura (scanlines), ruído analógico via Canvas na sintonia de canais, botões giratórios físicos (scroll/clique) e chat ao vivo embutido em carcaça de celular flip anos 2000 com Google OAuth via Passport.</description>
+                <technologies>Node.js, Express, Socket.io, Passport, Google OAuth 2.0, HTML5 Canvas, CSS CRT Shaders</technologies>
                 <url>https://github.com/PietroTy/tv2</url>
                 <repo>https://github.com/PietroTy/tv2</repo>
             </project>
@@ -837,8 +837,8 @@ const SYSTEM_PROMPT_EN = `
             <project id="p05">
                 <name>LaPlayer</name>
                 <type>Aplicativo mobile self-hosted</type>
-                <description>Dart/Flutter music client inspired by Spotify, with a self-hosted library, Spotify API metadata, yt-dlp extraction, Python backend, local caching, offline mode, and encrypted metadata/cache storage.</description>
-                <technologies>Dart, Flutter, Python, Spotify API, yt-dlp, Self-Hosting</technologies>
+                <description>Dart/Flutter music client inspired by Spotify. Refactored with the music-tracker engine architecture (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.</description>
+                <technologies>Dart, Flutter, Python, Spotify API, librespot, Vocaloid TTS, Self-Hosting</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
@@ -875,12 +875,12 @@ const SYSTEM_PROMPT_EN = `
                 <repo>não disponível / not available</repo>
             </project>
             <project id="p10">
-                <name>Erium</name>
-                <type>TCC técnico</type>
-                <description>Full-stack toolkit for air passengers, including baggage calculations, passport validation, flight regulations, a SQL database, external API consumption, and a custom team-built API.</description>
-                <technologies>Java, Spring Boot, React, JavaScript, Node.js, SQL, REST APIs</technologies>
-                <url>não disponível / not available</url>
-                <repo>não disponível / not available</repo>
+                <name>Erium TCC</name>
+                <type>Capstone - Systems Development Tech Degree (CPS / ETEC)</type>
+                <description>Capstone project (TCC) for the Systems Development Tech Degree at Centro Paula Souza (ETEC). Full-stack air travel passenger toolkit (baggage calculation, passport validation, flight regulations), developed in a team with fellow devs like Anthony Chukwudi (@anthonyDev01).</description>
+                <technologies>TCC, Java, Spring Boot, React, JavaScript, Node.js, SQL, REST APIs</technologies>
+                <url>https://github.com/anthonyDev01/TCC--Erium</url>
+                <repo>https://github.com/anthonyDev01/TCC--Erium and https://github.com/anthonyDev01/Erium-api</repo>
             </project>
             <project id="p11">
                 <name>Stickers Bot</name>
@@ -909,8 +909,8 @@ const SYSTEM_PROMPT_EN = `
             <project id="p14">
                 <name>TV2</name>
                 <type>Aplicação web em tempo real</type>
-                <description>Node.js TV/streaming platform with extensive programming curation and a robust multi-user playback synchronization system. It uses Socket.io to keep media state, position, and controls consistent in real time, with integrated chat and Google OAuth authentication through Passport.</description>
-                <technologies>Node.js, Socket.io, JavaScript, Google OAuth, Passport</technologies>
+                <description>Real-time synchronized Node.js TV/streaming platform featuring a vintage CRT cabinet interface, CSS scanlines, Canvas-based analog noise on channel tuning, interactive physical rotary knobs, and a 2000s flip-phone live chat with Google OAuth authentication via Passport.</description>
+                <technologies>Node.js, Express, Socket.io, Passport, Google OAuth 2.0, HTML5 Canvas, CSS CRT Shaders</technologies>
                 <url>https://github.com/PietroTy/tv2</url>
                 <repo>https://github.com/PietroTy/tv2</repo>
             </project>

@@ -1,8 +1,9 @@
 import React from "react";
-import screenshotImg from "../../assets/stickers_bot_logo.png";
+import screenshotImg from "../../assets/whatsapp_bot_screenshot.jpg";
 
 export default function WhatsAppBotPage({ lang, setPage }) {
   const pt = lang === "pt";
+  const [modalData, setModalData] = React.useState(null);
 
   const features = [
     {
@@ -40,7 +41,6 @@ export default function WhatsAppBotPage({ lang, setPage }) {
       <div className="container">
         
 
-
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
@@ -69,12 +69,17 @@ export default function WhatsAppBotPage({ lang, setPage }) {
           </div>
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <img 
-              src={screenshotImg} 
-              alt="WhatsApp Bot Preview" 
-              className="hero-image" 
-              style={{ maxWidth: "320px", borderRadius: "16px", boxShadow: "0 10px 40px rgba(0,0,0,0.3)", border: "2px solid var(--border)" }}
-            />
+            <div 
+              style={{ cursor: "pointer", display: "inline-block" }}
+              onClick={() => setModalData(screenshotImg)}
+            >
+              <img 
+                src={screenshotImg} 
+                alt="WhatsApp Bot Preview" 
+                className="hero-image" 
+                style={{ maxWidth: "300px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "2px solid var(--border)" }}
+              />
+            </div>
           </div>
         </section>
 
@@ -88,6 +93,75 @@ export default function WhatsAppBotPage({ lang, setPage }) {
             </div>
           ))}
         </section>
+
+        {/* Lightbox Image Modal */}
+        {modalData && (
+          <div 
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.88)",
+              backdropFilter: "blur(10px)",
+              zIndex: 99999,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "1.5rem",
+              cursor: "pointer"
+            }}
+            onClick={() => setModalData(null)}
+          >
+            <div 
+              style={{
+                position: "relative",
+                maxWidth: "90vw",
+                maxHeight: "90vh",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
+            >
+              <button
+                onClick={() => setModalData(null)}
+                style={{
+                  position: "absolute",
+                  top: "-50px",
+                  right: "0",
+                  background: "rgba(255,255,255,0.2)",
+                  border: "none",
+                  color: "#fff",
+                  fontSize: "1.5rem",
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 4px 15px rgba(0,0,0,0.5)"
+                }}
+                title={pt ? "Fechar" : "Close"}
+              >
+                ✕
+              </button>
+              <img 
+                src={modalData} 
+                alt="WhatsApp Bot Screenshot"
+                style={{
+                  maxHeight: "80vh",
+                  maxWidth: "100%",
+                  objectFit: "contain",
+                  borderRadius: "28px",
+                  boxShadow: "0 25px 60px rgba(0, 0, 0, 0.9)",
+                  border: "3px solid rgba(255,255,255,0.2)"
+                }}
+              />
+            </div>
+          </div>
+        )}
 
         {/* Tech Stack Footer */}
         <section style={{ marginTop: "4rem", borderTop: "1px solid var(--border)", paddingTop: "3rem", paddingBottom: "2rem" }}>

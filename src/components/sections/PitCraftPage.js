@@ -28,9 +28,9 @@ const INSTANCES = [
     tag: "AET",
     version: "1.21.1",
     loader: "NeoForge",
-    status: "launching",
-    statusTextPt: "Estreia em 11 de Julho",
-    statusTextEn: "Starts July 11th",
+    status: "online",
+    statusTextPt: "Online Agora",
+    statusTextEn: "Online Now",
     modsCount: 24,
     descriptionPt: "Exploração de duas dimensões incríveis: os reinos flutuantes do Aether e a mística floresta do crepúsculo no Twilight Forest.",
     descriptionEn: "Exploration of two incredible dimensions: the floating realms of the Aether and the mystical twilight forest in Twilight Forest.",
@@ -146,6 +146,7 @@ export default function PitCraftPage({
   };
 
   const getStatusClass = (status) => {
+    if (status === "online") return "status-online";
     if (status === "closed") return "status-closed";
     if (status === "launching") return "status-launching";
     return "status-soon";
@@ -193,7 +194,7 @@ export default function PitCraftPage({
             <div className="status-bar">
               <div className="status-left">
                 <div className="status-title">
-                  {pt ? "Próxima temporada:" : "Next season:"} <span className="status-server-name">Aether & Twilight ({pt ? "Estreia em 11 de Julho" : "Starts July 11th"})</span>
+                  {pt ? "Temporada Ativa:" : "Active season:"} <span className="status-server-name">Aether & Twilight ({pt ? "Online Agora" : "Online Now"})</span>
                 </div>
               </div>
               <div className="status-players">
