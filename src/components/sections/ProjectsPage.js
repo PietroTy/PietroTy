@@ -130,7 +130,6 @@ export default function ProjectsPage({ lang, setPage }) {
                         {p.link.includes("github.com") ? (pt ? "Repositório" : "Repository") : (pt ? "Acessar Aplicação" : "Open App")} &rarr;
                       </a>
                     )}
-                  </div>
                     {p.apk && p.id !== "laplayer" && (
                       <a
                         href={p.apk}
