@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://boss-flux-analysis-activities.trycloudflare.com',
+    BACKEND_URL: 'https://leasing-biography-collectables-differences.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
