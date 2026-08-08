@@ -6,36 +6,36 @@ export default function EtlCnpjPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Pipeline ETL de Alta Performance",
-      titleEn: "High-Performance ETL Pipeline",
-      descPt: "Arquitetura para baixar, descompactar, higienizar, normalizar e estruturar a base de dados abertos de CNPJs da Receita Federal.",
-      descEn: "Engineered pipeline to download, decompress, clean, normalize, and load the entire Receita Federal CNPJ open database.",
+      titlePt: "Pipeline ETL & Predição de Dados",
+      titleEn: "ETL Pipeline & Data Prediction",
+      descPt: "Arquitetura completa para coleta, tratamento, limpeza, análise exploratória e modelagem preditiva sobre dados empresariais.",
+      descEn: "End-to-end data pipeline for ingestion, cleaning, normalization, exploratory analysis, and predictive modeling.",
       iconPt: "// PIPELINE DE DADOS",
       iconEn: "// DATA PIPELINE"
     },
     {
+      titlePt: "Base de Dados Abertos da Receita Federal",
+      titleEn: "Receita Federal Open Data API",
+      descPt: "Processamento automatizado da API e base pública de dados de CNPJs, empresas, sócios (QSA), filiais e atividades econômicas (CNAE).",
+      descEn: "Automated ingestion of official Receita Federal open CNPJ datasets, company structures, partner boards, and CNAE codes.",
+      iconPt: "// DADOS PÚBLICOS CNPJ",
+      iconEn: "// OPEN CNPJ DATA"
+    },
+    {
+      titlePt: "Inteligência de Mercado & Prospecção B2B",
+      titleEn: "Market Intelligence & B2B Prospecting",
+      descPt: "Estruturação de dados para prospecção ativa de clientes, enriquecimento de leads B2B, análise setorial e identificação de padrões.",
+      descEn: "Data structuring engineered for active client prospecting, B2B lead enrichment, sector analysis, and pattern detection.",
+      iconPt: "// PROSPECÇÃO B2B",
+      iconEn: "// B2B PROSPECTING"
+    },
+    {
       titlePt: "Processamento de Milhões de Registros",
       titleEn: "Processing Millions of Records",
-      descPt: "Otimização de memória em Python com Pandas/NumPy em lotes (chunks) para processamento eficiente de gigabytes de dados empresariais.",
-      descEn: "Python memory optimization using Pandas/NumPy chunking strategy to process gigabytes of corporate records efficiently.",
+      descPt: "Otimização de memória em Python com Pandas/NumPy em lotes (chunks) para carga relacional eficiente em PostgreSQL.",
+      descEn: "Python memory optimization using Pandas/NumPy chunking strategy for high-speed relational loading into PostgreSQL.",
       iconPt: "// BIG DATA & PYTHON",
       iconEn: "// BIG DATA"
-    },
-    {
-      titlePt: "Cruzamento Relacional & Grafo de Sócios",
-      titleEn: "Relational Joins & Partner Graph Analysis",
-      descPt: "Modelagem de relacionamentos entre CNPJs, quadro de sócios e administradores (QSA), filiais e códigos de atividade econômica (CNAE).",
-      descEn: "Complex join architecture connecting companies, partner boards (QSA), branches, and economic activity codes (CNAE).",
-      iconPt: "// MODELAGEM & CONEXÕES",
-      iconEn: "// GRAPH ANALYSIS"
-    },
-    {
-      titlePt: "Inteligência de Mercado & Prospecção",
-      titleEn: "Market Intelligence & Lead Generation",
-      descPt: "Consultas analíticas rápidas para geração de inteligência de mercado, perfil de empresas, enriquecimento de leads e análise setorial.",
-      descEn: "Fast analytical queries for market intelligence, company profiling, B2B lead enrichment, and sector-wide insights.",
-      iconPt: "// INTELIGÊNCIA B2B",
-      iconEn: "// MARKET INTELLIGENCE"
     }
   ];
 
@@ -51,8 +51,8 @@ export default function EtlCnpjPage({ lang, setPage }) {
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Engine de Engenharia de Dados para extração, tratamento, higienização, cruzamento relacional e carga da base completa de dados abertos da Receita Federal do Brasil (CNPJs, sócios e CNAEs)."
-                : "Data Engineering pipeline for extracting, cleaning, normalizing, cross-joining, and loading the complete Brazilian Federal Revenue open data (CNPJ, partners, and CNAE codes)."
+                ? "Engine de Engenharia de Dados desenvolvida para coleta, higienização, processamento, análise e preditor em larga escala com base nos dados abertos do CNPJ da Receita Federal."
+                : "Data Engineering engine built for large-scale data collection, cleaning, processing, analysis, and prediction based on official Receita Federal open CNPJ data."
               }
             </p>
 
@@ -87,6 +87,61 @@ export default function EtlCnpjPage({ lang, setPage }) {
           </div>
         </section>
 
+        {/* Co-Author & Project Context */}
+        <section 
+          style={{
+            marginTop: "3.5rem",
+            background: "rgba(6, 182, 212, 0.06)",
+            border: "1px solid rgba(6, 182, 212, 0.25)",
+            borderRadius: "20px",
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#06b6d4", marginBottom: "1rem" }}>
+            {pt ? "🤝 Desenvolvimento Conjunto & Aplicações de Mercado" : "🤝 Co-Development & Market Applications"}
+          </h2>
+          <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
+            {pt ? (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  Este projeto de Engenharia e Inteligência de Dados foi desenvolvido conjuntamente por Pietro e{" "}
+                  <a 
+                    href="https://github.com/Ariel-Marques23" 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    style={{ color: "#06b6d4", textDecoration: "underline", fontWeight: "600" }}
+                  >
+                    Ariel Marques Sartorio
+                  </a>
+                  .
+                </p>
+                <p style={{ margin: 0 }}>
+                  A solução engloba todo o ciclo de vida dos dados: desde a coleta automatizada da fonte pública de dados da API/base aberta de CNPJs do Governo Federal, passando por tratamento, higienização, análises exploratórias, processamento em lotes e modelos de predição. O objetivo principal é subsidiar estratégias de prospecção comercial B2B, análise de mercado e inteligência corporativa.
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ marginBottom: "1rem" }}>
+                  This Data Engineering and Intelligence project was co-developed by Pietro and{" "}
+                  <a 
+                    href="https://github.com/Ariel-Marques23" 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    style={{ color: "#06b6d4", textDecoration: "underline", fontWeight: "600" }}
+                  >
+                    Ariel Marques Sartorio
+                  </a>
+                  .
+                </p>
+                <p style={{ margin: 0 }}>
+                  The solution covers the entire data lifecycle: from automated collection of the official Brazilian Federal Revenue open CNPJ dataset to cleaning, normalization, exploratory analysis, batch processing, and prediction models. Its primary goal is supporting B2B market intelligence and client prospecting.
+                </p>
+              </>
+            )}
+          </div>
+        </section>
+
         {/* Feature Grid */}
         <section className="features-section" style={{ marginTop: "3rem" }}>
           {features.map((f, idx) => (
@@ -103,23 +158,23 @@ export default function EtlCnpjPage({ lang, setPage }) {
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2rem" }}>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Linguagem Base" : "Core Language"}
+                {pt ? "Co-Desenvolvedores" : "Co-Developers"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Python 3.11+
+                Pietro Ty & Ariel Marques Sartorio
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Engine de Dados" : "Data Engine"}
+                {pt ? "Linguagem & Libs" : "Language & Libs"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Pandas & NumPy Chunking
+                Python, Pandas & NumPy
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Banco de Destino" : "Target Warehouse"}
+                {pt ? "Banco de Dados" : "Database Engine"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
                 PostgreSQL DB
@@ -130,7 +185,7 @@ export default function EtlCnpjPage({ lang, setPage }) {
                 {pt ? "Fonte de Dados" : "Data Source"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Receita Federal do Brasil (Dados Abertos)
+                Receita Federal do Brasil (CNPJ)
               </p>
             </div>
           </div>
@@ -174,8 +229,8 @@ export default function EtlCnpjPage({ lang, setPage }) {
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>ETL CNPJ Engine</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 
-                  ? "Pipeline de Engenharia de Dados de alta velocidade para raspagem, limpeza e carga relacional da base de CNPJs da Receita Federal."
-                  : "High-speed Data Engineering pipeline for parsing, cleaning, and relational loading of official Receita Federal CNPJ datasets."
+                  ? "Pipeline de Engenharia de Dados desenvolvido conjuntamente por Pietro Ty e Ariel Marques Sartorio para prospecção e análise de mercado."
+                  : "Data Engineering pipeline co-developed by Pietro Ty and Ariel Marques Sartorio for prospecting and market intelligence."
                 }
               </p>
             </div>
