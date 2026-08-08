@@ -212,8 +212,8 @@ export const PROJECTS = [
     "nameEn": "TV2",
     "taglinePt": "Aplicação web em tempo real",
     "taglineEn": "Real-time web application",
-    "descPt": "Plataforma Node.js de TV/streaming com extensa curadoria de programação e um sistema robusto de sincronização de reprodução entre usuários. Usa Socket.io para manter estado, posição e comandos de mídia consistentes em tempo real, além de chat integrado e autenticação Google OAuth via Passport.",
-    "descEn": "Node.js TV/streaming platform with extensive programming curation and a robust multi-user playback synchronization system. It uses Socket.io to keep media state, position, and controls consistent in real time, with integrated chat and Google OAuth authentication through Passport.",
+    "descPt": "Plataforma Node.js de TV/streaming idealizada como uma vitrine alternativa para arte, música, animações e desenhos (antigos e novos) do YouTube, curados por amigos entusiastas da arte. Possui sincronização de reprodução em tempo real via Socket.io, chat retro e Google OAuth.",
+    "descEn": "Node.js TV/streaming platform designed as an alternative showcase for visual art, music, classic & modern cartoons from YouTube, curated by art-loving friends. Features real-time multi-user playback sync via Socket.io, retro chat, and Google OAuth.",
     "tags": [
       "Node.js",
       "Socket.io",

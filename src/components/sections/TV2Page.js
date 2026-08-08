@@ -1,5 +1,7 @@
 import React from "react";
-import screenshotImg from "../../assets/tv2_logo.png";
+import logoImg from "../../assets/tv2_logo.png";
+import print1Img from "../../assets/tv2_screenshot_1.png";
+import print2Img from "../../assets/tv2_screenshot_2.png";
 
 export default function TV2Page({ lang, setPage }) {
   const pt = lang === "pt";
@@ -7,9 +9,16 @@ export default function TV2Page({ lang, setPage }) {
 
   const features = [
     {
+      titlePt: "Vitrine Alternativa & Curadoria Colaborativa",
+      titleEn: "Alternative Showcase & Collaborative Curation",
+      descPt: "Idealizada como uma vitrine cultural alternativa para arte, música, videoclipes, animações e desenhos (novos e clássicos) que possuem grande valor visual e estético no YouTube, tudo curado por amigos apaixonados por arte.",
+      descEn: "Designed as an alternative cultural showcase for visual art, music, classic & modern cartoons from YouTube with rich aesthetic value, collaboratively curated by a community of art enthusiasts.",
+      icon: "// ART & CURATION"
+    },
+    {
       titlePt: "Transmissão Sincronizada em Tempo Real",
       titleEn: "Real-Time Synced Broadcast",
-      descPt: "Todos os espectadores assistem exatamente ao mesmo segundo do mesmo vídeo ou episódio em tempo real por meio de agendamento determinístico.",
+      descPt: "Todos os espectadores assistem exatamente ao mesmo segundo do mesmo vídeo ou episódio em tempo real por meio de um agendador determinístico.",
       descEn: "All viewers watch the exact same second of the video or episode simultaneously in real time powered by a deterministic schedule engine.",
       icon: "// SYNCHRONIZED"
     },
@@ -36,20 +45,37 @@ export default function TV2Page({ lang, setPage }) {
     }
   ];
 
+  const gallery = [
+    {
+      img: print1Img,
+      titlePt: "Transmissão ao Vivo em Tela CRT",
+      titleEn: "CRT Live Broadcast",
+      descPt: "Exibição sintonizada de animações, artes visuais e videoclipes em tempo real no gabinete de tubo analógico com OSD de programação.",
+      descEn: "Live playback of cartoons, visual arts, and music videos in real time inside the vintage CRT cabinet with custom OSD."
+    },
+    {
+      img: print2Img,
+      titlePt: "Sintonia & Ruído Estático (Canvas)",
+      titleEn: "Tuning & Canvas Static Noise",
+      descPt: "Efeito clássico de estática/chiado analógico gerado via HTML5 Canvas durante a troca de canais e sintonização.",
+      descEn: "Classic analog static noise generated dynamically via HTML5 Canvas shaders during channel switching and tuning."
+    }
+  ];
+
   return (
     <div className="page pitcraft-page">
       <div className="container">
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Node.js • Socket.io • Real-Time CRT TV</div>
+            <div className="hero-tag">Node.js • Socket.io • Vitrine Cultural & Retro TV</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               TV2
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Plataforma de TV e streaming sincronizado em tempo real. Combina a nostalgia dos aparelhos de TV de tubo analógicos com chat ao vivo em estilo celular flip e autenticação via Google."
-                : "Real-time synchronized TV and streaming platform. Blends vintage analog CRT television aesthetics with a retro flip-phone live chat and Google OAuth."
+                ? "Plataforma de TV e streaming sincronizado idealizada como uma vitrine alternativa para a expressão artística e cultural. Reúne música, arte, animações clássicas e contemporâneas — tudo com alto valor visual disponível no YouTube e curado por um coletivo de amigos entusiastas de arte."
+                : "Real-time synchronized TV and streaming platform designed as an alternative showcase for artistic and cultural expression. Features curated music, visual art, classic and contemporary cartoons — all with rich aesthetic value from YouTube, curated by a collective of art-loving friends."
               }
             </p>
 
@@ -78,10 +104,10 @@ export default function TV2Page({ lang, setPage }) {
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div 
               style={{ cursor: "pointer", display: "inline-block" }}
-              onClick={() => setModalData(screenshotImg)}
+              onClick={() => setModalData(logoImg)}
             >
               <img 
-                src={screenshotImg} 
+                src={logoImg} 
                 alt="TV2 Logo" 
                 className="hero-image" 
                 style={{ 
@@ -106,6 +132,41 @@ export default function TV2Page({ lang, setPage }) {
               <p className="feature-description">{pt ? f.descPt : f.descEn}</p>
             </div>
           ))}
+        </section>
+
+        {/* Screenshots Showcase Gallery */}
+        <section style={{ marginTop: "4rem" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "1.5rem", borderLeft: "4px solid var(--p2)", paddingLeft: "1rem" }}>
+            {pt ? "Capturas da Interface & Efeitos" : "Interface Screenshots & Effects"}
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "2rem" }}>
+            {gallery.map((item, idx) => (
+              <div 
+                key={idx}
+                style={{
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease, border-color 0.3s ease"
+                }}
+                onClick={() => setModalData(item.img)}
+              >
+                <img 
+                  src={item.img} 
+                  alt={pt ? item.titlePt : item.titleEn}
+                  style={{ width: "100%", height: "220px", objectFit: "cover", display: "block" }}
+                />
+                <div style={{ padding: "1.2rem" }}>
+                  <h4 style={{ fontSize: "1.1rem", fontWeight: 600, color: "var(--fg)" }}>{pt ? item.titlePt : item.titleEn}</h4>
+                  <p style={{ fontSize: "0.88rem", color: "var(--muted2)", marginTop: "0.4rem", lineHeight: 1.5 }}>
+                    {pt ? item.descPt : item.descEn}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Tech Stack Footer */}
