@@ -318,36 +318,40 @@ export default function LaPlayerPage({ lang, setPage }) {
                   width: "42px",
                   height: "42px",
                   borderRadius: "50%",
+                  background: "rgba(255,255,255,0.1)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  fontSize: "1.1rem",
                   cursor: "pointer",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 4px 15px rgba(0,0,0,0.5)"
+                  justifyContent: "center"
                 }}
-                title={pt ? "Fechar" : "Close"}
               >
                 ✕
               </button>
               <img 
-                src={modalData.img} 
-                alt={pt ? modalData.titlePt : modalData.titleEn}
+                src={typeof modalData === "string" ? modalData : modalData.img} 
+                alt={typeof modalData === "string" ? "LaPlayer Preview" : (pt ? modalData.titlePt : modalData.titleEn)}
                 style={{
-                  maxHeight: "75vh",
-                  maxWidth: "100%",
+                  maxHeight: typeof modalData === "string" ? "75vh" : "65vh",
+                  maxWidth: "80vw",
+                  width: "auto",
+                  height: "auto",
                   objectFit: "contain",
-                  borderRadius: "32px",
-                  boxShadow: "0 25px 60px rgba(0, 0, 0, 0.9)",
-                  border: "3px solid rgba(255,255,255,0.2)"
+                  borderRadius: "12px"
                 }}
               />
-              <div style={{ marginTop: "1rem", color: "#fff", textAlign: "center" }}>
-                <h4 style={{ fontSize: "1.2rem", fontWeight: "700", marginBottom: "0.2rem" }}>
-                  {pt ? modalData.titlePt : modalData.titleEn}
-                </h4>
-                <p style={{ fontSize: "0.9rem", color: "var(--muted2)" }}>
-                  {pt ? modalData.descPt : modalData.descEn}
-                </p>
-              </div>
+              {typeof modalData === "object" && modalData.titlePt && (
+                <div style={{ marginTop: "1rem", color: "#fff", textAlign: "center", maxWidth: "600px" }}>
+                  <h4 style={{ fontSize: "1.2rem", fontWeight: "700", marginBottom: "0.3rem" }}>
+                    {pt ? modalData.titlePt : modalData.titleEn}
+                  </h4>
+                  <p style={{ fontSize: "0.9rem", color: "var(--muted2)", lineHeight: 1.5 }}>
+                    {pt ? modalData.descPt : modalData.descEn}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         )}

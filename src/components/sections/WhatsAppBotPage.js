@@ -105,39 +105,41 @@ export default function WhatsAppBotPage({ lang, setPage }) {
               position: "fixed",
               top: 0,
               left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.88)",
-              backdropFilter: "blur(10px)",
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "rgba(0, 0, 0, 0.9)",
+              backdropFilter: "blur(8px)",
               zIndex: 99999,
               display: "flex",
-              alignItems: "center",
               justifyContent: "center",
-              padding: "1.5rem",
-              cursor: "pointer"
+              alignItems: "center",
+              padding: "2rem",
+              cursor: "zoom-out"
             }}
             onClick={() => setModalData(null)}
           >
             <div 
               style={{
                 position: "relative",
-                maxWidth: "90vw",
-                maxHeight: "90vh",
+                maxWidth: "85vw",
+                maxHeight: "85vh",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center"
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "1rem",
+                background: "var(--card)",
+                border: "1px solid var(--border)",
+                borderRadius: "20px",
+                boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
+                cursor: "default"
               }}
+              onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setModalData(null)}
                 style={{
                   position: "absolute",
-                  top: "-50px",
-                  right: "0",
-                  background: "rgba(255,255,255,0.2)",
-                  border: "none",
-                  color: "#fff",
-                  fontSize: "1.5rem",
                   width: "42px",
                   height: "42px",
                   borderRadius: "50%",

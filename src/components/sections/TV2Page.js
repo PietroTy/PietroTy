@@ -207,22 +207,69 @@ export default function TV2Page({ lang, setPage }) {
               position: "fixed",
               top: 0,
               left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(0,0,0,0.85)",
-              zIndex: 9999,
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "rgba(0, 0, 0, 0.9)",
+              backdropFilter: "blur(8px)",
+              zIndex: 99999,
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              padding: "2rem"
+              padding: "2rem",
+              cursor: "zoom-out"
             }}
             onClick={() => setModalData(null)}
           >
-            <div style={{ relative: "relative", maxWidth: "90vw", maxHeight: "90vh" }}>
+            <div 
+              style={{
+                position: "relative",
+                maxWidth: "85vw",
+                maxHeight: "85vh",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "1rem",
+                background: "var(--card)",
+                border: "1px solid var(--border)",
+                borderRadius: "20px",
+                boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
+                cursor: "default"
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setModalData(null)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "12px",
+                  width: "36px",
+                  height: "36px",
+                  borderRadius: "50%",
+                  background: "rgba(255,255,255,0.1)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  fontSize: "1.1rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}
+              >
+                ✕
+              </button>
               <img 
-                src={modalData} 
-                alt="Enlarged preview" 
-                style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "12px", border: "1px solid var(--border)" }}
+                src={typeof modalData === "string" ? modalData : modalData.img} 
+                alt="Enlarged preview"
+                style={{
+                  maxHeight: "75vh",
+                  maxWidth: "80vw",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                  borderRadius: "12px"
+                }}
               />
             </div>
           </div>
