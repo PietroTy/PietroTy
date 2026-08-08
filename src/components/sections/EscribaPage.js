@@ -96,8 +96,8 @@ export default function EscribaPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#f59e0b", marginBottom: "1rem" }}>
-            {pt ? "📖 A Origem, Orientação Acadêmica & Artigo Científico" : "📖 Origin, Academic Mentorship & Research Paper"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#f59e0b", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// INICIAÇÃO CIENTÍFICA, ORIENTAÇÃO & ARTIGO ACADÊMICO" : "// RESEARCH INITIATION, MENTORSHIP & PAPER"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -121,7 +121,7 @@ export default function EscribaPage({ lang, setPage }) {
                   Para a engine do sistema, a escolha da <strong>Maritaca AI (Modelos Sabiá)</strong> provou ser uma decisão estratégica decisiva: os modelos apresentaram proficiência ímpar na norma culta do português brasileiro para textos acadêmicos, aliada a um custo operacional drasticamente inferior ao de concorrentes internacionais.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  📄 <i>Atualmente, estou trabalhando na escrita de um artigo acadêmico (paper) detalhando a arquitetura, o desenvolvimento, os desafios técnicos enfrentados e os resultados obtidos com o Escriba AI.</i>
+                  <i>Atualmente, estou trabalhando na escrita de um artigo acadêmico (paper) detalhando a arquitetura, o desenvolvimento, os desafios técnicos enfrentados e os resultados obtidos com o Escriba AI.</i>
                 </p>
               </>
             ) : (
@@ -145,7 +145,7 @@ export default function EscribaPage({ lang, setPage }) {
                   For the underlying engine, adopting <strong>Maritaca AI (Sabiá models)</strong> proved to be a key strategic decision: the models demonstrated unmatched fluency in Brazilian Portuguese academic prose, combined with high cost-efficiency compared to international LLM APIs.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  📄 <i>I am currently writing an academic research paper documenting the technical architecture, development challenges, and evaluation results of Escriba AI.</i>
+                  <i>I am currently writing an academic research paper documenting the technical architecture, development challenges, and evaluation results of Escriba AI.</i>
                 </p>
               </>
             )}

@@ -96,8 +96,8 @@ export default function WhatsAppBotPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#22c55e", marginBottom: "1rem" }}>
-            {pt ? "🚀 O Projeto que Abriu as Portas da Minha Carreira" : "🚀 The Project that Launched My Career"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#22c55e", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// MARCO NA CARREIRA & OPORTUNIDADE ENGAJA" : "// CAREER MILESTONE & ENGAJA OPPORTUNITY"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -109,7 +109,7 @@ export default function WhatsAppBotPage({ lang, setPage }) {
                   A proficiência técnica demonstrada neste projeto foi o diferencial que me <strong>conseguiu o primeiro emprego na Engaja Soluções Corporativas</strong>, onde fui contratado para projetar a estrutura, arquitetura e manutenção de agentes de IA para clientes enterprise.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  📰 <i>Atualmente, o bot continua 100% ativo, realizando disparos automáticos diários de jornais e resumos de notícias personalizados em diversos grupos do WhatsApp.</i>
+                  <i>Atualmente, o bot continua 100% ativo, realizando disparos automáticos diários de jornais e resumos de notícias personalizados em diversos grupos do WhatsApp.</i>
                 </p>
               </>
             ) : (
@@ -121,7 +121,7 @@ export default function WhatsAppBotPage({ lang, setPage }) {
                   The technical expertise showcased in this project was the exact catalyst that <strong>landed my job at Engaja Soluções Corporativas</strong>, where I was brought on to architect and maintain enterprise AI agent infrastructure.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  📰 <i>Today, the bot remains 100% active, dispatching automated daily news feeds and custom newsletters to multiple WhatsApp communities.</i>
+                  <i>Today, the bot remains 100% active, dispatching automated daily news feeds and custom newsletters to multiple WhatsApp communities.</i>
                 </p>
               </>
             )}

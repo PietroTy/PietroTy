@@ -87,8 +87,8 @@ export default function CVMakerPage({ lang, setPage }) {
               }}
               onClick={() => setModalData("cvmaker_card")}
             >
-              <div style={{ fontSize: "4rem" }}>🎯</div>
-              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.1rem" }}>CVMaker AI</div>
+              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.8rem" }}>CV</div>
+              <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.8)", fontWeight: "bold", fontSize: "0.9rem" }}>CVMaker AI</div>
             </div>
           </div>
         </section>
@@ -104,8 +104,8 @@ export default function CVMakerPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#3b82f6", marginBottom: "1rem" }}>
-            {pt ? "🎯 Otimização de Processo & Ranqueamento em Algoritmos ATS" : "🎯 Workflow Optimization & ATS Ranking"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#3b82f6", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// OTIMIZAÇÃO DE PROCESSO & ALGORITMOS ATS" : "// WORKFLOW OPTIMIZATION & ATS ALGORITHMS"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -205,7 +205,7 @@ export default function CVMakerPage({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div style={{ fontSize: "5rem", marginBottom: "1rem" }}>🎯</div>
+              <div style={{ fontFamily: "var(--mono)", fontSize: "3rem", fontWeight: "bold", color: "#fff", marginBottom: "1rem" }}>CV</div>
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>CVMaker AI</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 

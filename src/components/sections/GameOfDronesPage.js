@@ -93,8 +93,8 @@ export default function GameOfDronesPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#10b981", marginBottom: "1rem" }}>
-            {pt ? "🛸 Capitania de Software, Treinamento do YOLOv8n & Bi-Classificação" : "🛸 Software Captaincy, YOLOv8n Training & Bi-Qualification"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#10b981", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// CAPITANIA DE SOFTWARE, YOLOv8n & BI-CLASSIFICAÇÃO SAE" : "// SOFTWARE CAPTAINCY, YOLOv8n & SAE BI-QUALIFICATION"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -106,7 +106,7 @@ export default function GameOfDronesPage({ lang, setPage }) {
                   Sob sua liderança técnica, a equipe desenvolveu todos os controles de voo embarcados em <strong>Raspberry Pi</strong>, além de treinar e integrar redes neurais <strong>YOLOv8n</strong> para tomada de decisão autônoma de voo e leitura de alvos durante missões específicas da competição.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  🏆 <i>Pelo 2º ano consecutivo, a equipe obteve a classificação oficial para a fase nacional da Competição EletroQuad SAE BRASIL, consolidando uma trajetória marcante de gestão técnica, trabalho em equipe e inovação embarcada.</i>
+                  <i>Pelo 2º ano consecutivo, a equipe obteve a classificação oficial para a fase nacional da Competição EletroQuad SAE BRASIL, consolidando uma trajetória marcante de gestão técnica, trabalho em equipe e inovação embarcada.</i>
                 </p>
               </>
             ) : (
@@ -118,7 +118,7 @@ export default function GameOfDronesPage({ lang, setPage }) {
                   Under his technical leadership, the team engineered all flight control algorithms on <strong>Raspberry Pi</strong>, alongside training and deploying custom <strong>YOLOv8n</strong> neural networks for autonomous target detection and flight maneuvers.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  🏆 <i>For the 2nd consecutive year, the team earned national qualification in the EletroQuad SAE BRASIL competition, validating excellence in team leadership, embedded systems, and computer vision.</i>
+                  <i>For the 2nd consecutive year, the team earned national qualification in the EletroQuad SAE BRASIL competition, validating excellence in team leadership, embedded systems, and computer vision.</i>
                 </p>
               </>
             )}

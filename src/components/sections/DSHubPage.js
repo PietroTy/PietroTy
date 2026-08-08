@@ -96,8 +96,8 @@ export default function DSHubPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#0ea5e9", marginBottom: "1rem" }}>
-            {pt ? "📊 Propósito do Data Science Hub" : "📊 Purpose of Data Science Hub"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#0ea5e9", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// PROPÓSITO DO DATA SCIENCE HUB" : "// PURPOSE OF DATA SCIENCE HUB"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (

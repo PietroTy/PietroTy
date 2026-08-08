@@ -57,8 +57,8 @@ export default function EtlCnpjPage({ lang, setPage }) {
             </p>
 
             <div style={{ marginTop: "2rem" }}>
-              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.85 }}>
-                ⚡ {pt ? "Engenharia de Big Data / Milhões de Registros" : "Big Data Engineering / Millions of Records"}
+              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
+                // {pt ? "ENGENHARIA DE BIG DATA / MILHÕES DE REGISTROS" : "BIG DATA ENGINEERING / MILLIONS OF RECORDS"}
               </span>
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function EtlCnpjPage({ lang, setPage }) {
               }}
               onClick={() => setModalData("etl_card")}
             >
-              <div style={{ fontSize: "3.5rem" }}>⚡</div>
-              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.1rem" }}>ETL CNPJ Engine</div>
+              <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.8rem" }}>ETL</div>
+              <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.8)", fontWeight: "bold", fontSize: "0.9rem" }}>ETL CNPJ Engine</div>
             </div>
           </div>
         </section>
@@ -98,8 +98,8 @@ export default function EtlCnpjPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#06b6d4", marginBottom: "1rem" }}>
-            {pt ? "🤝 Desenvolvimento Conjunto & Aplicações de Mercado" : "🤝 Co-Development & Market Applications"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#06b6d4", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// DESENVOLVIMENTO CONJUNTO & INTELIGÊNCIA B2B" : "// CO-DEVELOPMENT & B2B MARKET INTELLIGENCE"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -225,7 +225,7 @@ export default function EtlCnpjPage({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div style={{ fontSize: "5rem", marginBottom: "1rem" }}>⚡</div>
+              <div style={{ fontFamily: "var(--mono)", fontSize: "3rem", fontWeight: "bold", color: "#fff", marginBottom: "1rem" }}>ETL</div>
               <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>ETL CNPJ Engine</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 

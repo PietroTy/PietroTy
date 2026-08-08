@@ -1,5 +1,6 @@
 import React from "react";
 import chubLogo from "../../assets/chub_logo.png";
+import chubScreenshot from "../../assets/chub_screenshot.png";
 
 export default function CHubPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -7,36 +8,36 @@ export default function CHubPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "30+ Minijogos em WebAssembly",
-      titleEn: "30+ WebAssembly Minigames",
-      descPt: "Coletânea com mais de 30 jogos (clones retrô e criações autorais) compilados nativamente em C via Emscripten para rodar no navegador.",
-      descEn: "Collection of over 30 games (retro clones and original titles) compiled natively in C via Emscripten to run smoothly inside any web browser.",
-      iconPt: "// JOGOS & WEBASSEMBLY",
-      iconEn: "// WEBASSEMBLY GAMES"
+      titlePt: "Nostalgia dos Jogos Flash (Kizi & Click Jogos)",
+      titleEn: "Nostalgic Flash Games (Kizi & Click Jogos)",
+      descPt: "Inspirado nas clássicas plataformas de jogos em Flash da infância, reunindo jogos retrô 2D em uma única vitrine interativa.",
+      descEn: "Inspired by classic childhood Flash game portals, combining retro 2D games into a single interactive showcase.",
+      iconPt: "// CONCEITO RETRÔ",
+      iconEn: "// RETRO CONCEPT"
     },
     {
-      titlePt: "Arte Procedural por Código & C/Raylib",
-      titleEn: "Procedural Code Art & C/Raylib",
-      descPt: "Toda a arte, spritemaps e elementos visuais são desenhados por algoritmos e primitiva gráfica procedural no Raylib em linguagem C pura.",
-      descEn: "All visual artwork, spritemaps, and UI elements are rendered algorithmically via Raylib graphic primitives written in pure C.",
-      iconPt: "// MOTOR EM C",
-      iconEn: "// C ENGINE"
+      titlePt: "Primeiros Jogos em C com Raylib",
+      titleEn: "First C Games with Raylib",
+      descPt: "Desenvolvidos do zero em C com a biblioteca Raylib durante o 1º semestre da faculdade, incluindo clássicos como Snake e Flappy Bird.",
+      descEn: "Built from scratch in C with the Raylib library during the 1st semester of computer science, including Snake and Flappy Bird clones.",
+      iconPt: "// LINGUAGEM C & RAYLIB",
+      iconEn: "// C & RAYLIB"
     },
     {
-      titlePt: "Nostalgia dos Portais Flash (Kizi & Click Jogos)",
-      titleEn: "Flash Game Portal Nostalgia (Kizi & ClickJogos)",
-      descPt: "Interface desenvolvida para evocar a atmosfera nostálgica dos clássicos portais de jogos em Flash dos anos 2000.",
-      descEn: "Interface designed to recreate the nostalgic atmosphere of 2000s web Flash game hubs.",
-      iconPt: "// NOSTALGIA FLASH",
-      iconEn: "// FLASH PORTAL"
+      titlePt: "Compilação Web via WebAssembly (Emscripten)",
+      titleEn: "WebAssembly Compilation (Emscripten)",
+      descPt: "Compilação de código de baixo nível em C diretamente para WebAssembly (WASM), permitindo rodar jogos de alta performance no navegador.",
+      descEn: "Low-level C code compiled directly to WebAssembly (WASM) using Emscripten for smooth in-browser game execution.",
+      iconPt: "// WEBASSEMBLY (WASM)",
+      iconEn: "// WEBASSEMBLY"
     },
     {
-      titlePt: "Ciclo de Aprendizado Acadêmico",
-      titleEn: "Academic Learning Milestone",
-      descPt: "Projeto iniciado no 1º semestre da faculdade e entregue como trabalho final na última disciplina com o Prof. Dr. David Buzatto.",
-      descEn: "Project started in the 1st semester of Computer Science and delivered as the final capstone project for Prof. Dr. David Buzatto.",
-      iconPt: "// TRAJETÓRIA",
-      iconEn: "// MILESTONE"
+      titlePt: "Projeto Final de Graduação Acadêmica",
+      titleEn: "Final Academic Capstone Project",
+      descPt: "Entregue como projeto de conclusão de ciclo para o Prof. Dr. David Buzatto no IFSP, consolidando o aprendizado em Ciência da Computação.",
+      descEn: "Delivered as the final course project for Prof. Dr. David Buzatto at IFSP, completing a foundational computer science milestone.",
+      iconPt: "// PROJETO ACADÊMICO",
+      iconEn: "// ACADEMIC CAPSTONE"
     }
   ];
 
@@ -46,35 +47,35 @@ export default function CHubPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">C • Raylib • WebAssembly • HTML5</div>
+            <div className="hero-tag">C • Raylib • WebAssembly (Emscripten) • HTML5</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               cHUB
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Portal interativo com mais de 30 minijogos desenvolvidos integralmente em linguagem C com Raylib e compilados para WebAssembly. Inspirado em clássicos portais Flash como Kizi e Click Jogos."
-                : "Interactive portal featuring over 30 minigames built in C with Raylib and compiled to WebAssembly. Inspired by classic web Flash game portals like Kizi and Click Jogos."
+                ? "Portal retro de minijogos 2D desenvolvidos em linguagem C com Raylib e compilados para WebAssembly. Inspirado no Kizi e Click Jogos, nasceu das primeiras aulas de programação no bacharelado."
+                : "Retro 2D minigame portal built in C with Raylib and compiled to WebAssembly. Inspired by classic Flash platforms, born during early computer science classes."
               }
             </p>
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
-                href="https://pietroty.github.io/Chub/"
+                href="https://pietroty.github.io/chub/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-fill"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
               >
-                <span>{pt ? "Jogar cHUB no Browser" : "Play cHUB in Browser"} &rarr;</span>
+                <span>{pt ? "Acessar cHUB" : "Access cHUB"} &rarr;</span>
               </a>
               <a
-                href="https://github.com/PietroTy/Chub"
+                href="https://github.com/PietroTy/chub"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline"
-                style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 24px" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
               >
-                <span>{pt ? "Repositório GitHub" : "GitHub Repository"}</span>
+                <span>{pt ? "Repositório GitHub" : "GitHub Repository"} &rarr;</span>
               </a>
             </div>
           </div>
@@ -105,8 +106,8 @@ export default function CHubPage({ lang, setPage }) {
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
         >
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#a855f7", marginBottom: "1rem" }}>
-            {pt ? "📖 A História por Trás do cHUB" : "📖 The Story Behind cHUB"}
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "#a855f7", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// HISTÓRIA DO PROJETO & HOMENAGEM ACADÊMICA" : "// PROJECT STORY & ACADEMIC DEDICATION"}
           </h2>
           <div style={{ color: "var(--fg)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -143,26 +144,50 @@ export default function CHubPage({ lang, setPage }) {
                     rel="noreferrer" 
                     style={{ color: "#a855f7", textDecoration: "underline", fontWeight: "600" }}
                   >
-                    Professor Dr. David Buzatto
+                    Professor David Buzatto, PhD
                   </a>
-                  , during my 1st semester of the Computer Science Bachelor's degree.
+                  , back in my 1st semester of Computer Science.
                 </p>
                 <p style={{ marginBottom: "1rem" }}>
-                  Back then, I compiled the projects into executable <code>.exe</code> files and shared them with my classmates over WhatsApp so everyone could play during breaks. The very first games created were a <strong>Snake</strong> clone and a <strong>Flappy Bird</strong> clone.
+                  At the time, I compiled the executables (<code>.exe</code>) and shared them via WhatsApp with my classmates to play during class breaks. The first titles built were clones of <strong>Snake</strong> and <strong>Flappy Bird</strong>.
                 </p>
                 <p style={{ marginBottom: "1rem" }}>
-                  As I progressed through college, I kept expanding the game library and materialized the concept of <strong>cHUB</strong> — a unified arcade portal inspired by childhood Flash game hubs like <i>Kizi</i> and <i>ClickJogos</i>.
+                  As I progressed through the program, I kept expanding the game library and materialized <strong>cHUB</strong> — a unified games hub inspired by classic childhood Flash portals like <i>Kizi</i> and <i>Click Jogos</i>.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  Ultimately, I submitted cHUB as the final capstone project for the last course I took with Prof. Dr. David Buzatto, closing a full academic circle.
+                  Finally, I delivered cHUB as the final project for my last course under Prof. Dr. David Buzatto, completing an important academic chapter.
                 </p>
               </>
             )}
           </div>
         </section>
 
+        {/* Screenshot / Gameplay Preview */}
+        <section style={{ marginTop: "3.5rem" }}>
+          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", marginBottom: "1.5rem" }}>
+            {pt ? "Interface da Plataforma & Jogos" : "Platform Interface & Gameplay"}
+          </h2>
+          <div 
+            style={{
+              borderRadius: "20px",
+              overflow: "hidden",
+              border: "1px solid var(--border)",
+              boxShadow: "0 15px 40px rgba(0,0,0,0.4)",
+              cursor: "pointer",
+              background: "var(--card)"
+            }}
+            onClick={() => setModalData(chubScreenshot)}
+          >
+            <img 
+              src={chubScreenshot} 
+              alt="cHUB Gameplay Preview" 
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+        </section>
+
         {/* Feature Grid */}
-        <section className="features-section" style={{ marginTop: "3rem" }}>
+        <section className="features-section" style={{ marginTop: "3.5rem" }}>
           {features.map((f, idx) => (
             <div key={idx} className="feature-item">
               <div className="feature-icon-wrapper">{pt ? f.iconPt || f.icon : f.iconEn || f.icon}</div>
@@ -180,31 +205,31 @@ export default function CHubPage({ lang, setPage }) {
                 {pt ? "Linguagem Base" : "Core Language"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Linguagem C (C99)
+                Linguagem C (ANSI / C99)
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Biblioteca Gráfica" : "Graphics Library"}
+                {pt ? "Engine de Gráficos" : "Graphics Engine"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Raylib Framework
+                Raylib Framework 2D
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Compilação Web" : "Web Target"}
+                {pt ? "Compilação Web" : "Web Compiler"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                WebAssembly (Emscripten)
+                Emscripten & WebAssembly (WASM)
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Orientador Acadêmico" : "Academic Advisor"}
+                {pt ? "Mentoria Acadêmica" : "Academic Mentor"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Prof. Dr. David Buzatto
+                Prof. Dr. David Buzatto (IFSP)
               </p>
             </div>
           </div>
