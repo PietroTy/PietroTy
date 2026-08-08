@@ -101,25 +101,13 @@ export default function TV2Page({ lang, setPage }) {
             </div>
           </div>
 
-          <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div 
-              style={{ cursor: "pointer", display: "inline-block" }}
+          <div className="hero-logo-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <img 
+              src={logoImg} 
+              alt="TV2 Logo" 
+              className="tv2-hero-logo" 
               onClick={() => setModalData(logoImg)}
-            >
-              <img 
-                src={logoImg} 
-                alt="TV2 Logo" 
-                className="hero-image" 
-                style={{ 
-                  width: "280px", 
-                  height: "280px", 
-                  objectFit: "cover", 
-                  borderRadius: "16px", 
-                  boxShadow: "0 15px 40px rgba(0,0,0,0.5)", 
-                  border: "2px solid var(--border)" 
-                }}
-              />
-            </div>
+            />
           </div>
         </section>
 

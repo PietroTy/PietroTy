@@ -56,6 +56,20 @@
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(124, 58, 237, 0.5));
 }
 
+.pitcraft-page .tv2-hero-logo {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(14, 165, 233, 0.4));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+  cursor: pointer;
+}
+
+.pitcraft-page .tv2-hero-logo:hover {
+  transform: scale(1.05) translateY(-2px);
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 20px rgba(239, 68, 68, 0.7)) drop-shadow(0 0 15px rgba(14, 165, 233, 0.7));
+}
+
 @media (max-width: 900px) {
   .pitcraft-page .hero-logo-container {
     justify-content: center;
