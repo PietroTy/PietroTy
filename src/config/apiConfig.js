@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://link-irc-think-stations.trycloudflare.com',
+    BACKEND_URL: 'https://armstrong-const-handles-extraordinary.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
