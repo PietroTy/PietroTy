@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://yarn-dans-updates-cow.trycloudflare.com',
+    BACKEND_URL: 'https://value-liberal-symbol-den.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
