@@ -226,25 +226,8 @@ export default function EriumPage({ lang, setPage }) {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={() => setModalData(null)}
-                style={{
-                  position: "absolute",
-                  width: "42px",
-                  height: "42px",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 4px 15px rgba(0,0,0,0.5)"
-                }}
-                title={pt ? "Fechar" : "Close"}
-              >
-                ✕
-              </button>
               <img 
-                src={modalData} 
+                src={typeof modalData === "string" ? modalData : modalData.img}
                 alt="Erium Logo Screenshot"
                 style={{
                   maxHeight: "80vh",
