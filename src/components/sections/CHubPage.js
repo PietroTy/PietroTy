@@ -1,6 +1,5 @@
 import React from "react";
 import chubLogo from "../../assets/chub_logo.png";
-import chubScreenshot from "../../assets/chub_screenshot.png";
 
 export default function CHubPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -159,30 +158,6 @@ export default function CHubPage({ lang, setPage }) {
                 </p>
               </>
             )}
-          </div>
-        </section>
-
-        {/* Screenshot / Gameplay Preview */}
-        <section style={{ marginTop: "3.5rem" }}>
-          <h2 style={{ fontSize: "1.4rem", fontWeight: "700", marginBottom: "1.5rem" }}>
-            {pt ? "Interface da Plataforma & Jogos" : "Platform Interface & Gameplay"}
-          </h2>
-          <div 
-            style={{
-              borderRadius: "20px",
-              overflow: "hidden",
-              border: "1px solid var(--border)",
-              boxShadow: "0 15px 40px rgba(0,0,0,0.4)",
-              cursor: "pointer",
-              background: "var(--card)"
-            }}
-            onClick={() => setModalData(chubScreenshot)}
-          >
-            <img 
-              src={chubScreenshot} 
-              alt="cHUB Gameplay Preview" 
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
           </div>
         </section>
 
