@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://edgar-casey-letters-acc.trycloudflare.com',
+    BACKEND_URL: 'https://peers-adaptation-baths-suites.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
