@@ -404,33 +404,59 @@
 /* Features Grid */
 .pitcraft-page .features-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.8rem;
   padding-top: 2rem;
   border-top: 1px dashed var(--border);
+}
+
+@media (max-width: 900px) {
+  .pitcraft-page .features-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pitcraft-page .feature-item {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.75rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pitcraft-page .feature-item:hover {
+  border-color: var(--p2);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
 .pitcraft-page .feature-icon-wrapper {
-  font-size: 1.5rem;
-  color: var(--p3);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--p2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .pitcraft-page .feature-title {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1.35;
 }
 
 .pitcraft-page .feature-description {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   color: var(--muted2);
-  line-height: 1.6;
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* Pit Profile Page */
