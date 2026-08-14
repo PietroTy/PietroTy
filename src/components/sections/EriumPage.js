@@ -83,7 +83,7 @@ export default function EriumPage({ lang, setPage }) {
                 src={eriumLogo} 
                 alt="Erium Logo Centro Paula Souza" 
                 className="hero-image" 
-                style={{ maxWidth: "280px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "2px solid var(--border)" }}
+                style={{ maxWidth: "280px", borderRadius: "0px", boxShadow: "0 15px 40px rgba(0,0,0,0.5)", border: "2px solid var(--border)" }}
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function EriumPage({ lang, setPage }) {
             marginTop: "4rem", 
             background: "rgba(124, 58, 237, 0.05)", 
             border: "1px solid rgba(124, 58, 237, 0.2)", 
-            borderRadius: "24px", 
+            borderRadius: "0px", 
             padding: "2.5rem 2rem" 
           }}
         >
@@ -129,7 +129,7 @@ export default function EriumPage({ lang, setPage }) {
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
-            <div style={{ background: "var(--card)", padding: "1.5rem", borderRadius: "16px", border: "1px solid var(--border)" }}>
+            <div style={{ background: "var(--card)", padding: "1.5rem", borderRadius: "0px", border: "1px solid var(--border)" }}>
               <div style={{ color: "var(--p2)", fontFamily: "var(--mono)", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem" }}>
                 {`// FRONTEND WEB (TYPESCRIPT / VITE)`}
               </div>
@@ -152,7 +152,7 @@ export default function EriumPage({ lang, setPage }) {
               </a>
             </div>
 
-            <div style={{ background: "var(--card)", padding: "1.5rem", borderRadius: "16px", border: "1px solid var(--border)" }}>
+            <div style={{ background: "var(--card)", padding: "1.5rem", borderRadius: "0px", border: "1px solid var(--border)" }}>
               <div style={{ color: "var(--p2)", fontFamily: "var(--mono)", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem" }}>
                 {`// BACKEND API (NODE.JS / VERCEL)`}
               </div>
@@ -220,7 +220,7 @@ export default function EriumPage({ lang, setPage }) {
                 padding: "1rem",
                 background: "var(--card)",
                 border: "1px solid var(--border)",
-                borderRadius: "20px",
+                borderRadius: "0px",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
                 cursor: "default"
               }}
@@ -233,7 +233,7 @@ export default function EriumPage({ lang, setPage }) {
                   maxHeight: "80vh",
                   maxWidth: "100%",
                   objectFit: "contain",
-                  borderRadius: "28px",
+                  borderRadius: "0px",
                   boxShadow: "0 25px 60px rgba(0, 0, 0, 0.9)",
                   border: "3px solid rgba(255,255,255,0.2)"
                 }}

@@ -142,7 +142,7 @@ export default function LaPlayerPage({ lang, setPage }) {
             marginTop: "4rem", 
             background: "rgba(124, 58, 237, 0.05)", 
             border: "1px solid rgba(124, 58, 237, 0.2)", 
-            borderRadius: "24px", 
+            borderRadius: "0px", 
             padding: "2.5rem 2rem" 
           }}
         >
@@ -164,7 +164,7 @@ export default function LaPlayerPage({ lang, setPage }) {
             )}
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "1.2rem", marginTop: "1.5rem" }}>
-            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "14px", border: "1px solid var(--border)" }}>
+            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "0px", border: "1px solid var(--border)" }}>
               <div style={{ color: "var(--p2)", fontWeight: "700", marginBottom: "0.4rem" }}>Processamento 100% Serverless</div>
               <p style={{ fontSize: "0.85rem", color: "var(--muted2)", lineHeight: "1.5" }}>
                 {pt 
@@ -172,7 +172,7 @@ export default function LaPlayerPage({ lang, setPage }) {
                   : "No home server or VPS required. The client executes all logic directly on local mobile hardware."}
               </p>
             </div>
-            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "14px", border: "1px solid var(--border)" }}>
+            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "0px", border: "1px solid var(--border)" }}>
               <div style={{ color: "var(--p2)", fontWeight: "700", marginBottom: "0.4rem" }}>Stream Direto Spotify (librespot)</div>
               <p style={{ fontSize: "0.85rem", color: "var(--muted2)", lineHeight: "1.5" }}>
                 {pt 
@@ -180,7 +180,7 @@ export default function LaPlayerPage({ lang, setPage }) {
                   : "Direct connection to Spotify servers via client-side librespot, fetching native high-quality .ogg (Vorbis) audio."}
               </p>
             </div>
-            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "14px", border: "1px solid var(--border)" }}>
+            <div style={{ background: "var(--card)", padding: "1.2rem", borderRadius: "0px", border: "1px solid var(--border)" }}>
               <div style={{ color: "var(--p2)", fontWeight: "700", marginBottom: "0.4rem" }}>Narração por Vocaloid TTS</div>
               <p style={{ fontSize: "0.85rem", color: "var(--muted2)", lineHeight: "1.5" }}>
                 {pt 
@@ -210,7 +210,7 @@ export default function LaPlayerPage({ lang, setPage }) {
                 style={{
                   background: "var(--card)",
                   border: "1px solid var(--border)",
-                  borderRadius: "24px",
+                  borderRadius: "0px",
                   padding: "2rem",
                   display: "flex",
                   flexWrap: "wrap",
@@ -240,7 +240,7 @@ export default function LaPlayerPage({ lang, setPage }) {
                         maxWidth: "260px", 
                         width: "100%", 
                         height: "auto", 
-                        borderRadius: "28px", 
+                        borderRadius: "0px", 
                         border: "3px solid rgba(255,255,255,0.15)", 
                         boxShadow: "0 18px 40px rgba(0,0,0,0.6)",
                         display: "block",
@@ -314,7 +314,7 @@ export default function LaPlayerPage({ lang, setPage }) {
                   width: "auto",
                   height: "auto",
                   objectFit: "contain",
-                  borderRadius: "12px"
+                  borderRadius: "0px"
                 }}
               />
               {typeof modalData === "object" && modalData.titlePt && (

@@ -440,7 +440,7 @@ export default function PitCraftPage({
                 padding: "1rem",
                 background: "var(--card)",
                 border: "1px solid var(--border)",
-                borderRadius: "20px",
+                borderRadius: "0px",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
                 cursor: "default"
               }}
@@ -455,7 +455,7 @@ export default function PitCraftPage({
                   width: "auto",
                   height: "auto",
                   objectFit: "contain",
-                  borderRadius: "12px"
+                  borderRadius: "0px"
                 }}
               />
             </div>

@@ -77,17 +77,26 @@ export default function PortfolioPage({ lang, setPage }) {
         </section>
 
         {/* Project Story Section */}
-        <section style={{ marginTop: "4rem", borderTop: "1px dashed var(--border)", paddingTop: "3rem" }}>
-          <h2 style={{ fontSize: "1.8rem", fontWeight: "800", marginBottom: "1.5rem" }}>
-            {pt ? "A História do Projeto" : "The Project's Story"}
+        <section 
+          style={{ 
+            marginTop: "3.5rem", 
+            background: "var(--card)", 
+            border: "1px solid var(--border)", 
+            borderRadius: "0px", 
+            padding: "2rem",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+          }}
+        >
+          <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
+            {pt ? "// A HISTÓRIA DO PROJETO & ASSISTENTE TY" : "// PROJECT STORY & TY ASSISTANT"}
           </h2>
-          <p style={{ color: "var(--muted2)", lineHeight: "1.8", fontSize: "0.95rem", marginBottom: "1.5rem" }}>
+          <p style={{ color: "var(--text)", lineHeight: "1.7", fontSize: "1rem", marginBottom: "1rem" }}>
             {pt 
               ? "O portfólio nasceu com a missão de unificar a presença digital do Pietro, servindo como uma central para todos os seus projetos e experimentos técnicos. Mais do que um simples currículo visual, o objetivo era construir uma experiência cyberpunk interativa e imersiva."
               : "This portfolio was born with the mission of unifying Pietro's digital presence, serving as a hub for all his technical projects and experiments. More than a simple visual resume, the goal was to build an interactive and immersive cyberpunk experience."
             }
           </p>
-          <p style={{ color: "var(--muted2)", lineHeight: "1.8", fontSize: "0.95rem" }}>
+          <p style={{ color: "var(--text)", lineHeight: "1.7", fontSize: "1rem" }}>
             {pt
               ? "Durante o desenvolvimento, surgiu a ideia de criar o Ty: um assistente virtual inteligente capaz de conversar com visitantes e recrutadores sobre a trajetória profissional do Pietro. Alimentado pela inteligência do Maritaca AI (pioneiro projeto de LLM em português desenvolvido por pesquisadores da UNICAMP), o Ty evoluiu de um simples bot de chat para se tornar a própria identidade visual e alma interativa deste portfólio, representado pelo marcante mascote de coelho em pixel-art."
               : "During development, the idea of creating Ty was born: a smart virtual assistant capable of chatting with visitors and recruiters about Pietro's professional journey. Powered by the intelligence of Maritaca AI (a pioneering Portuguese LLM project developed by researchers from UNICAMP), Ty evolved from a simple chatbot to become the visual identity and interactive soul of this portfolio, represented by the distinctive pixel-art bunny mascot."
@@ -157,7 +166,7 @@ export default function PortfolioPage({ lang, setPage }) {
                 padding: "1rem",
                 background: "var(--card)",
                 border: "1px solid var(--border)",
-                borderRadius: "20px",
+                borderRadius: "0px",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
                 cursor: "default"
               }}
@@ -172,7 +181,7 @@ export default function PortfolioPage({ lang, setPage }) {
                   width: "auto",
                   height: "auto",
                   objectFit: "contain",
-                  borderRadius: "12px"
+                  borderRadius: "0px"
                 }}
               />
             </div>
