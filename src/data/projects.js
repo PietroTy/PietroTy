@@ -23,8 +23,8 @@ export const PROJECTS = [
     "nameEn": "WhatsApp Bot",
     "taglinePt": "Projeto público / automação",
     "taglineEn": "Public project / automation",
-    "descPt": "Ecossistema modular de automação e IA para WhatsApp com memória persistente, respostas por LLM, atuação como SDR, jornal diário personalizado, comandos, Termo/Dueto/Quarteto e processamento de mídia. O projeto possui implementações e integrações com whatsapp-web.js e Evolution API.",
-    "descEn": "Modular WhatsApp automation and AI ecosystem with persistent memory, LLM responses, SDR workflows, customized daily news feeds, commands, word games, and media processing. The project includes implementations and integrations using whatsapp-web.js and Evolution API.",
+    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Nasceu da ideia de automatizar o envio do jornal diário PitmuNews para um grupo de amigos, evoluindo para um boletim totalmente customizado com felicitações de aniversário, notícias de jogos, piadas internas, minijogos (Termo/Dueto) e agente de IA por LLM. Integrado com whatsapp-web.js e Evolution API.",
+    "descEn": "Modular WhatsApp automation and AI ecosystem. Born from automating the daily PitmuNews digest for a close friends' group, evolving into a custom newsletter with group updates, birthday wishes, gaming news, inside jokes, word games (Termo/Dueto), and LLM responses. Built with whatsapp-web.js and Evolution API.",
     "tags": [
       "JavaScript",
       "Node.js",
@@ -156,8 +156,8 @@ export const PROJECTS = [
     "nameEn": "Stickers Bot",
     "taglinePt": "Serviço para WhatsApp",
     "taglineEn": "WhatsApp service",
-    "descPt": "Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas, usando pipelines de FFmpeg e sharp para compressão WebP. Comunidade informada com mais de 100 usuários ativos.",
-    "descEn": "Real-time service that converts images, GIFs, and videos into static or animated WhatsApp stickers using FFmpeg and sharp pipelines for WebP compression. Reported community of over 100 active users.",
+    "descPt": "Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas (WebP via FFmpeg e sharp). Inspirado originalmente em um projeto no GitHub de Matheus Toniolli (matheust3) e reconstruído do zero em uma versão muito mais estável, rápida e polida em microserviço.",
+    "descEn": "Real-time service converting images, GIFs, and videos into static/animated WhatsApp stickers (WebP via FFmpeg and sharp). Originally inspired by Matheus Toniolli's (matheust3) GitHub repo and rebuilt from scratch into a far more stable, fast, and polished standalone microservice.",
     "tags": [
       "JavaScript",
       "Node.js",

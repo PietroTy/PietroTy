@@ -198,7 +198,7 @@ const SYSTEM_PROMPT_PT = `
                 <description>Hub com mais de 30 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
                 <url>https://pietroty.github.io/Chub/</url>
-                <repo>não disponível / not available</repo>
+                <repo>https://github.com/PietroTy/Chub</repo>
             </project>
             <project id="p03">
                 <name>Escriba AI</name>
@@ -211,7 +211,7 @@ const SYSTEM_PROMPT_PT = `
             <project id="p04">
                 <name>Bot de WhatsApp — Agente Conversacional Multifuncional</name>
                 <type>Projeto público / automação</type>
-                <description>Ecossistema modular de automação e IA para WhatsApp com memória persistente, respostas por LLM, atuação como SDR, jornal diário personalizado, comandos, Termo/Dueto/Quarteto e processamento de mídia. O projeto possui implementações e integrações com whatsapp-web.js e Evolution API.</description>
+                <description>Ecossistema modular de automação e IA para WhatsApp. Nasceu da ideia de automatizar o envio do jornal diário PitmuNews para um grupo de amigos (após o amigo que enviava o jornal manualmente esquecer), evoluindo para um boletim totalmente customizado com felicitações de aniversário, notícias sobre jogos e interesses do grupo, piadas internas, minijogos (Termo/Dueto), memória persistente e respostas por LLM. Desenvolvido com whatsapp-web.js e Evolution API.</description>
                 <technologies>JavaScript, Node.js, whatsapp-web.js, Evolution API, Maritaca AI, FFmpeg, sharp, REST APIs</technologies>
                 <url>https://github.com/PietroTy/bot-whatsapp</url>
                 <repo>https://github.com/PietroTy/bot-whatsapp</repo>
@@ -267,7 +267,7 @@ const SYSTEM_PROMPT_PT = `
             <project id="p11">
                 <name>Stickers Bot</name>
                 <type>Serviço para WhatsApp</type>
-                <description>Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas, usando pipelines de FFmpeg e sharp para compressão WebP. Comunidade informada com mais de 100 usuários ativos.</description>
+                <description>Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas (WebP via FFmpeg e sharp). Teve início junto ao ecossistema do bot de WhatsApp, inspirado originalmente em um projeto de Matheus Toniolli (matheust3) no GitHub e reconstruído em uma versão polida, estável e escalável em microserviço independente com grupo ativo de usuários.</description>
                 <technologies>JavaScript, Node.js, FFmpeg, sharp, WebP</technologies>
                 <url>https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8</url>
                 <repo>não disponível / not available</repo>
@@ -816,7 +816,7 @@ const SYSTEM_PROMPT_EN = `
                 <description>Hub with over 30 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
                 <url>https://pietroty.github.io/Chub/</url>
-                <repo>não disponível / not available</repo>
+                <repo>https://github.com/PietroTy/Chub</repo>
             </project>
             <project id="p03">
                 <name>Escriba AI</name>
@@ -829,7 +829,7 @@ const SYSTEM_PROMPT_EN = `
             <project id="p04">
                 <name>Bot de WhatsApp — Agente Conversacional Multifuncional</name>
                 <type>Projeto público / automação</type>
-                <description>Modular WhatsApp automation and AI ecosystem with persistent memory, LLM responses, SDR workflows, customized daily news feeds, commands, word games, and media processing. The project includes implementations and integrations using whatsapp-web.js and Evolution API.</description>
+                <description>Modular WhatsApp automation and AI ecosystem. Born from automating the daily PitmuNews newsletter for a close friends' group (after a friend who forwarded daily news kept forgetting), evolving into a custom bulletin with birthday wishes, gaming news, inside jokes, word games (Termo/Dueto), persistent memory, and LLM responses. Built with whatsapp-web.js and Evolution API.</description>
                 <technologies>JavaScript, Node.js, whatsapp-web.js, Evolution API, Maritaca AI, FFmpeg, sharp, REST APIs</technologies>
                 <url>https://github.com/PietroTy/bot-whatsapp</url>
                 <repo>https://github.com/PietroTy/bot-whatsapp</repo>
@@ -885,7 +885,7 @@ const SYSTEM_PROMPT_EN = `
             <project id="p11">
                 <name>Stickers Bot</name>
                 <type>Serviço para WhatsApp</type>
-                <description>Real-time service that converts images, GIFs, and videos into static or animated WhatsApp stickers using FFmpeg and sharp pipelines for WebP compression. Reported community of over 100 active users.</description>
+                <description>Real-time service converting images, GIFs, and videos into static or animated WhatsApp stickers (WebP via FFmpeg and sharp). Originated within the WhatsApp bot ecosystem, inspired by Matheus Toniolli's (matheust3) GitHub repository, and rebuilt from scratch into a polished, stable, standalone microservice with an active daily community.</description>
                 <technologies>JavaScript, Node.js, FFmpeg, sharp, WebP</technologies>
                 <url>https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8</url>
                 <repo>não disponível / not available</repo>

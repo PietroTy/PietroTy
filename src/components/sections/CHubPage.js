@@ -59,7 +59,7 @@ export default function CHubPage({ lang, setPage }) {
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
-                href="https://pietroty.github.io/chub/"
+                href="https://pietroty.github.io/Chub/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-fill"
@@ -68,7 +68,7 @@ export default function CHubPage({ lang, setPage }) {
                 <span>{pt ? "Acessar cHUB" : "Access cHUB"} &rarr;</span>
               </a>
               <a
-                href="https://github.com/PietroTy/chub"
+                href="https://github.com/PietroTy/Chub"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline"
