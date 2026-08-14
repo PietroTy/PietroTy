@@ -85,7 +85,7 @@ export default function WhatsAppBotPage({ lang, setPage }) {
           </div>
         </section>
 
-        {/* Career Milestone Story Section */}
+        {/* PitmuNews Origin & Career Milestone Story Section */}
         <section 
           style={{
             marginTop: "3.5rem",
@@ -97,31 +97,43 @@ export default function WhatsAppBotPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
-            {pt ? "// MARCO NA CARREIRA & OPORTUNIDADE ENGAJA" : "// CAREER MILESTONE & ENGAJA OPPORTUNITY"}
+            {pt ? "// A ORIGEM DO PITMUNEWS & OPORTUNIDADE ENGAJA" : "// PITMUNEWS ORIGIN & ENGAJA OPPORTUNITY"}
           </h2>
           <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  O <strong>Bot de WhatsApp</strong> foi a minha primeira grande experiência prática integrando APIs REST e modelos de linguagem (LLMs) via JavaScript. Ele serviu como laboratório para dominar gestão de estado conversacional, tratamento de dados em tempo real e webhooks.
+                  A ideia do envio do jornal diário <strong>PitmuNews</strong> nasceu em um grupo de amigos próximos. Um dos integrantes costumava encaminhar manualmente um resumo diário de notícias pego pronto de um site. Porém, quando ele esquecia ou não podia enviar, a galera sentia falta do tão amado jornal. Foi então que tive a ideia de automatizar totalmente a entrega desse boletim.
                 </p>
                 <p style={{ marginBottom: "1rem" }}>
-                  A proficiência técnica demonstrada neste projeto foi o diferencial que me <strong>conseguiu o primeiro emprego na Engaja Soluções Corporativas</strong>, onde fui contratado para projetar a estrutura, arquitetura e manutenção de agentes de IA para clientes enterprise.
+                  Com o tempo, fui além da simples automação: adaptei o conteúdo até criar um <strong>jornal próprio feito sob medida</strong> — incluindo felicitações automáticas de aniversário para integrantes do grupo, notícias relevantes sobre jogos e interesses do grupo, piadas internas e estatísticas.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  O projeto escalou para um robô completo que entrega o jornal em múltiplos grupos, possui minijogos interativos de adivinhação de palavras (como <i>Termo</i> e <i>Dueto</i>) e integra um chatbot de IA com memória de contexto e consulta de informações.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Esta foi a minha primeira grande experiência prática integrando APIs REST e modelos de linguagem (LLMs) em JavaScript. A proficiência técnica demonstrada foi o grande diferencial que me <strong>conseguiu o primeiro emprego na Engaja Soluções Corporativas</strong>, onde passei a projetar e manter infraestruturas de agentes de IA.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  <i>Atualmente, o bot continua 100% ativo, realizando disparos automáticos diários de jornais e resumos de notícias personalizados em diversos grupos do WhatsApp.</i>
+                  <i>Atualmente, o bot continua 100% ativo e operante.</i>
                 </p>
               </>
             ) : (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  The <strong>WhatsApp Bot</strong> was my very first hands-on experience building REST API integrations and Large Language Models (LLMs) with JavaScript. It served as a real-world playground for mastering conversational state, data handling, and webhooks.
+                  The idea for the daily <strong>PitmuNews</strong> newsletter started in a close friends' group. A friend used to manually forward a daily news summary fetched from a website. Whenever he forgot or couldn't post it, everyone missed the beloved daily digest. That inspired me to automate the entire dispatch.
                 </p>
                 <p style={{ marginBottom: "1rem" }}>
-                  The technical expertise showcased in this project was the exact catalyst that <strong>landed my job at Engaja Soluções Corporativas</strong>, where I was brought on to architect and maintain enterprise AI agent infrastructure.
+                  Over time, I expanded far beyond basic automation: I transformed it into a <strong>fully customized daily newsletter</strong>—featuring birthday announcements for group members, curated gaming and tech news, inside jokes, and group interests.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  The project scaled into a feature-packed bot serving multiple WhatsApp communities with automated news feeds, interactive word games (like <i>Termo</i> and <i>Dueto</i>), and an AI conversational agent with persistent memory.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  This was my first major hands-on experience building REST API and LLM integrations in JavaScript. The technical depth of this project was the exact catalyst that <strong>landed my first job at Engaja Soluções Corporativas</strong> building enterprise AI agent infrastructure.
                 </p>
                 <p style={{ margin: 0, fontWeight: "600", color: "var(--p2)" }}>
-                  <i>Today, the bot remains 100% active, dispatching automated daily news feeds and custom newsletters to multiple WhatsApp communities.</i>
+                  <i>Today, the bot remains 100% active and running.</i>
                 </p>
               </>
             )}

@@ -97,25 +97,37 @@ export default function StickersBotPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
-            {pt ? "// SPIN-OFF INDEPENDENTE & ESCALA DE USUÁRIOS" : "// INDEPENDENT SPIN-OFF & USER SCALE"}
+            {pt ? "// INSPIRAÇÃO, SPIN-OFF INDEPENDENTE & ESCALA" : "// INSPIRATION, INDEPENDENT SPIN-OFF & SCALE"}
           </h2>
           <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  O <strong>Stickers Bot</strong> nasceu originalmente como uma funcionalidade embutida dentro do Bot de WhatsApp principal. No entanto, o volume massivo de requisições de mídia fez com que o serviço se tornasse um projeto independente por questões de arquitetura e performance.
+                  O <strong>Stickers Bot</strong> teve início junto ao ecossistema do bot de WhatsApp. A ideia de criar o gerador veio de uma inspiração em um repositório no GitHub do <strong>Matheus Toniolli</strong> (<a href="https://github.com/matheust3" target="_blank" rel="noreferrer" style={{ color: "var(--p2)", textDecoration: "underline" }}>matheust3</a>), desenvolvedor que eu acompanhava na época.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Motivado por essa referência, decidi construir a minha própria versão — focado em entregá-la de forma <strong>muito mais estável, veloz, resiliente e polida</strong>.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Com o volume massivo de requisições de mídia recebidas diariamente, a funcionalidade evoluiu de um simples comando interno para um <strong>microserviço e produto totalmente independente</strong> por motivos de arquitetura e performance.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Apenas a comunidade e grupo oficial do bot contam com <strong>dezenas de usuários ativos criando figurinhas diariamente</strong>. Essa operação real proporcionou a Pietro uma valiosa experiência em <strong>gerenciamento de projetos, otimização de conversão de mídia em tempo real e tratamento de erros on-demand</strong> sob alta demanda.
+                  Apenas no grupo oficial do bot, <strong>dezenas de usuários ativos criam figurinhas diariamente</strong>. Essa operação real proporcionou valiosa experiência prática em <strong>gerenciamento de projetos, transcodificação de mídia em tempo real (FFmpeg/sharp) e tratamento de exceções on-demand</strong> sob alta demanda de concorrência.
                 </p>
               </>
             ) : (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  <strong>Stickers Bot</strong> originally started as a built-in feature inside the main WhatsApp bot. However, the massive volume of incoming media conversion requests required spinning off the project into an independent microservice for performance and architecture reasons.
+                  The <strong>Stickers Bot</strong> originated within the main WhatsApp bot ecosystem. The initial inspiration came from a GitHub repository by <strong>Matheus Toniolli</strong> (<a href="https://github.com/matheust3" target="_blank" rel="noreferrer" style={{ color: "var(--p2)", textDecoration: "underline" }}>matheust3</a>).
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  Motivated by that concept, I decided to build my own custom version from scratch—aiming for a <strong>far more stable, fast, resilient, and polished</strong> user experience.
+                </p>
+                <p style={{ marginBottom: "1rem" }}>
+                  As media conversion traffic surged, what started as an embedded feature spun off into a <strong>standalone microservice and independent product</strong> for architectural performance and scalability reasons.
                 </p>
                 <p style={{ margin: 0 }}>
-                  The official community group alone supports <strong>over 100 active users creating stickers every single day</strong>. Managing this live production workload provided Pietro with hands-on expertise in <strong>project scalability, real-time media transcoding, and on-demand error handling</strong>.
+                  The official community group alone supports <strong>dozens of active users creating stickers every single day</strong>. Managing this live production workload provided hands-on expertise in <strong>project scalability, real-time media transcoding (FFmpeg/sharp), and on-demand error handling</strong>.
                 </p>
               </>
             )}
