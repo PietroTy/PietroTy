@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://abs-circles-checking-jesus.trycloudflare.com',
+    BACKEND_URL: 'https://api-pitsite.magiktarot.com.br',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
