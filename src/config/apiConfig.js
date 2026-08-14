@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://peers-adaptation-baths-suites.trycloudflare.com',
+    BACKEND_URL: 'https://finishing-strain-surgical-permissions.trycloudflare.com',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
