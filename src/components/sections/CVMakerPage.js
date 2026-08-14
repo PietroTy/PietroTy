@@ -75,7 +75,7 @@ export default function CVMakerPage({ lang, setPage }) {
                 width: "260px",
                 height: "200px",
                 background: "linear-gradient(135deg, var(--p1), var(--p2))",
-                borderRadius: "20px",
+                borderRadius: "0px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -99,7 +99,7 @@ export default function CVMakerPage({ lang, setPage }) {
             marginTop: "3.5rem",
             background: "var(--card)",
             border: "1px solid var(--border)",
-            borderRadius: "20px",
+            borderRadius: "0px",
             padding: "2rem",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
           }}
@@ -198,7 +198,7 @@ export default function CVMakerPage({ lang, setPage }) {
                 padding: "2.5rem",
                 background: "linear-gradient(135deg, var(--p1), var(--card))",
                 border: "1px solid var(--border)",
-                borderRadius: "24px",
+                borderRadius: "0px",
                 textAlign: "center",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
                 cursor: "default"

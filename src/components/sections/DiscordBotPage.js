@@ -67,7 +67,7 @@ export default function DiscordBotPage({ lang, setPage }) {
                 width: "250px",
                 height: "180px",
                 background: "linear-gradient(135deg, #5865f2, var(--ink2))",
-                borderRadius: "16px",
+                borderRadius: "0px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -150,7 +150,7 @@ export default function DiscordBotPage({ lang, setPage }) {
                 width: "90vw",
                 padding: "3rem",
                 background: "linear-gradient(135deg, #5865f2, var(--card))",
-                borderRadius: "24px",
+                borderRadius: "0px",
                 border: "2px solid var(--border)",
                 textAlign: "center",
                 boxShadow: "0 20px 60px rgba(0,0,0,0.6)"

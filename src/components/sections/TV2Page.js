@@ -139,7 +139,7 @@ export default function TV2Page({ lang, setPage }) {
                 style={{
                   background: "var(--card)",
                   border: "1px solid var(--border)",
-                  borderRadius: "16px",
+                  borderRadius: "0px",
                   overflow: "hidden",
                   cursor: "pointer",
                   transition: "transform 0.3s ease, border-color 0.3s ease"
@@ -232,7 +232,7 @@ export default function TV2Page({ lang, setPage }) {
                 padding: "1rem",
                 background: "var(--card)",
                 border: "1px solid var(--border)",
-                borderRadius: "20px",
+                borderRadius: "0px",
                 boxShadow: "0 25px 70px rgba(0, 0, 0, 0.8)",
                 cursor: "default"
               }}
@@ -247,7 +247,7 @@ export default function TV2Page({ lang, setPage }) {
                   width: "auto",
                   height: "auto",
                   objectFit: "contain",
-                  borderRadius: "12px"
+                  borderRadius: "0px"
                 }}
               />
             </div>
