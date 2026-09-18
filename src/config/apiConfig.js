@@ -3,7 +3,10 @@ export const API_CONFIG = {
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
-        config: '/config'
+        config: '/config',
+        calendarHealth: '/calendar/health',
+        calendarAvailability: '/calendar/availability',
+        calendarBook: '/calendar/book',
     }
 };
 

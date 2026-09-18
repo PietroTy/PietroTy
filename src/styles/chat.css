@@ -63,7 +63,7 @@
 .msg.user { flex-direction: row-reverse; }
 .msg-bubble {
   max-width: 82%; padding: 0.6rem 0.9rem; border-radius: 0;
-  font-size: 0.72rem; line-height: 1.6;
+  font-size: 0.78rem; line-height: 1.35;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;

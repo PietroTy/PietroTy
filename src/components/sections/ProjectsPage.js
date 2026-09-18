@@ -14,6 +14,11 @@ import dsLogoImg from "../../assets/ds_icon.png";
 import eriumImg from "../../assets/erium_logo.jpg";
 import whatsappbotImg from "../../assets/whatsapp_bot_screenshot.jpg";
 import tv2Img from "../../assets/tv2_card_logo.png";
+import engajaLogo from "../../assets/engaja_logo.jpg";
+import n8nLogo from "../../assets/n8n_logo.png";
+import chatwootLogo from "../../assets/chatwoot_logo.png";
+import farmaisLogo from "../../assets/farmais_logo.jpg";
+import imobsystemLogo from "../../assets/imobsystem_logo.jpg";
 
 const getProjectPlaceholder = (color) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="350" height="180" viewBox="0 0 350 180"><rect width="100%" height="100%" fill="#0c081e"/><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="${color}20" stroke-width="1"/></pattern><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${color}35"/><stop offset="100%" stop-color="#0c081e"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#grid)"/><rect width="100%" height="100%" fill="url(#grad)"/><circle cx="175" cy="90" r="45" fill="none" stroke="${color}30" stroke-width="1.5" stroke-dasharray="5,5"/><circle cx="175" cy="90" r="28" fill="none" stroke="${color}b3" stroke-width="2"/></svg>`;
@@ -32,7 +37,7 @@ export default function ProjectsPage({ lang, setPage }) {
     <div className="page">
       <div className="section">
         <SectionHeader
-          tag={pt ? "projetos" : "projects"}
+          tag={pt ? "portfólio" : "portfolio"}
           title={
             pt ? (
               <>O que eu <em>construí</em></>
@@ -44,13 +49,14 @@ export default function ProjectsPage({ lang, setPage }) {
         />
 
         <div className="projects-grid">
-          {PROJECTS.map((p) => {
+          {PROJECTS.map((p, idx) => {
             const isOpen = openId === p.id;
+            const isFeatured = idx % 3 === 0;
             return (
               <div
                 key={p.id}
                 data-id={p.id}
-                className={`pcard${isOpen ? " open" : ""}${p.featured ? " featured" : ""}`}
+                className={`pcard${isOpen ? " open" : ""}${isFeatured ? " featured" : ""}`}
                 style={{ "--card-glow": `${p.color}20` }}
                 onClick={() => toggleOpen(p.id)}
               >
@@ -85,6 +91,16 @@ export default function ProjectsPage({ lang, setPage }) {
                         ? dsLogoImg
                         : p.id === "escriba"
                         ? escribaImg
+                        : p.id === "engaja-site"
+                        ? engajaLogo
+                        : p.id === "n8n-forms"
+                        ? n8nLogo
+                        : p.id === "chatwoot-custom"
+                        ? chatwootLogo
+                        : p.id === "farmais"
+                        ? farmaisLogo
+                        : p.id === "imobsystem"
+                        ? imobsystemLogo
                         : getProjectPlaceholder(p.color)
                     }
                     alt={pt ? p.namePt : p.nameEn}
@@ -94,8 +110,8 @@ export default function ProjectsPage({ lang, setPage }) {
                 <div className="pcard-header">
                   <div className="pcard-name">{pt ? p.namePt : p.nameEn}</div>
                   <div className="pcard-tags">
-                    {p.tags.slice(0, 3).map((t) => (
-                      <span key={t} className="chip chip-p">{t}</span>
+                    {p.tags.slice(0, 3).map((t, idx) => (
+                      <span key={t} className={`chip ${idx === 0 ? "chip-type" : "chip-p"}`}>{t}</span>
                     ))}
                   </div>
                 </div>

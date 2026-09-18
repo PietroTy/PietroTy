@@ -1,0 +1,239 @@
+/* ─── Services Grid ────────────────────────────────────────────────────────── */
+
+.srv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ─── Service Card ─────────────────────────────────────────────────────────── */
+
+.srv-card {
+  background: rgba(18, 18, 30, 0.65);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  overflow: hidden;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.srv-card:hover {
+  border-color: var(--srv-color);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 0 50px rgba(124, 58, 237, 0.05);
+}
+
+/* Card Header */
+.srv-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.6rem 1.6rem 1.2rem;
+  user-select: none;
+}
+
+.srv-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 1px solid var(--srv-color);
+  background: rgba(124, 58, 237, 0.08);
+  transition: all 0.25s ease;
+  color: var(--srv-color);
+  border-radius: 0;
+}
+
+.srv-card:hover .srv-icon-wrapper {
+  background: var(--srv-color);
+  color: #0b0b14;
+  border-color: transparent;
+  box-shadow: 0 0 20px var(--srv-color);
+}
+
+.srv-icon {
+  font-size: 1.35rem;
+}
+
+.srv-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.srv-tag {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  color: var(--srv-color);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.srv-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* Card Body (Always Visible) */
+.srv-card-body,
+.srv-card-body--open {
+  max-height: none;
+  opacity: 1;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.srv-desc {
+  padding: 0 1.6rem;
+  font-size: 0.92rem;
+  color: var(--muted2);
+  line-height: 1.45;
+  margin-bottom: 1.3rem;
+  border-top: 1px dashed var(--border2);
+  padding-top: 1.3rem;
+}
+
+/* Bullet list */
+.srv-bullets {
+  list-style: none;
+  padding: 0 1.6rem;
+  margin: 0 0 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.srv-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.38;
+}
+
+.srv-bullet-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 0;
+  background: var(--srv-color);
+  flex-shrink: 0;
+  margin-top: 0.45rem;
+  box-shadow: 0 0 8px var(--srv-color);
+}
+
+/* Tech Badges */
+.srv-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0 1.6rem 1.4rem;
+}
+
+.srv-badge {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  color: var(--srv-color);
+  background: rgba(124, 58, 237, 0.08);
+  border-radius: 0;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.srv-badge:hover {
+  border-color: var(--srv-color);
+  background: rgba(124, 58, 237, 0.18);
+  color: #ffffff;
+}
+
+/* Action & CTA Button */
+.srv-action-wrap {
+  padding: 1.2rem 1.6rem 1.6rem;
+  border-top: 1px solid var(--border2);
+  margin-top: auto;
+  background: rgba(13, 13, 24, 0.4);
+}
+
+.srv-cta {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 0;
+  gap: 8px;
+}
+
+/* ─── Full Stack Section ────────────────────────────────────────────────────── */
+
+.srv-stack-section {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border2);
+  padding-top: 1.5rem;
+}
+
+.srv-stack-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--p2);
+  letter-spacing: 0.1em;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.srv-stack-toggle:hover {
+  color: var(--p3);
+}
+
+.srv-stack-toggle svg {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.srv-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  animation: fadeUp 0.3s ease;
+}
+
+.srv-stack-group {}
+
+.srv-stack-label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.srv-stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}

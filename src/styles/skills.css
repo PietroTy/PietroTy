@@ -231,9 +231,9 @@
 .bcc-summary {
   color: var(--muted);
   max-width: 900px;
-  line-height: 1.75;
+  line-height: 1.4;
   margin: 0.75rem 0 1.5rem;
-  font-size: 0.88rem;
+  font-size: 0.93rem;
 }
 
 .bcc-semesters {
@@ -305,8 +305,8 @@
 .bcc-component ul {
   margin: 0.75rem 0 0 1.1rem;
   color: var(--muted);
-  line-height: 1.65;
-  font-size: 0.8rem;
+  line-height: 1.38;
+  font-size: 0.85rem;
 }
 
 .bcc-component li + li {
