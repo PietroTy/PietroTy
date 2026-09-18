@@ -1,12 +1,12 @@
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: flex; flex-direction: column; justify-content: center;
-  padding: 4rem 2rem; max-width: 920px; margin: 0 auto;
+  padding: 1.5rem 2rem 7.5rem; max-width: 920px; margin: 0 auto;
   position: relative;
 }
 .hero-kicker {
-  font-family: var(--mono); font-size: 0.6rem; color: var(--p2);
-  letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.75rem;
+  font-family: var(--mono); font-size: 0.66rem; color: var(--p2);
+  letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 2.75rem;
   display: flex; align-items: center; gap: 0.75rem; opacity: 0;
   animation: fadeUp 0.7s 0.1s forwards;
   white-space: nowrap;
@@ -25,7 +25,7 @@
   display: block;
 }
 .hero-desc {
-  font-size: 1rem; color: var(--muted2); max-width: 500px; line-height: 1.75;
+  font-size: 1.05rem; color: var(--muted2); max-width: 500px; line-height: 1.38;
   margin-bottom: 2.5rem; font-weight: 300;
   opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
   position: relative; z-index: 1;
@@ -55,7 +55,7 @@
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
   letter-spacing: -0.03em;
 }
-.stat-label { font-family: var(--mono); font-size: 0.66rem; color: var(--muted); margin-top: 3px; letter-spacing: 0.04em; }
+.stat-label { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); margin-top: 3px; letter-spacing: 0.04em; }
 
 .hero-image-wrapper {
   position: absolute;
@@ -133,4 +133,51 @@
   .hero-avatar {
     object-position: center top;
   }
+}
+
+/* Scroll Indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--p3);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0.85;
+  user-select: none;
+}
+
+.hero-scroll-indicator:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.hero-scroll-icon {
+  animation: heroScrollBounce 1.6s infinite ease-in-out;
+  color: var(--p2);
+}
+
+.hero-scroll-indicator:hover .hero-scroll-icon {
+  color: var(--p3);
+}
+
+@keyframes heroScrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.hero-scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 18px);
 }

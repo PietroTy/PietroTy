@@ -28,5 +28,6 @@ backend/
 deploy.sh
 .backend.pid
 .backend.log
+.frontend.log
 .tunnel.pid
 .tunnel.log

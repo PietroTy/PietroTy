@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SectionHeader from "../common/SectionHeader";
 import Timeline from "./Timeline";
+import PixelIcon from "../common/PixelIcon";
 import pitImg from "../../assets/pit_avatar.png";
 
 export default function HomePage({ lang, setPage }) {
   const pt = lang === "pt";
-  const currentYear = new Date().getFullYear();
-  const devYears = currentYear - 2021;
-  const dataYears = currentYear - 2024;
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTimeline = () => {
+    const el = document.getElementById("timeline-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="page">
@@ -35,27 +53,23 @@ export default function HomePage({ lang, setPage }) {
             </>
           )}
         </p>
+
         <div className="hero-actions">
           <button className="btn btn-fill" onClick={() => setPage("projects")}>
-            {pt ? "Ver projetos" : "View projects"} &rarr;
+            {pt ? "Ver portfólio" : "View portfolio"} &rarr;
+          </button>
+          <button className="btn btn-outline" onClick={() => setPage("contact")}>
+            {pt ? "Entre em contato" : "Get in touch"} &rarr;
           </button>
         </div>
-        <div className="hero-stats">
-          {[
-            ["17+", pt ? "projetos e soluções" : "projects and solutions"],
-            [`${devYears}+`, pt ? "anos desenvolvendo" : "years developing"],
-            [`${dataYears}+`, pt ? "anos na área de dados" : "years in data"],
-          ].map(([v, l]) => (
-            <div
-              key={l}
-              className="stat"
-              style={{ cursor: "pointer" }}
-              onClick={() => document.getElementById("timeline-section")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              <div className="stat-val">{v}</div>
-              <div className="stat-label">{l}</div>
-            </div>
-          ))}
+
+        <div
+          className={`hero-scroll-indicator ${scrolled ? "hidden" : ""}`}
+          onClick={scrollToTimeline}
+          title={pt ? "Role para baixo" : "Scroll down"}
+        >
+          <span>{pt ? "Role para baixo" : "Scroll down"}</span>
+          <PixelIcon name="chevron-down" size={16} className="hero-scroll-icon" />
         </div>
       </div>
 

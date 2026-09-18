@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Ambient from "./components/common/Ambient";
 import Nav from "./components/common/Nav";
 import Footer from "./components/common/Footer";
 import HomePage from "./components/sections/HomePage";
+import ServicesPage from "./components/sections/ServicesPage";
 import ProjectsPage from "./components/sections/ProjectsPage";
 import SkillsPage from "./components/sections/SkillsPage";
 import ContactPage from "./components/sections/ContactPage";
@@ -23,14 +24,21 @@ import CVMakerPage from "./components/projectDetails/CVMakerPage";
 import BleachCoPage from "./components/projectDetails/BleachCoPage";
 import CrmEngajaPage from "./components/projectDetails/CrmEngajaPage";
 import EtlCnpjPage from "./components/projectDetails/EtlCnpjPage";
+import EngajaSitePage from "./components/projectDetails/EngajaSitePage";
+import ChatwootPage from "./components/projectDetails/ChatwootPage";
+import N8nFormsPage from "./components/projectDetails/N8nFormsPage";
+import SantaIzabelPage from "./components/projectDetails/SantaIzabelPage";
+import ImobSystemPage from "./components/projectDetails/ImobSystemPage";
+import FarmaisPage from "./components/projectDetails/FarmaisPage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
 const PAGE_KEYS = [
-  "home", "projects", "skills", "contact", "pitcraft", 
+  "home", "services", "projects", "skills", "contact", "pitcraft", 
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
   "gameofdrones", "discordbot", "portfolio", "erium", "tv2", "magiktarot", "magik-tarot",
-  "chub", "escriba", "dshub", "cvmaker", "bleach-co", "bleachco", "crm-engaja", "crmengaja", "etl-cnpj", "etlcnpj"
+  "chub", "escriba", "dshub", "cvmaker", "bleach-co", "bleachco", "crm-engaja", "crmengaja", "etl-cnpj", "etlcnpj",
+  "engaja-site", "engajasite", "chatwoot-custom", "n8n-forms", "santa-izabel", "imobsystem", "farmais"
 ];
 
 const PAGE_METADATA = {
@@ -44,24 +52,34 @@ const PAGE_METADATA = {
       desc: "Pietro Turci Moraes Martins' portfolio — Data Development Consultant, Full-Stack Developer, Data Engineer, and AI Researcher experienced with PostgreSQL, Power BI, ETL, automation, and LLMs."
     }
   },
+  services: {
+    pt: {
+      title: "Serviços | Pietro Ty",
+      desc: "Soluções em Desenvolvimento Web, Consultoria de Dados, Automações Inteligentes e Chatbots personalizados por Pietro Ty."
+    },
+    en: {
+      title: "Services | Pietro Ty",
+      desc: "Web Development, Data Consulting, Intelligent Automations, and Custom Chatbots by Pietro Ty."
+    }
+  },
   projects: {
     pt: {
-      title: "Projetos | Pietro Ty",
+      title: "Portfólio | Pietro Ty",
       desc: "Explore os projetos desenvolvidos por Pietro Ty - Automações inteligentes, bots, APIs, scraping, pipelines de dados e mais."
     },
     en: {
-      title: "Projects | Pietro Ty",
+      title: "Portfolio | Pietro Ty",
       desc: "Explore projects developed by Pietro Ty - Intelligent automations, bots, APIs, scraping, data pipelines, and more."
     }
   },
   skills: {
     pt: {
-      title: "Habilidades | Pietro Ty",
-      desc: "Competências e stack tecnológica de Pietro Ty: Python, Node.js, React, SQL, Cloud, DevOps, IA e Engenharia de Dados."
+      title: "Serviços & Habilidades | Pietro Ty",
+      desc: "Competências e serviços oferecidos por Pietro Ty."
     },
     en: {
-      title: "Skills | Pietro Ty",
-      desc: "Skills and tech stack of Pietro Ty: Python, Node.js, React, SQL, Cloud, DevOps, AI, and Data Engineering."
+      title: "Services & Skills | Pietro Ty",
+      desc: "Services and skills offered by Pietro Ty."
     }
   },
   contact: {
@@ -197,11 +215,18 @@ const PAGE_METADATA = {
   }
 };
 
+const getInitialPage = () => {
+  const hash = window.location.hash.replace("#", "").trim();
+  return PAGE_KEYS.includes(hash) ? hash : "home";
+};
+
 export default function App() {
-  const [pageHistory, setPageHistory] = useState(["home"]);
+  const [pageHistory, setPageHistory] = useState(() => [getInitialPage()]);
   const page = pageHistory[pageHistory.length - 1] || "home";
   const [lang, setLang] = useState("pt");
   const [selectedSeasonId, setSelectedSeasonId] = useState("aether");
+
+  const isBackNavigation = useRef(false);
 
   // Sync document title and meta tags when page or language changes
   useEffect(() => {
@@ -229,35 +254,45 @@ export default function App() {
   // Sync state from URL hash on load/hash change
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash.replace("#", "");
-      if (PAGE_KEYS.includes(hash)) {
-        setPageHistory((prev) => {
-          if (prev[prev.length - 1] === hash) return prev;
-          return [...prev, hash];
-        });
-      } else if (!hash) {
-        setPageHistory(["home"]);
+      const hash = window.location.hash.replace("#", "").trim();
+      const targetPage = PAGE_KEYS.includes(hash) ? hash : "home";
+
+      if (isBackNavigation.current) {
+        isBackNavigation.current = false;
+        return;
       }
+
+      setPageHistory((prev) => {
+        const currentPage = prev[prev.length - 1];
+        if (currentPage === targetPage) return prev;
+
+        // If user clicked browser's native back button
+        if (prev.length > 1 && prev[prev.length - 2] === targetPage) {
+          return prev.slice(0, -1);
+        }
+
+        // Forward navigation
+        return [...prev, targetPage];
+      });
     };
 
     window.addEventListener("hashchange", handleHashChange);
-    handleHashChange();
-
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  // Scroll to top on initial load (even if URL has a hash)
+  // Scroll to top on initial load
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
   // Sync hash and scroll on page change
   useEffect(() => {
-    const currentHash = window.location.hash.replace("#", "");
+    const currentHash = window.location.hash.replace("#", "").trim();
     if (page !== currentHash) {
       if (page === "home") {
-        // Clear hash but keep anchor
-        window.history.pushState(null, null, " ");
+        if (window.location.hash) {
+          window.history.pushState("", document.title, window.location.pathname + window.location.search);
+        }
       } else {
         window.location.hash = page;
       }
@@ -272,15 +307,29 @@ export default function App() {
   };
 
   const handleBack = () => {
+    isBackNavigation.current = true;
     setPageHistory((prev) => {
-      if (prev.length <= 1) {
-        window.location.hash = "";
-        return ["home"];
+      if (prev.length > 1) {
+        const nextHist = prev.slice(0, -1);
+        const prevPage = nextHist[nextHist.length - 1];
+        window.location.hash = prevPage === "home" ? "" : prevPage;
+        return nextHist;
       }
-      const nextHist = prev.slice(0, -1);
-      const prevPage = nextHist[nextHist.length - 1];
-      window.location.hash = prevPage === "home" ? "" : prevPage;
-      return nextHist;
+
+      const currentPage = prev[prev.length - 1] || "home";
+      const isMainSection = ["home", "projects", "skills", "contact"].includes(currentPage);
+      const targetPage = isMainSection ? "home" : "projects";
+
+      if (currentPage === targetPage) {
+        if (targetPage !== "home") {
+          window.location.hash = "";
+          return ["home"];
+        }
+        return prev;
+      }
+
+      window.location.hash = targetPage === "home" ? "" : targetPage;
+      return ["home", targetPage];
     });
   };
 
@@ -288,8 +337,9 @@ export default function App() {
 
   const pages = {
     home: <HomePage lang={lang} setPage={setPage} />,
+    services: <ServicesPage lang={lang} setPage={setPage} />,
     projects: <ProjectsPage lang={lang} setPage={setPage} />,
-    skills: <SkillsPage lang={lang} />,
+    skills: <ServicesPage lang={lang} setPage={setPage} />,
     contact: <ContactPage lang={lang} />,
     pitcraft: (
       <PitCraftPage
@@ -330,6 +380,16 @@ export default function App() {
     crmengaja: <CrmEngajaPage lang={lang} setPage={setPage} />,
     "etl-cnpj": <EtlCnpjPage lang={lang} setPage={setPage} />,
     etlcnpj: <EtlCnpjPage lang={lang} setPage={setPage} />,
+    "engaja-site": <EngajaSitePage lang={lang} setPage={setPage} />,
+    engajasite: <EngajaSitePage lang={lang} setPage={setPage} />,
+    "chatwoot-custom": <ChatwootPage lang={lang} setPage={setPage} />,
+    chatwootcustom: <ChatwootPage lang={lang} setPage={setPage} />,
+    "n8n-forms": <N8nFormsPage lang={lang} setPage={setPage} />,
+    n8nforms: <N8nFormsPage lang={lang} setPage={setPage} />,
+    "santa-izabel": <SantaIzabelPage lang={lang} setPage={setPage} />,
+    santaizabel: <SantaIzabelPage lang={lang} setPage={setPage} />,
+    imobsystem: <ImobSystemPage lang={lang} setPage={setPage} />,
+    farmais: <FarmaisPage lang={lang} setPage={setPage} />,
   };
 
   return (

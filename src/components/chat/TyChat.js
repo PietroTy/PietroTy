@@ -58,8 +58,8 @@ export default function TyChat({ lang }) {
   const bottomRef = useRef(null);
   const [tipIndex, setTipIndex] = useState(0);
 
-  const tipsPt = ["Fale comigo!", "", "Clique aqui!", "", "Dúvidas sobre o Pietro?", "", "Ver projetos?", ""];
-  const tipsEn = ["Talk to me!", "", "Click here!", "", "Questions about Pietro?", "", "See projects?", ""];
+  const tipsPt = ["Fale comigo!", "", "Clique aqui!", "", "Dúvidas sobre o Pietro?", "", "Ver portfólio?", ""];
+  const tipsEn = ["Talk to me!", "", "Click here!", "", "Questions about Pietro?", "", "See portfolio?", ""];
   const currentTips = lang === "en" ? tipsEn : tipsPt;
 
   useEffect(() => {
