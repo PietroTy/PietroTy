@@ -617,3 +617,64 @@
 .booking-cancel-link:hover {
   color: #c084fc;
 }
+
+@media (max-width: 640px) {
+  .contact-featured-calendar {
+    padding: 1.25rem 0.85rem;
+    margin-bottom: 2rem;
+  }
+  .calendar-main-title {
+    font-size: 1.15rem;
+  }
+  .calendar-main-desc {
+    font-size: 0.82rem;
+  }
+  .calendar-nav-controls {
+    padding: 0.6rem 0.75rem;
+    gap: 0.5rem;
+  }
+  .calendar-month-title {
+    font-size: 0.88rem;
+  }
+  .calendar-nav-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  .calendar-grid-wrapper {
+    gap: 3px;
+  }
+  .calendar-weekday-header {
+    font-size: 0.65rem;
+    padding: 4px 0;
+  }
+  .calendar-day-cell {
+    aspect-ratio: 1;
+    min-height: 38px;
+    font-size: 0.78rem;
+    padding: 2px;
+  }
+  .calendar-slot-indicator {
+    width: 4px;
+    height: 4px;
+    margin-top: 2px;
+  }
+  .calendar-time-chips {
+    gap: 0.5rem;
+  }
+  .calendar-chip {
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    flex: 1 1 calc(50% - 0.5rem);
+    text-align: center;
+    justify-content: center;
+  }
+  .booking-selected-slot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .booking-change-slot {
+    margin-left: 0;
+  }
+}
+
