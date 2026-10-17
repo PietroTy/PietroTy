@@ -39,15 +39,15 @@ export const CONTACT_LINKS = [
   {
     namePt: "Portfólio",
     nameEn: "Portfolio",
-    handlePt: "pietroty.github.io/PietroTy",
-    handleEn: "pietroty.github.io/PietroTy",
+    handlePt: "pietroty.com.br",
+    handleEn: "pietroty.com.br",
     url: LINKS.portfolio,
   },
   {
     namePt: "Chub",
     nameEn: "Chub",
-    handlePt: "pietroty.github.io/Chub",
-    handleEn: "pietroty.github.io/Chub",
+    handlePt: "chub.pietroty.com.br",
+    handleEn: "chub.pietroty.com.br",
     url: LINKS.chub,
   },
   {

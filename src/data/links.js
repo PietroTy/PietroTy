@@ -1,8 +1,8 @@
 export const LINKS = {
   github: "https://github.com/PietroTy",
-  portfolio: "https://pietroty.github.io/PietroTy/",
+  portfolio: "https://pietroty.com.br/",
   instagram: "https://www.instagram.com/pit_tmm",
   linkedin: "https://www.linkedin.com/in/pietro-turci",
-  chub: "https://pietroty.github.io/Chub/",
+  chub: "https://chub.pietroty.com.br/",
   spotify: "https://open.spotify.com/playlist/7z5nGVM2jXRFiCiyMRpTiF?si=0787b2c015444e87",
 };

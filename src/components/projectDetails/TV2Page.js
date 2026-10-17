@@ -86,7 +86,7 @@ export default function TV2Page({ lang, setPage }) {
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
-                href="https://pietroty.github.io/tv2/"
+                href="https://tv2.pietroty.com.br/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-fill"

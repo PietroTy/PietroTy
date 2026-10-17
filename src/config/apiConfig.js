@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BACKEND_URL: 'https://api-pitsite.magiktarot.com.br',
+    BACKEND_URL: 'https://api.pietroty.com.br',
     ENDPOINTS: {
         chat: '/chat',
         health: '/health',
