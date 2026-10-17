@@ -197,7 +197,7 @@ const SYSTEM_PROMPT_PT = `
                 <type>Projeto público</type>
                 <description>Hub com mais de 30 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
-                <url>https://pietroty.github.io/Chub/</url>
+                <url>https://chub.pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/Chub</repo>
             </project>
             <project id="p03">
@@ -317,7 +317,7 @@ const SYSTEM_PROMPT_PT = `
                 <type>Site público</type>
                 <description>Portfólio bilíngue em React com identidade pixel/cyberpunk, chatbot Ty integrado a LLM e base biográfica, páginas detalhadas de projetos, design responsivo e deploy automatizado por GitHub Actions.</description>
                 <technologies>React, JavaScript, LLM API, i18n, GitHub Actions, Responsive Design</technologies>
-                <url>https://pietroty.github.io/PietroTy/</url>
+                <url>https://pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/PietroTy</repo>
             </project>
         </projects>
@@ -609,10 +609,10 @@ const SYSTEM_PROMPT_PT = `
     </creator_info>
     <links>
         <github>https://github.com/PietroTy</github>
-        <portfolio>https://pietroty.github.io/PietroTy/</portfolio>
+        <portfolio>https://pietroty.com.br/</portfolio>
         <linkedin>https://br.linkedin.com/in/pietro-turci-2a419229a</linkedin>
         <instagram>https://www.instagram.com/pit_tmm</instagram>
-        <chub>https://pietroty.github.io/Chub/</chub>
+        <chub>https://chub.pietroty.com.br/</chub>
         <spotify>https://open.spotify.com/playlist/7z5nGVM2jXRFiCiyMRpTiF?si=0787b2c015444e87</spotify>
     </links>
     <output_rules>
@@ -815,7 +815,7 @@ const SYSTEM_PROMPT_EN = `
                 <type>Projeto público</type>
                 <description>Hub with over 30 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
-                <url>https://pietroty.github.io/Chub/</url>
+                <url>https://chub.pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/Chub</repo>
             </project>
             <project id="p03">
@@ -935,7 +935,7 @@ const SYSTEM_PROMPT_EN = `
                 <type>Site público</type>
                 <description>Bilingual React portfolio with a pixel/cyberpunk identity, Ty chatbot connected to an LLM and biographical knowledge base, detailed project pages, responsive design, and automated GitHub Actions deployment.</description>
                 <technologies>React, JavaScript, LLM API, i18n, GitHub Actions, Responsive Design</technologies>
-                <url>https://pietroty.github.io/PietroTy/</url>
+                <url>https://pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/PietroTy</repo>
             </project>
         </projects>
@@ -1227,10 +1227,10 @@ const SYSTEM_PROMPT_EN = `
     </creator_info>
     <links>
         <github>https://github.com/PietroTy</github>
-        <portfolio>https://pietroty.github.io/PietroTy/</portfolio>
+        <portfolio>https://pietroty.com.br/</portfolio>
         <linkedin>https://br.linkedin.com/in/pietro-turci-2a419229a</linkedin>
         <instagram>https://www.instagram.com/pit_tmm</instagram>
-        <chub>https://pietroty.github.io/Chub/</chub>
+        <chub>https://chub.pietroty.com.br/</chub>
         <spotify>https://open.spotify.com/playlist/7z5nGVM2jXRFiCiyMRpTiF?si=0787b2c015444e87</spotify>
     </links>
     <output_rules>

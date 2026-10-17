@@ -13,7 +13,7 @@ export const PROJECTS = [
       "Raylib",
       "WebAssembly"
     ],
-    "link": "https://pietroty.github.io/Chub/",
+    "link": "https://chub.pietroty.com.br/",
     "featured": true,
     "color": "#a855f7"
   },
@@ -212,7 +212,7 @@ export const PROJECTS = [
       "Socket.io",
       "JavaScript"
     ],
-    "link": "https://pietroty.github.io/tv2/",
+    "link": "https://tv2.pietroty.com.br/",
     "featured": false,
     "color": "#0ea5e9"
   },
@@ -302,7 +302,7 @@ export const PROJECTS = [
       "JavaScript",
       "LLM API"
     ],
-    "link": "https://pietroty.github.io/PietroTy/",
+    "link": "https://pietroty.com.br/",
     "featured": false,
     "color": "#9d5cfc"
   },
