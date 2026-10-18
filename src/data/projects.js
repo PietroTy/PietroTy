@@ -52,7 +52,7 @@ export const PROJECTS = [
     "link": null,
     "featured": false,
     "color": "#8b5cf6",
-    "apk": "app_release.apk"
+    "apk": "https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
   },
   {
     "id": "crm-engaja",

@@ -94,7 +94,7 @@ export default function LaPlayerPage({ lang, setPage }) {
             {/* Download APK Button */}
             <div style={{ marginTop: "2rem" }}>
               <a
-                href={process.env.PUBLIC_URL + "/app_release.apk"}
+                href="https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
                 download
                 className="btn btn-fill"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
