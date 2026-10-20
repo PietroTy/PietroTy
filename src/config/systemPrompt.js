@@ -299,10 +299,10 @@ const SYSTEM_PROMPT_PT = `
             <project id="p15">
                 <name>Bleach.co</name>
                 <type>E-commerce e site institucional</type>
-                <description>Site institucional e e-commerce conceitual para marca de streetwear, desenvolvido com React/Next.js, design minimalista, transições de alta fidelidade e foco em performance.</description>
-                <technologies>React, Next.js, JavaScript, CSS Grid, E-commerce</technologies>
-                <url>https://github.com/PietroTy/site-bleach.co</url>
-                <repo>https://github.com/PietroTy/site-bleach.co</repo>
+                <description>Loja online da minha marca de streetwear, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo a camiseta e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago.</description>
+                <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
+                <url>https://bleachco.com.br/</url>
+                <repo>https://github.com/PietroTy/bleachco</repo>
             </project>
             <project id="p16">
                 <name>Bot de Discord</name>
@@ -917,10 +917,10 @@ const SYSTEM_PROMPT_EN = `
             <project id="p15">
                 <name>Bleach.co</name>
                 <type>E-commerce e site institucional</type>
-                <description>Conceptual institutional website and e-commerce for a streetwear brand, built with React/Next.js, minimalist design, high-fidelity transitions, and performance optimization.</description>
-                <technologies>React, Next.js, JavaScript, CSS Grid, E-commerce</technologies>
-                <url>https://github.com/PietroTy/site-bleach.co</url>
-                <repo>https://github.com/PietroTy/site-bleach.co</repo>
+                <description>Online store for my own streetwear brand, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing the shirt and procedurally generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout.</description>
+                <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
+                <url>https://bleachco.com.br/</url>
+                <repo>https://github.com/PietroTy/bleachco</repo>
             </project>
             <project id="p16">
                 <name>Bot de Discord</name>

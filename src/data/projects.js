@@ -238,17 +238,17 @@ export const PROJECTS = [
     "id": "bleach-co",
     "namePt": "Bleach.co",
     "nameEn": "Bleach.co",
-    "taglinePt": "E-commerce e site institucional",
-    "taglineEn": "E-commerce and institutional website",
-    "descPt": "Site institucional e e-commerce conceitual para marca de streetwear, desenvolvido com React/Next.js, design minimalista, transições de alta fidelidade e foco em performance.",
-    "descEn": "Conceptual institutional website and e-commerce for a streetwear brand, built with React/Next.js, minimalist design, high-fidelity transitions, and performance optimization.",
+    "taglinePt": "E-commerce da minha marca",
+    "taglineEn": "My brand's e-commerce",
+    "descPt": "Loja online da minha marca de streetwear, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo a camiseta e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago.",
+    "descEn": "Online store for my own streetwear brand, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing the shirt and procedurally generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout.",
     "tags": [
       "site",
       "React",
-      "Next.js",
-      "JavaScript"
+      "Three.js",
+      "Node.js"
     ],
-    "link": "https://github.com/PietroTy/site-bleach.co",
+    "link": "https://bleachco.com.br/",
     "featured": false,
     "color": "#ffffff"
   },
