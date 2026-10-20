@@ -31,12 +31,12 @@ export default function BleachCoPage({ lang, setPage }) {
       iconEn: "// PRODUCTION & SEO"
     },
     {
-      titlePt: "Arquitetura React & Next.js",
-      titleEn: "React & Next.js Architecture",
-      descPt: "Desenvolvimento com Server-Side Rendering (SSR) e otimização dinâmica para navegação tátil e fluida.",
-      descEn: "Built with Server-Side Rendering (SSR) and dynamic optimizations for instant catalog and product page loads.",
-      iconPt: "// REACT & NEXT.JS",
-      iconEn: "// NEXT.JS ENGINE"
+      titlePt: "React & Three.js",
+      titleEn: "React & Three.js",
+      descPt: "Esqueleto 3D vestindo a camiseta, manchas de água sanitária geradas por código e backend Node.js/Express com checkout Mercado Pago.",
+      descEn: "A 3D skeleton wearing the shirt, procedurally generated bleach stains, and a Node.js/Express back end with Mercado Pago checkout.",
+      iconPt: "// REACT & THREE.JS",
+      iconEn: "// REACT & THREE.JS"
     }
   ];
 
@@ -46,7 +46,7 @@ export default function BleachCoPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">React • Next.js • E-Commerce • Marca Própria de Streetwear</div>
+            <div className="hero-tag">React • Three.js • E-Commerce • Marca Própria de Streetwear</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Bleach.co
             </h1>
@@ -59,7 +59,7 @@ export default function BleachCoPage({ lang, setPage }) {
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
-                href="https://github.com/PietroTy/site-bleach.co"
+                href="https://github.com/PietroTy/bleachco"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-fill"
@@ -106,7 +106,7 @@ export default function BleachCoPage({ lang, setPage }) {
                   A <strong>Bleach.co</strong> é a minha marca própria de camisetas streetwear, projetada do conceito inicial à operação final. Todo o site e a estrutura tecnológica foram desenvolvidos inteiramente por mim — incluindo os processos de pagamento (checkout transparente), cálculo automatizado de frete, estratégias de SEO e marketing.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Além do desenvolvimento de software em React/Next.js, atuei diretamente na idealização da marca, identidade visual, acompanhamento dos processos de produção têxtil e na <strong>direção de fotografia autoral</strong> para a produção de assets visuais e campanhas publicitárias do site, sempre com o objetivo de entregar uma estética marcante e uma experiência de compra completamente sem fricção (<i>seamless</i>).
+                  Além do desenvolvimento de software em React e Three.js, atuei diretamente na idealização da marca, identidade visual, acompanhamento dos processos de produção têxtil e na <strong>direção de fotografia autoral</strong> para a produção de assets visuais e campanhas publicitárias do site, sempre com o objetivo de entregar uma estética marcante e uma experiência de compra completamente sem fricção (<i>seamless</i>).
                 </p>
               </>
             ) : (
@@ -115,7 +115,7 @@ export default function BleachCoPage({ lang, setPage }) {
                   <strong>Bleach.co</strong> is my own streetwear apparel brand, built from initial concept to live operations. The entire website and tech stack were built single-handedly — including payment gateways, automated shipping cost calculation, SEO strategy, and marketing pipelines.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Beyond software engineering with React/Next.js, I handled brand conceptualization, visual identity, garment manufacturing supervision, and <strong>original photography direction</strong> for website assets and ad campaigns — with the core goal of delivering a bold visual identity and a <i>seamless</i> client experience.
+                  Beyond software engineering with React and Three.js, I handled brand conceptualization, visual identity, garment manufacturing supervision, and <strong>original photography direction</strong> for website assets and ad campaigns — with the core goal of delivering a bold visual identity and a <i>seamless</i> client experience.
                 </p>
               </>
             )}
@@ -141,7 +141,7 @@ export default function BleachCoPage({ lang, setPage }) {
                 {pt ? "Framework Frontend" : "Frontend Framework"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Next.js & React
+                React & Three.js
               </p>
             </div>
             <div>

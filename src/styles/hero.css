@@ -95,6 +95,53 @@
   background: transparent;
   filter: drop-shadow(-30px 0 80px rgba(124, 58, 237, 0.18));
 }
+/* Scroll Indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--p3);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0.85;
+  user-select: none;
+}
+
+.hero-scroll-indicator:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.hero-scroll-icon {
+  animation: heroScrollBounce 1.6s infinite ease-in-out;
+  color: var(--p2);
+}
+
+.hero-scroll-indicator:hover .hero-scroll-icon {
+  color: var(--p3);
+}
+
+@keyframes heroScrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.hero-scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 18px);
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 1rem 1.25rem 2.5rem;
@@ -194,51 +241,4 @@
   .hero-stats {
     display: none;
   }
-}
-
-/* Scroll Indicator */
-.hero-scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--p3);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  z-index: 10;
-  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  opacity: 0.85;
-  user-select: none;
-}
-
-.hero-scroll-indicator:hover {
-  opacity: 1;
-  color: #ffffff;
-}
-
-.hero-scroll-icon {
-  animation: heroScrollBounce 1.6s infinite ease-in-out;
-  color: var(--p2);
-}
-
-.hero-scroll-indicator:hover .hero-scroll-icon {
-  color: var(--p3);
-}
-
-@keyframes heroScrollBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
-
-.hero-scroll-indicator.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, 18px);
 }
