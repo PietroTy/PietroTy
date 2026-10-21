@@ -17,7 +17,7 @@ export const TIMELINE = [
     "type": "education"
   },
   {
-    "year": "Após a 16ª OBMEP",
+    "year": "2022",
     "rolePt": "Programa de Iniciação Científica Jr. em Matemática",
     "roleEn": "Junior Scientific Initiation Program in Mathematics",
     "placePt": "OBMEP / IMPA · vínculo acadêmico com IME-USP",
