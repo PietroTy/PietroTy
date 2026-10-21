@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0cb2f869.css",
-    "main.js": "/static/js/main.de09c567.js",
+    "main.js": "/static/js/main.55041540.js",
     "static/media/game_of_drones_logo.png": "/static/media/game_of_drones_logo.cbe3cf9d88c05271b03e.png",
     "static/media/laplayer_logo.png": "/static/media/laplayer_logo.8ca2d9e859d635024ad8.png",
     "static/media/magik_tarot_logo.png": "/static/media/magik_tarot_logo.4262716cd053fa72eff3.png",
@@ -42,10 +42,10 @@
     "static/media/orespawn_screenshot_1.jpg": "/static/media/orespawn_screenshot_1.82bdaec0962e5e97a86f.jpg",
     "index.html": "/index.html",
     "main.0cb2f869.css.map": "/static/css/main.0cb2f869.css.map",
-    "main.de09c567.js.map": "/static/js/main.de09c567.js.map"
+    "main.55041540.js.map": "/static/js/main.55041540.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb2f869.css",
-    "static/js/main.de09c567.js"
+    "static/js/main.55041540.js"
   ]
 }
