@@ -23,6 +23,8 @@ import crmImg from "../../assets/crm_card.png";
 import etlImg from "../../assets/etl_card.png";
 import calciteImg from "../../assets/calcite_card.png";
 import santaIzabelImg from "../../assets/santa_izabel_card.png";
+import vitalsImg from "../../assets/vitals_card.png";
+import garimpoImg from "../../assets/garimpo_card.png";
 
 const PROJECT_IMAGES = {
   chub: chubImg,
@@ -48,6 +50,8 @@ const PROJECT_IMAGES = {
   "etl-cnpj": etlImg,
   calcite: calciteImg,
   "santa-izabel": santaIzabelImg,
+  vitals: vitalsImg,
+  "garimpo-sp": garimpoImg,
 };
 
 const getProjectPlaceholder = (color) => {

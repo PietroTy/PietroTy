@@ -163,6 +163,41 @@ export const PROJECTS = [
     "color": "#06b6d4"
   },
   {
+    "id": "vitals",
+    "namePt": "Vitals",
+    "nameEn": "Vitals",
+    "taglinePt": "Infraestrutura pessoal",
+    "taglineEn": "Personal infrastructure",
+    "descPt": "Gerenciador que mantém ligados todos os meus sites, APIs, bots e servidores de jogo: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local que o Calcite usa para ligar, desligar e ver logs ao vivo.",
+    "descEn": "Manager that keeps all my sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a local API that Calcite uses to start, stop, and stream logs.",
+    "tags": [
+      "infra",
+      "Python",
+      "Bash",
+      "Cloudflare"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#22c55e"
+  },
+  {
+    "id": "garimpo-sp",
+    "namePt": "GarimpoSP",
+    "nameEn": "GarimpoSP",
+    "taglinePt": "Projeto pessoal",
+    "taglineEn": "Personal project",
+    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
+    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
+    "tags": [
+      "site",
+      "Curadoria",
+      "Mapa"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#c2410c"
+  },
+  {
     "id": "cvmaker",
     "namePt": "CVMaker",
     "nameEn": "CVMaker",

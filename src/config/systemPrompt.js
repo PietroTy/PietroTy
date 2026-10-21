@@ -318,6 +318,20 @@ const SYSTEM_PROMPT_PT = `
                 <technologies>Go, React, Markdown, LLM, Cloudflare Tunnel</technologies>
                 <url>não disponível / not available</url>
             </project>
+            <project id="p-vitals">
+                <name>Vitals</name>
+                <type>Infraestrutura pessoal</type>
+                <description>Gerenciador em Python e Bash que mantém ligados todos os sites, APIs, bots e servidores de jogo do Pietro: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local com token usada pela aba Vitals do Calcite.</description>
+                <technologies>Python, Bash, Cloudflare Tunnel, Linux, cron</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-garimpo">
+                <name>GarimpoSP</name>
+                <type>Projeto pessoal</type>
+                <description>Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.</description>
+                <technologies>Curadoria, mapa</technologies>
+                <url>não disponível / not available</url>
+            </project>
             <project id="p16">
                 <name>Bot de Discord</name>
                 <type>Projeto público</type>
@@ -948,6 +962,20 @@ const SYSTEM_PROMPT_EN = `
                 <type>Personal tool</type>
                 <description>Obsidian-compatible web second brain: Markdown notes, kanban, a project pipeline that reorganizes itself from open tasks, spreadsheets, attachments, and an LLM agent that proposes note edits (saved only on approval). Go server with the React front end embedded in the binary, always on and reachable online through a Cloudflare tunnel. Personal use, no public link.</description>
                 <technologies>Go, React, Markdown, LLM, Cloudflare Tunnel</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-vitals">
+                <name>Vitals</name>
+                <type>Personal infrastructure</type>
+                <description>Python and Bash manager that keeps all of Pietro's sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a token-protected local API used by the Calcite Vitals tab.</description>
+                <technologies>Python, Bash, Cloudflare Tunnel, Linux, cron</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-garimpo">
+                <name>GarimpoSP</name>
+                <type>Personal project</type>
+                <description>A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.</description>
+                <technologies>Curation, map</technologies>
                 <url>não disponível / not available</url>
             </project>
             <project id="p16">
