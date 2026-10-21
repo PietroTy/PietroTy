@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import siLogo from "../../assets/santa_izabel_card.png";
 
 export default function SantaIzabelPage({ lang, setPage }) {
   const pt = lang === "pt";
-  const [modalData, setModalData] = useState(null);
 
   const features = [
     {
@@ -16,8 +16,8 @@ export default function SantaIzabelPage({ lang, setPage }) {
     {
       titlePt: "Layout de Alta Fidelidade Visual",
       titleEn: "High-Fidelity Visual Design",
-      descPt: "Design moderno alinhado à força da marca multinacional Santa Izabel / Herder, com tipografia legível e contraste visual marcante.",
-      descEn: "Modern design conveying the heritage of Santa Izabel / Herder multinational, featuring clean typography and strong visual contrast.",
+      descPt: "Design moderno alinhado à marca Santa Izabel / Herder, com tipografia legível e contraste visual marcante.",
+      descEn: "Modern design in line with the Santa Izabel / Herder brand, with clean typography and strong visual contrast.",
       iconPt: "// UX / UI DESIGN",
       iconEn: "// VISUAL DESIGN"
     },
@@ -45,42 +45,26 @@ export default function SantaIzabelPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Landing Page Industrial • React • Implementos Agrícolas • SEO</div>
+            <div className="hero-tag">Landing page sob contrato • React • Implementos Agrícolas • SEO</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Santa Izabel & Herder Agro
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Landing page completa de alta fidelidade visual desenvolvida para a multinacional Santa Izabel / Herder do Brasil (implementos agrícolas). Apresentação de catálogo industrial, responsividade e captação de leads."
-                : "High-fidelity landing page developed for multinational Santa Izabel / Herder do Brasil (agricultural implements). Displays industrial catalog specs, responsive design, and lead capture."
+                ? "Landing page que fui contratado para desenvolver para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, faz parte do grupo americano Alamo. Catálogo industrial, responsividade e captação de leads."
+                : "Landing page I was hired to build for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive design, and lead capture."
               }
             </p>
 
             <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
               <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
-                // {pt ? "PROJETO WEB INDUSTRIAL" : "INDUSTRIAL WEB PROJECT"}
+                // {pt ? "PROJETO SOB CONTRATO" : "CLIENT PROJECT"}
               </span>
             </div>
           </div>
 
           <div className="hero-image-container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div 
-              style={{
-                width: "280px",
-                padding: "2rem",
-                background: "var(--card)",
-                border: "1px solid var(--border)",
-                borderRadius: "4px",
-                textAlign: "center"
-              }}
-            >
-              <div style={{ fontFamily: "var(--mono)", color: "#16a34a", fontSize: "1.6rem", fontWeight: "700" }}>
-                🚜 Santa Izabel / Herder
-              </div>
-              <p style={{ fontSize: "0.8rem", color: "var(--muted2)", marginTop: "0.5rem" }}>
-                Implementos Agrícolas
-              </p>
-            </div>
+            <img src={siLogo} alt="Santa Izabel" className="hero-logo" style={{ maxWidth: "340px", display: "block" }} />
           </div>
         </section>
 

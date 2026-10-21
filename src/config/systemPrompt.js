@@ -298,11 +298,25 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p15">
                 <name>Bleach.co</name>
-                <type>E-commerce e site institucional</type>
-                <description>Loja online da minha marca de streetwear, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo a camiseta e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago.</description>
+                <type>E-commerce sob contrato</type>
+                <description>Site e loja online que fui contratado para desenvolver para a Bleach.co, marca paulistana de camisetas alvejadas à mão, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo cada estampa e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago e cálculo de frete.</description>
                 <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
                 <url>https://bleachco.com.br/</url>
                 <repo>https://github.com/PietroTy/bleachco</repo>
+            </project>
+            <project id="p-santa-izabel">
+                <name>Santa Izabel</name>
+                <type>Landing page sob contrato</type>
+                <description>Landing page que fui contratado para desenvolver para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.</description>
+                <technologies>React, JavaScript, SEO</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-calcite">
+                <name>Calcite</name>
+                <type>Ferramenta pessoal</type>
+                <description>Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho conforme as tarefas, planilhas, anexos e um agente com LLM que propõe edições nas notas (só grava com aprovação). Servidor em Go com o front em React embutido no binário, sempre ligado e acessível pela internet via túnel da Cloudflare. Uso pessoal, sem link público.</description>
+                <technologies>Go, React, Markdown, LLM, Cloudflare Tunnel</technologies>
+                <url>não disponível / not available</url>
             </project>
             <project id="p16">
                 <name>Bot de Discord</name>
@@ -916,11 +930,25 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p15">
                 <name>Bleach.co</name>
-                <type>E-commerce e site institucional</type>
-                <description>Online store for my own streetwear brand, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing the shirt and procedurally generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout.</description>
+                <type>Client e-commerce</type>
+                <description>Website and online store I was hired to build for Bleach.co, a São Paulo brand of hand-bleached t-shirts, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing each print and code-generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout and shipping quotes.</description>
                 <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
                 <url>https://bleachco.com.br/</url>
                 <repo>https://github.com/PietroTy/bleachco</repo>
+            </project>
+            <project id="p-santa-izabel">
+                <name>Santa Izabel</name>
+                <type>Client landing page</type>
+                <description>Landing page I was hired to build for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.</description>
+                <technologies>React, JavaScript, SEO</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-calcite">
+                <name>Calcite</name>
+                <type>Personal tool</type>
+                <description>Obsidian-compatible web second brain: Markdown notes, kanban, a project pipeline that reorganizes itself from open tasks, spreadsheets, attachments, and an LLM agent that proposes note edits (saved only on approval). Go server with the React front end embedded in the binary, always on and reachable online through a Cloudflare tunnel. Personal use, no public link.</description>
+                <technologies>Go, React, Markdown, LLM, Cloudflare Tunnel</technologies>
+                <url>não disponível / not available</url>
             </project>
             <project id="p16">
                 <name>Bot de Discord</name>
