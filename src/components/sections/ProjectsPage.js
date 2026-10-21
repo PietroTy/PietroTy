@@ -7,7 +7,7 @@ import appLogoClean from "../../assets/laplayer_logo.png";
 import magiktarotImg from "../../assets/magik_tarot_logo.png";
 import stickersbotImg from "../../assets/stickers_bot_logo.png";
 import gameOfDronesImg from "../../assets/game_of_drones_logo.png";
-import bleachcoImg from "../../assets/bleach_co_logo.png";
+import bleachcoImg from "../../assets/bleach_co_card.png";
 import agentTyImg from "../../assets/agent_ty.png";
 import escribaImg from "../../assets/escriba_icon.png";
 import dsLogoImg from "../../assets/ds_icon.png";
@@ -19,6 +19,36 @@ import n8nLogo from "../../assets/n8n_logo.png";
 import chatwootLogo from "../../assets/chatwoot_logo.png";
 import farmaisLogo from "../../assets/farmais_logo.jpg";
 import imobsystemLogo from "../../assets/imobsystem_logo.jpg";
+import crmImg from "../../assets/crm_card.png";
+import etlImg from "../../assets/etl_card.png";
+import calciteImg from "../../assets/calcite_card.png";
+import santaIzabelImg from "../../assets/santa_izabel_card.png";
+
+const PROJECT_IMAGES = {
+  chub: chubImg,
+  pitcraft: pitcraftImg,
+  laplayer: appLogoClean,
+  "magik-tarot": magiktarotImg,
+  "bot-figurinhas": stickersbotImg,
+  "whatsapp-bot": whatsappbotImg,
+  erium: eriumImg,
+  tv2: tv2Img,
+  "drone-autonomo": gameOfDronesImg,
+  "bleach-co": bleachcoImg,
+  portfolio: agentTyImg,
+  cvmaker: `data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="#1e40af"/><text x="90" y="90" font-family="sans-serif" font-size="95" text-anchor="middle" dominant-baseline="central">🎯</text></svg>')}`,
+  dshub: dsLogoImg,
+  escriba: escribaImg,
+  "engaja-site": engajaLogo,
+  "n8n-forms": n8nLogo,
+  "chatwoot-custom": chatwootLogo,
+  farmais: farmaisLogo,
+  imobsystem: imobsystemLogo,
+  "crm-engaja": crmImg,
+  "etl-cnpj": etlImg,
+  calcite: calciteImg,
+  "santa-izabel": santaIzabelImg,
+};
 
 const getProjectPlaceholder = (color) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="350" height="180" viewBox="0 0 350 180"><rect width="100%" height="100%" fill="#0c081e"/><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="${color}20" stroke-width="1"/></pattern><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${color}35"/><stop offset="100%" stop-color="#0c081e"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#grid)"/><rect width="100%" height="100%" fill="url(#grad)"/><circle cx="175" cy="90" r="45" fill="none" stroke="${color}30" stroke-width="1.5" stroke-dasharray="5,5"/><circle cx="175" cy="90" r="28" fill="none" stroke="${color}b3" stroke-width="2"/></svg>`;
@@ -62,47 +92,7 @@ export default function ProjectsPage({ lang, setPage }) {
               >
                 <div className="pcard-image-wrapper">
                   <img
-                    src={
-                      p.id === "chub"
-                        ? chubImg
-                        : p.id === "pitcraft"
-                        ? pitcraftImg
-                        : p.id === "laplayer"
-                        ? appLogoClean
-                        : p.id === "magik-tarot"
-                        ? magiktarotImg
-                        : p.id === "bot-figurinhas"
-                        ? stickersbotImg
-                        : p.id === "whatsapp-bot"
-                        ? whatsappbotImg
-                        : p.id === "erium"
-                        ? eriumImg
-                        : p.id === "tv2"
-                        ? tv2Img
-                        : p.id === "drone-autonomo"
-                        ? gameOfDronesImg
-                        : p.id === "bleach-co"
-                        ? bleachcoImg
-                        : p.id === "portfolio"
-                        ? agentTyImg
-                        : p.id === "cvmaker"
-                        ? `data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="#1e40af"/><text x="90" y="90" font-family="sans-serif" font-size="95" text-anchor="middle" dominant-baseline="central">🎯</text></svg>')}`
-                        : p.id === "dshub"
-                        ? dsLogoImg
-                        : p.id === "escriba"
-                        ? escribaImg
-                        : p.id === "engaja-site"
-                        ? engajaLogo
-                        : p.id === "n8n-forms"
-                        ? n8nLogo
-                        : p.id === "chatwoot-custom"
-                        ? chatwootLogo
-                        : p.id === "farmais"
-                        ? farmaisLogo
-                        : p.id === "imobsystem"
-                        ? imobsystemLogo
-                        : getProjectPlaceholder(p.color)
-                    }
+                    src={PROJECT_IMAGES[p.id] || getProjectPlaceholder(p.color)}
                     alt={pt ? p.namePt : p.nameEn}
                     className="pcard-image"
                   />

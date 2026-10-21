@@ -30,6 +30,7 @@ import N8nFormsPage from "./components/projectDetails/N8nFormsPage";
 import SantaIzabelPage from "./components/projectDetails/SantaIzabelPage";
 import ImobSystemPage from "./components/projectDetails/ImobSystemPage";
 import FarmaisPage from "./components/projectDetails/FarmaisPage";
+import CalcitePage from "./components/projectDetails/CalcitePage";
 import TyChat from "./components/chat/TyChat";
 import "./styles/index.css";
 
@@ -38,7 +39,7 @@ const PAGE_KEYS = [
   "pitcraft-seasons", "laplayer", "stickerbot", "whatsappbot", 
   "gameofdrones", "discordbot", "portfolio", "erium", "tv2", "magiktarot", "magik-tarot",
   "chub", "escriba", "dshub", "cvmaker", "bleach-co", "bleachco", "crm-engaja", "crmengaja", "etl-cnpj", "etlcnpj",
-  "engaja-site", "engajasite", "chatwoot-custom", "n8n-forms", "santa-izabel", "imobsystem", "farmais"
+  "engaja-site", "engajasite", "chatwoot-custom", "n8n-forms", "santa-izabel", "imobsystem", "farmais", "calcite"
 ];
 
 const PAGE_METADATA = {
@@ -390,6 +391,7 @@ export default function App() {
     santaizabel: <SantaIzabelPage lang={lang} setPage={setPage} />,
     imobsystem: <ImobSystemPage lang={lang} setPage={setPage} />,
     farmais: <FarmaisPage lang={lang} setPage={setPage} />,
+    calcite: <CalcitePage lang={lang} />,
   };
 
   return (
