@@ -1,5 +1,5 @@
 import React from "react";
-import bleachcoLogo from "../../assets/bleach_co_logo.png";
+import bleachcoLogo from "../../assets/bleach_co_card.png";
 
 export default function BleachCoPage({ lang, setPage }) {
   const pt = lang === "pt";
@@ -7,36 +7,36 @@ export default function BleachCoPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Processos de Pagamento & Frete",
-      titleEn: "Payment Gateways & Freight Engine",
-      descPt: "Integração nativa de checkout para pagamentos via PIX/Cartão e calculador de frete em tempo real com regras de envio.",
-      descEn: "Native checkout integration for instant PIX/Credit payments and real-time shipping cost calculator with custom rules.",
+      titlePt: "Checkout & Frete",
+      titleEn: "Checkout & Shipping",
+      descPt: "Pagamento por PIX e cartão via Mercado Pago e cálculo de frete em tempo real, com pedidos registrados no backend.",
+      descEn: "PIX and card payments through Mercado Pago and real-time shipping quotes, with orders recorded in the back end.",
       iconPt: "// CHECKOUT & FRETE",
       iconEn: "// CHECKOUT & SHIPPING"
     },
     {
-      titlePt: "Identidade Visual & Direção de Fotografia",
-      titleEn: "Visual Identity & Photography Direction",
-      descPt: "Concepção completa da marca, criação de logo, escolha tipográfica e fotografia autoral para assets do site e propagandas.",
-      descEn: "Complete brand conceptualization, logo creation, typography, and original photography for website assets and ad campaigns.",
-      iconPt: "// FOTOGRAFIA & ASSETS",
-      iconEn: "// BRANDING & PHOTOS"
+      titlePt: "Esqueleto 3D",
+      titleEn: "3D Skeleton",
+      descPt: "Um esqueleto em Three.js veste a camiseta de cada estampa; um clique troca a estampa no próprio modelo.",
+      descEn: "A Three.js skeleton wears each print's shirt; one click swaps the print right on the model.",
+      iconPt: "// THREE.JS",
+      iconEn: "// THREE.JS"
     },
     {
-      titlePt: "Produção, SEO & Marketing",
-      titleEn: "Apparel Production, SEO & Marketing",
-      descPt: "Acompanhamento do processo fabril das camisetas, otimização de SEO para busca orgânica e estratégia de tráfego.",
-      descEn: "Hands-on garment manufacturing pipeline supervision, SEO search engine optimization, and performance marketing.",
-      iconPt: "// PRODUÇÃO & SEO",
-      iconEn: "// PRODUCTION & SEO"
+      titlePt: "Manchas Procedurais",
+      titleEn: "Procedural Stains",
+      descPt: "Manchas de água sanitária geradas por código no fundo e nos títulos, que o visitante também pinta arrastando o dedo.",
+      descEn: "Code-generated bleach stains across the background and headings, which visitors can also paint by dragging.",
+      iconPt: "// CANVAS",
+      iconEn: "// CANVAS"
     },
     {
-      titlePt: "React & Three.js",
-      titleEn: "React & Three.js",
-      descPt: "Esqueleto 3D vestindo a camiseta, manchas de água sanitária geradas por código e backend Node.js/Express com checkout Mercado Pago.",
-      descEn: "A 3D skeleton wearing the shirt, procedurally generated bleach stains, and a Node.js/Express back end with Mercado Pago checkout.",
-      iconPt: "// REACT & THREE.JS",
-      iconEn: "// REACT & THREE.JS"
+      titlePt: "Catálogo & SEO",
+      titleEn: "Catalog & SEO",
+      descPt: "Páginas de estampa com fotos de frente e costas, rotas estáticas geradas no build e sitemap para busca orgânica.",
+      descEn: "Print pages with front and back photos, static routes generated at build time, and a sitemap for organic search.",
+      iconPt: "// CATÁLOGO & SEO",
+      iconEn: "// CATALOG & SEO"
     }
   ];
 
@@ -46,26 +46,26 @@ export default function BleachCoPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">React • Three.js • E-Commerce • Marca Própria de Streetwear</div>
+            <div className="hero-tag">React • Three.js • Node.js • E-commerce sob contrato</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               Bleach.co
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Marca autoral de camisetas e e-commerce de streetwear desenvolvido integralmente do zero. Cobertura completa: idealização de marca, identidade visual, pagamentos, frete, fotografia de assets, marketing e SEO."
-                : "Own streetwear t-shirt brand and e-commerce platform built from scratch. End-to-end coverage: brand conceptualization, visual identity, payments, freight, photography, marketing, and SEO."
+                ? "Site e e-commerce da Bleach.co, marca paulistana de camisetas alvejadas à mão. Fui contratado para fazer a loja inteira: front, backend, pagamentos, frete e a parte visual interativa."
+                : "Website and online store for Bleach.co, a São Paulo brand of hand-bleached t-shirts. I was hired to build the whole store: front end, back end, payments, shipping, and the interactive visuals."
               }
             </p>
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
-                href="https://github.com/PietroTy/bleachco"
+                href="https://bleachco.com.br/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-fill"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
               >
-                <span>{pt ? "Ver Repositório GitHub" : "View GitHub Repository"} &rarr;</span>
+                <span>{pt ? "Acessar Site" : "Visit Website"} &rarr;</span>
               </a>
             </div>
           </div>
@@ -97,25 +97,25 @@ export default function BleachCoPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
-            {pt ? "// MARCA AUTORAL & ECOSSISTEMA E-COMMERCE" : "// OWN BRAND & E-COMMERCE ECOSYSTEM"}
+            {pt ? "// PROJETO SOB CONTRATO" : "// CLIENT PROJECT"}
           </h2>
           <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  A <strong>Bleach.co</strong> é a minha marca própria de camisetas streetwear, projetada do conceito inicial à operação final. Todo o site e a estrutura tecnológica foram desenvolvidos inteiramente por mim — incluindo os processos de pagamento (checkout transparente), cálculo automatizado de frete, estratégias de SEO e marketing.
+                  A <strong>Bleach.co</strong> me contratou para tirar a loja do papel. Desenvolvi sozinho o site e toda a estrutura por trás dele: catálogo, carrinho, checkout com Mercado Pago, cálculo de frete e o backend em Node.js/Express que registra os pedidos.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Além do desenvolvimento de software em React e Three.js, atuei diretamente na idealização da marca, identidade visual, acompanhamento dos processos de produção têxtil e na <strong>direção de fotografia autoral</strong> para a produção de assets visuais e campanhas publicitárias do site, sempre com o objetivo de entregar uma estética marcante e uma experiência de compra completamente sem fricção (<i>seamless</i>).
+                  A identidade da marca pedia um site que parecesse feito à mão, então a parte visual virou o centro do projeto: um <strong>esqueleto 3D em Three.js</strong> que veste cada estampa, manchas de água sanitária geradas por código e uma estética pixelada consistente em todas as páginas.
                 </p>
               </>
             ) : (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  <strong>Bleach.co</strong> is my own streetwear apparel brand, built from initial concept to live operations. The entire website and tech stack were built single-handedly — including payment gateways, automated shipping cost calculation, SEO strategy, and marketing pipelines.
+                  <strong>Bleach.co</strong> hired me to get their store off the ground. I built the website and everything behind it on my own: catalog, cart, Mercado Pago checkout, shipping quotes, and the Node.js/Express back end that records orders.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Beyond software engineering with React and Three.js, I handled brand conceptualization, visual identity, garment manufacturing supervision, and <strong>original photography direction</strong> for website assets and ad campaigns — with the core goal of delivering a bold visual identity and a <i>seamless</i> client experience.
+                  The brand wanted a site that felt handmade, so the visuals became the core of the project: a <strong>Three.js 3D skeleton</strong> that wears each print, code-generated bleach stains, and a consistent pixelated look across every page.
                 </p>
               </>
             )}
@@ -149,15 +149,15 @@ export default function BleachCoPage({ lang, setPage }) {
                 {pt ? "Pagamentos & Frete" : "Payments & Shipping"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                PIX, Cartão & Calculador de Frete
+                Mercado Pago (PIX e cartão)
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Assets & Fotografia" : "Assets & Media"}
+                {pt ? "Backend" : "Back End"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Direção de Fotografia & SEO
+                Node.js & Express
               </p>
             </div>
           </div>

@@ -18,22 +18,22 @@ export const PROJECTS = [
     "color": "#a855f7"
   },
   {
-    "id": "whatsapp-bot",
-    "namePt": "Bot de WhatsApp",
-    "nameEn": "WhatsApp Bot",
-    "taglinePt": "Automação e IA para WhatsApp",
-    "taglineEn": "WhatsApp automation and AI",
-    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
-    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
+    "id": "bleach-co",
+    "namePt": "Bleach.co",
+    "nameEn": "Bleach.co",
+    "taglinePt": "E-commerce sob contrato",
+    "taglineEn": "Client e-commerce",
+    "descPt": "Site e loja online desenvolvidos sob contrato para a Bleach.co, marca paulistana de camisetas alvejadas à mão (bleachco.com.br). Front em React com Three.js (esqueleto 3D vestindo cada estampa e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago e cálculo de frete.",
+    "descEn": "Website and online store built under contract for Bleach.co, a São Paulo brand of hand-bleached t-shirts (bleachco.com.br). React front end with Three.js (a 3D skeleton wearing each print and code-generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout and shipping quotes.",
     "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "whatsapp-web.js"
+      "site",
+      "React",
+      "Three.js",
+      "Node.js"
     ],
-    "link": "https://github.com/PietroTy/bot-whatsapp",
+    "link": "https://bleachco.com.br/",
     "featured": false,
-    "color": "#22c55e"
+    "color": "#ffffff"
   },
   {
     "id": "laplayer",
@@ -55,6 +55,60 @@ export const PROJECTS = [
     "apk": "https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
   },
   {
+    "id": "calcite",
+    "namePt": "Calcite",
+    "nameEn": "Calcite",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
+    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
+    "tags": [
+      "app",
+      "Go",
+      "React",
+      "LLM"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "whatsapp-bot",
+    "namePt": "Bot de WhatsApp",
+    "nameEn": "WhatsApp Bot",
+    "taglinePt": "Automação e IA para WhatsApp",
+    "taglineEn": "WhatsApp automation and AI",
+    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
+    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
+    "tags": [
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "whatsapp-web.js"
+    ],
+    "link": "https://github.com/PietroTy/bot-whatsapp",
+    "featured": false,
+    "color": "#22c55e"
+  },
+  {
+    "id": "escriba",
+    "namePt": "Escriba AI",
+    "nameEn": "Escriba AI",
+    "taglinePt": "Pesquisa aplicada",
+    "taglineEn": "Applied research",
+    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
+    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
+    "tags": [
+      "saas",
+      "Python",
+      "Streamlit",
+      "Maritaca AI"
+    ],
+    "link": "https://escriba.streamlit.app/",
+    "featured": true,
+    "color": "#f59e0b"
+  },
+  {
     "id": "crm-engaja",
     "namePt": "CRM Corporativo, BI e Integrações",
     "nameEn": "Corporate CRM, BI & Integrations",
@@ -71,6 +125,42 @@ export const PROJECTS = [
     "link": null,
     "featured": true,
     "color": "#7c3aed"
+  },
+  {
+    "id": "santa-izabel",
+    "namePt": "Santa Izabel & Herder Agro",
+    "nameEn": "Santa Izabel & Herder Agro",
+    "taglinePt": "Landing page sob contrato",
+    "taglineEn": "Client landing page",
+    "descPt": "Landing page desenvolvida sob contrato para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.",
+    "descEn": "Landing page built under contract for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.",
+    "tags": [
+      "site",
+      "React",
+      "JavaScript",
+      "SEO"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#16a34a"
+  },
+  {
+    "id": "etl-cnpj",
+    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
+    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
+    "taglinePt": "Engenharia de dados",
+    "taglineEn": "Data engineering",
+    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
+    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
+    "tags": [
+      "dados",
+      "Python",
+      "Pandas",
+      "NumPy"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#06b6d4"
   },
   {
     "id": "cvmaker",
@@ -107,24 +197,6 @@ export const PROJECTS = [
     "link": null,
     "featured": false,
     "color": "#10b981"
-  },
-  {
-    "id": "escriba",
-    "namePt": "Escriba AI",
-    "nameEn": "Escriba AI",
-    "taglinePt": "Pesquisa aplicada",
-    "taglineEn": "Applied research",
-    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
-    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
-    "tags": [
-      "saas",
-      "Python",
-      "Streamlit",
-      "Maritaca AI"
-    ],
-    "link": "https://escriba.streamlit.app/",
-    "featured": true,
-    "color": "#f59e0b"
   },
   {
     "id": "erium",
@@ -215,42 +287,6 @@ export const PROJECTS = [
     "link": "https://tv2.pietroty.com.br/",
     "featured": false,
     "color": "#0ea5e9"
-  },
-  {
-    "id": "etl-cnpj",
-    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
-    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
-    "taglinePt": "Engenharia de dados",
-    "taglineEn": "Data engineering",
-    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
-    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
-    "tags": [
-      "dados",
-      "Python",
-      "Pandas",
-      "NumPy"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#06b6d4"
-  },
-  {
-    "id": "bleach-co",
-    "namePt": "Bleach.co",
-    "nameEn": "Bleach.co",
-    "taglinePt": "E-commerce da minha marca",
-    "taglineEn": "My brand's e-commerce",
-    "descPt": "Loja online da minha marca de streetwear, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo a camiseta e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago.",
-    "descEn": "Online store for my own streetwear brand, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing the shirt and procedurally generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout.",
-    "tags": [
-      "site",
-      "React",
-      "Three.js",
-      "Node.js"
-    ],
-    "link": "https://bleachco.com.br/",
-    "featured": false,
-    "color": "#ffffff"
   },
   {
     "id": "discord-bot",
@@ -377,24 +413,6 @@ export const PROJECTS = [
     "link": null,
     "featured": true,
     "color": "#512bd4"
-  },
-  {
-    "id": "santa-izabel",
-    "namePt": "Santa Izabel & Herder Agro",
-    "nameEn": "Santa Izabel & Herder Agro",
-    "taglinePt": "Landing page industrial / agro",
-    "taglineEn": "Industrial & agro landing page",
-    "descPt": "Landing page completa de alta fidelidade visual desenvolvida para a multinacional Santa Izabel / Herder do Brasil (implementos agrícolas). Apresentação de catálogo industrial, responsividade total, UX moderna e foco em geração de leads comerciais.",
-    "descEn": "High-fidelity full landing page developed for multinational Santa Izabel / Herder do Brasil (agricultural implements). Displays an industrial catalog with modern UX, full mobile responsiveness, and lead capture optimization.",
-    "tags": [
-      "site",
-      "React",
-      "JavaScript",
-      "SEO"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#16a34a"
   },
   {
     "id": "farmais",
