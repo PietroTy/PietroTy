@@ -126,7 +126,7 @@ const SYSTEM_PROMPT_PT = `
             <job>
                 <company>OBMEP / IMPA — Programa de Iniciação Científica Jr. (PIC), polo do IME-USP</company>
                 <role>Participante do Programa de Iniciação Científica Jr. em Matemática</role>
-                <period>Ciclo posterior à 16ª OBMEP · datas exatas pendentes</period>
+                <period>2022 (ciclo da 16ª OBMEP, edição 2021)</period>
                 <location>São Paulo, SP / modalidade exata pendente</location>
                 <contract>Programa de formação científica para estudante premiado na OBMEP</contract>
                 <details>
@@ -744,7 +744,7 @@ const SYSTEM_PROMPT_EN = `
             <job>
                 <company>OBMEP / IMPA — Programa de Iniciação Científica Jr. (PIC), polo do IME-USP</company>
                 <role>Junior Scientific Initiation Program Participant in Mathematics</role>
-                <period>Cycle following the 16th OBMEP · exact dates pending</period>
+                <period>2022 (16th OBMEP cycle, 2021 edition)</period>
                 <location>São Paulo, SP / exact delivery format pending</location>
                 <contract>Programa de formação científica para estudante premiado na OBMEP</contract>
                 <details>
