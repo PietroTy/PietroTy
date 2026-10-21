@@ -69,7 +69,7 @@ export const PROJECTS = [
       "LLM"
     ],
     "link": null,
-    "featured": false,
+    "featured": true,
     "color": "#8b5cf6"
   },
   {
@@ -91,22 +91,22 @@ export const PROJECTS = [
     "color": "#22c55e"
   },
   {
-    "id": "escriba",
-    "namePt": "Escriba AI",
-    "nameEn": "Escriba AI",
-    "taglinePt": "Pesquisa aplicada",
-    "taglineEn": "Applied research",
-    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
-    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
+    "id": "santa-izabel",
+    "namePt": "Santa Izabel & Herder Agro",
+    "nameEn": "Santa Izabel & Herder Agro",
+    "taglinePt": "Landing page sob contrato",
+    "taglineEn": "Client landing page",
+    "descPt": "Landing page desenvolvida sob contrato para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.",
+    "descEn": "Landing page built under contract for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.",
     "tags": [
-      "saas",
-      "Python",
-      "Streamlit",
-      "Maritaca AI"
+      "site",
+      "React",
+      "JavaScript",
+      "SEO"
     ],
-    "link": "https://escriba.streamlit.app/",
-    "featured": true,
-    "color": "#f59e0b"
+    "link": null,
+    "featured": false,
+    "color": "#16a34a"
   },
   {
     "id": "crm-engaja",
@@ -127,24 +127,6 @@ export const PROJECTS = [
     "color": "#7c3aed"
   },
   {
-    "id": "santa-izabel",
-    "namePt": "Santa Izabel & Herder Agro",
-    "nameEn": "Santa Izabel & Herder Agro",
-    "taglinePt": "Landing page sob contrato",
-    "taglineEn": "Client landing page",
-    "descPt": "Landing page desenvolvida sob contrato para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.",
-    "descEn": "Landing page built under contract for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.",
-    "tags": [
-      "site",
-      "React",
-      "JavaScript",
-      "SEO"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#16a34a"
-  },
-  {
     "id": "etl-cnpj",
     "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
     "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
@@ -159,26 +141,8 @@ export const PROJECTS = [
       "NumPy"
     ],
     "link": null,
-    "featured": true,
-    "color": "#06b6d4"
-  },
-  {
-    "id": "vitals",
-    "namePt": "Vitals",
-    "nameEn": "Vitals",
-    "taglinePt": "Infraestrutura pessoal",
-    "taglineEn": "Personal infrastructure",
-    "descPt": "Gerenciador que mantém ligados todos os meus sites, APIs, bots e servidores de jogo: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local que o Calcite usa para ligar, desligar e ver logs ao vivo.",
-    "descEn": "Manager that keeps all my sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a local API that Calcite uses to start, stop, and stream logs.",
-    "tags": [
-      "infra",
-      "Python",
-      "Bash",
-      "Cloudflare"
-    ],
-    "link": null,
     "featured": false,
-    "color": "#22c55e"
+    "color": "#06b6d4"
   },
   {
     "id": "garimpo-sp",
@@ -196,6 +160,24 @@ export const PROJECTS = [
     "link": null,
     "featured": false,
     "color": "#c2410c"
+  },
+  {
+    "id": "escriba",
+    "namePt": "Escriba AI",
+    "nameEn": "Escriba AI",
+    "taglinePt": "Pesquisa aplicada",
+    "taglineEn": "Applied research",
+    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
+    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
+    "tags": [
+      "saas",
+      "Python",
+      "Streamlit",
+      "Maritaca AI"
+    ],
+    "link": "https://escriba.streamlit.app/",
+    "featured": true,
+    "color": "#f59e0b"
   },
   {
     "id": "cvmaker",
@@ -232,6 +214,24 @@ export const PROJECTS = [
     "link": null,
     "featured": false,
     "color": "#10b981"
+  },
+  {
+    "id": "vitals",
+    "namePt": "Vitals",
+    "nameEn": "Vitals",
+    "taglinePt": "Infraestrutura pessoal",
+    "taglineEn": "Personal infrastructure",
+    "descPt": "Gerenciador que mantém ligados todos os meus sites, APIs, bots e servidores de jogo: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local que o Calcite usa para ligar, desligar e ver logs ao vivo.",
+    "descEn": "Manager that keeps all my sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a local API that Calcite uses to start, stop, and stream logs.",
+    "tags": [
+      "infra",
+      "Python",
+      "Bash",
+      "Cloudflare"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#22c55e"
   },
   {
     "id": "erium",
@@ -324,24 +324,6 @@ export const PROJECTS = [
     "color": "#0ea5e9"
   },
   {
-    "id": "discord-bot",
-    "namePt": "Bot de Discord",
-    "nameEn": "Discord Bot",
-    "taglinePt": "Projeto público",
-    "taglineEn": "Public project",
-    "descPt": "Bot de administração e entretenimento com comandos de moderação, economia virtual e minijogos, desenvolvido com Node.js e Discord.js.",
-    "descEn": "Administration and entertainment bot with moderation commands, a virtual economy, and minigames, built with Node.js and Discord.js.",
-    "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "Discord.js"
-    ],
-    "link": "https://github.com/PietroTy/bot-discord",
-    "featured": false,
-    "color": "#5865f2"
-  },
-  {
     "id": "pitcraft",
     "namePt": "PitCraft",
     "nameEn": "PitCraft",
@@ -358,6 +340,24 @@ export const PROJECTS = [
     "link": "https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh",
     "featured": true,
     "color": "#f43f5e"
+  },
+  {
+    "id": "discord-bot",
+    "namePt": "Bot de Discord",
+    "nameEn": "Discord Bot",
+    "taglinePt": "Projeto público",
+    "taglineEn": "Public project",
+    "descPt": "Bot de administração e entretenimento com comandos de moderação, economia virtual e minijogos, desenvolvido com Node.js e Discord.js.",
+    "descEn": "Administration and entertainment bot with moderation commands, a virtual economy, and minigames, built with Node.js and Discord.js.",
+    "tags": [
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "Discord.js"
+    ],
+    "link": "https://github.com/PietroTy/bot-discord",
+    "featured": false,
+    "color": "#5865f2"
   },
   {
     "id": "portfolio",
@@ -378,24 +378,6 @@ export const PROJECTS = [
     "color": "#9d5cfc"
   },
   {
-    "id": "chatwoot-custom",
-    "namePt": "Chatwoot Customizado",
-    "nameEn": "Custom Chatwoot Integration",
-    "taglinePt": "Solução corporativa / atendimento",
-    "taglineEn": "Corporate customer service solution",
-    "descPt": "Integração e personalização da plataforma omnichannel Chatwoot para atendimento corporativo em empresas. Customização de fluxos de triagem, distribuição de conversas, webhooks, relatórios de produtividade e conexão direta com canais como WhatsApp (Evolution API) e CRM.",
-    "descEn": "Omnichannel Chatwoot platform integration and customization for enterprise customer service. Features custom routing workflows, chat distribution, webhooks, productivity reports, and direct integration with WhatsApp (Evolution API) and CRM.",
-    "tags": [
-      "saas",
-      "Chatwoot",
-      "Docker",
-      "Node.js"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#0284c7"
-  },
-  {
     "id": "n8n-forms",
     "namePt": "Formulários & Workflows n8n",
     "nameEn": "n8n Forms & Workflows",
@@ -412,6 +394,24 @@ export const PROJECTS = [
     "link": null,
     "featured": true,
     "color": "#ea580c"
+  },
+  {
+    "id": "chatwoot-custom",
+    "namePt": "Chatwoot Customizado",
+    "nameEn": "Custom Chatwoot Integration",
+    "taglinePt": "Solução corporativa / atendimento",
+    "taglineEn": "Corporate customer service solution",
+    "descPt": "Integração e personalização da plataforma omnichannel Chatwoot para atendimento corporativo em empresas. Customização de fluxos de triagem, distribuição de conversas, webhooks, relatórios de produtividade e conexão direta com canais como WhatsApp (Evolution API) e CRM.",
+    "descEn": "Omnichannel Chatwoot platform integration and customization for enterprise customer service. Features custom routing workflows, chat distribution, webhooks, productivity reports, and direct integration with WhatsApp (Evolution API) and CRM.",
+    "tags": [
+      "saas",
+      "Chatwoot",
+      "Docker",
+      "Node.js"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#0284c7"
   },
   {
     "id": "engaja-site",
@@ -446,7 +446,7 @@ export const PROJECTS = [
       "SQL Server"
     ],
     "link": null,
-    "featured": true,
+    "featured": false,
     "color": "#512bd4"
   },
   {
