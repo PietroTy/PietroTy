@@ -94,82 +94,52 @@ export const TIMELINE = [
     "type": "research"
   },
   {
-    "year": "Abr 2025 – Jan 2026",
-    "rolePt": "Pesquisa em IA, Acessibilidade e Design Educacional",
-    "roleEn": "AI, Accessibility, and Instructional Design Research",
+    "year": "Set 2024 – Jan 2026",
+    "rolePt": "Bolsista — Pesquisa em IA e Acessibilidade",
+    "roleEn": "Research Scholar — AI and Accessibility",
     "placePt": "IFSP / ENAP — COSAIC",
     "placeEn": "IFSP / ENAP — COSAIC",
-    "descPt": "Pesquisou aplicações de LLMs e IA generativa para produção, revisão e adaptação de conteúdo educacional digital em escala. Fundou e arquitetou o Escriba, plataforma em Python/Streamlit com múltiplos LLMs para geração de textos acadêmicos e pipelines de verificação. Aplicou design educacional inclusivo, acessibilidade digital, WCAG, DEIA, tecnologias assistivas e testes de usabilidade. Revisou conteúdos da Escola Virtual do Governo (EV.G/ENAP) com metodologia ADDIE e rigor técnico-pedagógico.",
-    "descEn": "Researched LLM and generative AI applications for the production, review, and adaptation of digital educational content at scale. Founded and architected Escriba, a Python/Streamlit platform using multiple LLMs for academic writing and verification pipelines. Applied inclusive instructional design, digital accessibility, WCAG, DEIA, assistive technologies, and usability testing. Reviewed content for Brazil's Virtual School of Government using ADDIE and technical-pedagogical quality controls.",
+    "descPt": "Desenvolvimento completo da plataforma Escriba AI em Python, focada na integração de modelos de linguagem (LLMs) para assistência e revisão acadêmica. Implementação de rotinas automatizadas de web scraping e estruturação de coleta de dados com Playwright. Revisão técnica de materiais da Escola Virtual do Governo (EV.G), garantindo a aplicação rigorosa de padrões de acessibilidade digital (WCAG).",
+    "descEn": "Built the Escriba AI platform end to end in Python, integrating large language models (LLMs) for academic assistance and review. Implemented automated web scraping routines and structured data collection with Playwright. Technical review of materials for Brazil's Virtual School of Government (EV.G), enforcing digital accessibility standards (WCAG).",
     "tags": [
-      "LLMs",
       "Python",
-      "Streamlit",
-      "WCAG",
-      "ADDIE"
+      "LLMs",
+      "Playwright",
+      "WCAG"
     ],
     "type": "research"
   },
   {
-    "year": "Mar – Jun 2026",
-    "rolePt": "Estagiário em Automações de IA",
-    "roleEn": "AI Automation Intern",
+    "year": "Fev – Jun 2026",
+    "rolePt": "Estagiário em Desenvolvimento",
+    "roleEn": "Development Intern",
     "placePt": "Engaja Soluções Corporativas",
     "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Atuou no ciclo completo de produtos digitais, da concepção estratégica ao deploy em produção, com foco em automações inteligentes, IA generativa e desenvolvimento full-stack. Arquitetou, desenvolveu e implantou um CRM corporativo customizado integrado ao Power BI para dashboards executivos e fluxos de dados em tempo real. Projetou pipelines de automação baseados em LLMs, agentes de IA, n8n e Python, reduzindo trabalho manual em rotinas administrativas e de atendimento. Construiu integrações entre PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe e APIs internas/externas. Implantou agentes conversacionais de IA para atendimento via WhatsApp, com gestão de múltiplos clientes e suporte técnico/consultivo.",
-    "descEn": "Worked across the full digital product lifecycle, from strategy to production deployment, focusing on intelligent automation, generative AI, and full-stack development. Architected, built, and deployed a custom corporate CRM integrated with Power BI for executive dashboards and real-time data flows. Designed automation pipelines based on LLMs, AI agents, n8n, and Python, reducing manual work in administrative and customer-service routines. Built integrations among PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe, and internal/external APIs. Deployed conversational AI agents for WhatsApp service, supporting multiple clients and providing technical consulting.",
+    "descPt": "Desenvolvimento e manutenção de integrações no backend corporativo em C# e .NET (MVC), conectando o sistema a plataformas de terceiros. Criação e orquestração de fluxos de automação focados em atendimento comercial, integrando sistemas internos com agentes conversacionais. Apoio contínuo no mapeamento de regras de negócio do software e na preparação arquitetural para a modernização do frontend.",
+    "descEn": "Built and maintained corporate back-end integrations in C# and .NET (MVC), connecting the system to third-party platforms. Created and orchestrated automation flows for sales support, integrating internal systems with conversational agents. Ongoing support in mapping the software's business rules and preparing the architecture for front-end modernization.",
     "tags": [
-      "n8n",
-      "Python",
-      "PostgreSQL",
-      "Power BI"
-    ],
-    "type": "work"
-  },
-  {
-    "year": "Abr – Ago 2026",
-    "rolePt": "QA Tester e Revisor de Código",
-    "roleEn": "QA Tester and Code Reviewer",
-    "placePt": "MakeLemonad",
-    "placeEn": "MakeLemonad",
-    "descPt": "Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte. Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX. Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.",
-    "descEn": "Performed critical code reviews and quality audits for new features in production web applications serving large clients. Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements. Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.",
-    "tags": [
-      "QA",
-      "OWASP",
-      "Pentest",
-      "UX"
-    ],
-    "type": "work"
-  },
-  {
-    "year": "Mai – Set 2026",
-    "rolePt": "Engenheiro de IA para Textos Acadêmicos",
-    "roleEn": "Applied AI Engineer for Academic Writing",
-    "placePt": "Consultoria Acadêmica — PUC",
-    "placeEn": "Academic Consulting — PUC",
-    "descPt": "Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba. Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações. Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.",
-    "descEn": "Provided generative AI consulting for doctoral research through the Escriba platform. Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms. Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.",
-    "tags": [
-      "LLMs",
-      "ABNT",
-      "Prompt Engineering"
+      "C#",
+      ".NET MVC",
+      "Integrações",
+      "Automação"
     ],
     "type": "work"
   },
   {
     "year": "Jul – Set 2026",
-    "rolePt": "Consultor em Desenvolvimento de Dados",
-    "roleEn": "Data Development Consultant",
+    "rolePt": "Desenvolvedor Júnior",
+    "roleEn": "Junior Developer",
     "placePt": "Engaja Soluções Corporativas",
     "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Promovido do estágio em Automações de IA ao cargo de Consultor em Desenvolvimento de Dados. Foi líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads. Conduziu a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação. Comercializou, implantou e evoluiu o CRM corporativo personalizado, com operação direta sobre bancos transacionais PostgreSQL. Desenvolveu painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas. Liderou especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.",
-    "descEn": "Promoted from the AI Automation internship to Data Development Consultant. Led the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization. Drove the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures. Commercialized, deployed, and evolved a custom corporate CRM, working directly with transactional PostgreSQL databases. Built custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making. Led technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.",
+    "descPt": "Desenvolvimento full-stack de sistemas corporativos em C#, .NET e JavaScript (arquitetura MVC), conduzindo a transição progressiva de interfaces legadas. Modelagem e administração de bases de dados relacionais complexas, atuando centralmente com Oracle SQL e PostgreSQL, além da gestão de ecossistemas de clientes em SQL Server. Desenvolvimento de rotinas de ETL para clientes utilizando integrações de BI.",
+    "descEn": "Full-stack development of corporate systems in C#, .NET, and JavaScript (MVC architecture), leading the progressive migration of legacy interfaces. Modeled and administered complex relational databases, working mainly with Oracle SQL and PostgreSQL, plus SQL Server client environments. Built ETL routines for clients using BI integrations.",
     "tags": [
+      "C#",
+      ".NET",
+      "Oracle SQL",
       "PostgreSQL",
-      "Power BI",
-      "Governança",
-      "Liderança"
+      "SQL Server",
+      "ETL"
     ],
     "type": "work"
   }
