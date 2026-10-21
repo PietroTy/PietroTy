@@ -35,8 +35,8 @@ export default function HomePage({ lang, setPage }) {
         </div>
         <div className="hero-kicker">
           {pt
-            ? "Consultor em Desenvolvimento de Dados | Full-Stack | Data Engineering | AI"
-            : "Data Development Consultant | Full-Stack | Data Engineering | AI"}
+            ? "Desenvolvimento de Dados | Full-Stack | Data Engineering | AI"
+            : "Data Development | Full-Stack | Data Engineering | AI"}
         </div>
         <h1 className="hero-h1">
           {pt ? "Oi, sou o" : "Hi, I'm"}
@@ -45,11 +45,11 @@ export default function HomePage({ lang, setPage }) {
         <p className="hero-desc">
           {pt ? (
             <>
-              Consultor em <strong>Desenvolvimento de Dados</strong> na Engaja, Desenvolvedor <strong>Full-Stack</strong>, Engenheiro de <strong>Dados</strong> e Pesquisador em <strong>IA</strong>. Atua com PostgreSQL, Power BI, ETL, automações e produtos digitais de ponta a ponta.
+              Desenvolvedor <strong>Full-Stack</strong>, Engenheiro de <strong>Dados</strong> e Pesquisador em <strong>IA</strong>. Atua com PostgreSQL, Power BI, ETL, automações e produtos digitais de ponta a ponta.
             </>
           ) : (
             <>
-              <strong>Data Development Consultant</strong> at Engaja, <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and <strong>AI</strong> Researcher. Works with PostgreSQL, Power BI, ETL, automation, and end-to-end digital products.
+              <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and <strong>AI</strong> Researcher. Works with PostgreSQL, Power BI, ETL, automation, and end-to-end digital products.
             </>
           )}
         </p>

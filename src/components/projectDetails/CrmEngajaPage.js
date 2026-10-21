@@ -58,7 +58,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
 
             <div style={{ marginTop: "2rem" }}>
               <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
-                // {pt ? "EM OPERAÇÃO PRIVADA (NDA)" : "ACTIVE PRIVATE PRODUCTION (NDA)"}
+                // {pt ? "PROJETO PRIVADO (NDA)" : "PRIVATE PROJECT (NDA)"}
               </span>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
-            {pt ? "// OPERAÇÃO COMERCIAL EM PRODUÇÃO & SIGILO CORPORATIVO" : "// ACTIVE CORPORATE OPERATION & CONFIDENTIALITY"}
+            {pt ? "// SIGILO CORPORATIVO" : "// CORPORATE CONFIDENTIALITY"}
           </h2>
           <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
@@ -108,7 +108,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
                   Este CRM corporativo foi concebido e construído <strong>100% do zero</strong> para solucionar gargalos operacionais e integrar em tempo real os dados de atendimento, vendas e pós-venda.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Como a aplicação se encontra atualmente em <strong>operação ativa por uma empresa privada</strong>, a especificação detalhada da arquitetura interna, esquemas de tabelas e códigos-fonte proprietários são mantidos sob sigilo corporativo. O projeto atesta a capacidade de entregar sistemas de missão crítica customizados com inteligência analítica em Power BI.
+                  Como a aplicação foi desenvolvida para <strong>uma empresa privada</strong>, a especificação detalhada da arquitetura interna, esquemas de tabelas e códigos-fonte proprietários são mantidos sob sigilo corporativo. O projeto atesta a capacidade de entregar sistemas de missão crítica customizados com inteligência analítica em Power BI.
                 </p>
               </>
             ) : (
@@ -117,7 +117,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
                   This enterprise CRM was architected and built <strong>100% from scratch</strong> to eliminate operational bottlenecks and streamline customer support, sales, and analytics data in real time.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Because the platform is currently in <strong>active commercial production by a private enterprise</strong>, detailed internal database schemas and proprietary source code are protected under corporate NDA. The project demonstrates the capacity to deliver mission-critical software with native Power BI analytics.
+                  Because the platform was built for <strong>a private enterprise</strong>, detailed internal database schemas and proprietary source code are protected under corporate NDA. The project demonstrates the capacity to deliver mission-critical software with native Power BI analytics.
                 </p>
               </>
             )}
@@ -167,7 +167,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
                 {pt ? "Status do Projeto" : "Project Status"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                {pt ? "Em Operação Privada" : "Active Private Production"}
+                {pt ? "Encerrado (NDA)" : "Closed (NDA)"}
               </p>
             </div>
           </div>

@@ -23,26 +23,26 @@ const SYSTEM_PROMPT_PT = `
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
         <age>19 anos — data de nascimento pendente</age>
-        <current_role>Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas</current_role>
-        <headline>Consultor em Desenvolvimento de Dados | Desenvolvedor Full-Stack | Engenheiro de Dados | Pesquisador em IA</headline>
+        <current_role>Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA; ex-Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas (Jul–Set 2026)</current_role>
+        <headline>Desenvolvimento de Dados | Desenvolvedor Full-Stack | Engenheiro de Dados | Pesquisador em IA</headline>
         <email>pietro.turcimm@gmail.com</email>
         <phone>(11) 99884-8997</phone>
         <location>São João da Boa Vista, SP; residência oficial em São Paulo, SP, com mobilidade para atuação presencial na capital</location>
-        <summary>Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas, promovido após atuação como estagiário em Automações de IA. Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA com experiência em arquitetura de sistemas, governança tecnológica, automação inteligente, bancos PostgreSQL, Business Intelligence, pipelines de ETL e desenvolvimento de produtos digitais de ponta a ponta. Graduando em Ciência da Computação pelo IFSP, curso com nota máxima 5 no MEC, e técnico em Desenvolvimento de Sistemas pela ETEC. Combina base analítica e matemática — Menção Honrosa na 16ª OBMEP e participação no Programa de Iniciação Científica Jr. (PIC) da OBMEP, com atividades vinculadas ao IME-USP — com atuação prática em CRM corporativo integrado ao Power BI, agentes conversacionais e workflows com LLMs/n8n, análise de dados em larga escala, aplicações web e mobile, WebAssembly e sistemas embarcados. Possui 23 projetos e soluções documentados, inglês fluente e experiência em liderança técnica, pesquisa, docência e comunicação com clientes.</summary>
+        <summary>Foi Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas (julho a setembro de 2026), promovido após atuação como estagiário em Automações de IA. Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA com experiência em arquitetura de sistemas, governança tecnológica, automação inteligente, bancos PostgreSQL, Business Intelligence, pipelines de ETL e desenvolvimento de produtos digitais de ponta a ponta. Graduando em Ciência da Computação pelo IFSP, curso com nota máxima 5 no MEC, e técnico em Desenvolvimento de Sistemas pela ETEC. Combina base analítica e matemática — Menção Honrosa na 16ª OBMEP e participação no Programa de Iniciação Científica Jr. (PIC) da OBMEP, com atividades vinculadas ao IME-USP — com atuação prática em CRM corporativo integrado ao Power BI, agentes conversacionais e workflows com LLMs/n8n, análise de dados em larga escala, aplicações web e mobile, WebAssembly e sistemas embarcados. Possui 23 projetos e soluções documentados, inglês fluente e experiência em liderança técnica, pesquisa, docência e comunicação com clientes.</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>Consultor em Desenvolvimento de Dados</role>
-                <period>Julho 2026 – Atualmente</period>
+                <period>Julho 2026 – Setembro 2026</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
                 <contract>PJ</contract>
                 <details>
                     - Promovido do estágio em Automações de IA ao cargo de Consultor em Desenvolvimento de Dados.
-                    - Líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads.
-                    - Conduz a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação.
-                    - Comercializa, implanta e evolui o CRM corporativo personalizado para novos clientes, com operação direta sobre bancos transacionais PostgreSQL.
-                    - Desenvolve painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas.
-                    - Lidera especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.
+                    - Foi líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads.
+                    - Conduziu a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação.
+                    - Comercializou, implantou e evoluiu o CRM corporativo personalizado, com operação direta sobre bancos transacionais PostgreSQL.
+                    - Desenvolveu painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas.
+                    - Liderou especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.
                 </details>
             </job>
             <job>
@@ -62,25 +62,25 @@ const SYSTEM_PROMPT_PT = `
             <job>
                 <company>MakeLemonad</company>
                 <role>Freelancer — QA Tester e Revisor de Código</role>
-                <period>2026 – Atualmente</period>
+                <period>Abril 2026 – Agosto 2026</period>
                 <location>Remoto</location>
                 <contract>PJ / Freelancer</contract>
                 <details>
-                    - Realiza revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte.
-                    - Executa testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX.
-                    - Executa testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.
+                    - Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte.
+                    - Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX.
+                    - Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.
                 </details>
             </job>
             <job>
                 <company>Consultoria Acadêmica Independente — PUC</company>
                 <role>Engenheiro de IA Aplicada a Textos Acadêmicos</role>
-                <period>2026 – Atualmente</period>
+                <period>Maio 2026 – Setembro 2026</period>
                 <location>Remoto</location>
                 <contract>Prestação de serviço</contract>
                 <details>
-                    - Presta consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba.
-                    - Desenvolve engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações.
-                    - Garante aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.
+                    - Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba.
+                    - Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações.
+                    - Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.
                 </details>
             </job>
             <job>
@@ -202,7 +202,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p03">
                 <name>Escriba AI</name>
-                <type>Pesquisa aplicada e produto em uso</type>
+                <type>Pesquisa aplicada</type>
                 <description>Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.</description>
                 <technologies>Python, Streamlit, Maritaca AI, Sabiá, LLMs, Prompt Engineering</technologies>
                 <url>https://escriba.streamlit.app/</url>
@@ -642,25 +642,25 @@ const SYSTEM_PROMPT_EN = `
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
         <age>19 years old — date of birth pending</age>
-        <current_role>Data Development Consultant | Full-Stack Developer | Data Engineer | AI Researcher at Engaja Soluções Corporativas</current_role>
+        <current_role>Full-Stack Developer | Data Engineer | AI Researcher; former Data Development Consultant at Engaja Soluções Corporativas (Jul–Sep 2026)</current_role>
         <email>pietro.turcimm@gmail.com</email>
         <phone>(11) 99884-8997</phone>
         <location>São João da Boa Vista, São Paulo, Brazil; official residence in São Paulo city and available for on-site work in the capital.</location>
-        <summary>Data Development Consultant at Engaja Soluções Corporativas, promoted after an AI Automation internship. Full-Stack Developer, Data Engineer, and AI Researcher experienced in system architecture, technology governance, intelligent automation, PostgreSQL databases, Business Intelligence, ETL pipelines, and end-to-end digital product delivery. He is pursuing a B.Sc. in Computer Science at IFSP, a program rated 5/5 by MEC, and holds a technical degree in Systems Development from ETEC. He combines a strong analytical and mathematical foundation — an Honorable Mention in the 16th OBMEP and participation in the OBMEP Junior Scientific Initiation Program (PIC), with activities linked to IME-USP — with hands-on work on a corporate CRM integrated with Power BI, LLM/n8n agents and workflows, large-scale data analysis, web and mobile applications, WebAssembly, and embedded systems. He has 23 documented projects and solutions, fluent English, and experience in technical leadership, research, teaching, and client communication.</summary>
+        <summary>Former Data Development Consultant at Engaja Soluções Corporativas (July to September 2026), promoted after an AI Automation internship. Full-Stack Developer, Data Engineer, and AI Researcher experienced in system architecture, technology governance, intelligent automation, PostgreSQL databases, Business Intelligence, ETL pipelines, and end-to-end digital product delivery. He is pursuing a B.Sc. in Computer Science at IFSP, a program rated 5/5 by MEC, and holds a technical degree in Systems Development from ETEC. He combines a strong analytical and mathematical foundation — an Honorable Mention in the 16th OBMEP and participation in the OBMEP Junior Scientific Initiation Program (PIC), with activities linked to IME-USP — with hands-on work on a corporate CRM integrated with Power BI, LLM/n8n agents and workflows, large-scale data analysis, web and mobile applications, WebAssembly, and embedded systems. He has 23 documented projects and solutions, fluent English, and experience in technical leadership, research, teaching, and client communication.</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>Data Development Consultant</role>
-                <period>July 2026 – Present</period>
+                <period>July 2026 – September 2026</period>
                 <location>São João da Boa Vista, SP · On-site</location>
                 <contract>PJ</contract>
                 <details>
                     - Promoted from the AI Automation internship to Data Development Consultant.
-                    - Leads the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization.
-                    - Drives the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures.
-                    - Commercializes, deploys, and evolves a custom corporate CRM for new clients, working directly with transactional PostgreSQL databases.
-                    - Builds custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making.
-                    - Leads technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.
+                    - Led the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization.
+                    - Drove the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures.
+                    - Commercialized, deployed, and evolved a custom corporate CRM, working directly with transactional PostgreSQL databases.
+                    - Built custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making.
+                    - Led technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.
                 </details>
             </job>
             <job>
@@ -680,25 +680,25 @@ const SYSTEM_PROMPT_EN = `
             <job>
                 <company>MakeLemonad</company>
                 <role>Freelance QA Tester and Code Reviewer</role>
-                <period>2026 – Present</period>
+                <period>April 2026 – August 2026</period>
                 <location>Remote</location>
                 <contract>PJ / Freelancer</contract>
                 <details>
-                    - Performs critical code reviews and quality audits for new features in production web applications serving large clients.
-                    - Runs functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements.
-                    - Executes offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.
+                    - Performed critical code reviews and quality audits for new features in production web applications serving large clients.
+                    - Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements.
+                    - Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.
                 </details>
             </job>
             <job>
                 <company>Consultoria Acadêmica Independente — PUC</company>
                 <role>Applied AI Engineer for Academic Writing</role>
-                <period>2026 – Present</period>
+                <period>May 2026 – September 2026</period>
                 <location>Remote</location>
                 <contract>Prestação de serviço</contract>
                 <details>
-                    - Provides generative AI consulting for doctoral research through the Escriba platform.
-                    - Develops multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms.
-                    - Supports strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.
+                    - Provided generative AI consulting for doctoral research through the Escriba platform.
+                    - Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms.
+                    - Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.
                 </details>
             </job>
             <job>
@@ -820,7 +820,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p03">
                 <name>Escriba AI</name>
-                <type>Pesquisa aplicada e produto em uso</type>
+                <type>Pesquisa aplicada</type>
                 <description>Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.</description>
                 <technologies>Python, Streamlit, Maritaca AI, Sabiá, LLMs, Prompt Engineering</technologies>
                 <url>https://escriba.streamlit.app/</url>
