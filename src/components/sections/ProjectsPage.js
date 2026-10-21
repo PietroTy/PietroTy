@@ -25,6 +25,7 @@ import calciteImg from "../../assets/calcite_card.png";
 import santaIzabelImg from "../../assets/santa_izabel_card.png";
 import vitalsImg from "../../assets/vitals_card.png";
 import garimpoImg from "../../assets/garimpo_card.png";
+import discordImg from "../../assets/discord_card.png";
 
 const PROJECT_IMAGES = {
   chub: chubImg,
@@ -52,6 +53,7 @@ const PROJECT_IMAGES = {
   "santa-izabel": santaIzabelImg,
   vitals: vitalsImg,
   "garimpo-sp": garimpoImg,
+  "discord-bot": discordImg,
 };
 
 const getProjectPlaceholder = (color) => {
@@ -83,9 +85,9 @@ export default function ProjectsPage({ lang, setPage }) {
         />
 
         <div className="projects-grid">
-          {PROJECTS.map((p, idx) => {
+          {PROJECTS.map((p) => {
             const isOpen = openId === p.id;
-            const isFeatured = idx % 3 === 0;
+            const isFeatured = p.featured;
             return (
               <div
                 key={p.id}
