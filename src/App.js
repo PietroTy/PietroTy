@@ -45,12 +45,12 @@ const PAGE_KEYS = [
 const PAGE_METADATA = {
   home: {
     pt: {
-      title: "PietroTy | Consultor em Desenvolvimento de Dados",
-      desc: "Portfólio de Pietro Turci Moraes Martins — Consultor em Desenvolvimento de Dados, Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA. Experiência com PostgreSQL, Power BI, ETL, automações e LLMs."
+      title: "PietroTy | Desenvolvedor Full-Stack",
+      desc: "Portfólio de Pietro Turci Moraes Martins — Desenvolvedor Full-Stack especialista em sistemas legados. Oracle SQL, PostgreSQL, SQL Server, C#/.NET, BI e pipelines de dados."
     },
     en: {
-      title: "PietroTy | Data Development Consultant",
-      desc: "Pietro Turci Moraes Martins' portfolio — Data Development Consultant, Full-Stack Developer, Data Engineer, and AI Researcher experienced with PostgreSQL, Power BI, ETL, automation, and LLMs."
+      title: "PietroTy | Full-Stack Developer",
+      desc: "Pietro Turci Moraes Martins' portfolio — Full-Stack Developer specialized in legacy systems. Oracle SQL, PostgreSQL, SQL Server, C#/.NET, BI, and data pipelines."
     }
   },
   services: {
