@@ -126,6 +126,37 @@ export const TIMELINE = [
     "type": "work"
   },
   {
+    "year": "Abr – Ago 2026",
+    "rolePt": "QA Tester e Revisor de Código",
+    "roleEn": "QA Tester and Code Reviewer",
+    "placePt": "MakeLemonad · Freela temporário",
+    "placeEn": "MakeLemonad · Temporary freelance",
+    "descPt": "Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte. Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX. Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.",
+    "descEn": "Performed critical code reviews and quality audits for new features in production web applications serving large clients. Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements. Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.",
+    "tags": [
+      "QA",
+      "OWASP",
+      "Pentest",
+      "UX"
+    ],
+    "type": "work"
+  },
+  {
+    "year": "Mai – Set 2026",
+    "rolePt": "Engenheiro de IA para Textos Acadêmicos",
+    "roleEn": "Applied AI Engineer for Academic Writing",
+    "placePt": "Consultoria Acadêmica — PUC · Freela temporário",
+    "placeEn": "Academic Consulting — PUC · Temporary freelance",
+    "descPt": "Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba. Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações. Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.",
+    "descEn": "Provided generative AI consulting for doctoral research through the Escriba platform. Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms. Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.",
+    "tags": [
+      "LLMs",
+      "ABNT",
+      "Prompt Engineering"
+    ],
+    "type": "work"
+  },
+  {
     "year": "Jul – Set 2026",
     "rolePt": "Desenvolvedor Júnior",
     "roleEn": "Junior Developer",
