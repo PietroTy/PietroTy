@@ -127,13 +127,13 @@ export const TIMELINE = [
     "type": "work"
   },
   {
-    "year": "2026 – Atualmente",
+    "year": "Abr – Ago 2026",
     "rolePt": "QA Tester e Revisor de Código",
     "roleEn": "QA Tester and Code Reviewer",
     "placePt": "MakeLemonad",
     "placeEn": "MakeLemonad",
-    "descPt": "Realiza revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte. Executa testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX. Executa testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.",
-    "descEn": "Performs critical code reviews and quality audits for new features in production web applications serving large clients. Runs functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements. Executes offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.",
+    "descPt": "Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte. Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX. Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.",
+    "descEn": "Performed critical code reviews and quality audits for new features in production web applications serving large clients. Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements. Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.",
     "tags": [
       "QA",
       "OWASP",
@@ -143,13 +143,13 @@ export const TIMELINE = [
     "type": "work"
   },
   {
-    "year": "2026 – Atualmente",
+    "year": "Mai – Set 2026",
     "rolePt": "Engenheiro de IA para Textos Acadêmicos",
     "roleEn": "Applied AI Engineer for Academic Writing",
     "placePt": "Consultoria Acadêmica — PUC",
     "placeEn": "Academic Consulting — PUC",
-    "descPt": "Presta consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba. Desenvolve engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações. Garante aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.",
-    "descEn": "Provides generative AI consulting for doctoral research through the Escriba platform. Develops multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms. Supports strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.",
+    "descPt": "Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba. Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações. Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.",
+    "descEn": "Provided generative AI consulting for doctoral research through the Escriba platform. Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms. Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.",
     "tags": [
       "LLMs",
       "ABNT",
@@ -158,13 +158,13 @@ export const TIMELINE = [
     "type": "work"
   },
   {
-    "year": "Jul 2026 – Atualmente",
+    "year": "Jul – Set 2026",
     "rolePt": "Consultor em Desenvolvimento de Dados",
     "roleEn": "Data Development Consultant",
     "placePt": "Engaja Soluções Corporativas",
     "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Promovido do estágio em Automações de IA ao cargo de Consultor em Desenvolvimento de Dados. Líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads. Conduz a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação. Comercializa, implanta e evolui o CRM corporativo personalizado para novos clientes, com operação direta sobre bancos transacionais PostgreSQL. Desenvolve painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas. Lidera especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.",
-    "descEn": "Promoted from the AI Automation internship to Data Development Consultant. Leads the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization. Drives the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures. Commercializes, deploys, and evolves a custom corporate CRM for new clients, working directly with transactional PostgreSQL databases. Builds custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making. Leads technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.",
+    "descPt": "Promovido do estágio em Automações de IA ao cargo de Consultor em Desenvolvimento de Dados. Foi líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads. Conduziu a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação. Comercializou, implantou e evoluiu o CRM corporativo personalizado, com operação direta sobre bancos transacionais PostgreSQL. Desenvolveu painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas. Liderou especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.",
+    "descEn": "Promoted from the AI Automation internship to Data Development Consultant. Led the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization. Drove the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures. Commercialized, deployed, and evolved a custom corporate CRM, working directly with transactional PostgreSQL databases. Built custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making. Led technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.",
     "tags": [
       "PostgreSQL",
       "Power BI",
