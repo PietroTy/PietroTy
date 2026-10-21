@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.0cb2f869.css",
-    "main.js": "/static/js/main.55041540.js",
+    "main.js": "/static/js/main.3fca5b43.js",
     "static/media/game_of_drones_logo.png": "/static/media/game_of_drones_logo.cbe3cf9d88c05271b03e.png",
     "static/media/laplayer_logo.png": "/static/media/laplayer_logo.8ca2d9e859d635024ad8.png",
     "static/media/magik_tarot_logo.png": "/static/media/magik_tarot_logo.4262716cd053fa72eff3.png",
     "static/media/chatwoot_logo.png": "/static/media/chatwoot_logo.3e96c9c81e4c5306ad12.png",
-    "static/media/bleach_co_logo.png": "/static/media/bleach_co_logo.5ebde5d56fa6817241fa.png",
     "static/media/escriba_icon.png": "/static/media/escriba_icon.508999322f8bc7ab7e95.png",
     "static/media/escriba_logo.png": "/static/media/escriba_logo.e458eafca5326b75278e.png",
     "static/media/tv2_screenshot_2.png": "/static/media/tv2_screenshot_2.7c759a16017428954998.png",
@@ -33,19 +32,24 @@
     "static/media/pitcraft_screenshot_2.jpg": "/static/media/pitcraft_screenshot_2.8671a77bd4bbdc1b0929.jpg",
     "static/media/engaja_screenshot_3.png": "/static/media/engaja_screenshot_3.59239b84fd5634016d8b.png",
     "static/media/orespawn_screenshot_2.jpg": "/static/media/orespawn_screenshot_2.5872a8f128ef26ea13fd.jpg",
+    "static/media/etl_card.png": "/static/media/etl_card.97f88ee7433951284091.png",
     "static/media/engaja_screenshot_2.png": "/static/media/engaja_screenshot_2.b2f99f70a0b31cc191e7.png",
     "static/media/stickers_bot_logo.png": "/static/media/stickers_bot_logo.1fb78eeebc7f37f8b43b.png",
     "static/media/pitcraft_logo.png": "/static/media/pitcraft_logo.2f126554da8ac48960d3.png",
     "static/media/orespawn_screenshot_3.png": "/static/media/orespawn_screenshot_3.46e57ad6eecb90821c7d.png",
+    "static/media/bleach_co_card.png": "/static/media/bleach_co_card.dbbe5ee72097e6a03e66.png",
     "static/media/laplayer_spotify_ban.png": "/static/media/laplayer_spotify_ban.0adcd575443651caca03.png",
     "static/media/monocraft.woff": "/static/media/monocraft.2c9422fce540c8229fc0.woff",
+    "static/media/calcite_card.png": "/static/media/calcite_card.3e119739e66cadbf6330.png",
     "static/media/orespawn_screenshot_1.jpg": "/static/media/orespawn_screenshot_1.82bdaec0962e5e97a86f.jpg",
+    "static/media/santa_izabel_card.png": "/static/media/santa_izabel_card.2aa8d93359ac4a41de7c.png",
+    "static/media/crm_card.png": "/static/media/crm_card.d86dfa3ffa3ea36ced82.png",
     "index.html": "/index.html",
     "main.0cb2f869.css.map": "/static/css/main.0cb2f869.css.map",
-    "main.55041540.js.map": "/static/js/main.55041540.js.map"
+    "main.3fca5b43.js.map": "/static/js/main.3fca5b43.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb2f869.css",
-    "static/js/main.55041540.js"
+    "static/js/main.3fca5b43.js"
   ]
 }
