@@ -23,77 +23,47 @@ const SYSTEM_PROMPT_PT = `
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
         <age>19 anos — data de nascimento pendente</age>
-        <current_role>Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA; ex-Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas (Jul–Set 2026)</current_role>
-        <headline>Desenvolvimento de Dados | Desenvolvedor Full-Stack | Engenheiro de Dados | Pesquisador em IA</headline>
+        <current_role>Desenvolvedor Full-Stack especialista em sistemas legados; ex-Desenvolvedor Júnior na Engaja Soluções Corporativas (Jul–Set 2026)</current_role>
+        <headline>Desenvolvedor Júnior | BI | SQL | JS | .NET &amp; C#</headline>
         <email>pietro.turcimm@gmail.com</email>
         <phone>(11) 99884-8997</phone>
         <location>São João da Boa Vista, SP; residência oficial em São Paulo, SP, com mobilidade para atuação presencial na capital</location>
-        <summary>Foi Consultor em Desenvolvimento de Dados na Engaja Soluções Corporativas (julho a setembro de 2026), promovido após atuação como estagiário em Automações de IA. Desenvolvedor Full-Stack, Engenheiro de Dados e Pesquisador em IA com experiência em arquitetura de sistemas, governança tecnológica, automação inteligente, bancos PostgreSQL, Business Intelligence, pipelines de ETL e desenvolvimento de produtos digitais de ponta a ponta. Graduando em Ciência da Computação pelo IFSP, curso com nota máxima 5 no MEC, e técnico em Desenvolvimento de Sistemas pela ETEC. Combina base analítica e matemática — Menção Honrosa na 16ª OBMEP e participação no Programa de Iniciação Científica Jr. (PIC) da OBMEP, com atividades vinculadas ao IME-USP — com atuação prática em CRM corporativo integrado ao Power BI, agentes conversacionais e workflows com LLMs/n8n, análise de dados em larga escala, aplicações web e mobile, WebAssembly e sistemas embarcados. Possui 23 projetos e soluções documentados, inglês fluente e experiência em liderança técnica, pesquisa, docência e comunicação com clientes.</summary>
+        <summary>Desenvolvedor Full-Stack especialista em sistemas legados e na sua modernização. Começou na pesquisa estruturada de dados para atuação consultiva corporativa. Atua fortemente na modelagem e gerenciamento de bancos de dados relacionais, com domínio principal em Oracle SQL e PostgreSQL, além de SQL Server em ecossistemas de clientes, e em C#/.NET (MVC). Trajetória marcada pela entrega de soluções escaláveis, transição de interfaces legadas para frameworks modernos e criação de pipelines de dados integrados a sistemas corporativos. Graduando em Ciência da Computação no IFSP e técnico em Desenvolvimento de Sistemas pela ETEC; inglês fluente (TOEFL B2).</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>Consultor em Desenvolvimento de Dados</role>
+                <role>Desenvolvedor Júnior</role>
                 <period>Julho 2026 – Setembro 2026</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
                 <contract>PJ</contract>
                 <details>
-                    - Promovido do estágio em Automações de IA ao cargo de Consultor em Desenvolvimento de Dados.
-                    - Foi líder e responsável direto pelo setor de TI, atuando em governança tecnológica, infraestrutura de redes e dados, coordenação técnica de projetos e suporte à organização de squads.
-                    - Conduziu a digitalização de processos operacionais internos e externos, substituindo rotinas manuais por arquiteturas integradas de dados e automação.
-                    - Comercializou, implantou e evoluiu o CRM corporativo personalizado, com operação direta sobre bancos transacionais PostgreSQL.
-                    - Desenvolveu painéis de BI e relatórios executivos sob demanda, integrando PostgreSQL e Power BI para apoiar decisões estratégicas.
-                    - Liderou especificação técnica, decisões arquiteturais, priorização de backlog e validação final de integrações de software de alta performance.
+                    - Desenvolvimento full-stack de sistemas corporativos em C#, .NET e JavaScript (arquitetura MVC), conduzindo a transição progressiva de interfaces legadas.
+                    - Modelagem e administração de bases de dados relacionais complexas, atuando centralmente com Oracle SQL e PostgreSQL, além da gestão de ecossistemas de clientes em SQL Server.
+                    - Desenvolvimento de rotinas de ETL para clientes utilizando integrações de BI.
                 </details>
             </job>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>Estagiário em Automações de IA</role>
-                <period>Março 2026 – Junho 2026</period>
+                <role>Estagiário em Desenvolvimento</role>
+                <period>Fevereiro 2026 – Junho 2026</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
                 <contract>Estágio</contract>
                 <details>
-                    - Atuou no ciclo completo de produtos digitais, da concepção estratégica ao deploy em produção, com foco em automações inteligentes, IA generativa e desenvolvimento full-stack.
-                    - Arquitetou, desenvolveu e implantou um CRM corporativo customizado integrado ao Power BI para dashboards executivos e fluxos de dados em tempo real.
-                    - Projetou pipelines de automação baseados em LLMs, agentes de IA, n8n e Python, reduzindo trabalho manual em rotinas administrativas e de atendimento.
-                    - Construiu integrações entre PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe e APIs internas/externas.
-                    - Implantou agentes conversacionais de IA para atendimento via WhatsApp, com gestão de múltiplos clientes e suporte técnico/consultivo.
-                </details>
-            </job>
-            <job>
-                <company>MakeLemonad</company>
-                <role>Freelancer — QA Tester e Revisor de Código</role>
-                <period>Abril 2026 – Agosto 2026</period>
-                <location>Remoto</location>
-                <contract>PJ / Freelancer</contract>
-                <details>
-                    - Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte.
-                    - Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX.
-                    - Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.
-                </details>
-            </job>
-            <job>
-                <company>Consultoria Acadêmica Independente — PUC</company>
-                <role>Engenheiro de IA Aplicada a Textos Acadêmicos</role>
-                <period>Maio 2026 – Setembro 2026</period>
-                <location>Remoto</location>
-                <contract>Prestação de serviço</contract>
-                <details>
-                    - Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba.
-                    - Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações.
-                    - Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.
+                    - Desenvolvimento e manutenção de integrações no backend corporativo em C# e .NET (MVC), conectando o sistema a plataformas de terceiros.
+                    - Criação e orquestração de fluxos de automação focados em atendimento comercial, integrando sistemas internos com agentes conversacionais.
+                    - Apoio contínuo no mapeamento de regras de negócio do software e na preparação arquitetural para a modernização do frontend.
                 </details>
             </job>
             <job>
                 <company>IFSP / ENAP — Projeto COSAIC</company>
-                <role>Pesquisador de Inovação e Iniciação Científica — Bolsista</role>
-                <period>Abril 2025 – Janeiro 2026</period>
+                <role>Bolsista — Pesquisa em IA e Acessibilidade</role>
+                <period>Setembro 2024 – Janeiro 2026</period>
                 <location>Remoto · Brasil</location>
                 <contract>Bolsa de Iniciação Científica</contract>
                 <details>
-                    - Pesquisou aplicações de LLMs e IA generativa para produção, revisão e adaptação de conteúdo educacional digital em escala.
-                    - Fundou e arquitetou o Escriba, plataforma em Python/Streamlit com múltiplos LLMs para geração de textos acadêmicos e pipelines de verificação.
-                    - Aplicou design educacional inclusivo, acessibilidade digital, WCAG, DEIA, tecnologias assistivas e testes de usabilidade.
-                    - Revisou conteúdos da Escola Virtual do Governo (EV.G/ENAP) com metodologia ADDIE e rigor técnico-pedagógico.
+                    - Desenvolvimento completo da plataforma Escriba AI em Python, focada na integração de LLMs para assistência e revisão acadêmica.
+                    - Implementação de rotinas automatizadas de web scraping e estruturação de coleta de dados com Playwright.
+                    - Revisão técnica de materiais da Escola Virtual do Governo (EV.G), garantindo padrões de acessibilidade digital (WCAG).
                 </details>
             </job>
             <job>
@@ -174,7 +144,7 @@ const SYSTEM_PROMPT_PT = `
                 <details>Comunicação básica, pronúncia, estruturas gramaticais essenciais e vocabulário cotidiano.</details>
             </degree>
         </education>
-        <languages>Português nativo; inglês fluente com TOEFL associado ao B2, curso completo e Teachers Course no CCAA; francês básico; espanhol básico; italiano básico.</languages>
+        <languages>Português nativo; inglês fluente com TOEFL associado ao B2, curso completo e Teachers Course no CCAA; francês intermediário; espanhol básico; italiano básico.</languages>
         <skills>
             <linguagens>Python, JavaScript, TypeScript, Java, C, C++, C#, Dart, PHP, Shell Script/Bash, HTML5, CSS3, SASS, SQL, R</linguagens>
             <dados_bi>PostgreSQL, DuckDB, Oracle, MySQL, SQLite, Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, PyTorch, Spark, Databricks, Airflow, Jupyter, Google Colab, ETL, Data Pipelines, Data Wrangling, Modelagem Dimensional, SQL Analytics, Power BI, DAX, Power Query/M, Modelagem de Relacionamentos, Dashboards, Análise de Marketing, Análise Comercial, Análise de RH, Análise de Logística, Análise Financeira e Contábil, Análise do Mercado de Ações, Segmentação de Clientes com ML, Detecção de Anomalias, Séries Temporais, Dados públicos de CNPJs</dados_bi>
@@ -642,76 +612,46 @@ const SYSTEM_PROMPT_EN = `
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
         <age>19 years old — date of birth pending</age>
-        <current_role>Full-Stack Developer | Data Engineer | AI Researcher; former Data Development Consultant at Engaja Soluções Corporativas (Jul–Sep 2026)</current_role>
+        <current_role>Full-Stack Developer specialized in legacy systems; former Junior Developer at Engaja Soluções Corporativas (Jul–Sep 2026)</current_role>
         <email>pietro.turcimm@gmail.com</email>
         <phone>(11) 99884-8997</phone>
         <location>São João da Boa Vista, São Paulo, Brazil; official residence in São Paulo city and available for on-site work in the capital.</location>
-        <summary>Former Data Development Consultant at Engaja Soluções Corporativas (July to September 2026), promoted after an AI Automation internship. Full-Stack Developer, Data Engineer, and AI Researcher experienced in system architecture, technology governance, intelligent automation, PostgreSQL databases, Business Intelligence, ETL pipelines, and end-to-end digital product delivery. He is pursuing a B.Sc. in Computer Science at IFSP, a program rated 5/5 by MEC, and holds a technical degree in Systems Development from ETEC. He combines a strong analytical and mathematical foundation — an Honorable Mention in the 16th OBMEP and participation in the OBMEP Junior Scientific Initiation Program (PIC), with activities linked to IME-USP — with hands-on work on a corporate CRM integrated with Power BI, LLM/n8n agents and workflows, large-scale data analysis, web and mobile applications, WebAssembly, and embedded systems. He has 23 documented projects and solutions, fluent English, and experience in technical leadership, research, teaching, and client communication.</summary>
+        <summary>Full-Stack Developer specialized in legacy systems and their modernization. Started in structured data research for corporate consulting. Strong in modeling and managing relational databases, mainly Oracle SQL and PostgreSQL, plus SQL Server in client environments, and in C#/.NET (MVC). Track record of delivering scalable solutions, migrating legacy interfaces to modern frameworks, and building data pipelines integrated with corporate systems. Pursuing a B.Sc. in Computer Science at IFSP; technical degree in Systems Development from ETEC; fluent English (TOEFL B2).</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>Data Development Consultant</role>
+                <role>Junior Developer</role>
                 <period>July 2026 – September 2026</period>
                 <location>São João da Boa Vista, SP · On-site</location>
                 <contract>PJ</contract>
                 <details>
-                    - Promoted from the AI Automation internship to Data Development Consultant.
-                    - Led the IT function, covering technology governance, network and data infrastructure, technical project coordination, and support for squad organization.
-                    - Drove the digitization of internal and external operations by replacing manual routines with integrated data and automation architectures.
-                    - Commercialized, deployed, and evolved a custom corporate CRM, working directly with transactional PostgreSQL databases.
-                    - Built custom BI dashboards and executive reports by integrating PostgreSQL and Power BI for strategic decision-making.
-                    - Led technical specification, architecture decisions, backlog prioritization, and final validation of high-performance software integrations.
+                    - Full-stack development of corporate systems in C#, .NET, and JavaScript (MVC architecture), leading the progressive migration of legacy interfaces.
+                    - Modeled and administered complex relational databases, working mainly with Oracle SQL and PostgreSQL, plus SQL Server client environments.
+                    - Built ETL routines for clients using BI integrations.
                 </details>
             </job>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>AI Automation Intern</role>
-                <period>March 2026 – June 2026</period>
+                <role>Development Intern</role>
+                <period>February 2026 – June 2026</period>
                 <location>São João da Boa Vista, SP · On-site</location>
                 <contract>Estágio</contract>
                 <details>
-                    - Worked across the full digital product lifecycle, from strategy to production deployment, focusing on intelligent automation, generative AI, and full-stack development.
-                    - Architected, built, and deployed a custom corporate CRM integrated with Power BI for executive dashboards and real-time data flows.
-                    - Designed automation pipelines based on LLMs, AI agents, n8n, and Python, reducing manual work in administrative and customer-service routines.
-                    - Built integrations among PostgreSQL, Cloudfy, Evolution API, Chatwoot, Stripe, and internal/external APIs.
-                    - Deployed conversational AI agents for WhatsApp service, supporting multiple clients and providing technical consulting.
-                </details>
-            </job>
-            <job>
-                <company>MakeLemonad</company>
-                <role>Freelance QA Tester and Code Reviewer</role>
-                <period>April 2026 – August 2026</period>
-                <location>Remote</location>
-                <contract>PJ / Freelancer</contract>
-                <details>
-                    - Performed critical code reviews and quality audits for new features in production web applications serving large clients.
-                    - Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements.
-                    - Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.
-                </details>
-            </job>
-            <job>
-                <company>Consultoria Acadêmica Independente — PUC</company>
-                <role>Applied AI Engineer for Academic Writing</role>
-                <period>May 2026 – September 2026</period>
-                <location>Remote</location>
-                <contract>Prestação de serviço</contract>
-                <details>
-                    - Provided generative AI consulting for doctoral research through the Escriba platform.
-                    - Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms.
-                    - Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.
+                    - Built and maintained corporate back-end integrations in C# and .NET (MVC), connecting the system to third-party platforms.
+                    - Created and orchestrated automation flows for sales support, integrating internal systems with conversational agents.
+                    - Supported mapping of business rules and architectural preparation for front-end modernization.
                 </details>
             </job>
             <job>
                 <company>IFSP / ENAP — Projeto COSAIC</company>
-                <role>Innovation and Scientific Initiation Researcher — Scholar</role>
-                <period>April 2025 – January 2026</period>
+                <role>Research Scholar — AI and Accessibility</role>
+                <period>September 2024 – January 2026</period>
                 <location>Remote · Brazil</location>
                 <contract>Bolsa de Iniciação Científica</contract>
                 <details>
-                    - Researched LLM and generative AI applications for the production, review, and adaptation of digital educational content at scale.
-                    - Founded and architected Escriba, a Python/Streamlit platform using multiple LLMs for academic writing and verification pipelines.
-                    - Applied inclusive instructional design, digital accessibility, WCAG, DEIA, assistive technologies, and usability testing.
-                    - Reviewed content for Brazil's Virtual School of Government using ADDIE and technical-pedagogical quality controls.
+                    - Built the Escriba AI platform end to end in Python, integrating LLMs for academic assistance and review.
+                    - Implemented automated web scraping and structured data collection with Playwright.
+                    - Technical review of materials for Brazil's Virtual School of Government (EV.G), enforcing WCAG accessibility standards.
                 </details>
             </job>
             <job>
@@ -792,7 +732,7 @@ const SYSTEM_PROMPT_EN = `
                 <details>Basic communication, pronunciation, essential grammar, and everyday vocabulary.</details>
             </degree>
         </education>
-        <languages>Native Portuguese; fluent English with TOEFL associated with CEFR B2, complete CCAA English program and Teachers Course; basic French; basic Spanish; basic Italian.</languages>
+        <languages>Native Portuguese; fluent English with TOEFL associated with CEFR B2, complete CCAA English program and Teachers Course; intermediate French; basic Spanish; basic Italian.</languages>
         <skills>
             <linguagens>Python, JavaScript, TypeScript, Java, C, C++, C#, Dart, PHP, Shell Script/Bash, HTML5, CSS3, SASS, SQL, R</linguagens>
             <dados_bi>PostgreSQL, DuckDB, Oracle, MySQL, SQLite, Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, PyTorch, Spark, Databricks, Airflow, Jupyter, Google Colab, ETL, Data Pipelines, Data Wrangling, Modelagem Dimensional, SQL Analytics, Power BI, DAX, Power Query/M, Modelagem de Relacionamentos, Dashboards, Análise de Marketing, Análise Comercial, Análise de RH, Análise de Logística, Análise Financeira e Contábil, Análise do Mercado de Ações, Segmentação de Clientes com ML, Detecção de Anomalias, Séries Temporais, Dados públicos de CNPJs</dados_bi>
