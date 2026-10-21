@@ -55,6 +55,30 @@ const SYSTEM_PROMPT_PT = `
                 </details>
             </job>
             <job>
+                <company>MakeLemonad</company>
+                <role>Freelancer — QA Tester e Revisor de Código</role>
+                <period>Abril 2026 – Agosto 2026</period>
+                <location>Remoto</location>
+                <contract>Freela temporário</contract>
+                <details>
+                    - Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte.
+                    - Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX.
+                    - Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.
+                </details>
+            </job>
+            <job>
+                <company>Consultoria Acadêmica Independente — PUC</company>
+                <role>Engenheiro de IA Aplicada a Textos Acadêmicos</role>
+                <period>Maio 2026 – Setembro 2026</period>
+                <location>Remoto</location>
+                <contract>Freela temporário</contract>
+                <details>
+                    - Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba.
+                    - Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações.
+                    - Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.
+                </details>
+            </job>
+            <job>
                 <company>IFSP / ENAP — Projeto COSAIC</company>
                 <role>Bolsista — Pesquisa em IA e Acessibilidade</role>
                 <period>Setembro 2024 – Janeiro 2026</period>
@@ -640,6 +664,30 @@ const SYSTEM_PROMPT_EN = `
                     - Built and maintained corporate back-end integrations in C# and .NET (MVC), connecting the system to third-party platforms.
                     - Created and orchestrated automation flows for sales support, integrating internal systems with conversational agents.
                     - Supported mapping of business rules and architectural preparation for front-end modernization.
+                </details>
+            </job>
+            <job>
+                <company>MakeLemonad</company>
+                <role>Freelance QA Tester and Code Reviewer</role>
+                <period>April 2026 – August 2026</period>
+                <location>Remote</location>
+                <contract>Freela temporário</contract>
+                <details>
+                    - Performed critical code reviews and quality audits for new features in production web applications serving large clients.
+                    - Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements.
+                    - Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.
+                </details>
+            </job>
+            <job>
+                <company>Consultoria Acadêmica Independente — PUC</company>
+                <role>Applied AI Engineer for Academic Writing</role>
+                <period>May 2026 – September 2026</period>
+                <location>Remote</location>
+                <contract>Freela temporário</contract>
+                <details>
+                    - Provided generative AI consulting for doctoral research through the Escriba platform.
+                    - Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms.
+                    - Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.
                 </details>
             </job>
             <job>
