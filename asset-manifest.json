@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0cb2f869.css",
-    "main.js": "/static/js/main.5ca65af8.js",
+    "main.js": "/static/js/main.590723e2.js",
     "static/media/game_of_drones_logo.png": "/static/media/game_of_drones_logo.cbe3cf9d88c05271b03e.png",
     "static/media/laplayer_logo.png": "/static/media/laplayer_logo.8ca2d9e859d635024ad8.png",
     "static/media/magik_tarot_logo.png": "/static/media/magik_tarot_logo.4262716cd053fa72eff3.png",
@@ -42,14 +42,16 @@
     "static/media/monocraft.woff": "/static/media/monocraft.2c9422fce540c8229fc0.woff",
     "static/media/calcite_card.png": "/static/media/calcite_card.3e119739e66cadbf6330.png",
     "static/media/orespawn_screenshot_1.jpg": "/static/media/orespawn_screenshot_1.82bdaec0962e5e97a86f.jpg",
+    "static/media/vitals_card.png": "/static/media/vitals_card.ce3f7180980033433093.png",
     "static/media/santa_izabel_card.png": "/static/media/santa_izabel_card.2aa8d93359ac4a41de7c.png",
+    "static/media/garimpo_card.png": "/static/media/garimpo_card.1cd4d86282378109ca13.png",
     "static/media/crm_card.png": "/static/media/crm_card.d86dfa3ffa3ea36ced82.png",
     "index.html": "/index.html",
     "main.0cb2f869.css.map": "/static/css/main.0cb2f869.css.map",
-    "main.5ca65af8.js.map": "/static/js/main.5ca65af8.js.map"
+    "main.590723e2.js.map": "/static/js/main.590723e2.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb2f869.css",
-    "static/js/main.5ca65af8.js"
+    "static/js/main.590723e2.js"
   ]
 }
