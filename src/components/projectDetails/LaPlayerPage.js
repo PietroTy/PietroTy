@@ -8,33 +8,11 @@ import spotifyBanImg from "../../assets/laplayer_spotify_ban.png";
 
 // ── Versão final (congelada) ─────────────────────────────────────────────
 // O LaPlayer vai ser refeito do zero; esta página fica com a última versão que funciona.
-// Para liberar o acesso ao servidor, preencha SERVER_URL e ACCESS_KEY (vazio aparece como "a definir").
+// A versão pública vem sem servidor e sem chave: quem instala aponta para o próprio servidor.
 const FINAL_TAG = "v2.6.0";
 const REPO = "https://github.com/PietroTy/laplayer";
 const APK_URL = `${REPO}/releases/download/${FINAL_TAG}/laplayer.apk`;
 const SOURCE_URL = `${REPO}/archive/refs/tags/${FINAL_TAG}.zip`;
-const SERVER_URL = "";
-const ACCESS_KEY = "";
-
-function CopyField({ label, value, pt }) {
-  const [copied, setCopied] = React.useState(false);
-  const copy = () => {
-    navigator.clipboard?.writeText(value);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
-  return (
-    <div style={{ display: "flex", alignItems: "center", gap: "0.8rem", flexWrap: "wrap", padding: "0.8rem 1rem", background: "rgba(0,0,0,0.3)", border: "1px solid var(--border)" }}>
-      <span style={{ color: "var(--muted2)", fontFamily: "var(--mono)", fontSize: "0.8rem", minWidth: "8rem" }}>{label}</span>
-      <code style={{ flex: 1, color: value ? "var(--p2)" : "var(--muted2)", wordBreak: "break-all" }}>{value || (pt ? "(a definir)" : "(to be defined)")}</code>
-      {value && (
-        <button className="btn btn-ghost" style={{ padding: "4px 12px", fontSize: "0.8rem" }} onClick={copy}>
-          {copied ? (pt ? "Copiado" : "Copied") : (pt ? "Copiar" : "Copy")}
-        </button>
-      )}
-    </div>
-  );
-}
 
 const codeBlock = { display: "block", background: "rgba(0,0,0,0.4)", border: "1px solid var(--border)", padding: "0.8rem 1rem", margin: "0.5rem 0 1rem", color: "var(--p2)", fontFamily: "var(--mono)", fontSize: "0.8rem", whiteSpace: "pre-wrap", wordBreak: "break-all" };
 
@@ -179,18 +157,14 @@ export default function LaPlayerPage({ lang, setPage }) {
               <a href={`${REPO}/tree/${FINAL_TAG}`} target="_blank" rel="noreferrer" className="btn btn-ghost">GitHub</a>
             </div>
 
-            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "1. Usar no meu servidor" : "1. Use my server"}</h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "0.8rem" }}>
-              <CopyField label={pt ? "Servidor" : "Server"} value={SERVER_URL} pt={pt} />
-              <CopyField label={pt ? "Chave de acesso" : "Access key"} value={ACCESS_KEY} pt={pt} />
-            </div>
+            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "1. Instalar" : "1. Install"}</h3>
             <p style={{ margin: "0 0 2rem" }}>
               {pt
-                ? "Instale o APK, abra Configurações e cole o endereço do servidor e a chave de acesso. A busca e os downloads passam a usar esse servidor."
-                : "Install the APK, open Settings and paste the server address and access key. Search and downloads will use that server."}
+                ? "O APK vem sem servidor configurado. Instale, abra Configurações → Servidor e coloque o endereço e a chave de acesso do seu servidor (passo 2). A busca e os downloads passam a usar ele."
+                : "The APK ships without a server. Install it, open Settings → Server and enter your server's address and access key (step 2). Search and downloads will use it."}
             </p>
 
-            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "2. Rodar o seu servidor" : "2. Run your own server"}</h3>
+            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "2. Rodar o servidor" : "2. Run the server"}</h3>
             <p style={{ margin: 0 }}>
               {pt
                 ? "Precisa de Python 3.12, ffmpeg e Node (o yt-dlp usa para passar pelos desafios do YouTube). Baixe o .zip do código acima e, na pasta server:"
@@ -200,16 +174,18 @@ export default function LaPlayerPage({ lang, setPage }) {
 uvicorn main:app --host 0.0.0.0 --port 3004`}</code>
             <p style={{ margin: 0 }}>{pt ? "Ou com Docker, na mesma pasta:" : "Or with Docker, in the same folder:"}</p>
             <code style={codeBlock}>{`docker build -t laplayer-server .
-docker run -d -p 3004:3004 laplayer-server`}</code>
+docker run -d -p 3004:3004 --env-file .env laplayer-server`}</code>
             <p style={{ margin: "0 0 0.6rem" }}>
               {pt
-                ? "As chaves de acesso ficam em VALID_KEYS, no main.py: troque pelas suas antes de abrir para a internet."
-                : "Access keys live in VALID_KEYS, in main.py: replace them with your own before exposing it to the internet."}
+                ? "As chaves de acesso aceitas ficam num arquivo .env na pasta server (ou na de cima), separadas por vírgula. Sem nenhuma, o servidor recusa tudo:"
+                : "Accepted access keys go in a .env file in the server folder (or the one above), comma-separated. With none, the server refuses everything:"}
             </p>
+            <code style={codeBlock}>{`LAPLAYER_KEYS=uma-chave-sua,outra-chave
+SLSKD_API_KEY=a-chave-do-slskd`}</code>
             <p style={{ margin: "0 0 0.6rem" }}>
               {pt
-                ? "Soulseek (opcional, quando o YouTube bloqueia): suba o slskd com o docker-compose.yml da pasta server, entre numa conta Soulseek pela interface (porta 5030) e defina SLSKD_API_KEY igual nos dois lados."
-                : "Soulseek (optional, when YouTube blocks): start slskd with the server folder's docker-compose.yml, log into a Soulseek account in its UI (port 5030) and set the same SLSKD_API_KEY on both sides."}
+                ? "Soulseek (opcional, quando o YouTube bloqueia): suba o slskd com o docker-compose.yml da pasta server, entre numa conta Soulseek pela interface (porta 5030) e use a mesma SLSKD_API_KEY no slskd e no .env."
+                : "Soulseek (optional, when YouTube blocks): start slskd with the server folder's docker-compose.yml, log into a Soulseek account in its UI (port 5030) and use the same SLSKD_API_KEY in slskd and in .env."}
             </p>
             <p style={{ margin: 0 }}>
               {pt
