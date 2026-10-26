@@ -6,6 +6,38 @@ import screenshotImg4 from "../../assets/laplayer_screenshot_4.png";
 import screenshotImg5 from "../../assets/laplayer_screenshot_5.png";
 import spotifyBanImg from "../../assets/laplayer_spotify_ban.png";
 
+// ── Versão final (congelada) ─────────────────────────────────────────────
+// O LaPlayer vai ser refeito do zero; esta página fica com a última versão que funciona.
+// Para liberar o acesso ao servidor, preencha SERVER_URL e ACCESS_KEY (vazio aparece como "a definir").
+const FINAL_TAG = "v2.6.0";
+const REPO = "https://github.com/PietroTy/laplayer";
+const APK_URL = `${REPO}/releases/download/${FINAL_TAG}/laplayer.apk`;
+const SOURCE_URL = `${REPO}/archive/refs/tags/${FINAL_TAG}.zip`;
+const SERVER_URL = "";
+const ACCESS_KEY = "";
+
+function CopyField({ label, value, pt }) {
+  const [copied, setCopied] = React.useState(false);
+  const copy = () => {
+    navigator.clipboard?.writeText(value);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: "0.8rem", flexWrap: "wrap", padding: "0.8rem 1rem", background: "rgba(0,0,0,0.3)", border: "1px solid var(--border)" }}>
+      <span style={{ color: "var(--muted2)", fontFamily: "var(--mono)", fontSize: "0.8rem", minWidth: "8rem" }}>{label}</span>
+      <code style={{ flex: 1, color: value ? "var(--p2)" : "var(--muted2)", wordBreak: "break-all" }}>{value || (pt ? "(a definir)" : "(to be defined)")}</code>
+      {value && (
+        <button className="btn btn-ghost" style={{ padding: "4px 12px", fontSize: "0.8rem" }} onClick={copy}>
+          {copied ? (pt ? "Copiado" : "Copied") : (pt ? "Copiar" : "Copy")}
+        </button>
+      )}
+    </div>
+  );
+}
+
+const codeBlock = { display: "block", background: "rgba(0,0,0,0.4)", border: "1px solid var(--border)", padding: "0.8rem 1rem", margin: "0.5rem 0 1rem", color: "var(--p2)", fontFamily: "var(--mono)", fontSize: "0.8rem", whiteSpace: "pre-wrap", wordBreak: "break-all" };
+
 export default function LaPlayerPage({ lang, setPage }) {
   const pt = lang === "pt";
   const [modalData, setModalData] = React.useState(null);
@@ -80,7 +112,7 @@ export default function LaPlayerPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Flutter Mobile App • 100% Serverless</div>
+            <div className="hero-tag">{pt ? "Flutter Mobile App • Versão final" : "Flutter Mobile App • Final version"}</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
               LaPlayer
             </h1>
@@ -94,7 +126,7 @@ export default function LaPlayerPage({ lang, setPage }) {
             {/* Download APK Button */}
             <div style={{ marginTop: "2rem" }}>
               <a
-                href="https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
+                href={APK_URL}
                 download
                 className="btn btn-fill"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.8rem", padding: "12px 28px" }}
@@ -104,10 +136,10 @@ export default function LaPlayerPage({ lang, setPage }) {
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                <span>{pt ? "Baixar APK Grátis" : "Download Free APK"}</span>
+                <span>{pt ? "Baixar laplayer.apk" : "Download laplayer.apk"}</span>
               </a>
               <p style={{ fontSize: "0.8rem", opacity: 0.5, marginTop: "0.6rem" }}>
-                {pt ? "Compatível com Android 8.0+" : "Compatible with Android 8.0+"}
+                {pt ? `Versão final ${FINAL_TAG} · Android 8.0+` : `Final version ${FINAL_TAG} · Android 8.0+`}
               </p>
             </div>
           </div>
@@ -124,6 +156,66 @@ export default function LaPlayerPage({ lang, setPage }) {
                 style={{ maxWidth: "280px", display: "block" }}
               />
             </div>
+          </div>
+        </section>
+
+        {/* Versão final: app, servidor e instruções */}
+        <section style={{ marginTop: "3rem" }}>
+          <div style={{ color: "var(--p2)", fontFamily: "var(--mono)", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem" }}>
+            {`// ${pt ? "VERSÃO FINAL" : "FINAL VERSION"} ${FINAL_TAG}`}
+          </div>
+          <h2 style={{ fontSize: "1.6rem", fontWeight: "800", marginBottom: "1rem" }}>
+            {pt ? "Congelado: o LaPlayer que funciona" : "Frozen: the LaPlayer that works"}
+          </h2>
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", padding: "2rem", fontSize: "0.95rem", color: "var(--muted2)", lineHeight: "1.8" }}>
+            <p style={{ margin: "0 0 1.2rem" }}>
+              {pt
+                ? "O LaPlayer vai ser refeito do zero. Esta é a última versão que funciona, guardada inteira: o app, o código do servidor e o passo a passo para usar."
+                : "LaPlayer is being rebuilt from scratch. This is the last working version, kept whole: the app, the server code and the step-by-step to use it."}
+            </p>
+            <div style={{ display: "flex", gap: "0.8rem", flexWrap: "wrap", marginBottom: "2rem" }}>
+              <a href={APK_URL} download className="btn btn-fill">{pt ? "App (laplayer.apk)" : "App (laplayer.apk)"}</a>
+              <a href={SOURCE_URL} className="btn btn-ghost">{pt ? "Código do app e do servidor (.zip)" : "App and server code (.zip)"}</a>
+              <a href={`${REPO}/tree/${FINAL_TAG}`} target="_blank" rel="noreferrer" className="btn btn-ghost">GitHub</a>
+            </div>
+
+            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "1. Usar no meu servidor" : "1. Use my server"}</h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "0.8rem" }}>
+              <CopyField label={pt ? "Servidor" : "Server"} value={SERVER_URL} pt={pt} />
+              <CopyField label={pt ? "Chave de acesso" : "Access key"} value={ACCESS_KEY} pt={pt} />
+            </div>
+            <p style={{ margin: "0 0 2rem" }}>
+              {pt
+                ? "Instale o APK, abra Configurações e cole o endereço do servidor e a chave de acesso. A busca e os downloads passam a usar esse servidor."
+                : "Install the APK, open Settings and paste the server address and access key. Search and downloads will use that server."}
+            </p>
+
+            <h3 style={{ color: "#fff", fontSize: "1.1rem", margin: "0 0 0.8rem" }}>{pt ? "2. Rodar o seu servidor" : "2. Run your own server"}</h3>
+            <p style={{ margin: 0 }}>
+              {pt
+                ? "Precisa de Python 3.12, ffmpeg e Node (o yt-dlp usa para passar pelos desafios do YouTube). Baixe o .zip do código acima e, na pasta server:"
+                : "Needs Python 3.12, ffmpeg and Node (yt-dlp uses it for YouTube challenges). Download the code .zip above and, in the server folder:"}
+            </p>
+            <code style={codeBlock}>{`pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 3004`}</code>
+            <p style={{ margin: 0 }}>{pt ? "Ou com Docker, na mesma pasta:" : "Or with Docker, in the same folder:"}</p>
+            <code style={codeBlock}>{`docker build -t laplayer-server .
+docker run -d -p 3004:3004 laplayer-server`}</code>
+            <p style={{ margin: "0 0 0.6rem" }}>
+              {pt
+                ? "As chaves de acesso ficam em VALID_KEYS, no main.py: troque pelas suas antes de abrir para a internet."
+                : "Access keys live in VALID_KEYS, in main.py: replace them with your own before exposing it to the internet."}
+            </p>
+            <p style={{ margin: "0 0 0.6rem" }}>
+              {pt
+                ? "Soulseek (opcional, quando o YouTube bloqueia): suba o slskd com o docker-compose.yml da pasta server, entre numa conta Soulseek pela interface (porta 5030) e defina SLSKD_API_KEY igual nos dois lados."
+                : "Soulseek (optional, when YouTube blocks): start slskd with the server folder's docker-compose.yml, log into a Soulseek account in its UI (port 5030) and set the same SLSKD_API_KEY on both sides."}
+            </p>
+            <p style={{ margin: 0 }}>
+              {pt
+                ? "Para o celular alcançar o servidor de fora de casa, exponha a porta 3004 com um túnel (por exemplo cloudflared tunnel --url http://localhost:3004) e use esse endereço no app."
+                : "To reach the server from outside your home, expose port 3004 with a tunnel (e.g. cloudflared tunnel --url http://localhost:3004) and use that address in the app."}
+            </p>
           </div>
         </section>
 
