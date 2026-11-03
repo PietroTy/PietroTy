@@ -100,6 +100,12 @@ export default function LaPlayerPage({ lang, setPage }) {
                 : "A 100% Serverless & Client-Side music player combining the sleek Spotify mobile interface with direct on-device processing without external server dependency."
               }
             </p>
+            <p
+              onClick={() => setPage("laplayer-jade")}
+              style={{ marginTop: "1rem", cursor: "pointer", fontFamily: "var(--mono)", fontSize: "0.85rem", color: "var(--p2)" }}
+            >
+              {pt ? "// MVP: aperfeiçoado depois no LaPlayer Jade, projeto particular" : "// MVP: later refined into LaPlayer Jade, a private project"} &rarr;
+            </p>
 
             {/* Download APK Button */}
             <div style={{ marginTop: "2rem" }}>

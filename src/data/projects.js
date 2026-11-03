@@ -41,8 +41,8 @@ export const PROJECTS = [
     "nameEn": "LaPlayer",
     "taglinePt": "Aplicativo mobile serverless",
     "taglineEn": "Serverless mobile application",
-    "descPt": "Cliente de música em Dart/Flutter com interface inspirada no Spotify. Arquitetura 100% Serverless (client-side), rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.",
-    "descEn": "Dart/Flutter music client inspired by Spotify with 100% Serverless (client-side) architecture. Refactored with the music-tracker engine (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.",
+    "descPt": "MVP, aperfeiçoado depois no LaPlayer Jade (projeto particular). Cliente de música em Dart/Flutter com interface inspirada no Spotify. Arquitetura 100% Serverless (client-side), rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.",
+    "descEn": "MVP, later refined into LaPlayer Jade (a private project). Dart/Flutter music client inspired by Spotify with 100% Serverless (client-side) architecture. Refactored with the music-tracker engine (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.",
     "tags": [
       "app",
       "Flutter",
@@ -71,6 +71,78 @@ export const PROJECTS = [
     "link": null,
     "featured": true,
     "color": "#8b5cf6"
+  },
+  {
+    "id": "laplayer-jade",
+    "namePt": "LaPlayer Jade",
+    "nameEn": "LaPlayer Jade",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Surgiu do LaPlayer, o MVP original, refeito do zero: app em Flutter para Android e Linux com servidor próprio em Python que baixa as músicas (YouTube Music com metadados do Deezer). Biblioteca, playlist e histórico iguais no celular e no PC via Syncthing.",
+    "descEn": "Grew out of LaPlayer, the original MVP, rebuilt from scratch: a Flutter app for Android and Linux with its own Python server that downloads the songs (YouTube Music with Deezer metadata). Library, playlist, and history stay the same on phone and PC through Syncthing.",
+    "tags": [
+      "app",
+      "Flutter",
+      "Python",
+      "Syncthing"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "cvpearl",
+    "namePt": "CVPearl",
+    "nameEn": "CVPearl",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Surgiu do CVMaker, o MVP original. Gerador de currículos sob medida: analisa a vaga e escreve o currículo de uma página e a mensagem pro recrutador a partir de um perfil revisado, usando o Claude Code local. Servidor em Go e PDF pelo Chromium.",
+    "descEn": "Grew out of CVMaker, the original MVP. Tailored résumé generator: analyzes the job posting and writes a one-page résumé and recruiter message from a reviewed profile using local Claude Code. Go server and Chromium PDF output.",
+    "tags": [
+      "ia",
+      "Go",
+      "LLM",
+      "JavaScript"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "amethist",
+    "namePt": "Amethist",
+    "nameEn": "Amethist",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Gerenciador de arquivos próprio com cara de drive: galeria, prévias de documentos, espelho dos projetos de hora em hora, backup diário pro Google Drive e rotinas agendadas. Servidor em Go e app Android.",
+    "descEn": "My own drive-like file manager: gallery, document previews, hourly project mirroring, daily Google Drive backup, and scheduled routines. Go server and Android app.",
+    "tags": [
+      "app",
+      "Go",
+      "rclone",
+      "Flutter"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "serrasafe",
+    "namePt": "SerraSafe",
+    "nameEn": "SerraSafe",
+    "taglinePt": "Projeto do IFSP",
+    "taglineEn": "IFSP project",
+    "descPt": "Sistema embarcado com ESP32-S3 e sensores ambientais que classifica o risco de queimada na Serra da Paulista em baixo, moderado ou alto. Fiquei com a análise e o tratamento dos dados.",
+    "descEn": "Embedded ESP32-S3 system with environmental sensors that rates wildfire risk in Serra da Paulista as low, moderate, or high. I handled the data analysis and cleaning.",
+    "tags": [
+      "dados",
+      "ESP32",
+      "IoT",
+      "Sensores"
+    ],
+    "link": "https://serra-safe.netlify.app/",
+    "featured": false,
+    "color": "#e8772e"
   },
   {
     "id": "whatsapp-bot",
@@ -110,12 +182,12 @@ export const PROJECTS = [
   },
   {
     "id": "crm-engaja",
-    "namePt": "CRM White-label",
-    "nameEn": "White-label CRM",
+    "namePt": "Lápis CRM",
+    "nameEn": "Lápis CRM",
     "taglinePt": "Produto em desenvolvimento",
     "taglineEn": "Product in development",
-    "descPt": "CRM multiempresa, em que cada empresa usa o mesmo sistema com os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
-    "descEn": "Multi-tenant CRM where each company uses the same system with its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
+    "descPt": "CRM white-label e multiempresa: cada empresa usa o mesmo sistema com a própria marca e os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
+    "descEn": "White-label, multi-tenant CRM: each company uses it with its own brand and its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
     "tags": [
       "saas",
       "Node.js",
@@ -186,8 +258,8 @@ export const PROJECTS = [
     "nameEn": "CVMaker",
     "taglinePt": "Aplicação pública",
     "taglineEn": "Public application",
-    "descPt": "Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
-    "descEn": "Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
+    "descPt": "MVP, aperfeiçoado depois no CVPearl (projeto particular). Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
+    "descEn": "MVP, later refined into CVPearl (a private project). Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
     "tags": [
       "saas",
       "Python",

@@ -55,6 +55,12 @@ export default function CVMakerPage({ lang, setPage }) {
                 : "A tool created to streamline the exhausting job application process. Centralizes candidate data, applies 'word islands' techniques for ATS search algorithms, and adapts professional expertise using Sabiá-4 AI."
               }
             </p>
+            <p
+              onClick={() => setPage("cvpearl")}
+              style={{ marginTop: "1rem", cursor: "pointer", fontFamily: "var(--mono)", fontSize: "0.85rem", color: "var(--p2)" }}
+            >
+              {pt ? "// MVP: aperfeiçoado depois no CVPearl, projeto particular" : "// MVP: later refined into CVPearl, a private project"} &rarr;
+            </p>
 
             <div style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
               <a
