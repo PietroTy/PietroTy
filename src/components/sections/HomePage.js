@@ -35,8 +35,8 @@ export default function HomePage({ lang, setPage }) {
         </div>
         <div className="hero-kicker">
           {pt
-            ? "Desenvolvimento de Dados | Full-Stack | Data Engineering | AI"
-            : "Data Development | Full-Stack | Data Engineering | AI"}
+            ? "Desenvolvedor Júnior | BI | SQL | JS | .NET & C#"
+            : "Junior Developer | BI | SQL | JS | .NET & C#"}
         </div>
         <h1 className="hero-h1">
           {pt ? "Oi, sou o" : "Hi, I'm"}
@@ -45,11 +45,11 @@ export default function HomePage({ lang, setPage }) {
         <p className="hero-desc">
           {pt ? (
             <>
-              Desenvolvedor <strong>Full-Stack</strong>, Engenheiro de <strong>Dados</strong> e Pesquisador em <strong>IA</strong>. Atua com PostgreSQL, Power BI, ETL, automações e produtos digitais de ponta a ponta.
+              Desenvolvedor <strong>Full-Stack</strong> especialista em <strong>sistemas legados</strong> e na sua modernização. Atua com bancos relacionais (<strong>Oracle SQL</strong>, PostgreSQL e SQL Server), C#/.NET e pipelines de dados integrados a sistemas corporativos.
             </>
           ) : (
             <>
-              <strong>Full-Stack</strong> Developer, <strong>Data</strong> Engineer, and <strong>AI</strong> Researcher. Works with PostgreSQL, Power BI, ETL, automation, and end-to-end digital products.
+              <strong>Full-Stack</strong> Developer specialized in <strong>legacy systems</strong> and their modernization. Works with relational databases (<strong>Oracle SQL</strong>, PostgreSQL, and SQL Server), C#/.NET, and data pipelines integrated with corporate systems.
             </>
           )}
         </p>
