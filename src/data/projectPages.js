@@ -1,6 +1,6 @@
 import jadeLogo from "../assets/jade_card.png";
 import cvpearlLogo from "../assets/cvpearl_card.png";
-import amethistLogo from "../assets/amethist_card.png";
+import amethystLogo from "../assets/amethyst_card.png";
 import serrasafeLogo from "../assets/serrasafe_card.png";
 
 // Conteúdo das páginas de projeto que usam SimpleProjectPage.
@@ -30,12 +30,13 @@ export const PROJECT_PAGES = {
     logo: cvpearlLogo,
     tag: "Go • JavaScript • Claude Code • Chromium",
     title: "CVPearl",
+    link: "https://cvpearl.pietroty.com.br/",
     origin: { page: "cvmaker", name: "CVMaker" },
     subtitle: {
       pt: "Gerador de currículos sob medida: cola a vaga e ele analisa os requisitos, escreve o currículo de uma página e a mensagem pro recrutador a partir do meu perfil.",
       en: "Tailored résumé generator: paste a job posting and it analyzes the requirements, then writes a one-page résumé and the recruiter message from my profile."
     },
-    badge: { pt: "USO PESSOAL", en: "PERSONAL TOOL" },
+    badge: { pt: "USO PESSOAL · COM SENHA", en: "PERSONAL USE · PASSWORD PROTECTED" },
     features: [
       { icon: "LLM", title: { pt: "Claude Code local", en: "Local Claude Code" }, desc: { pt: "O servidor roda o Claude Code sem interface, só com ferramentas de leitura, e recebe a resposta num JSON com formato fixo.", en: "The server runs Claude Code headless with read-only tools and gets the answer back as JSON in a fixed schema." } },
       { icon: "ANÁLISE", title: { pt: "Análise da vaga", en: "Job Analysis" }, desc: { pt: "Mostra a senioridade real, os requisitos com evidência no perfil, as lacunas e as perguntas que devem aparecer na entrevista.", en: "Shows the real seniority, requirements backed by the profile, gaps, and the questions likely to come up in the interview." } },
@@ -47,10 +48,10 @@ export const PROJECT_PAGES = {
       { pt: "Pra montar o perfil, fiz uma tela de revisão em que conferi uma por uma as 114 afirmações dos currículos antigos. O servidor é em Go e a interface é JavaScript puro.", en: "To build the profile, I made a review screen where I checked all 114 claims from my old résumés one by one. The server is in Go and the interface is plain JavaScript." }
     ]
   },
-  amethist: {
-    logo: amethistLogo,
+  amethyst: {
+    logo: amethystLogo,
     tag: "Go • JavaScript • Flutter • rclone • Syncthing",
-    title: "Amethist",
+    title: "Amethyst",
     subtitle: {
       pt: "Meu próprio gerenciador de arquivos, com cara de drive: navega, mostra fotos, vídeos e documentos, espelha meus projetos e faz backup sozinho pro Google Drive.",
       en: "My own file manager with a drive-like feel: it browses, previews photos, videos, and documents, mirrors my projects, and backs itself up to Google Drive."
@@ -63,7 +64,7 @@ export const PROJECT_PAGES = {
       { icon: "ROTINAS", title: { pt: "Rotinas", en: "Routines" }, desc: { pt: "Roda tarefas agendadas, como os scripts dos meus outros projetos, sem precisar de cron solto pelo sistema.", en: "Runs scheduled tasks, like my other projects' scripts, without loose cron jobs around the system." } }
     ],
     about: [
-      { pt: "Nasceu pra organizar anos de arquivos espalhados entre HD, SSD, Windows e nuvem. Importei tudo copiando e verificando cada arquivo, sem apagar os originais, e depois o Amethist virou o lugar onde tudo mora.", en: "It was built to organize years of files scattered across HDD, SSD, Windows, and the cloud. I imported everything by copying and verifying each file without deleting the originals, and Amethist became where everything lives." },
+      { pt: "Nasceu pra organizar anos de arquivos espalhados entre HD, SSD, Windows e nuvem. Importei tudo copiando e verificando cada arquivo, sem apagar os originais, e depois o Amethyst virou o lugar onde tudo mora.", en: "It was built to organize years of files scattered across HDD, SSD, Windows, and the cloud. I imported everything by copying and verifying each file without deleting the originals, and Amethyst became where everything lives." },
       { pt: "O servidor é em Go, com a interface em JavaScript embutida no binário, e fica acessível pela internet por um túnel da Cloudflare. Os arquivos continuam em pastas normais, então nada fica preso ao app.", en: "The server is in Go with the JavaScript interface embedded in the binary, reachable online through a Cloudflare tunnel. Files stay in normal folders, so nothing is locked into the app." }
     ]
   },
