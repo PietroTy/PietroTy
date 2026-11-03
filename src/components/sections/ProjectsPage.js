@@ -19,13 +19,14 @@ import n8nLogo from "../../assets/n8n_logo.png";
 import chatwootLogo from "../../assets/chatwoot_logo.png";
 import farmaisLogo from "../../assets/farmais_logo.jpg";
 import imobsystemLogo from "../../assets/imobsystem_logo.jpg";
-import crmImg from "../../assets/crm_card.png";
+import crmImg from "../../assets/lapis_card.png";
 import etlImg from "../../assets/etl_card.png";
 import calciteImg from "../../assets/calcite_card.png";
 import santaIzabelImg from "../../assets/santa_izabel_card.png";
 import vitalsImg from "../../assets/vitals_card.png";
 import garimpoImg from "../../assets/garimpo_card.png";
 import discordImg from "../../assets/discord_card.png";
+import { PROJECT_PAGES } from "../../data/projectPages";
 
 const PROJECT_IMAGES = {
   chub: chubImg,
@@ -54,6 +55,7 @@ const PROJECT_IMAGES = {
   vitals: vitalsImg,
   "garimpo-sp": garimpoImg,
   "discord-bot": discordImg,
+  ...Object.fromEntries(Object.entries(PROJECT_PAGES).map(([id, page]) => [id, page.logo])),
 };
 
 const getProjectPlaceholder = (color) => {

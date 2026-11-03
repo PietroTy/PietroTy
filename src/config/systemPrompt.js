@@ -63,7 +63,7 @@ const SYSTEM_PROMPT_PT = `
                 <location>Remoto e São João da Boa Vista, SP</location>
                 <contract>Freelance, projetos sob demanda</contract>
                 <details>
-                    - CRM white-label multiempresa em Node.js (Fastify), React e PostgreSQL, em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.
+                    - Lápis CRM: CRM white-label multiempresa em Node.js (Fastify), React e PostgreSQL, em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.
                     - Agentes de IA no WhatsApp para uma loja e para uma clínica médica (lembretes e follow-up de consultas ligados ao sistema da clínica).
                     - Implantação de uma central de atendimento Chatwoot, com o WhatsApp de cada vendedor, numa distribuidora.
                     - Infraestrutura na AWS (EC2) com Chatwoot, Evolution API, n8n, PostgreSQL, Redis e túnel da Cloudflare, com backup diário.
@@ -160,7 +160,7 @@ const SYSTEM_PROMPT_PT = `
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM White-label</name>
+                <name>Lápis CRM</name>
                 <type>Produto próprio em desenvolvimento (projeto freelance)</type>
                 <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, tarefas, pedidos, estoque, financeiro e relatórios de BI). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
                 <technologies>Node.js, Fastify, React, PostgreSQL, BI</technologies>
@@ -193,7 +193,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p05">
                 <name>LaPlayer</name>
-                <type>Aplicativo mobile self-hosted</type>
+                <type>Aplicativo mobile self-hosted · MVP, aperfeiçoado depois no LaPlayer Jade (projeto particular)</type>
                 <description>Cliente de música em Dart/Flutter com interface inspirada no Spotify. Rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.</description>
                 <technologies>Dart, Flutter, Python, Spotify API, librespot, Vocaloid TTS, Self-Hosting</technologies>
                 <url>não disponível / not available</url>
@@ -201,7 +201,7 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p06">
                 <name>CVMaker / CV Adapter</name>
-                <type>Aplicação pública</type>
+                <type>Aplicação pública · MVP, aperfeiçoado depois no CVPearl (projeto particular)</type>
                 <description>Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.</description>
                 <technologies>Python, Streamlit, Sabiá-4, OOXML, DOCX, LibreOffice Headless</technologies>
                 <url>https://cvmaker-ty.streamlit.app/</url>
@@ -317,21 +317,28 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p-serrasafe">
                 <name>SerraSafe</name>
-                <type>Projeto do IFSP em produção</type>
-                <description>Trabalho do IFSP que virou um produto em produção: IoT e sistemas embarcados que monitoram pontos de risco de queimada na Serra da Paulista, no Leste Paulista, em São João da Boa Vista.</description>
-                <technologies>IoT, sistemas embarcados</technologies>
+                <type>Projeto do IFSP (2026, equipe de seis estudantes)</type>
+                <description>Sistema embarcado de baixo custo com ESP32-S3 e sensores (temperatura, umidade do ar e do solo, gás e fumaça, chama, chuva e relógio DS3231) que classifica o risco de queimada na Serra da Paulista, no Leste Paulista, em São João da Boa Vista, em baixo, moderado ou alto, com dispositivos em rede e alertas preventivos. Pietro ficou com a parte de dados: limpeza e tratamento das leituras, análise e a lógica da pontuação de risco.</description>
+                <technologies>ESP32-S3, IoT, sensores, análise e tratamento de dados</technologies>
+                <url>https://serra-safe.netlify.app/</url>
+            </project>
+            <project id="p-laplayer-jade">
+                <name>LaPlayer Jade</name>
+                <type>Ferramenta pessoal (código privado) · surgiu do LaPlayer, o MVP original</type>
+                <description>Nova versão do LaPlayer, refeita do zero depois que o original (que puxava do Spotify) parou com o bloqueio da conta; a versão pública ficou congelada na v2.6.0. App em Flutter para Android e Linux com servidor próprio em Python que acha as músicas no YouTube Music (Soulseek de reserva), baixa em m4a e preenche os metadados pelo Deezer. A pasta de músicas sincroniza pelo Syncthing, e a playlist e o histórico de cada aparelho viram eventos que os outros juntam. Num teste com 40 músicas, a busca do YouTube Music acertou 97%.</description>
+                <technologies>Flutter, Dart, Python, yt-dlp, Deezer API, Syncthing</technologies>
                 <url>não disponível / not available</url>
             </project>
             <project id="p-amethist">
                 <name>Amethist</name>
                 <type>Ferramenta pessoal</type>
-                <description>Gerenciador de arquivos próprio em Go, com espelho entre discos, backup para o Google Drive e rotinas automáticas agendadas. Uso pessoal, sem link público.</description>
-                <technologies>Go, JavaScript</technologies>
+                <description>Gerenciador de arquivos próprio com cara de drive: galeria com miniaturas (ffmpeg), prévia de PDFs e documentos do Office, espelho da pasta de projetos de hora em hora, backup diário para o Google Drive (rclone) e rotinas agendadas. Servidor em Go com a interface embutida, app Android em Flutter e acesso pela internet via túnel da Cloudflare. Uso pessoal, sem link público.</description>
+                <technologies>Go, JavaScript, Flutter, rclone, Cloudflare Tunnel</technologies>
                 <url>não disponível / not available</url>
             </project>
             <project id="p-cvpearl">
                 <name>CVPearl</name>
-                <type>Ferramenta pessoal</type>
+                <type>Ferramenta pessoal · surgiu do CVMaker, o MVP original</type>
                 <description>Gerador de currículos sob medida para cada vaga: lê o perfil e as notas dele, analisa a vaga e escreve o currículo e a mensagem pro recrutador usando o Claude Code rodando local, com PDF de uma página. Servidor em Go. Uso pessoal, sem link público.</description>
                 <technologies>Go, JavaScript, LLM</technologies>
                 <url>não disponível / not available</url>
@@ -706,7 +713,7 @@ const SYSTEM_PROMPT_EN = `
                 <location>Remote and São João da Boa Vista, SP</location>
                 <contract>Freelance, on-demand projects</contract>
                 <details>
-                    - Multi-tenant white-label CRM in Node.js (Fastify), React, and PostgreSQL, in development; Engaja Soluções Corporativas is the first company using it.
+                    - Lápis CRM: a multi-tenant white-label CRM in Node.js (Fastify), React, and PostgreSQL, in development; Engaja Soluções Corporativas is the first company using it.
                     - WhatsApp AI agents for a store and a medical clinic (appointment reminders and follow-ups tied to the clinic's system).
                     - Chatwoot help desk rollout, with each salesperson's WhatsApp, for a distributor.
                     - AWS (EC2) infrastructure with Chatwoot, Evolution API, n8n, PostgreSQL, Redis, and a Cloudflare tunnel, with daily backups.
@@ -803,7 +810,7 @@ const SYSTEM_PROMPT_EN = `
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM White-label</name>
+                <name>Lápis CRM</name>
                 <type>Own product in development (freelance project)</type>
                 <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, tasks, orders, inventory, finance, and BI reports). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
                 <technologies>Node.js, Fastify, React, PostgreSQL, BI</technologies>
@@ -836,7 +843,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p05">
                 <name>LaPlayer</name>
-                <type>Aplicativo mobile self-hosted</type>
+                <type>Self-hosted mobile app · MVP, later refined into LaPlayer Jade (a private project)</type>
                 <description>Dart/Flutter music client inspired by Spotify. Refactored with the music-tracker engine architecture (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.</description>
                 <technologies>Dart, Flutter, Python, Spotify API, librespot, Vocaloid TTS, Self-Hosting</technologies>
                 <url>não disponível / not available</url>
@@ -844,7 +851,7 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p06">
                 <name>CVMaker / CV Adapter</name>
-                <type>Aplicação pública</type>
+                <type>Public app · MVP, later refined into CVPearl (a private project)</type>
                 <description>Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.</description>
                 <technologies>Python, Streamlit, Sabiá-4, OOXML, DOCX, LibreOffice Headless</technologies>
                 <url>https://cvmaker-ty.streamlit.app/</url>
@@ -960,21 +967,28 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p-serrasafe">
                 <name>SerraSafe</name>
-                <type>IFSP project in production</type>
-                <description>An IFSP project that became a product in production: IoT and embedded systems monitoring wildfire risk spots in Serra da Paulista, in the Leste Paulista region, São João da Boa Vista.</description>
-                <technologies>IoT, embedded systems</technologies>
+                <type>IFSP project (2026, team of six students)</type>
+                <description>Low-cost embedded system with an ESP32-S3 and sensors (temperature, air and soil humidity, gas and smoke, flame, rain, and a DS3231 clock) that rates wildfire risk in Serra da Paulista, in the Leste Paulista region, São João da Boa Vista, as low, moderate, or high, with networked devices and early alerts. Pietro handled the data side: cleaning and processing the readings, the analysis, and the risk-score logic.</description>
+                <technologies>ESP32-S3, IoT, sensors, data analysis and cleaning</technologies>
+                <url>https://serra-safe.netlify.app/</url>
+            </project>
+            <project id="p-laplayer-jade">
+                <name>LaPlayer Jade</name>
+                <type>Personal tool (private code) · grew out of LaPlayer, the original MVP</type>
+                <description>The new LaPlayer, rebuilt from scratch after the original (which streamed from Spotify) stopped when the account was banned; the public version stays frozen at v2.6.0. A Flutter app for Android and Linux with its own Python server that finds songs on YouTube Music (Soulseek as a fallback), downloads them as m4a, and fills metadata from Deezer. The music folder syncs through Syncthing, and each device's playlist and history become events the others merge. In a 40-song test, YouTube Music search got 97% right.</description>
+                <technologies>Flutter, Dart, Python, yt-dlp, Deezer API, Syncthing</technologies>
                 <url>não disponível / not available</url>
             </project>
             <project id="p-amethist">
                 <name>Amethist</name>
                 <type>Personal tool</type>
-                <description>His own file manager in Go, with mirroring between disks, Google Drive backup, and scheduled automatic routines. Personal use, no public link.</description>
-                <technologies>Go, JavaScript</technologies>
+                <description>His own drive-like file manager: gallery with ffmpeg thumbnails, PDF and Office document previews, hourly mirroring of the projects folder, daily Google Drive backup (rclone), and scheduled routines. Go server with the interface embedded, Flutter Android app, and online access through a Cloudflare tunnel. Personal use, no public link.</description>
+                <technologies>Go, JavaScript, Flutter, rclone, Cloudflare Tunnel</technologies>
                 <url>não disponível / not available</url>
             </project>
             <project id="p-cvpearl">
                 <name>CVPearl</name>
-                <type>Personal tool</type>
+                <type>Personal tool · grew out of CVMaker, the original MVP</type>
                 <description>Tailored résumé generator: reads his profile and notes, analyzes the job posting, and writes the résumé and the recruiter message using Claude Code running locally, with a one-page PDF. Go server. Personal use, no public link.</description>
                 <technologies>Go, JavaScript, LLM</technologies>
                 <url>não disponível / not available</url>
