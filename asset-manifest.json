@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0cb2f869.css",
-    "main.js": "/static/js/main.12b33841.js",
+    "main.js": "/static/js/main.399a4378.js",
     "static/media/game_of_drones_logo.png": "/static/media/game_of_drones_logo.cbe3cf9d88c05271b03e.png",
     "static/media/laplayer_logo.png": "/static/media/laplayer_logo.8ca2d9e859d635024ad8.png",
     "static/media/magik_tarot_logo.png": "/static/media/magik_tarot_logo.4262716cd053fa72eff3.png",
@@ -17,8 +17,8 @@
     "static/media/tv2_card_logo.png": "/static/media/tv2_card_logo.234c1eaa696ad210b2a9.png",
     "static/media/ds_icon.png": "/static/media/ds_icon.0d247035dd078c0a7a16.png",
     "static/media/laplayer_screenshot_3.png": "/static/media/laplayer_screenshot_3.11afa1a1e7dda07594ab.png",
+    "static/media/serrasafe_card.png": "/static/media/serrasafe_card.c29ef9ebd07d9320d833.png",
     "static/media/engaja_screenshot_1.png": "/static/media/engaja_screenshot_1.3b6ba77484e8008ac610.png",
-    "static/media/serrasafe_card.png": "/static/media/serrasafe_card.897a5963a3aa05da47b2.png",
     "static/media/tv2_logo.png": "/static/media/tv2_logo.97ed8213257daa1396d7.png",
     "static/media/laplayer_screenshot_1.png": "/static/media/laplayer_screenshot_1.d81bb75019ebfd14d5ce.png",
     "static/media/laplayer_screenshot_2.png": "/static/media/laplayer_screenshot_2.cb852743e644388d9f89.png",
@@ -40,23 +40,23 @@
     "static/media/pitcraft_logo.png": "/static/media/pitcraft_logo.2f126554da8ac48960d3.png",
     "static/media/orespawn_screenshot_3.png": "/static/media/orespawn_screenshot_3.46e57ad6eecb90821c7d.png",
     "static/media/laplayer_spotify_ban.png": "/static/media/laplayer_spotify_ban.0adcd575443651caca03.png",
+    "static/media/jade_card.png": "/static/media/jade_card.af2907dd80f8a30597af.png",
     "static/media/monocraft.woff": "/static/media/monocraft.2c9422fce540c8229fc0.woff",
-    "static/media/jade_card.png": "/static/media/jade_card.fa069341de8d7a88c570.png",
-    "static/media/cvpearl_card.png": "/static/media/cvpearl_card.7e5d5b9c7c24d465c621.png",
-    "static/media/amethist_card.png": "/static/media/amethist_card.8dfb1005ebcc7c9be029.png",
+    "static/media/cvpearl_card.png": "/static/media/cvpearl_card.cf55ce924d69ef7ab6ac.png",
+    "static/media/amethist_card.png": "/static/media/amethist_card.fa2536a3e4157db37276.png",
     "static/media/calcite_card.png": "/static/media/calcite_card.3e119739e66cadbf6330.png",
     "static/media/orespawn_screenshot_1.jpg": "/static/media/orespawn_screenshot_1.82bdaec0962e5e97a86f.jpg",
     "static/media/vitals_card.png": "/static/media/vitals_card.ce3f7180980033433093.png",
-    "static/media/lapis_card.png": "/static/media/lapis_card.118adde33af68dc89947.png",
     "static/media/santa_izabel_card.png": "/static/media/santa_izabel_card.2aa8d93359ac4a41de7c.png",
     "static/media/garimpo_card.png": "/static/media/garimpo_card.1cd4d86282378109ca13.png",
+    "static/media/lapis_card.png": "/static/media/lapis_card.53cf0db9d851604108ac.png",
     "static/media/discord_card.png": "/static/media/discord_card.81b142d8b374b60c1723.png",
     "index.html": "/index.html",
     "main.0cb2f869.css.map": "/static/css/main.0cb2f869.css.map",
-    "main.12b33841.js.map": "/static/js/main.12b33841.js.map"
+    "main.399a4378.js.map": "/static/js/main.399a4378.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb2f869.css",
-    "static/js/main.12b33841.js"
+    "static/js/main.399a4378.js"
   ]
 }
