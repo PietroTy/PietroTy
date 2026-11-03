@@ -35,8 +35,8 @@ export default function HomePage({ lang, setPage }) {
         </div>
         <div className="hero-kicker">
           {pt
-            ? "Desenvolvedor Júnior | BI | SQL | JS | .NET & C#"
-            : "Junior Developer | BI | SQL | JS | .NET & C#"}
+            ? "Desenvolvedor Júnior | Dados | SQL | BI | Automação com IA"
+            : "Junior Developer | Data | SQL | BI | AI Automation"}
         </div>
         <h1 className="hero-h1">
           {pt ? "Oi, sou o" : "Hi, I'm"}
@@ -45,11 +45,11 @@ export default function HomePage({ lang, setPage }) {
         <p className="hero-desc">
           {pt ? (
             <>
-              Desenvolvedor <strong>Full-Stack</strong> especialista em <strong>sistemas legados</strong> e na sua modernização. Atua com bancos relacionais (<strong>Oracle SQL</strong>, PostgreSQL e SQL Server), C#/.NET e pipelines de dados integrados a sistemas corporativos.
+              Desenvolvedor <strong>Full-Stack</strong> e estudante de Ciência da Computação no IFSP. Trabalho com <strong>dados</strong> (PostgreSQL, SQL, ETL e Power BI), <strong>automação com IA</strong> (n8n e agentes de WhatsApp) e sistemas web, do banco até a infraestrutura na nuvem.
             </>
           ) : (
             <>
-              <strong>Full-Stack</strong> Developer specialized in <strong>legacy systems</strong> and their modernization. Works with relational databases (<strong>Oracle SQL</strong>, PostgreSQL, and SQL Server), C#/.NET, and data pipelines integrated with corporate systems.
+              <strong>Full-Stack</strong> developer and Computer Science student at IFSP. I work with <strong>data</strong> (PostgreSQL, SQL, ETL, and Power BI), <strong>AI automation</strong> (n8n and WhatsApp agents), and web systems, from the database to cloud infrastructure.
             </>
           )}
         </p>

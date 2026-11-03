@@ -63,13 +63,13 @@ export const TIMELINE = [
     "type": "education"
   },
   {
-    "year": "Jan 2024 – Abr 2025",
+    "year": "2024",
     "rolePt": "Professor de Inglês",
     "roleEn": "English Teacher",
     "placePt": "CCAA Perdizes | Lapa | Vila Guilherme",
     "placeEn": "CCAA Perdizes | Lapa | Vila Guilherme",
-    "descPt": "Ministrou aulas imersivas e dinâmicas de inglês para diferentes níveis e perfis de aprendizagem. Preparou alunos para exames e certificações internacionais, com taxa de aprovação informada de 100%. Aplicou comunicação didática, adaptação de conteúdo, gestão de sala e apresentação acessível de conceitos complexos. Concluiu o curso completo de inglês e o Teachers Course do CCAA.",
-    "descEn": "Taught immersive and dynamic English classes for different proficiency levels and learning profiles. Prepared students for international exams and certifications, with a reported 100% pass rate. Applied instructional communication, content adaptation, classroom management, and accessible explanation of complex concepts. Completed CCAA's full English program and Teachers Course.",
+    "descPt": "Deu aulas de inglês para diferentes níveis e perfis de alunos e preparou turmas para exames e certificações internacionais. Trabalhou comunicação didática, adaptação de conteúdo e explicação acessível de conceitos complexos. Concluiu o curso completo de inglês e o Teachers Course do CCAA.",
+    "descEn": "Taught English to students of different levels and learning profiles and prepared classes for international exams and certifications. Practiced instructional communication, content adaptation, and accessible explanation of complex concepts. Completed CCAA's full English program and Teachers Course.",
     "tags": [
       "English",
       "Teaching",
@@ -111,67 +111,70 @@ export const TIMELINE = [
   },
   {
     "year": "Fev – Jun 2026",
-    "rolePt": "Estagiário em Desenvolvimento",
-    "roleEn": "Development Intern",
+    "rolePt": "Estagiário em Automações de IA",
+    "roleEn": "AI Automation Intern",
     "placePt": "Engaja Soluções Corporativas",
     "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Desenvolvimento e manutenção de integrações no backend corporativo em C# e .NET (MVC), conectando o sistema a plataformas de terceiros. Criação e orquestração de fluxos de automação focados em atendimento comercial, integrando sistemas internos com agentes conversacionais. Apoio contínuo no mapeamento de regras de negócio do software e na preparação arquitetural para a modernização do frontend.",
-    "descEn": "Built and maintained corporate back-end integrations in C# and .NET (MVC), connecting the system to third-party platforms. Created and orchestrated automation flows for sales support, integrating internal systems with conversational agents. Ongoing support in mapping the software's business rules and preparing the architecture for front-end modernization.",
+    "descPt": "Criou automações no n8n ligando formulários ao banco de dados (avaliações, propostas e contratos de R&S, cadastro de currículos e banco de talentos) e os agentes de IA que atendem no WhatsApp da empresa. Apoiou o mapeamento de regras de negócio dos sistemas internos.",
+    "descEn": "Built n8n automations connecting forms to the database (assessments, recruiting proposals and contracts, résumé intake, and talent pool) and the AI agents that answer the company's WhatsApp. Helped map business rules for internal systems.",
     "tags": [
-      "C#",
-      ".NET MVC",
-      "Integrações",
+      "n8n",
+      "Agentes de IA",
+      "WhatsApp",
       "Automação"
     ],
     "type": "work"
   },
   {
-    "year": "Abr – Ago 2026",
-    "rolePt": "QA Tester e Revisor de Código",
-    "roleEn": "QA Tester and Code Reviewer",
-    "placePt": "MakeLemonad · Freela temporário",
-    "placeEn": "MakeLemonad · Temporary freelance",
-    "descPt": "Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte. Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX. Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.",
-    "descEn": "Performed critical code reviews and quality audits for new features in production web applications serving large clients. Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements. Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.",
-    "tags": [
-      "QA",
-      "OWASP",
-      "Pentest",
-      "UX"
-    ],
-    "type": "work"
-  },
-  {
-    "year": "Mai – Set 2026",
-    "rolePt": "Engenheiro de IA para Textos Acadêmicos",
-    "roleEn": "Applied AI Engineer for Academic Writing",
-    "placePt": "Consultoria Acadêmica — PUC · Freela temporário",
-    "placeEn": "Academic Consulting — PUC · Temporary freelance",
-    "descPt": "Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba. Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações. Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.",
-    "descEn": "Provided generative AI consulting for doctoral research through the Escriba platform. Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms. Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.",
-    "tags": [
-      "LLMs",
-      "ABNT",
-      "Prompt Engineering"
-    ],
-    "type": "work"
-  },
-  {
-    "year": "Jul – Set 2026",
+    "year": "Jul – Out 2026",
     "rolePt": "Desenvolvedor Júnior",
     "roleEn": "Junior Developer",
     "placePt": "Engaja Soluções Corporativas",
     "placeEn": "Engaja Soluções Corporativas",
-    "descPt": "Desenvolvimento full-stack de sistemas corporativos em C#, .NET e JavaScript (arquitetura MVC), conduzindo a transição progressiva de interfaces legadas. Modelagem e administração de bases de dados relacionais complexas, atuando centralmente com Oracle SQL e PostgreSQL, além da gestão de ecossistemas de clientes em SQL Server. Desenvolvimento de rotinas de ETL para clientes utilizando integrações de BI.",
-    "descEn": "Full-stack development of corporate systems in C#, .NET, and JavaScript (MVC architecture), leading the progressive migration of legacy interfaces. Modeled and administered complex relational databases, working mainly with Oracle SQL and PostgreSQL, plus SQL Server client environments. Built ETL routines for clients using BI integrations.",
+    "descPt": "Respondeu pelo setor de TI da empresa. Desenvolveu rotinas de ETL e integrações de BI para clientes, trabalhando com PostgreSQL, Oracle SQL e SQL Server nas bases deles, manteve as automações e os agentes de IA no WhatsApp e fez o site institucional com foco em SEO.",
+    "descEn": "Ran the company's IT area. Built ETL routines and BI integrations for clients, working with PostgreSQL, Oracle SQL, and SQL Server on their databases, maintained the automations and WhatsApp AI agents, and built the corporate website with an SEO focus.",
     "tags": [
-      "C#",
-      ".NET",
-      "Oracle SQL",
+      "SQL",
+      "ETL",
+      "Power BI",
       "PostgreSQL",
-      "SQL Server",
-      "ETL"
+      "n8n",
+      "SEO"
     ],
     "type": "work"
+  },
+  {
+    "year": "2026",
+    "rolePt": "Desenvolvedor Freelancer",
+    "roleEn": "Freelance Developer",
+    "placePt": "Projetos sob demanda",
+    "placeEn": "On-demand projects",
+    "descPt": "Projetos de ponta a ponta para empresas: um CRM multiempresa em Node.js, React e PostgreSQL; agentes de IA no WhatsApp para uma loja e para uma clínica médica (lembretes e follow-up de consultas); implantação de uma central de atendimento Chatwoot numa distribuidora; infraestrutura na AWS (EC2, n8n, PostgreSQL, Redis, Cloudflare); lojas e landing pages em React; QA, revisão de código e testes de segurança para uma empresa de tecnologia; e consultoria personalizada para uma tese de doutorado com o Escriba.",
+    "descEn": "End-to-end projects for companies: a multi-tenant CRM in Node.js, React, and PostgreSQL; WhatsApp AI agents for a store and a medical clinic (appointment reminders and follow-ups); a Chatwoot help desk rollout for a distributor; AWS infrastructure (EC2, n8n, PostgreSQL, Redis, Cloudflare); React stores and landing pages; QA, code review, and security testing for a tech company; and tailored consulting for a doctoral thesis using Escriba.",
+    "tags": [
+      "Node.js",
+      "React",
+      "PostgreSQL",
+      "AWS",
+      "Chatwoot",
+      "QA"
+    ],
+    "type": "work"
+  },
+  {
+    "year": "Nov 2026 – Ago 2027",
+    "rolePt": "Iniciação Científica — Previsão de Mercado de Cripto",
+    "roleEn": "Undergraduate Research — Crypto Market Forecasting",
+    "placePt": "IFSP · bolsa FAI UFSCar · TCC",
+    "placeEn": "IFSP · FAI UFSCar grant · thesis",
+    "descPt": "Pesquisa sobre prever o Bitcoin com dados: preço, sentimento do Reddit medido por LLM local, notícias, dados on-chain e macro. Testou 14 sinais da literatura e 1.014 combinações com backtest sem vazamento de dados, custos de operação e correção para múltiplos testes. Nenhum previu a direção diária; uma regra de risco por tendência e volatilidade reduziu a pior queda de −83% para −35%.",
+    "descEn": "Research on forecasting Bitcoin with data: price, Reddit sentiment scored by a local LLM, news, on-chain, and macro data. Tested 14 signals from the literature and 1,014 combinations with leak-free backtests, trading costs, and multiple-testing correction. None predicted daily direction; a trend-and-volatility risk rule cut the worst drawdown from −83% to −35%.",
+    "tags": [
+      "Python",
+      "Séries Temporais",
+      "LLM",
+      "Backtest"
+    ],
+    "type": "research"
   }
 ];

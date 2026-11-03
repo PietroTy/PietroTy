@@ -22,60 +22,54 @@ const SYSTEM_PROMPT_PT = `
     <creator_info>
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
-        <age>19 anos — data de nascimento pendente</age>
-        <current_role>Desenvolvedor Full-Stack especialista em sistemas legados; ex-Desenvolvedor Júnior na Engaja Soluções Corporativas (Jul–Set 2026)</current_role>
-        <headline>Desenvolvedor Júnior | BI | SQL | JS | .NET &amp; C#</headline>
+        <age>20 anos (nascido em 01/09/2006, em São Paulo, SP)</age>
+        <current_role>Desenvolvedor e estudante de Ciência da Computação no IFSP; foi Desenvolvedor Júnior na Engaja Soluções Corporativas (jul–out/2026) e faz projetos como desenvolvedor freelancer</current_role>
+        <headline>Desenvolvedor Júnior | Dados | SQL | BI | Automação com IA</headline>
         <email>pietro.turcimm@gmail.com</email>
         <phone>(11) 99884-8997</phone>
-        <location>São João da Boa Vista, SP; residência oficial em São Paulo, SP, com mobilidade para atuação presencial na capital</location>
-        <summary>Desenvolvedor Full-Stack especialista em sistemas legados e na sua modernização. Começou na pesquisa estruturada de dados para atuação consultiva corporativa. Atua fortemente na modelagem e gerenciamento de bancos de dados relacionais, com domínio principal em Oracle SQL e PostgreSQL, além de SQL Server em ecossistemas de clientes, e em C#/.NET (MVC). Trajetória marcada pela entrega de soluções escaláveis, transição de interfaces legadas para frameworks modernos e criação de pipelines de dados integrados a sistemas corporativos. Graduando em Ciência da Computação no IFSP e técnico em Desenvolvimento de Sistemas pela ETEC; inglês fluente (TOEFL B2).</summary>
+        <location>São João da Boa Vista, SP; residência oficial em São Paulo, SP. Aberto a vagas remotas, híbridas ou presenciais em São Paulo</location>
+        <availability>Procura uma vaga fixa (CLT) em qualquer área de TI; dados é a que ele mais curte.</availability>
+        <summary>Desenvolvedor full-stack e estudante de Ciência da Computação no IFSP (6º de 8 semestres, formatura prevista para dez/2027). Trabalha com dados (PostgreSQL, SQL, ETL e Power BI), automação com IA (n8n e agentes de WhatsApp) e sistemas web, do banco de dados até a infraestrutura na nuvem. Técnico em Desenvolvimento de Sistemas pela ETEC, inglês fluente (TOEFL B2) e uma pesquisa de iniciação científica sobre previsão do mercado de cripto.</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>Desenvolvedor Júnior</role>
-                <period>Julho 2026 – Setembro 2026</period>
+                <period>Julho 2026 – Outubro 2026</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
                 <contract>PJ</contract>
                 <details>
-                    - Desenvolvimento full-stack de sistemas corporativos em C#, .NET e JavaScript (arquitetura MVC), conduzindo a transição progressiva de interfaces legadas.
-                    - Modelagem e administração de bases de dados relacionais complexas, atuando centralmente com Oracle SQL e PostgreSQL, além da gestão de ecossistemas de clientes em SQL Server.
-                    - Desenvolvimento de rotinas de ETL para clientes utilizando integrações de BI.
+                    - Respondeu pelo setor de TI da empresa.
+                    - Desenvolveu rotinas de ETL e integrações de BI para clientes da Engaja, trabalhando com PostgreSQL, Oracle SQL e SQL Server nas bases deles.
+                    - Manteve as automações no n8n e os agentes de IA que atendem no WhatsApp da empresa.
+                    - Fez o site institucional da Engaja, com foco em SEO.
                 </details>
             </job>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>Estagiário em Desenvolvimento</role>
+                <role>Estagiário em Automações de IA</role>
                 <period>Fevereiro 2026 – Junho 2026</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
                 <contract>Estágio</contract>
                 <details>
-                    - Desenvolvimento e manutenção de integrações no backend corporativo em C# e .NET (MVC), conectando o sistema a plataformas de terceiros.
-                    - Criação e orquestração de fluxos de automação focados em atendimento comercial, integrando sistemas internos com agentes conversacionais.
-                    - Apoio contínuo no mapeamento de regras de negócio do software e na preparação arquitetural para a modernização do frontend.
+                    - Criou automações no n8n ligando formulários ao banco de dados: avaliações, propostas e contratos de recrutamento, cadastro de currículos e banco de talentos.
+                    - Criou os agentes de IA que atendem no WhatsApp da empresa.
+                    - Apoiou o mapeamento de regras de negócio dos sistemas internos.
                 </details>
             </job>
             <job>
-                <company>MakeLemonad</company>
-                <role>Freelancer — QA Tester e Revisor de Código</role>
-                <period>Abril 2026 – Agosto 2026</period>
-                <location>Remoto</location>
-                <contract>Freela temporário</contract>
+                <company>Projetos freelance</company>
+                <role>Desenvolvedor Freelancer</role>
+                <period>2026</period>
+                <location>Remoto e São João da Boa Vista, SP</location>
+                <contract>Freelance, projetos sob demanda</contract>
                 <details>
-                    - Realizou revisão crítica de código e auditoria de qualidade de novas features em aplicações web de produção para clientes de grande porte.
-                    - Executou testes funcionais, exploratórios, de regressão e usabilidade em ambientes de staging, documentando bugs e melhorias de UX.
-                    - Executou testes de segurança ofensivos e defensivos, incluindo análise de vulnerabilidades OWASP e penetration testing antes do deploy.
-                </details>
-            </job>
-            <job>
-                <company>Consultoria Acadêmica Independente — PUC</company>
-                <role>Engenheiro de IA Aplicada a Textos Acadêmicos</role>
-                <period>Maio 2026 – Setembro 2026</period>
-                <location>Remoto</location>
-                <contract>Freela temporário</contract>
-                <details>
-                    - Prestou consultoria técnica em IA generativa para pesquisa de doutorado usando a plataforma Escriba.
-                    - Desenvolveu engenharia de prompt multicamada, checagem cruzada, templates especializados e mecanismos de mitigação de alucinações.
-                    - Garantiu aderência à ABNT, consistência textual e verificação factual em textos acadêmicos de alto rigor.
+                    - CRM white-label multiempresa em Node.js (Fastify), React e PostgreSQL, em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.
+                    - Agentes de IA no WhatsApp para uma loja e para uma clínica médica (lembretes e follow-up de consultas ligados ao sistema da clínica).
+                    - Implantação de uma central de atendimento Chatwoot, com o WhatsApp de cada vendedor, numa distribuidora.
+                    - Infraestrutura na AWS (EC2) com Chatwoot, Evolution API, n8n, PostgreSQL, Redis e túnel da Cloudflare, com backup diário.
+                    - Site e loja da Bleach.co (React, Three.js, Node.js, Mercado Pago, Melhor Envio) e landing page da Santa Izabel.
+                    - QA, revisão de código e testes de segurança (OWASP) para uma empresa de tecnologia; hoje testa e dá feedback de produto numa ferramenta nova deles antes do lançamento.
+                    - Consultoria personalizada para uma tese de doutorado na PUC, usando o Escriba.
                 </details>
             </job>
             <job>
@@ -85,111 +79,98 @@ const SYSTEM_PROMPT_PT = `
                 <location>Remoto · Brasil</location>
                 <contract>Bolsa de Iniciação Científica</contract>
                 <details>
-                    - Desenvolvimento completo da plataforma Escriba AI em Python, focada na integração de LLMs para assistência e revisão acadêmica.
-                    - Implementação de rotinas automatizadas de web scraping e estruturação de coleta de dados com Playwright.
-                    - Revisão técnica de materiais da Escola Virtual do Governo (EV.G), garantindo padrões de acessibilidade digital (WCAG).
+                    - Criou o Escriba, plataforma em Python e Streamlit que gera e adapta textos acadêmicos com vários LLMs em português (Maritaca/Sabiá), com prompt em camadas, checagem cruzada entre modelos e formatação ABNT.
+                    - Fez web scraping e coleta de dados com Playwright.
+                    - Revisou materiais da Escola Virtual do Governo (EV.G) com WCAG, ADDIE e DEIA, adaptou conteúdo para tecnologias assistivas e fez testes de usabilidade.
                 </details>
             </job>
             <job>
-                <company>CCAA Perdizes | Lapa | Vila Guilherme</company>
+                <company>CCAA (Perdizes, Lapa e Vila Guilherme)</company>
                 <role>Professor de Inglês</role>
-                <period>Janeiro 2024 – Abril 2025</period>
+                <period>2024</period>
                 <location>São Paulo, SP · Presencial</location>
                 <contract>Freelance</contract>
                 <details>
-                    - Ministrou aulas imersivas e dinâmicas de inglês para diferentes níveis e perfis de aprendizagem.
-                    - Preparou alunos para exames e certificações internacionais, com taxa de aprovação informada de 100%.
-                    - Aplicou comunicação didática, adaptação de conteúdo, gestão de sala e apresentação acessível de conceitos complexos.
+                    - Deu aulas de inglês para vários níveis e preparou alunos para exames internacionais.
                     - Concluiu o curso completo de inglês e o Teachers Course do CCAA.
                 </details>
             </job>
             <job>
-                <company>IFSP — Game of Drones Team (equipe oficial do campus)</company>
-                <role>Desenvolvedor de Software e IA para Drone Autônomo</role>
+                <company>IFSP — Equipe Game of Drones</company>
+                <role>Software e IA para Drone Autônomo</role>
                 <period>2024 – 2025</period>
                 <location>São João da Boa Vista, SP</location>
                 <contract>Extracurricular</contract>
                 <details>
-                    - Atuou na equipe oficial Game of Drones do IFSP, criada para o desenvolvimento de um drone quadricóptero autônomo no contexto da Competição EletroQuad SAE BRASIL.
-                    - Desenvolveu algoritmos de Machine Learning e visão computacional em Python/OpenCV para navegação autônoma, leitura de trajetória e tomada de decisão embarcada.
-                    - Trabalhou com filtros de cor, detecção de contornos, transformações espaciais, controle PID, desvio de obstáculos e integração com requisitos de telemetria em tempo real.
-                    - Otimizou e integrou o software em Raspberry Pi/Linux, considerando capacidade de processamento, peso, consumo de bateria e confiabilidade durante missões sem piloto.
-                    - O projeto fazia parte de uma competição universitária multidisciplinar que exige concepção, documentação, construção e voo autônomo de drones, simulando aplicações práticas do setor elétrico.
+                    - Software de um drone autônomo para a competição EletroQuad SAE Brasil: visão computacional com Python/OpenCV, controle PID e Raspberry Pi.
                 </details>
             </job>
             <job>
-                <company>OBMEP / IMPA — Programa de Iniciação Científica Jr. (PIC), polo do IME-USP</company>
-                <role>Participante do Programa de Iniciação Científica Jr. em Matemática</role>
-                <period>2022 (ciclo da 16ª OBMEP, edição 2021)</period>
-                <location>São Paulo, SP / modalidade exata pendente</location>
-                <contract>Programa de formação científica para estudante premiado na OBMEP</contract>
+                <company>OBMEP / IMPA — Programa de Iniciação Científica Jr. (PIC), ligado ao IME-USP</company>
+                <role>Participante do PIC Jr. em Matemática</role>
+                <period>2022</period>
+                <location>São Paulo, SP</location>
+                <contract>Programa para premiados na OBMEP</contract>
                 <details>
-                    - Participou do Programa de Iniciação Científica Jr. (PIC) da OBMEP após receber Menção Honrosa na 16ª edição da olimpíada.
-                    - Realizou estudos avançados de matemática e atividades científicas vinculadas ao programa da OBMEP, com referência acadêmica ao IME-USP.
-                    - Desenvolveu raciocínio lógico, resolução de problemas, demonstração matemática e autonomia de estudo, base posteriormente aplicada à Ciência da Computação, dados e IA.
-                    - A modalidade exata, as datas, o polo e o professor orientador ainda precisam ser confirmados documentalmente.
+                    - Participou do PIC Jr. após a Menção Honrosa na 16ª OBMEP.
                 </details>
             </job>
         </experience>
+        <research>
+            <item>Iniciação Científica e TCC (nov/2026 – ago/2027, bolsa FAI UFSCar, professor Arthur): dá pra prever o Bitcoin com dados? Juntou preço, sentimento do Reddit medido por LLM local, 48 mil manchetes, dados on-chain e macro. Testou 14 sinais da literatura e 1.014 combinações com backtest sem vazamento de dados, custos e correção para múltiplos testes. Nenhum previu a direção do dia seguinte; uma regra de risco por tendência e volatilidade reduziu a pior queda de −83% para −35% (2015–2026).</item>
+        </research>
         <education>
             <degree>
                 <institution>IFSP — Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São João da Boa Vista</institution>
                 <course>Bacharelado em Ciência da Computação</course>
                 <period>Fevereiro 2024 – Dezembro 2027 (previsão)</period>
-                <status>Em andamento · 5º de 8 semestres</status>
-                <details>Curso público federal com nota máxima 5 no MEC. Formação em estruturas de dados, algoritmos, teoria da computação, cálculo, álgebra linear, geometria analítica, sistemas operacionais, redes, IA, computação gráfica, bancos de dados e engenharia de software; inclui extensão, pesquisa e TCC com banca.</details>
+                <status>Em andamento · 6º de 8 semestres</status>
+                <details>Curso público federal com nota máxima 5 no MEC. Inclui extensão, pesquisa e TCC com banca.</details>
             </degree>
             <degree>
                 <institution>FATEC-SP — Faculdade de Tecnologia de São Paulo</institution>
                 <course>Tecnólogo em Análise e Desenvolvimento de Sistemas</course>
                 <period>Janeiro 2024 – Fevereiro 2024</period>
                 <status>Transferido para o IFSP</status>
-                <details>Breve passagem antes da transferência para o bacharelado, com contato com design de software, resolução de problemas e fundamentos de desenvolvimento de sistemas.</details>
             </degree>
             <degree>
                 <institution>ETEC Horácio Augusto da Silveira — São Paulo, SP</institution>
                 <course>Ensino Médio Integrado ao Técnico em Desenvolvimento de Sistemas</course>
                 <period>2021 – Dezembro 2023</period>
                 <status>Concluído</status>
-                <details>Formação prática no ciclo completo de software: requisitos, orientação a objetos, Java, JavaScript, React, Angular, SQL/Oracle, mobile com Android Studio, segurança da informação, Arduino, APIs, documentação, testes, Git e metodologias ágeis. TCC: Erium.</details>
+                <details>TCC: Erium, app para quem viaja de avião (bagagem, passaporte, normas de voo), feito em equipe, em Java/Spring Boot e React. Também fez o ImobSystem em C#/.NET.</details>
             </degree>
             <degree>
                 <institution>CCAA</institution>
                 <course>Curso Completo de Língua Inglesa e Teachers Course</course>
-                <period>Datas pendentes</period>
                 <status>Concluído</status>
-                <details>Formação de fluência oral, escrita e gramatical, complementada por capacitação metodológica e didática para docência.</details>
             </degree>
             <degree>
                 <institution>CEL — Centro de Estudo de Línguas da E.E. Senador Paulo Egydio de Oliveira Carvalho</institution>
                 <course>Curso de Língua Francesa</course>
-                <period>1 ano · datas pendentes</period>
+                <period>1 ano</period>
                 <status>Concluído</status>
-                <details>Comunicação básica, pronúncia, estruturas gramaticais essenciais e vocabulário cotidiano.</details>
             </degree>
         </education>
-        <languages>Português nativo; inglês fluente com TOEFL associado ao B2, curso completo e Teachers Course no CCAA; francês intermediário; espanhol básico; italiano básico.</languages>
+        <languages>Português nativo; inglês fluente (TOEFL nível B2, curso completo e Teachers Course no CCAA); francês (1 ano no CEL); espanhol básico; italiano básico.</languages>
         <skills>
-            <linguagens>Python, JavaScript, TypeScript, Java, C, C++, C#, Dart, PHP, Shell Script/Bash, HTML5, CSS3, SASS, SQL, R</linguagens>
-            <dados_bi>PostgreSQL, DuckDB, Oracle, MySQL, SQLite, Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, PyTorch, Spark, Databricks, Airflow, Jupyter, Google Colab, ETL, Data Pipelines, Data Wrangling, Modelagem Dimensional, SQL Analytics, Power BI, DAX, Power Query/M, Modelagem de Relacionamentos, Dashboards, Análise de Marketing, Análise Comercial, Análise de RH, Análise de Logística, Análise Financeira e Contábil, Análise do Mercado de Ações, Segmentação de Clientes com ML, Detecção de Anomalias, Séries Temporais, Dados públicos de CNPJs</dados_bi>
-            <ia_automacao>LLMs, Prompt Engineering, Agentes de IA, LangChain, CrewAI, n8n/RPA, Maritaca AI/Sabiá, GPT, Machine Learning, Visão Computacional, OpenCV, Streamlit, Gradio, Evolution API, Chatwoot, Automação de WhatsApp, Mitigação de alucinações, Pipelines de verificação factual</ia_automacao>
-            <web_mobile_backend>React, React Native, Next.js, Angular, jQuery, Flutter, Node.js, Spring Boot, JPA/Hibernate, JSP/Servlets, APIs REST, JWT, OAuth, Socket.io, Styled Components, Tailwind CSS, MUI, Microserviços, MVC, WebAssembly, OOXML/DOCX, FFmpeg, sharp, yt-dlp</web_mobile_backend>
-            <cloud_devops_tools>Git, GitHub, GitHub Actions, CI/CD, Docker, AWS, GCP, Linux, Self-Hosting, Scrum, Kanban, Jira, Backlog Management, Playwright, Testes E2E, Testes funcionais, Testes de regressão, OWASP, Penetration Testing, Web Scraping, Figma, Design Systems, Web Vitals, Google Tag Manager, Stripe API, Cloudfy, Android Studio, Gradle, Raspberry Pi, Arduino, ESP32</cloud_devops_tools>
-            <lideranca_pesquisa_comunicacao>Liderança técnica, Governança tecnológica, Decisão arquitetural, Coordenação de projetos e squads, Gestão de backlog, Documentação técnica, Suporte técnico e consultivo, Pesquisa aplicada, Metodologia científica, Design educacional ADDIE, WCAG, DEIA, Tecnologias assistivas, Testes de usabilidade, Docência, Comunicação técnica, Inglês fluente</lideranca_pesquisa_comunicacao>
+            <uso_real>Python, SQL/PostgreSQL, JavaScript/TypeScript, Node.js, React, React Native, Next.js, Angular, Flutter/Dart, Go, C/C++, Bash, Power BI (DAX, Power Query), ETL, PyTorch, OpenCV, n8n, LLMs e prompts, agentes de WhatsApp (Evolution API), Chatwoot, AWS (EC2), Docker, Linux, Cloudflare, Playwright, Git/GitHub Actions, testes, revisão de código, OWASP/pentest, Scrum e Jira, WCAG</uso_real>
+            <em_parte>Oracle SQL e SQL Server (bases de clientes na Engaja)</em_parte>
+            <base_academica>C#/.NET, Java/Spring Boot e Vue.js: usou na faculdade e em projetos (ImobSystem, Erium, Farmais), não no dia a dia</base_academica>
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM Corporativo, BI e Integrações</name>
-                <type>Solução corporativa privada</type>
-                <description>CRM corporativo customizado arquitetado, desenvolvido, implantado e posteriormente comercializado para novos clientes. Integra bancos PostgreSQL, dashboards e relatórios executivos no Power BI, automações com n8n/Python e integrações com Evolution API, Chatwoot, Cloudfy, Stripe e APIs de negócio.</description>
-                <technologies>PostgreSQL, Power BI, DAX, Power Query, n8n, Python, Evolution API, Chatwoot, Cloudfy, Stripe, REST APIs</technologies>
+                <name>CRM White-label</name>
+                <type>Produto próprio em desenvolvimento (projeto freelance)</type>
+                <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, atendimento, tarefas e relatórios). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
+                <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
             <project id="p02">
                 <name>cHUB — Hub de Jogos em C e WebAssembly</name>
                 <type>Projeto público</type>
-                <description>Hub com mais de 30 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.</description>
+                <description>Hub com 29 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
                 <url>https://chub.pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/Chub</repo>
@@ -292,16 +273,16 @@ const SYSTEM_PROMPT_PT = `
             </project>
             <project id="p15">
                 <name>Bleach.co</name>
-                <type>E-commerce sob contrato</type>
-                <description>Site e loja online que fui contratado para desenvolver para a Bleach.co, marca paulistana de camisetas alvejadas à mão, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo cada estampa e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago e cálculo de frete.</description>
+                <type>Projeto freelance</type>
+                <description>Site e loja online que desenvolveu como freelancer para a Bleach.co, marca paulistana de camisetas alvejadas à mão, no ar em bleachco.com.br. Front em React com Three.js (esqueleto 3D vestindo cada estampa e manchas de água sanitária geradas por código) e backend Node.js/Express com checkout Mercado Pago e cálculo de frete.</description>
                 <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
                 <url>https://bleachco.com.br/</url>
                 <repo>https://github.com/PietroTy/bleachco</repo>
             </project>
             <project id="p-santa-izabel">
                 <name>Santa Izabel</name>
-                <type>Landing page sob contrato</type>
-                <description>Landing page que fui contratado para desenvolver para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.</description>
+                <type>Projeto freelance</type>
+                <description>Landing page que desenvolveu como freelancer para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.</description>
                 <technologies>React, JavaScript, SEO</technologies>
                 <url>não disponível / not available</url>
             </project>
@@ -333,6 +314,27 @@ const SYSTEM_PROMPT_PT = `
                 <technologies>JavaScript, Node.js, Discord.js</technologies>
                 <url>https://github.com/PietroTy/bot-discord</url>
                 <repo>https://github.com/PietroTy/bot-discord</repo>
+            </project>
+            <project id="p-serrasafe">
+                <name>SerraSafe</name>
+                <type>Projeto do IFSP em produção</type>
+                <description>Trabalho do IFSP que virou um produto em produção: IoT e sistemas embarcados que monitoram pontos de risco de queimada na Serra da Paulista, no Leste Paulista, em São João da Boa Vista.</description>
+                <technologies>IoT, sistemas embarcados</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-amethist">
+                <name>Amethist</name>
+                <type>Ferramenta pessoal</type>
+                <description>Gerenciador de arquivos próprio em Go, com espelho entre discos, backup para o Google Drive e rotinas automáticas agendadas. Uso pessoal, sem link público.</description>
+                <technologies>Go, JavaScript</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-cvpearl">
+                <name>CVPearl</name>
+                <type>Ferramenta pessoal</type>
+                <description>Gerador de currículos sob medida para cada vaga: lê o perfil e as notas dele, analisa a vaga e escreve o currículo e a mensagem pro recrutador usando o Claude Code rodando local, com PDF de uma página. Servidor em Go. Uso pessoal, sem link público.</description>
+                <technologies>Go, JavaScript, LLM</technologies>
+                <url>não disponível / not available</url>
             </project>
             <project id="p17">
                 <name>Portfólio Web Interativo PietroTy</name>
@@ -632,7 +634,7 @@ const SYSTEM_PROMPT_PT = `
     <links>
         <github>https://github.com/PietroTy</github>
         <portfolio>https://pietroty.com.br/</portfolio>
-        <linkedin>https://br.linkedin.com/in/pietro-turci-2a419229a</linkedin>
+        <linkedin>https://www.linkedin.com/in/pietro-turci</linkedin>
         <instagram>https://www.instagram.com/pit_tmm</instagram>
         <chub>https://chub.pietroty.com.br/</chub>
         <spotify>https://open.spotify.com/playlist/7z5nGVM2jXRFiCiyMRpTiF?si=0787b2c015444e87</spotify>
@@ -663,173 +665,155 @@ const SYSTEM_PROMPT_EN = `
     <creator_info>
         <full_name>Pietro Turci Moraes Martins</full_name>
         <professional_name>PietroTy</professional_name>
-        <age>19 years old — date of birth pending</age>
-        <current_role>Full-Stack Developer specialized in legacy systems; former Junior Developer at Engaja Soluções Corporativas (Jul–Sep 2026)</current_role>
+        <age>20 years old (born September 1, 2006, in São Paulo, Brazil)</age>
+        <current_role>Developer and Computer Science student at IFSP; was a Junior Developer at Engaja Soluções Corporativas (Jul–Oct 2026) and works on projects as a freelance developer</current_role>
+        <headline>Junior Developer | Data | SQL | BI | AI Automation</headline>
         <email>pietro.turcimm@gmail.com</email>
-        <phone>(11) 99884-8997</phone>
-        <location>São João da Boa Vista, São Paulo, Brazil; official residence in São Paulo city and available for on-site work in the capital.</location>
-        <summary>Full-Stack Developer specialized in legacy systems and their modernization. Started in structured data research for corporate consulting. Strong in modeling and managing relational databases, mainly Oracle SQL and PostgreSQL, plus SQL Server in client environments, and in C#/.NET (MVC). Track record of delivering scalable solutions, migrating legacy interfaces to modern frameworks, and building data pipelines integrated with corporate systems. Pursuing a B.Sc. in Computer Science at IFSP; technical degree in Systems Development from ETEC; fluent English (TOEFL B2).</summary>
+        <phone>+55 (11) 99884-8997</phone>
+        <location>São João da Boa Vista, SP; official residence in São Paulo, SP. Open to remote, hybrid, or on-site roles in São Paulo</location>
+        <availability>Looking for a full-time (CLT) position in any IT area; data is the one he enjoys most.</availability>
+        <summary>Full-stack developer and Computer Science student at IFSP (6th of 8 semesters, expected graduation Dec 2027). Works with data (PostgreSQL, SQL, ETL, and Power BI), AI automation (n8n and WhatsApp agents), and web systems, from the database to cloud infrastructure. Systems Development technician from ETEC, fluent in English (TOEFL B2), and doing undergraduate research on crypto market forecasting.</summary>
         <experience>
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>Junior Developer</role>
-                <period>July 2026 – September 2026</period>
+                <period>July 2026 – October 2026</period>
                 <location>São João da Boa Vista, SP · On-site</location>
-                <contract>PJ</contract>
+                <contract>Contractor (PJ)</contract>
                 <details>
-                    - Full-stack development of corporate systems in C#, .NET, and JavaScript (MVC architecture), leading the progressive migration of legacy interfaces.
-                    - Modeled and administered complex relational databases, working mainly with Oracle SQL and PostgreSQL, plus SQL Server client environments.
-                    - Built ETL routines for clients using BI integrations.
+                    - Ran the company's IT area.
+                    - Built ETL routines and BI integrations for Engaja's clients, working with PostgreSQL, Oracle SQL, and SQL Server on their databases.
+                    - Maintained the n8n automations and the AI agents answering the company's WhatsApp.
+                    - Built Engaja's corporate website with an SEO focus.
                 </details>
             </job>
             <job>
                 <company>Engaja Soluções Corporativas</company>
-                <role>Development Intern</role>
+                <role>AI Automation Intern</role>
                 <period>February 2026 – June 2026</period>
                 <location>São João da Boa Vista, SP · On-site</location>
-                <contract>Estágio</contract>
+                <contract>Internship</contract>
                 <details>
-                    - Built and maintained corporate back-end integrations in C# and .NET (MVC), connecting the system to third-party platforms.
-                    - Created and orchestrated automation flows for sales support, integrating internal systems with conversational agents.
-                    - Supported mapping of business rules and architectural preparation for front-end modernization.
+                    - Built n8n automations connecting forms to the database: assessments, recruiting proposals and contracts, résumé intake, and talent pool.
+                    - Built the AI agents that answer the company's WhatsApp.
+                    - Helped map business rules for internal systems.
                 </details>
             </job>
             <job>
-                <company>MakeLemonad</company>
-                <role>Freelance QA Tester and Code Reviewer</role>
-                <period>April 2026 – August 2026</period>
-                <location>Remote</location>
-                <contract>Freela temporário</contract>
+                <company>Freelance projects</company>
+                <role>Freelance Developer</role>
+                <period>2026</period>
+                <location>Remote and São João da Boa Vista, SP</location>
+                <contract>Freelance, on-demand projects</contract>
                 <details>
-                    - Performed critical code reviews and quality audits for new features in production web applications serving large clients.
-                    - Ran functional, exploratory, regression, and usability tests in staging environments, documenting bugs and UX improvements.
-                    - Executed offensive and defensive security tests, including OWASP vulnerability analysis and penetration testing before deployment.
+                    - Multi-tenant white-label CRM in Node.js (Fastify), React, and PostgreSQL, in development; Engaja Soluções Corporativas is the first company using it.
+                    - WhatsApp AI agents for a store and a medical clinic (appointment reminders and follow-ups tied to the clinic's system).
+                    - Chatwoot help desk rollout, with each salesperson's WhatsApp, for a distributor.
+                    - AWS (EC2) infrastructure with Chatwoot, Evolution API, n8n, PostgreSQL, Redis, and a Cloudflare tunnel, with daily backups.
+                    - Bleach.co website and store (React, Three.js, Node.js, Mercado Pago, Melhor Envio) and the Santa Izabel landing page.
+                    - QA, code review, and security testing (OWASP) for a tech company; now tests and gives product feedback on a new tool of theirs before launch.
+                    - Tailored consulting for a doctoral thesis at PUC, using Escriba.
                 </details>
             </job>
             <job>
-                <company>Consultoria Acadêmica Independente — PUC</company>
-                <role>Applied AI Engineer for Academic Writing</role>
-                <period>May 2026 – September 2026</period>
-                <location>Remote</location>
-                <contract>Freela temporário</contract>
-                <details>
-                    - Provided generative AI consulting for doctoral research through the Escriba platform.
-                    - Developed multi-layer prompt engineering, cross-checking, specialized templates, and hallucination-mitigation mechanisms.
-                    - Supported strict ABNT compliance, textual consistency, and factual verification for high-rigor academic writing.
-                </details>
-            </job>
-            <job>
-                <company>IFSP / ENAP — Projeto COSAIC</company>
+                <company>IFSP / ENAP — COSAIC Project</company>
                 <role>Research Scholar — AI and Accessibility</role>
                 <period>September 2024 – January 2026</period>
                 <location>Remote · Brazil</location>
-                <contract>Bolsa de Iniciação Científica</contract>
+                <contract>Undergraduate research grant</contract>
                 <details>
-                    - Built the Escriba AI platform end to end in Python, integrating LLMs for academic assistance and review.
-                    - Implemented automated web scraping and structured data collection with Playwright.
-                    - Technical review of materials for Brazil's Virtual School of Government (EV.G), enforcing WCAG accessibility standards.
+                    - Built Escriba, a Python/Streamlit platform that generates and adapts academic texts with several Portuguese LLMs (Maritaca/Sabiá), layered prompts, cross-model checking, and ABNT formatting.
+                    - Did web scraping and data collection with Playwright.
+                    - Reviewed materials for Brazil's Virtual School of Government (EV.G) with WCAG, ADDIE, and DEIA, adapted content for assistive technologies, and ran usability tests.
                 </details>
             </job>
             <job>
-                <company>CCAA Perdizes | Lapa | Vila Guilherme</company>
+                <company>CCAA (Perdizes, Lapa, and Vila Guilherme)</company>
                 <role>English Teacher</role>
-                <period>January 2024 – April 2025</period>
+                <period>2024</period>
                 <location>São Paulo, SP · On-site</location>
                 <contract>Freelance</contract>
                 <details>
-                    - Taught immersive and dynamic English classes for different proficiency levels and learning profiles.
-                    - Prepared students for international exams and certifications, with a reported 100% pass rate.
-                    - Applied instructional communication, content adaptation, classroom management, and accessible explanation of complex concepts.
+                    - Taught English to several levels and prepared students for international exams.
                     - Completed CCAA's full English program and Teachers Course.
                 </details>
             </job>
             <job>
-                <company>IFSP — Game of Drones Team (equipe oficial do campus)</company>
-                <role>Software and AI Developer for Autonomous Drones</role>
+                <company>IFSP — Game of Drones Team</company>
+                <role>Autonomous Drone Software and AI</role>
                 <period>2024 – 2025</period>
                 <location>São João da Boa Vista, SP</location>
                 <contract>Extracurricular</contract>
                 <details>
-                    - Worked on IFSP's Game of Drones team, formed to develop an autonomous quadrotor for the EletroQuad SAE BRASIL competition.
-                    - Developed machine learning and computer vision algorithms in Python/OpenCV for autonomous navigation, track reading, and embedded decision-making.
-                    - Worked with color filtering, contour detection, spatial transformations, PID control, obstacle avoidance, and integration with real-time telemetry requirements.
-                    - Optimized and integrated the software on Raspberry Pi/Linux under processing, weight, battery-consumption, and mission-reliability constraints.
-                    - The project belonged to a multidisciplinary university competition requiring the design, documentation, construction, and autonomous flight of drones in missions inspired by practical electric-sector applications.
+                    - Software for an autonomous drone for the EletroQuad SAE Brasil competition: computer vision with Python/OpenCV, PID control, and Raspberry Pi.
                 </details>
             </job>
             <job>
-                <company>OBMEP / IMPA — Programa de Iniciação Científica Jr. (PIC), polo do IME-USP</company>
-                <role>Junior Scientific Initiation Program Participant in Mathematics</role>
-                <period>2022 (16th OBMEP cycle, 2021 edition)</period>
-                <location>São Paulo, SP / exact delivery format pending</location>
-                <contract>Programa de formação científica para estudante premiado na OBMEP</contract>
+                <company>OBMEP / IMPA — Junior Scientific Initiation Program (PIC), linked to IME-USP</company>
+                <role>PIC Jr. participant in Mathematics</role>
+                <period>2022</period>
+                <location>São Paulo, SP</location>
+                <contract>Program for OBMEP award winners</contract>
                 <details>
-                    - Participated in the OBMEP Junior Scientific Initiation Program (PIC) after receiving an Honorable Mention in the 16th edition of the olympiad.
-                    - Completed advanced mathematics studies and scientific activities within the OBMEP program, with an academic connection to IME-USP.
-                    - Developed logical reasoning, problem solving, mathematical proof skills, and independent study habits later applied to computer science, data, and AI.
-                    - The exact dates, delivery format, study hub, and supervising professor still require documentary confirmation.
+                    - Joined PIC Jr. after an Honorable Mention at the 16th OBMEP.
                 </details>
             </job>
         </experience>
+        <research>
+            <item>Undergraduate research and thesis (Nov 2026 – Aug 2027, FAI UFSCar grant, advisor Prof. Arthur): can Bitcoin be forecast with data? Combined price, Reddit sentiment scored by a local LLM, 48k headlines, on-chain, and macro data. Tested 14 signals from the literature and 1,014 combinations with leak-free backtests, costs, and multiple-testing correction. None predicted next-day direction; a trend-and-volatility risk rule cut the worst drawdown from −83% to −35% (2015–2026).</item>
+        </research>
         <education>
             <degree>
-                <institution>IFSP — Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São João da Boa Vista</institution>
+                <institution>IFSP — Federal Institute of São Paulo, São João da Boa Vista Campus</institution>
                 <course>B.Sc. in Computer Science</course>
-                <period>Fevereiro 2024 – Dezembro 2027 (previsão)</period>
-                <status>Em andamento · 5º de 8 semestres</status>
-                <details>Federal public program rated 5/5 by MEC. Coursework includes data structures, algorithms, theory of computation, calculus, linear algebra, analytic geometry, operating systems, networks, AI, computer graphics, databases, and software engineering, plus extension projects, research, and a defended capstone.</details>
+                <period>February 2024 – December 2027 (expected)</period>
+                <status>In progress · 6th of 8 semesters</status>
+                <details>Public federal program with the top MEC rating (5). Includes extension, research, and a thesis defended before a committee.</details>
             </degree>
             <degree>
-                <institution>FATEC-SP — Faculdade de Tecnologia de São Paulo</institution>
+                <institution>FATEC-SP — São Paulo College of Technology</institution>
                 <course>Associate Degree in Systems Analysis and Development</course>
-                <period>Janeiro 2024 – Fevereiro 2024</period>
-                <status>Transferido para o IFSP</status>
-                <details>Brief enrollment before transferring to the bachelor's program, covering software design, problem-solving, and systems-development fundamentals.</details>
+                <period>January 2024 – February 2024</period>
+                <status>Transferred to IFSP</status>
             </degree>
             <degree>
                 <institution>ETEC Horácio Augusto da Silveira — São Paulo, SP</institution>
-                <course>High School with a Technical Degree in Systems Development</course>
-                <period>2021 – Dezembro 2023</period>
-                <status>Concluído</status>
-                <details>Hands-on education across the software lifecycle: requirements, OOP, Java, JavaScript, React, Angular, SQL/Oracle, Android development, information security, Arduino, APIs, documentation, testing, Git, and agile methods. Capstone: Erium.</details>
+                <course>High School integrated with a Systems Development Technical Degree</course>
+                <period>2021 – December 2023</period>
+                <status>Completed</status>
+                <details>Capstone: Erium, an app for air travelers (baggage, passport, flight rules), built as a team in Java/Spring Boot and React. Also built ImobSystem in C#/.NET.</details>
             </degree>
             <degree>
                 <institution>CCAA</institution>
-                <course>Complete English Program and Teachers Course</course>
-                <period>Datas pendentes</period>
-                <status>Concluído</status>
-                <details>Advanced oral, written, and grammatical English training plus pedagogical and methodological preparation for teaching.</details>
+                <course>Full English Program and Teachers Course</course>
+                <status>Completed</status>
             </degree>
             <degree>
-                <institution>CEL — Centro de Estudo de Línguas da E.E. Senador Paulo Egydio de Oliveira Carvalho</institution>
-                <course>French Language Course</course>
-                <period>1 ano · datas pendentes</period>
-                <status>Concluído</status>
-                <details>Basic communication, pronunciation, essential grammar, and everyday vocabulary.</details>
+                <institution>CEL — Language Center at E.E. Senador Paulo Egydio de Oliveira Carvalho</institution>
+                <course>French course</course>
+                <period>1 year</period>
+                <status>Completed</status>
             </degree>
         </education>
-        <languages>Native Portuguese; fluent English with TOEFL associated with CEFR B2, complete CCAA English program and Teachers Course; intermediate French; basic Spanish; basic Italian.</languages>
+        <languages>Portuguese (native); English (fluent: TOEFL B2, CCAA full program and Teachers Course); French (1 year at CEL); Spanish (basic); Italian (basic).</languages>
         <skills>
-            <linguagens>Python, JavaScript, TypeScript, Java, C, C++, C#, Dart, PHP, Shell Script/Bash, HTML5, CSS3, SASS, SQL, R</linguagens>
-            <dados_bi>PostgreSQL, DuckDB, Oracle, MySQL, SQLite, Pandas, NumPy, Scikit-learn, XGBoost, Random Forest, PyTorch, Spark, Databricks, Airflow, Jupyter, Google Colab, ETL, Data Pipelines, Data Wrangling, Modelagem Dimensional, SQL Analytics, Power BI, DAX, Power Query/M, Modelagem de Relacionamentos, Dashboards, Análise de Marketing, Análise Comercial, Análise de RH, Análise de Logística, Análise Financeira e Contábil, Análise do Mercado de Ações, Segmentação de Clientes com ML, Detecção de Anomalias, Séries Temporais, Dados públicos de CNPJs</dados_bi>
-            <ia_automacao>LLMs, Prompt Engineering, Agentes de IA, LangChain, CrewAI, n8n/RPA, Maritaca AI/Sabiá, GPT, Machine Learning, Visão Computacional, OpenCV, Streamlit, Gradio, Evolution API, Chatwoot, Automação de WhatsApp, Mitigação de alucinações, Pipelines de verificação factual</ia_automacao>
-            <web_mobile_backend>React, React Native, Next.js, Angular, jQuery, Flutter, Node.js, Spring Boot, JPA/Hibernate, JSP/Servlets, APIs REST, JWT, OAuth, Socket.io, Styled Components, Tailwind CSS, MUI, Microserviços, MVC, WebAssembly, OOXML/DOCX, FFmpeg, sharp, yt-dlp</web_mobile_backend>
-            <cloud_devops_tools>Git, GitHub, GitHub Actions, CI/CD, Docker, AWS, GCP, Linux, Self-Hosting, Scrum, Kanban, Jira, Backlog Management, Playwright, Testes E2E, Testes funcionais, Testes de regressão, OWASP, Penetration Testing, Web Scraping, Figma, Design Systems, Web Vitals, Google Tag Manager, Stripe API, Cloudfy, Android Studio, Gradle, Raspberry Pi, Arduino, ESP32</cloud_devops_tools>
-            <lideranca_pesquisa_comunicacao>Liderança técnica, Governança tecnológica, Decisão arquitetural, Coordenação de projetos e squads, Gestão de backlog, Documentação técnica, Suporte técnico e consultivo, Pesquisa aplicada, Metodologia científica, Design educacional ADDIE, WCAG, DEIA, Tecnologias assistivas, Testes de usabilidade, Docência, Comunicação técnica, Inglês fluente</lideranca_pesquisa_comunicacao>
+            <hands_on>Python, SQL/PostgreSQL, JavaScript/TypeScript, Node.js, React, React Native, Next.js, Angular, Flutter/Dart, Go, C/C++, Bash, Power BI (DAX, Power Query), ETL, PyTorch, OpenCV, n8n, LLMs and prompting, WhatsApp agents (Evolution API), Chatwoot, AWS (EC2), Docker, Linux, Cloudflare, Playwright, Git/GitHub Actions, testing, code review, OWASP/pentesting, Scrum and Jira, WCAG</hands_on>
+            <partial>Oracle SQL and SQL Server (client databases at Engaja)</partial>
+            <academic_base>C#/.NET, Java/Spring Boot, and Vue.js: used in college and projects (ImobSystem, Erium, Farmais), not day to day</academic_base>
         </skills>
         <projects>
             <project id="p01">
-                <name>CRM Corporativo, BI e Integrações</name>
-                <type>Solução corporativa privada</type>
-                <description>Custom corporate CRM architected, developed, deployed, and later commercialized to new clients. It integrates PostgreSQL databases, Power BI executive dashboards and reports, n8n/Python automation, and business integrations using Evolution API, Chatwoot, Cloudfy, Stripe, and APIs.</description>
-                <technologies>PostgreSQL, Power BI, DAX, Power Query, n8n, Python, Evolution API, Chatwoot, Cloudfy, Stripe, REST APIs</technologies>
+                <name>CRM White-label</name>
+                <type>Own product in development (freelance project)</type>
+                <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, support, tasks, and reports). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
+                <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
             <project id="p02">
                 <name>cHUB — Hub de Jogos em C e WebAssembly</name>
                 <type>Projeto público</type>
-                <description>Hub with over 30 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.</description>
+                <description>Hub with 29 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.</description>
                 <technologies>C, Raylib, WebAssembly, HTML, CSS, JavaScript</technologies>
                 <url>https://chub.pietroty.com.br/</url>
                 <repo>https://github.com/PietroTy/Chub</repo>
@@ -932,16 +916,16 @@ const SYSTEM_PROMPT_EN = `
             </project>
             <project id="p15">
                 <name>Bleach.co</name>
-                <type>Client e-commerce</type>
-                <description>Website and online store I was hired to build for Bleach.co, a São Paulo brand of hand-bleached t-shirts, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing each print and code-generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout and shipping quotes.</description>
+                <type>Freelance project</type>
+                <description>Website and online store he built as a freelancer for Bleach.co, a São Paulo brand of hand-bleached t-shirts, live at bleachco.com.br. React front end with Three.js (a 3D skeleton wearing each print and code-generated bleach stains) and a Node.js/Express back end with Mercado Pago checkout and shipping quotes.</description>
                 <technologies>React, Three.js, Node.js, Express, Mercado Pago</technologies>
                 <url>https://bleachco.com.br/</url>
                 <repo>https://github.com/PietroTy/bleachco</repo>
             </project>
             <project id="p-santa-izabel">
                 <name>Santa Izabel</name>
-                <type>Client landing page</type>
-                <description>Landing page I was hired to build for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.</description>
+                <type>Freelance project</type>
+                <description>Landing page he built as a freelancer for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.</description>
                 <technologies>React, JavaScript, SEO</technologies>
                 <url>não disponível / not available</url>
             </project>
@@ -973,6 +957,27 @@ const SYSTEM_PROMPT_EN = `
                 <technologies>JavaScript, Node.js, Discord.js</technologies>
                 <url>https://github.com/PietroTy/bot-discord</url>
                 <repo>https://github.com/PietroTy/bot-discord</repo>
+            </project>
+            <project id="p-serrasafe">
+                <name>SerraSafe</name>
+                <type>IFSP project in production</type>
+                <description>An IFSP project that became a product in production: IoT and embedded systems monitoring wildfire risk spots in Serra da Paulista, in the Leste Paulista region, São João da Boa Vista.</description>
+                <technologies>IoT, embedded systems</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-amethist">
+                <name>Amethist</name>
+                <type>Personal tool</type>
+                <description>His own file manager in Go, with mirroring between disks, Google Drive backup, and scheduled automatic routines. Personal use, no public link.</description>
+                <technologies>Go, JavaScript</technologies>
+                <url>não disponível / not available</url>
+            </project>
+            <project id="p-cvpearl">
+                <name>CVPearl</name>
+                <type>Personal tool</type>
+                <description>Tailored résumé generator: reads his profile and notes, analyzes the job posting, and writes the résumé and the recruiter message using Claude Code running locally, with a one-page PDF. Go server. Personal use, no public link.</description>
+                <technologies>Go, JavaScript, LLM</technologies>
+                <url>não disponível / not available</url>
             </project>
             <project id="p17">
                 <name>Portfólio Web Interativo PietroTy</name>
@@ -1272,7 +1277,7 @@ const SYSTEM_PROMPT_EN = `
     <links>
         <github>https://github.com/PietroTy</github>
         <portfolio>https://pietroty.com.br/</portfolio>
-        <linkedin>https://br.linkedin.com/in/pietro-turci-2a419229a</linkedin>
+        <linkedin>https://www.linkedin.com/in/pietro-turci</linkedin>
         <instagram>https://www.instagram.com/pit_tmm</instagram>
         <chub>https://chub.pietroty.com.br/</chub>
         <spotify>https://open.spotify.com/playlist/7z5nGVM2jXRFiCiyMRpTiF?si=0787b2c015444e87</spotify>

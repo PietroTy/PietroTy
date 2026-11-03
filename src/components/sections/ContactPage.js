@@ -16,19 +16,15 @@ const contactConfigMap = {
 };
 
 const SUBJECTS_PT = [
-  "Site / Landing Page",
-  "Consultoria de Dados",
-  "Automação de Processos",
-  "Bot WhatsApp / Redes Sociais",
-  "Freelance / Projeto",
+  "Vaga / Processo seletivo",
+  "Entrevista",
+  "Projeto do portfólio",
   "Outro",
 ];
 const SUBJECTS_EN = [
-  "Website / Landing Page",
-  "Data Consulting",
-  "Process Automation",
-  "WhatsApp Bot / Social Media",
-  "Freelance / Project",
+  "Job opening / Hiring",
+  "Interview",
+  "Portfolio project",
   "Other",
 ];
 
@@ -466,7 +462,7 @@ export default function ContactPage({ lang }) {
                 </label>
                 <textarea
                   className="booking-input booking-textarea"
-                  placeholder={pt ? "Conte um pouco sobre o projeto ou objetivo da conversa..." : "Tell me a bit about your project..."}
+                  placeholder={pt ? "Conte um pouco sobre a vaga ou o objetivo da conversa..." : "Tell me a bit about the role or what you'd like to talk about..."}
                   value={form.message}
                   onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                   rows={3}
@@ -539,8 +535,8 @@ export default function ContactPage({ lang }) {
             <h3 className="contact-lower-title">{pt ? "Outras formas de contato" : "Other ways to connect"}</h3>
             <p className="contact-pitch">
               {pt
-                ? "Tem uma ideia de projeto, precisa de consultoria em inteligência artificial, engenharia de dados ou automações? Me chame em qualquer um dos canais abaixo."
-                : "Have a project idea, need AI consulting, data engineering, or process automation? Reach out on any channel below."}
+                ? "Tem uma vaga ou quer conversar sobre algum projeto daqui? Me chame em qualquer um dos canais abaixo."
+                : "Have an opening or want to talk about one of these projects? Reach out on any channel below."}
             </p>
 
             <div className="contact-meta-list">
@@ -557,15 +553,15 @@ export default function ContactPage({ lang }) {
                 <div>
                   <strong>{pt ? "Localização" : "Location"}</strong>
                   <br />
-                  <span>São Paulo — SP ({pt ? "Remoto ou Híbrido" : "Remote or Hybrid"})</span>
+                  <span>São Paulo — SP ({pt ? "remoto, híbrido ou presencial" : "remote, hybrid, or on-site"})</span>
                 </div>
               </div>
               <div className="contact-meta-item">
                 <PixelIcon name="briefcase" size={20} className="contact-meta-icon" />
                 <div>
-                  <strong>{pt ? "Serviços e Contratos" : "Services & Contracts"}</strong>
+                  <strong>{pt ? "Disponibilidade" : "Availability"}</strong>
                   <br />
-                  <span>{pt ? "Disponível para consultoria e contratos PJ." : "Available for consulting and B2B contracts."}</span>
+                  <span>{pt ? "Aberto a vagas CLT: remoto, híbrido ou presencial em São Paulo." : "Open to full-time roles: remote, hybrid, or on-site in São Paulo."}</span>
                 </div>
               </div>
             </div>

@@ -6,36 +6,36 @@ export default function CrmEngajaPage({ lang, setPage }) {
 
   const features = [
     {
-      titlePt: "Desenvolvimento 100% do Zero",
-      titleEn: "Built 100% From Scratch",
-      descPt: "Arquitetura customizada projetada especificamente para atender a complexidade de processos, regras de negócio e fluxos de atendimento corporativo.",
-      descEn: "Custom software architecture engineered from the ground up to solve complex enterprise business rules and operational workflows.",
-      iconPt: "// DESENVOLVIMENTO PROPRÍETÁRIO",
-      iconEn: "// CUSTOM ARCHITECTURE"
+      titlePt: "Várias Empresas, Um Sistema",
+      titleEn: "Many Companies, One System",
+      descPt: "Arquitetura multiempresa: cada empresa usa o mesmo CRM com os próprios dados isolados no banco, com regras de acesso por empresa.",
+      descEn: "Multi-tenant architecture: each company uses the same CRM with its own data isolated in the database, with per-company access rules.",
+      iconPt: "// MULTIEMPRESA",
+      iconEn: "// MULTI-TENANT"
     },
     {
-      titlePt: "Integração Nativa com Power BI & DAX",
-      titleEn: "Native Power BI Integration & DAX",
-      descPt: "Modelagem de dados otimizada para alimentar dashboards executivos em Power BI em tempo real com relatórios de performance, conversão e receita.",
-      descEn: "Optimized data modeling feeding real-time Power BI executive dashboards for performance, conversion, and revenue analytics.",
-      iconPt: "// INTEGRADO COM POWER BI",
-      iconEn: "// NATIVE POWER BI"
+      titlePt: "Do Comercial ao Financeiro",
+      titleEn: "From Sales to Finance",
+      descPt: "Contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro e logística no mesmo lugar.",
+      descEn: "Contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, and logistics in one place.",
+      iconPt: "// MÓDULOS",
+      iconEn: "// MODULES"
     },
     {
-      titlePt: "Modelagem Relacional & PostgreSQL",
-      titleEn: "Relational Modeling & PostgreSQL Engine",
-      descPt: "Estrutura relacional robusta em PostgreSQL para alta disponibilidade, rastreabilidade de conversas, gestão de leads e histórico de clientes.",
-      descEn: "Robust PostgreSQL relational schema for high availability, interaction history, lead scoring, and account management.",
+      titlePt: "PostgreSQL & Auditoria",
+      titleEn: "PostgreSQL & Audit Trail",
+      descPt: "Modelagem relacional em PostgreSQL com registro de auditoria das alterações e eventos para integrações.",
+      descEn: "Relational PostgreSQL modeling with an audit trail of changes and events for integrations.",
       iconPt: "// BANCO POSTGRESQL",
       iconEn: "// POSTGRESQL DB"
     },
     {
-      titlePt: "Automação Multicanal & APIs (n8n / Evolution)",
-      titleEn: "Multichannel Automation & APIs",
-      descPt: "Conexão nativa com n8n, WhatsApp API, gateways de pagamento e telefonia VoIP para automação de tarefas repetitivas.",
-      descEn: "Native integration with n8n pipelines, WhatsApp API, payment gateways, and VoIP telephony to automate manual tasks.",
-      iconPt: "// AUTOMAÇÃO & APIS",
-      iconEn: "// WORKFLOW APIS"
+      titlePt: "Testado de Ponta a Ponta",
+      titleEn: "Tested End to End",
+      descPt: "API em Node.js (Fastify) com testes automatizados rodando contra um PostgreSQL de verdade, e front em React.",
+      descEn: "Node.js (Fastify) API with automated tests running against a real PostgreSQL database, plus a React front end.",
+      iconPt: "// QUALIDADE",
+      iconEn: "// QUALITY"
     }
   ];
 
@@ -45,20 +45,20 @@ export default function CrmEngajaPage({ lang, setPage }) {
         {/* Hero Section */}
         <section className="hero-section" style={{ alignItems: "center" }}>
           <div className="hero-content">
-            <div className="hero-tag">Solução Corporativa • PostgreSQL • Power BI Nativo • n8n • APIs</div>
+            <div className="hero-tag">Multiempresa • Node.js • React • PostgreSQL</div>
             <h1 className="hero-title" style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
-              CRM Corporativo & BI
+              CRM White-label
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Sistema de CRM e inteligência de negócios desenvolvido 100% do zero para ambiente empresarial. Conta com integração nativa com o Power BI, banco PostgreSQL e ecossistema de automações multicanal."
-                : "Corporate CRM and Business Intelligence platform built 100% from scratch for enterprise operation. Features native Power BI integration, PostgreSQL DB, and multichannel automation workflows."
+                ? "CRM multiempresa: várias empresas usam o mesmo sistema, cada uma com seus dados isolados. Feito em Node.js, React e PostgreSQL, cobre do comercial ao financeiro."
+                : "Multi-tenant CRM: several companies share the same system, each with its own isolated data. Built with Node.js, React, and PostgreSQL, it covers sales through finance."
               }
             </p>
 
             <div style={{ marginTop: "2rem" }}>
               <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
-                // {pt ? "PROJETO PRIVADO (NDA)" : "PRIVATE PROJECT (NDA)"}
+                // {pt ? "EM DESENVOLVIMENTO · CÓDIGO PRIVADO" : "IN DEVELOPMENT · PRIVATE CODE"}
               </span>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
               onClick={() => setModalData("crm_card")}
             >
               <div style={{ fontFamily: "var(--mono)", color: "#fff", fontWeight: "bold", fontSize: "1.8rem" }}>CRM</div>
-              <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.8)", fontWeight: "bold", fontSize: "0.9rem" }}>CRM & BI System</div>
+              <div style={{ fontFamily: "var(--mono)", color: "rgba(255,255,255,0.8)", fontWeight: "bold", fontSize: "0.9rem" }}>White-label CRM</div>
             </div>
           </div>
         </section>
@@ -99,25 +99,25 @@ export default function CrmEngajaPage({ lang, setPage }) {
           }}
         >
           <h2 style={{ fontSize: "1.2rem", fontFamily: "var(--mono)", fontWeight: "700", color: "var(--p2)", marginBottom: "1rem", letterSpacing: "0.05em" }}>
-            {pt ? "// SIGILO CORPORATIVO" : "// CORPORATE CONFIDENTIALITY"}
+            {pt ? "// SOBRE O PROJETO" : "// ABOUT THE PROJECT"}
           </h2>
           <div style={{ color: "var(--text)", lineHeight: 1.7, fontSize: "1rem" }}>
             {pt ? (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  Este CRM corporativo foi concebido e construído <strong>100% do zero</strong> para solucionar gargalos operacionais e integrar em tempo real os dados de atendimento, vendas e pós-venda.
+                  O CRM nasceu para organizar atendimento, vendas e pós-venda num lugar só e virou um produto <strong>white-label</strong>: a mesma base atende várias empresas, cada uma com a sua marca e os seus dados.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Como a aplicação foi desenvolvida para <strong>uma empresa privada</strong>, a especificação detalhada da arquitetura interna, esquemas de tabelas e códigos-fonte proprietários são mantidos sob sigilo corporativo. O projeto atesta a capacidade de entregar sistemas de missão crítica customizados com inteligência analítica em Power BI.
+                  Está em desenvolvimento, e a <strong>Engaja Soluções Corporativas</strong> é a primeira empresa a usar. O código é privado.
                 </p>
               </>
             ) : (
               <>
                 <p style={{ marginBottom: "1rem" }}>
-                  This enterprise CRM was architected and built <strong>100% from scratch</strong> to eliminate operational bottlenecks and streamline customer support, sales, and analytics data in real time.
+                  The CRM started as a way to keep customer support, sales, and after-sales in one place and became a <strong>white-label</strong> product: the same codebase serves several companies, each with its own brand and data.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Because the platform was built for <strong>a private enterprise</strong>, detailed internal database schemas and proprietary source code are protected under corporate NDA. The project demonstrates the capacity to deliver mission-critical software with native Power BI analytics.
+                  It is in development, and <strong>Engaja Soluções Corporativas</strong> is the first company using it. The code is private.
                 </p>
               </>
             )}
@@ -148,18 +148,18 @@ export default function CrmEngajaPage({ lang, setPage }) {
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Analytics Executivo" : "Executive Analytics"}
+                {pt ? "Backend" : "Backend"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                Power BI & Fórmulas DAX
+                Node.js (Fastify)
               </p>
             </div>
             <div>
               <h4 style={{ color: "var(--p2)", fontFamily: "var(--mono)", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "0.05em" }}>
-                {pt ? "Automação & APIs" : "Automation & APIs"}
+                {pt ? "Front-end" : "Front end"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                n8n, Python & Evolution API
+                React
               </p>
             </div>
             <div>
@@ -167,7 +167,7 @@ export default function CrmEngajaPage({ lang, setPage }) {
                 {pt ? "Status do Projeto" : "Project Status"}
               </h4>
               <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>
-                {pt ? "Encerrado (NDA)" : "Closed (NDA)"}
+                {pt ? "Em desenvolvimento" : "In development"}
               </p>
             </div>
           </div>
@@ -208,11 +208,11 @@ export default function CrmEngajaPage({ lang, setPage }) {
               onClick={(e) => e.stopPropagation()}
             >
               <div style={{ fontFamily: "var(--mono)", fontSize: "3rem", fontWeight: "bold", color: "#fff", marginBottom: "1rem" }}>CRM</div>
-              <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>CRM & BI System</h2>
+              <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: "0.8rem", fontFamily: "var(--mono)" }}>White-label CRM</h2>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.6 }}>
                 {pt 
-                  ? "Solução corporativa desenvolvida 100% do zero com banco PostgreSQL, dashboards executivos em Power BI e automação n8n."
-                  : "Custom corporate solution built 100% from scratch combining PostgreSQL DB, Power BI executive dashboards, and n8n automations."
+                  ? "CRM multiempresa em Node.js, React e PostgreSQL, em desenvolvimento."
+                  : "Multi-tenant CRM in Node.js, React, and PostgreSQL, in development."
                 }
               </p>
             </div>
