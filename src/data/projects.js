@@ -110,6 +110,24 @@ export const PROJECTS = [
     "color": "#8b5cf6"
   },
   {
+    "id": "calcite",
+    "namePt": "Calcite",
+    "nameEn": "Calcite",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
+    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
+    "tags": [
+      "app",
+      "Go",
+      "React",
+      "LLM"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#8b5cf6"
+  },
+  {
     "id": "cvmaker",
     "namePt": "CVMaker",
     "nameEn": "CVMaker",
@@ -146,22 +164,22 @@ export const PROJECTS = [
     "color": "#8b5cf6"
   },
   {
-    "id": "calcite",
-    "namePt": "Calcite",
-    "nameEn": "Calcite",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
-    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
+    "id": "etl-cnpj",
+    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
+    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
+    "taglinePt": "Engenharia de dados",
+    "taglineEn": "Data engineering",
+    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
+    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
     "tags": [
-      "app",
-      "Go",
-      "React",
-      "LLM"
+      "dados",
+      "Python",
+      "Pandas",
+      "NumPy"
     ],
     "link": null,
     "featured": true,
-    "color": "#8b5cf6"
+    "color": "#06b6d4"
   },
   {
     "id": "amethist",
@@ -200,42 +218,6 @@ export const PROJECTS = [
     "color": "#e8772e"
   },
   {
-    "id": "whatsapp-bot",
-    "namePt": "Bot de WhatsApp",
-    "nameEn": "WhatsApp Bot",
-    "taglinePt": "Automação e IA para WhatsApp",
-    "taglineEn": "WhatsApp automation and AI",
-    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
-    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
-    "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "whatsapp-web.js"
-    ],
-    "link": "https://github.com/PietroTy/bot-whatsapp",
-    "featured": false,
-    "color": "#22c55e"
-  },
-  {
-    "id": "etl-cnpj",
-    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
-    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
-    "taglinePt": "Engenharia de dados",
-    "taglineEn": "Data engineering",
-    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
-    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
-    "tags": [
-      "dados",
-      "Python",
-      "Pandas",
-      "NumPy"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#06b6d4"
-  },
-  {
     "id": "escriba",
     "namePt": "Escriba AI",
     "nameEn": "Escriba AI",
@@ -254,21 +236,22 @@ export const PROJECTS = [
     "color": "#f59e0b"
   },
   {
-    "id": "garimpo-sp",
-    "namePt": "GarimpoSP",
-    "nameEn": "GarimpoSP",
-    "taglinePt": "Projeto pessoal",
-    "taglineEn": "Personal project",
-    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
-    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
+    "id": "whatsapp-bot",
+    "namePt": "Bot de WhatsApp",
+    "nameEn": "WhatsApp Bot",
+    "taglinePt": "Automação e IA para WhatsApp",
+    "taglineEn": "WhatsApp automation and AI",
+    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
+    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
     "tags": [
-      "site",
-      "Curadoria",
-      "Mapa"
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "whatsapp-web.js"
     ],
-    "link": null,
+    "link": "https://github.com/PietroTy/bot-whatsapp",
     "featured": false,
-    "color": "#c2410c"
+    "color": "#22c55e"
   },
   {
     "id": "drone-autonomo",
@@ -343,22 +326,21 @@ export const PROJECTS = [
     "color": "#14b8a6"
   },
   {
-    "id": "dshub",
-    "namePt": "Data Science Hub",
-    "nameEn": "Data Science Hub",
-    "taglinePt": "Portfólio de dados",
-    "taglineEn": "Data portfolio",
-    "descPt": "Portal em Streamlit que centraliza soluções de Business Intelligence, Big Data e Machine Learning para casos de fintech, modelagem de risco, growth/marketing analytics e saúde preditiva.",
-    "descEn": "Streamlit portal centralizing Business Intelligence, Big Data, and Machine Learning solutions for fintech, risk modeling, growth/marketing analytics, and predictive health use cases.",
+    "id": "garimpo-sp",
+    "namePt": "GarimpoSP",
+    "nameEn": "GarimpoSP",
+    "taglinePt": "Projeto pessoal",
+    "taglineEn": "Personal project",
+    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
+    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
     "tags": [
-      "dados",
-      "Python",
-      "Streamlit",
-      "Pandas"
+      "site",
+      "Curadoria",
+      "Mapa"
     ],
-    "link": "https://datascienceh.streamlit.app/",
+    "link": null,
     "featured": true,
-    "color": "#0ea5e9"
+    "color": "#c2410c"
   },
   {
     "id": "magik-tarot",
@@ -397,22 +379,22 @@ export const PROJECTS = [
     "color": "#0ea5e9"
   },
   {
-    "id": "pitcraft",
-    "namePt": "PitCraft",
-    "nameEn": "PitCraft",
-    "taglinePt": "Infraestrutura e comunidade",
-    "taglineEn": "Infrastructure and community",
-    "descPt": "Infraestrutura Linux para servidores Minecraft Java/Forge/Fabric/NeoForge/Spigot por temporadas, com automações Bash, sincronização de modpacks, DNS dinâmico, backups, plugins, crossplay via Geyser e chat de voz por proximidade.",
-    "descEn": "Linux infrastructure for seasonal Minecraft Java/Forge/Fabric/NeoForge/Spigot servers with Bash automation, modpack synchronization, dynamic DNS, backups, plugins, Geyser crossplay, and proximity voice chat.",
+    "id": "dshub",
+    "namePt": "Data Science Hub",
+    "nameEn": "Data Science Hub",
+    "taglinePt": "Portfólio de dados",
+    "taglineEn": "Data portfolio",
+    "descPt": "Portal em Streamlit que centraliza soluções de Business Intelligence, Big Data e Machine Learning para casos de fintech, modelagem de risco, growth/marketing analytics e saúde preditiva.",
+    "descEn": "Streamlit portal centralizing Business Intelligence, Big Data, and Machine Learning solutions for fintech, risk modeling, growth/marketing analytics, and predictive health use cases.",
     "tags": [
-      "infra",
-      "Linux",
-      "Java",
-      "Bash"
+      "dados",
+      "Python",
+      "Streamlit",
+      "Pandas"
     ],
-    "link": "https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh",
+    "link": "https://datascienceh.streamlit.app/",
     "featured": true,
-    "color": "#f43f5e"
+    "color": "#0ea5e9"
   },
   {
     "id": "discord-bot",
@@ -451,22 +433,22 @@ export const PROJECTS = [
     "color": "#9d5cfc"
   },
   {
-    "id": "n8n-forms",
-    "namePt": "Formulários & Workflows n8n",
-    "nameEn": "n8n Forms & Workflows",
-    "taglinePt": "Automação de processos & dados",
-    "taglineEn": "Process automation & data flows",
-    "descPt": "Sistema de formulários corporativos dinâmicos e altamente personalizados integrados a bancos de dados PostgreSQL e ferramentas internas via pipelines no n8n. Automação de validação de dados, envio de notificações e sincronização por webhooks em tempo real.",
-    "descEn": "Custom dynamic corporate form system integrated with PostgreSQL databases and internal tools via n8n automation pipelines. Includes real-time data validation, notification triggers, and webhook synchronization.",
+    "id": "pitcraft",
+    "namePt": "PitCraft",
+    "nameEn": "PitCraft",
+    "taglinePt": "Infraestrutura e comunidade",
+    "taglineEn": "Infrastructure and community",
+    "descPt": "Infraestrutura Linux para servidores Minecraft Java/Forge/Fabric/NeoForge/Spigot por temporadas, com automações Bash, sincronização de modpacks, DNS dinâmico, backups, plugins, crossplay via Geyser e chat de voz por proximidade.",
+    "descEn": "Linux infrastructure for seasonal Minecraft Java/Forge/Fabric/NeoForge/Spigot servers with Bash automation, modpack synchronization, dynamic DNS, backups, plugins, Geyser crossplay, and proximity voice chat.",
     "tags": [
-      "saas",
-      "n8n",
-      "PostgreSQL",
-      "Node.js"
+      "infra",
+      "Linux",
+      "Java",
+      "Bash"
     ],
-    "link": null,
+    "link": "https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh",
     "featured": true,
-    "color": "#ea580c"
+    "color": "#f43f5e"
   },
   {
     "id": "chatwoot-custom",
@@ -503,6 +485,24 @@ export const PROJECTS = [
     "link": "https://engaja.com.br/",
     "featured": false,
     "color": "#7c3aed"
+  },
+  {
+    "id": "n8n-forms",
+    "namePt": "Formulários & Workflows n8n",
+    "nameEn": "n8n Forms & Workflows",
+    "taglinePt": "Automação de processos & dados",
+    "taglineEn": "Process automation & data flows",
+    "descPt": "Sistema de formulários corporativos dinâmicos e altamente personalizados integrados a bancos de dados PostgreSQL e ferramentas internas via pipelines no n8n. Automação de validação de dados, envio de notificações e sincronização por webhooks em tempo real.",
+    "descEn": "Custom dynamic corporate form system integrated with PostgreSQL databases and internal tools via n8n automation pipelines. Includes real-time data validation, notification triggers, and webhook synchronization.",
+    "tags": [
+      "saas",
+      "n8n",
+      "PostgreSQL",
+      "Node.js"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#ea580c"
   },
   {
     "id": "imobsystem",
