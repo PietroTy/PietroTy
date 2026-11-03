@@ -97,12 +97,12 @@ const SYSTEM_PROMPT_PT = `
             </job>
             <job>
                 <company>IFSP — Equipe Game of Drones</company>
-                <role>Software e IA para Drone Autônomo</role>
+                <role>Capitão da equipe de Software</role>
                 <period>2024 – 2025</period>
                 <location>São João da Boa Vista, SP</location>
                 <contract>Extracurricular</contract>
                 <details>
-                    - Software de um drone autônomo para a competição EletroQuad SAE Brasil: visão computacional com Python/OpenCV, controle PID e Raspberry Pi.
+                    - Liderou a equipe de software (15+ alunos) de um drone autônomo para a competição EletroQuad SAE Brasil: visão computacional com Python/OpenCV, controle PID e Raspberry Pi.
                 </details>
             </job>
             <job>
@@ -162,8 +162,8 @@ const SYSTEM_PROMPT_PT = `
             <project id="p01">
                 <name>CRM White-label</name>
                 <type>Produto próprio em desenvolvimento (projeto freelance)</type>
-                <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, tarefas, pedidos, estoque e financeiro). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
-                <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
+                <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, tarefas, pedidos, estoque, financeiro e relatórios de BI). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
+                <technologies>Node.js, Fastify, React, PostgreSQL, BI</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
@@ -740,12 +740,12 @@ const SYSTEM_PROMPT_EN = `
             </job>
             <job>
                 <company>IFSP — Game of Drones Team</company>
-                <role>Autonomous Drone Software and AI</role>
+                <role>Software Team Captain</role>
                 <period>2024 – 2025</period>
                 <location>São João da Boa Vista, SP</location>
                 <contract>Extracurricular</contract>
                 <details>
-                    - Software for an autonomous drone for the EletroQuad SAE Brasil competition: computer vision with Python/OpenCV, PID control, and Raspberry Pi.
+                    - Led the software team (15+ students) of an autonomous drone for the EletroQuad SAE Brasil competition: computer vision with Python/OpenCV, PID control, and Raspberry Pi.
                 </details>
             </job>
             <job>
@@ -805,8 +805,8 @@ const SYSTEM_PROMPT_EN = `
             <project id="p01">
                 <name>CRM White-label</name>
                 <type>Own product in development (freelance project)</type>
-                <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, tasks, orders, inventory, and finance). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
-                <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
+                <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, tasks, orders, inventory, finance, and BI reports). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
+                <technologies>Node.js, Fastify, React, PostgreSQL, BI</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
             </project>
