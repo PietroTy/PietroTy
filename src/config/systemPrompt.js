@@ -329,8 +329,8 @@ const SYSTEM_PROMPT_PT = `
                 <technologies>Flutter, Dart, Python, yt-dlp, Deezer API, Syncthing</technologies>
                 <url>não disponível / not available</url>
             </project>
-            <project id="p-amethist">
-                <name>Amethist</name>
+            <project id="p-amethyst">
+                <name>Amethyst</name>
                 <type>Ferramenta pessoal</type>
                 <description>Gerenciador de arquivos próprio com cara de drive: galeria com miniaturas (ffmpeg), prévia de PDFs e documentos do Office, espelho da pasta de projetos de hora em hora, backup diário para o Google Drive (rclone) e rotinas agendadas. Servidor em Go com a interface embutida, app Android em Flutter e acesso pela internet via túnel da Cloudflare. Uso pessoal, sem link público.</description>
                 <technologies>Go, JavaScript, Flutter, rclone, Cloudflare Tunnel</technologies>
@@ -339,7 +339,7 @@ const SYSTEM_PROMPT_PT = `
             <project id="p-cvpearl">
                 <name>CVPearl</name>
                 <type>Ferramenta pessoal · surgiu do CVMaker, o MVP original</type>
-                <description>Gerador de currículos sob medida para cada vaga: lê o perfil e as notas dele, analisa a vaga e escreve o currículo e a mensagem pro recrutador usando o Claude Code rodando local, com PDF de uma página. Servidor em Go. Uso pessoal, sem link público.</description>
+                <description>Gerador de currículos sob medida para cada vaga: lê o perfil e as notas dele, analisa a vaga e escreve o currículo e a mensagem pro recrutador usando o Claude Code rodando local, com PDF de uma página. Servidor em Go. No ar em https://cvpearl.pietroty.com.br, protegido por senha (uso pessoal).</description>
                 <technologies>Go, JavaScript, LLM</technologies>
                 <url>não disponível / not available</url>
             </project>
@@ -979,8 +979,8 @@ const SYSTEM_PROMPT_EN = `
                 <technologies>Flutter, Dart, Python, yt-dlp, Deezer API, Syncthing</technologies>
                 <url>não disponível / not available</url>
             </project>
-            <project id="p-amethist">
-                <name>Amethist</name>
+            <project id="p-amethyst">
+                <name>Amethyst</name>
                 <type>Personal tool</type>
                 <description>His own drive-like file manager: gallery with ffmpeg thumbnails, PDF and Office document previews, hourly mirroring of the projects folder, daily Google Drive backup (rclone), and scheduled routines. Go server with the interface embedded, Flutter Android app, and online access through a Cloudflare tunnel. Personal use, no public link.</description>
                 <technologies>Go, JavaScript, Flutter, rclone, Cloudflare Tunnel</technologies>
@@ -989,7 +989,7 @@ const SYSTEM_PROMPT_EN = `
             <project id="p-cvpearl">
                 <name>CVPearl</name>
                 <type>Personal tool · grew out of CVMaker, the original MVP</type>
-                <description>Tailored résumé generator: reads his profile and notes, analyzes the job posting, and writes the résumé and the recruiter message using Claude Code running locally, with a one-page PDF. Go server. Personal use, no public link.</description>
+                <description>Tailored résumé generator: reads his profile and notes, analyzes the job posting, and writes the résumé and the recruiter message using Claude Code running locally, with a one-page PDF. Go server. Online at https://cvpearl.pietroty.com.br behind a password (personal use).</description>
                 <technologies>Go, JavaScript, LLM</technologies>
                 <url>não disponível / not available</url>
             </project>

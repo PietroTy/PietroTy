@@ -132,15 +132,15 @@ export const PROJECTS = [
     "nameEn": "CVPearl",
     "taglinePt": "Ferramenta pessoal",
     "taglineEn": "Personal tool",
-    "descPt": "Surgiu do CVMaker, o MVP original. Gerador de currículos sob medida: analisa a vaga e escreve o currículo de uma página e a mensagem pro recrutador a partir de um perfil revisado, usando o Claude Code local. Servidor em Go e PDF pelo Chromium.",
-    "descEn": "Grew out of CVMaker, the original MVP. Tailored résumé generator: analyzes the job posting and writes a one-page résumé and recruiter message from a reviewed profile using local Claude Code. Go server and Chromium PDF output.",
+    "descPt": "Surgiu do CVMaker, o MVP original. Gerador de currículos sob medida: analisa a vaga e escreve o currículo de uma página e a mensagem pro recrutador a partir de um perfil revisado, usando o Claude Code local. Servidor em Go e PDF pelo Chromium. Fica no ar com senha.",
+    "descEn": "Grew out of CVMaker, the original MVP. Tailored résumé generator: analyzes the job posting and writes a one-page résumé and recruiter message from a reviewed profile using local Claude Code. Go server and Chromium PDF output. Online behind a password.",
     "tags": [
       "ia",
       "Go",
       "LLM",
       "JavaScript"
     ],
-    "link": null,
+    "link": "https://cvpearl.pietroty.com.br/",
     "featured": false,
     "color": "#8b5cf6"
   },
@@ -236,9 +236,9 @@ export const PROJECTS = [
     "color": "#22c55e"
   },
   {
-    "id": "amethist",
-    "namePt": "Amethist",
-    "nameEn": "Amethist",
+    "id": "amethyst",
+    "namePt": "Amethyst",
+    "nameEn": "Amethyst",
     "taglinePt": "Ferramenta pessoal",
     "taglineEn": "Personal tool",
     "descPt": "Gerenciador de arquivos próprio com cara de drive: galeria, prévias de documentos, espelho dos projetos de hora em hora, backup diário pro Google Drive e rotinas agendadas. Servidor em Go e app Android.",
