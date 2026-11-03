@@ -36,6 +36,43 @@ export const PROJECTS = [
     "color": "#ffffff"
   },
   {
+    "id": "santa-izabel",
+    "namePt": "Santa Izabel & Herder Agro",
+    "nameEn": "Santa Izabel & Herder Agro",
+    "taglinePt": "Projeto freelance",
+    "taglineEn": "Freelance project",
+    "descPt": "Landing page desenvolvida como freelancer para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.",
+    "descEn": "Landing page built as a freelancer for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.",
+    "tags": [
+      "site",
+      "React",
+      "JavaScript",
+      "SEO"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#16a34a"
+  },
+  {
+    "id": "crm-engaja",
+    "namePt": "Lápis CRM",
+    "nameEn": "Lápis CRM",
+    "taglinePt": "Produto em desenvolvimento",
+    "taglineEn": "Product in development",
+    "descPt": "CRM white-label e multiempresa: cada empresa usa o mesmo sistema com a própria marca e os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
+    "descEn": "White-label, multi-tenant CRM: each company uses it with its own brand and its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
+    "tags": [
+      "saas",
+      "Node.js",
+      "React",
+      "PostgreSQL",
+      "BI"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#7c3aed"
+  },
+  {
     "id": "laplayer",
     "namePt": "LaPlayer",
     "nameEn": "LaPlayer",
@@ -55,24 +92,6 @@ export const PROJECTS = [
     "apk": "https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
   },
   {
-    "id": "calcite",
-    "namePt": "Calcite",
-    "nameEn": "Calcite",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
-    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
-    "tags": [
-      "app",
-      "Go",
-      "React",
-      "LLM"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#8b5cf6"
-  },
-  {
     "id": "laplayer-jade",
     "namePt": "LaPlayer Jade",
     "nameEn": "LaPlayer Jade",
@@ -87,8 +106,26 @@ export const PROJECTS = [
       "Syncthing"
     ],
     "link": null,
-    "featured": true,
+    "featured": false,
     "color": "#8b5cf6"
+  },
+  {
+    "id": "cvmaker",
+    "namePt": "CVMaker",
+    "nameEn": "CVMaker",
+    "taglinePt": "Aplicação pública",
+    "taglineEn": "Public application",
+    "descPt": "MVP, aperfeiçoado depois no CVPearl (projeto particular). Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
+    "descEn": "MVP, later refined into CVPearl (a private project). Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
+    "tags": [
+      "saas",
+      "Python",
+      "Streamlit",
+      "Sabiá-4"
+    ],
+    "link": "https://cvmaker-ty.streamlit.app/",
+    "featured": false,
+    "color": "#3b82f6"
   },
   {
     "id": "cvpearl",
@@ -106,6 +143,24 @@ export const PROJECTS = [
     ],
     "link": null,
     "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "calcite",
+    "namePt": "Calcite",
+    "nameEn": "Calcite",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
+    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
+    "tags": [
+      "app",
+      "Go",
+      "React",
+      "LLM"
+    ],
+    "link": null,
+    "featured": true,
     "color": "#8b5cf6"
   },
   {
@@ -163,43 +218,6 @@ export const PROJECTS = [
     "color": "#22c55e"
   },
   {
-    "id": "santa-izabel",
-    "namePt": "Santa Izabel & Herder Agro",
-    "nameEn": "Santa Izabel & Herder Agro",
-    "taglinePt": "Projeto freelance",
-    "taglineEn": "Freelance project",
-    "descPt": "Landing page desenvolvida como freelancer para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.",
-    "descEn": "Landing page built as a freelancer for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.",
-    "tags": [
-      "site",
-      "React",
-      "JavaScript",
-      "SEO"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#16a34a"
-  },
-  {
-    "id": "crm-engaja",
-    "namePt": "Lápis CRM",
-    "nameEn": "Lápis CRM",
-    "taglinePt": "Produto em desenvolvimento",
-    "taglineEn": "Product in development",
-    "descPt": "CRM white-label e multiempresa: cada empresa usa o mesmo sistema com a própria marca e os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
-    "descEn": "White-label, multi-tenant CRM: each company uses it with its own brand and its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
-    "tags": [
-      "saas",
-      "Node.js",
-      "React",
-      "PostgreSQL",
-      "BI"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#7c3aed"
-  },
-  {
     "id": "etl-cnpj",
     "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
     "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
@@ -216,23 +234,6 @@ export const PROJECTS = [
     "link": null,
     "featured": false,
     "color": "#06b6d4"
-  },
-  {
-    "id": "garimpo-sp",
-    "namePt": "GarimpoSP",
-    "nameEn": "GarimpoSP",
-    "taglinePt": "Projeto pessoal",
-    "taglineEn": "Personal project",
-    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
-    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
-    "tags": [
-      "site",
-      "Curadoria",
-      "Mapa"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#c2410c"
   },
   {
     "id": "escriba",
@@ -253,22 +254,21 @@ export const PROJECTS = [
     "color": "#f59e0b"
   },
   {
-    "id": "cvmaker",
-    "namePt": "CVMaker",
-    "nameEn": "CVMaker",
-    "taglinePt": "Aplicação pública",
-    "taglineEn": "Public application",
-    "descPt": "MVP, aperfeiçoado depois no CVPearl (projeto particular). Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
-    "descEn": "MVP, later refined into CVPearl (a private project). Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
+    "id": "garimpo-sp",
+    "namePt": "GarimpoSP",
+    "nameEn": "GarimpoSP",
+    "taglinePt": "Projeto pessoal",
+    "taglineEn": "Personal project",
+    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
+    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
     "tags": [
-      "saas",
-      "Python",
-      "Streamlit",
-      "Sabiá-4"
+      "site",
+      "Curadoria",
+      "Mapa"
     ],
-    "link": "https://cvmaker-ty.streamlit.app/",
+    "link": null,
     "featured": false,
-    "color": "#3b82f6"
+    "color": "#c2410c"
   },
   {
     "id": "drone-autonomo",
