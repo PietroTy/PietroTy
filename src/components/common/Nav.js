@@ -4,8 +4,8 @@ import { FiArrowLeft } from "react-icons/fi";
 export default function Nav({ page, setPage, lang, setLang, handleBack, canGoBack }) {
   const t =
     lang === "pt"
-      ? { home: "Início", services: "Serviços", projects: "Portfólio", contact: "Contato", back: "Voltar" }
-      : { home: "Home", services: "Services", projects: "Portfolio", contact: "Contact", back: "Back" };
+      ? { home: "Início", skills: "Habilidades", projects: "Portfólio", contact: "Contato", back: "Voltar" }
+      : { home: "Home", skills: "Skills", projects: "Portfolio", contact: "Contact", back: "Back" };
 
   return (
     <nav className="nav">
@@ -28,7 +28,7 @@ export default function Nav({ page, setPage, lang, setLang, handleBack, canGoBac
       <div className="nav-links">
         {[
           ["home", t.home],
-          ["services", t.services],
+          ["skills", t.skills],
           ["projects", t.projects],
           ["contact", t.contact],
         ].map(([k, l]) => (

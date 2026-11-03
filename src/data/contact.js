@@ -18,8 +18,8 @@ export const CONTACT_LINKS = [
   {
     namePt: "LinkedIn",
     nameEn: "LinkedIn",
-    handlePt: "pietro-turci-2a419229a",
-    handleEn: "pietro-turci-2a419229a",
+    handlePt: "pietro-turci",
+    handleEn: "pietro-turci",
     url: LINKS.linkedin,
   },
   {

@@ -3,7 +3,6 @@ import Ambient from "./components/common/Ambient";
 import Nav from "./components/common/Nav";
 import Footer from "./components/common/Footer";
 import HomePage from "./components/sections/HomePage";
-import ServicesPage from "./components/sections/ServicesPage";
 import ProjectsPage from "./components/sections/ProjectsPage";
 import SkillsPage from "./components/sections/SkillsPage";
 import ContactPage from "./components/sections/ContactPage";
@@ -47,22 +46,22 @@ const PAGE_KEYS = [
 const PAGE_METADATA = {
   home: {
     pt: {
-      title: "PietroTy | Desenvolvedor Full-Stack",
-      desc: "Portfólio de Pietro Turci Moraes Martins — Desenvolvedor Full-Stack especialista em sistemas legados. Oracle SQL, PostgreSQL, SQL Server, C#/.NET, BI e pipelines de dados."
+      title: "PietroTy | Desenvolvedor",
+      desc: "Portfólio de Pietro Turci Moraes Martins — desenvolvedor e estudante de Ciência da Computação no IFSP. Dados, SQL, BI, automação com IA e web."
     },
     en: {
-      title: "PietroTy | Full-Stack Developer",
-      desc: "Pietro Turci Moraes Martins' portfolio — Full-Stack Developer specialized in legacy systems. Oracle SQL, PostgreSQL, SQL Server, C#/.NET, BI, and data pipelines."
+      title: "PietroTy | Developer",
+      desc: "Pietro Turci Moraes Martins' portfolio — developer and Computer Science student at IFSP. Data, SQL, BI, AI automation, and web."
     }
   },
   services: {
     pt: {
-      title: "Serviços | Pietro Ty",
-      desc: "Soluções em Desenvolvimento Web, Consultoria de Dados, Automações Inteligentes e Chatbots personalizados por Pietro Ty."
+      title: "Habilidades | Pietro Ty",
+      desc: "Linguagens, dados, automação com IA, web e infraestrutura que Pietro Turci usa nos projetos."
     },
     en: {
-      title: "Services | Pietro Ty",
-      desc: "Web Development, Data Consulting, Intelligent Automations, and Custom Chatbots by Pietro Ty."
+      title: "Skills | Pietro Ty",
+      desc: "Languages, data, AI automation, web, and infrastructure Pietro Turci uses in his projects."
     }
   },
   projects: {
@@ -77,12 +76,12 @@ const PAGE_METADATA = {
   },
   skills: {
     pt: {
-      title: "Serviços & Habilidades | Pietro Ty",
-      desc: "Competências e serviços oferecidos por Pietro Ty."
+      title: "Habilidades | Pietro Ty",
+      desc: "Linguagens, dados, automação com IA, web e infraestrutura que Pietro Turci usa nos projetos."
     },
     en: {
-      title: "Services & Skills | Pietro Ty",
-      desc: "Services and skills offered by Pietro Ty."
+      title: "Skills | Pietro Ty",
+      desc: "Languages, data, AI automation, web, and infrastructure Pietro Turci uses in his projects."
     }
   },
   contact: {
@@ -340,9 +339,9 @@ export default function App() {
 
   const pages = {
     home: <HomePage lang={lang} setPage={setPage} />,
-    services: <ServicesPage lang={lang} setPage={setPage} />,
+    services: <SkillsPage lang={lang} />,
     projects: <ProjectsPage lang={lang} setPage={setPage} />,
-    skills: <ServicesPage lang={lang} setPage={setPage} />,
+    skills: <SkillsPage lang={lang} />,
     contact: <ContactPage lang={lang} />,
     pitcraft: (
       <PitCraftPage
