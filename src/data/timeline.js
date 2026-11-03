@@ -79,8 +79,8 @@ export const TIMELINE = [
   },
   {
     "year": "2024 – 2025",
-    "rolePt": "Software e IA para Drone Autônomo",
-    "roleEn": "Autonomous Drone Software and AI",
+    "rolePt": "Capitão da Equipe de Software",
+    "roleEn": "Software Team Captain",
     "placePt": "IFSP — Game of Drones Team",
     "placeEn": "IFSP — Game of Drones Team",
     "descPt": "Atuou na equipe Game of Drones do IFSP, criada para o desenvolvimento de um drone quadricóptero autônomo no contexto da Competição EletroQuad SAE BRASIL. Desenvolveu algoritmos de Machine Learning e visão computacional em Python/OpenCV para navegação autônoma, leitura de trajetória e tomada de decisão embarcada. Trabalhou com filtros de cor, detecção de contornos, transformações espaciais, controle PID, desvio de obstáculos e integração com requisitos de telemetria em tempo real. Otimizou e integrou o software em Raspberry Pi/Linux, considerando capacidade de processamento, peso, consumo de bateria e confiabilidade durante missões sem piloto. O projeto fazia parte de uma competição universitária multidisciplinar que exige concepção, documentação, construção e voo autônomo de drones, simulando aplicações práticas do setor elétrico.",

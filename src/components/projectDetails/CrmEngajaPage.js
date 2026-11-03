@@ -16,8 +16,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
     {
       titlePt: "Do Comercial ao Financeiro",
       titleEn: "From Sales to Finance",
-      descPt: "Contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro e logística no mesmo lugar.",
-      descEn: "Contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, and logistics in one place.",
+      descPt: "Contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro e logística no mesmo lugar, com relatórios de BI.",
+      descEn: "Contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, and logistics in one place, with BI reports.",
       iconPt: "// MÓDULOS",
       iconEn: "// MODULES"
     },
@@ -51,8 +51,8 @@ export default function CrmEngajaPage({ lang, setPage }) {
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "CRM multiempresa: várias empresas usam o mesmo sistema, cada uma com seus dados isolados. Feito em Node.js, React e PostgreSQL, cobre do comercial ao financeiro."
-                : "Multi-tenant CRM: several companies share the same system, each with its own isolated data. Built with Node.js, React, and PostgreSQL, it covers sales through finance."
+                ? "CRM multiempresa: várias empresas usam o mesmo sistema, cada uma com seus dados isolados. Feito em Node.js, React e PostgreSQL, cobre do comercial ao financeiro, com relatórios de BI."
+                : "Multi-tenant CRM: several companies share the same system, each with its own isolated data. Built with Node.js, React, and PostgreSQL, it covers sales through finance, with BI reports."
               }
             </p>
 

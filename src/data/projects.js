@@ -114,13 +114,14 @@ export const PROJECTS = [
     "nameEn": "White-label CRM",
     "taglinePt": "Produto em desenvolvimento",
     "taglineEn": "Product in development",
-    "descPt": "CRM multiempresa, em que cada empresa usa o mesmo sistema com os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística e auditoria. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
-    "descEn": "Multi-tenant CRM where each company uses the same system with its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, and audit logs. In development; Engaja Soluções Corporativas is the first company using it.",
+    "descPt": "CRM multiempresa, em que cada empresa usa o mesmo sistema com os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
+    "descEn": "Multi-tenant CRM where each company uses the same system with its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
     "tags": [
       "saas",
       "Node.js",
       "React",
-      "PostgreSQL"
+      "PostgreSQL",
+      "BI"
     ],
     "link": null,
     "featured": true,
