@@ -162,7 +162,7 @@ const SYSTEM_PROMPT_PT = `
             <project id="p01">
                 <name>CRM White-label</name>
                 <type>Produto próprio em desenvolvimento (projeto freelance)</type>
-                <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, atendimento, tarefas e relatórios). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
+                <description>CRM multiempresa e white-label: cada empresa tem seus dados separados, sua marca e seus módulos (contatos, funil de vendas, tarefas, pedidos, estoque e financeiro). A Engaja Soluções Corporativas é a primeira empresa a usar. Ainda em desenvolvimento, sem link público.</description>
                 <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
@@ -805,7 +805,7 @@ const SYSTEM_PROMPT_EN = `
             <project id="p01">
                 <name>CRM White-label</name>
                 <type>Own product in development (freelance project)</type>
-                <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, support, tasks, and reports). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
+                <description>Multi-tenant white-label CRM: each company gets its own isolated data, branding, and modules (contacts, sales pipeline, tasks, orders, inventory, and finance). Engaja Soluções Corporativas is the first company using it. Still in development, no public link.</description>
                 <technologies>Node.js, Fastify, React, PostgreSQL</technologies>
                 <url>não disponível / not available</url>
                 <repo>não disponível / not available</repo>
