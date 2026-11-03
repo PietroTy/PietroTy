@@ -51,15 +51,18 @@ export default function SantaIzabelPage({ lang, setPage }) {
             </h1>
             <p className="hero-subtitle">
               {pt 
-                ? "Landing page que fui contratado para desenvolver para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, faz parte do grupo americano Alamo. Catálogo industrial, responsividade e captação de leads."
-                : "Landing page I was hired to build for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive design, and lead capture."
+                ? "Landing page que desenvolvi como freelancer para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, faz parte do grupo americano Alamo. Catálogo industrial, responsividade e captação de leads."
+                : "Landing page I built as a freelancer for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive design, and lead capture."
               }
             </p>
 
             <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
-              <span className="btn btn-outline" style={{ display: "inline-flex", cursor: "default", opacity: 0.9, fontFamily: "var(--mono)", fontSize: "0.85rem" }}>
-                // {pt ? "PROJETO SOB CONTRATO" : "CLIENT PROJECT"}
-              </span>
+              <a href="https://www.santaizabel.ind.br/home/" target="_blank" rel="noreferrer" className="btn btn-fill">
+                Santa Izabel &rarr;
+              </a>
+              <a href="https://www.herderdobrasil.com.br/home/" target="_blank" rel="noreferrer" className="btn btn-outline">
+                Herder do Brasil &rarr;
+              </a>
             </div>
           </div>
 

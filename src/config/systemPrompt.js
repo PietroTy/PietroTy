@@ -284,7 +284,7 @@ const SYSTEM_PROMPT_PT = `
                 <type>Projeto freelance</type>
                 <description>Landing page que desenvolveu como freelancer para a Santa Izabel, fabricante de implementos agrícolas de São João da Boa Vista que, junto com a Herder do Brasil, pertence ao grupo americano Alamo. Catálogo industrial, layout responsivo, SEO e formulários de orçamento.</description>
                 <technologies>React, JavaScript, SEO</technologies>
-                <url>não disponível / not available</url>
+                <url>https://www.santaizabel.ind.br/home/ e https://www.herderdobrasil.com.br/home/</url>
             </project>
             <project id="p-calcite">
                 <name>Calcite</name>
@@ -934,7 +934,7 @@ const SYSTEM_PROMPT_EN = `
                 <type>Freelance project</type>
                 <description>Landing page he built as a freelancer for Santa Izabel, an agricultural implements maker from São João da Boa Vista that, together with Herder do Brasil, belongs to the US-based Alamo Group. Industrial catalog, responsive layout, SEO, and quote request forms.</description>
                 <technologies>React, JavaScript, SEO</technologies>
-                <url>não disponível / not available</url>
+                <url>https://www.santaizabel.ind.br/home/ and https://www.herderdobrasil.com.br/home/</url>
             </project>
             <project id="p-calcite">
                 <name>Calcite</name>

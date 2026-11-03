@@ -49,7 +49,7 @@ export const PROJECTS = [
       "JavaScript",
       "SEO"
     ],
-    "link": null,
+    "link": "https://www.santaizabel.ind.br/home/",
     "featured": false,
     "color": "#16a34a"
   },
