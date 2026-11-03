@@ -1,21 +1,292 @@
 export const PROJECTS = [
   {
-    "id": "chub",
-    "namePt": "cHUB",
-    "nameEn": "cHUB",
-    "taglinePt": "Projeto público",
-    "taglineEn": "Public project",
-    "descPt": "Hub com 29 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.",
-    "descEn": "Hub with 29 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.",
+    "id": "crm-engaja",
+    "namePt": "Lápis CRM",
+    "nameEn": "Lápis CRM",
+    "taglinePt": "Produto em desenvolvimento",
+    "taglineEn": "Product in development",
+    "descPt": "CRM white-label e multiempresa: cada empresa usa o mesmo sistema com a própria marca e os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
+    "descEn": "White-label, multi-tenant CRM: each company uses it with its own brand and its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
     "tags": [
-      "jogo",
-      "C",
-      "Raylib",
-      "WebAssembly"
+      "saas",
+      "Node.js",
+      "React",
+      "PostgreSQL",
+      "BI"
     ],
-    "link": "https://chub.pietroty.com.br/",
+    "link": null,
     "featured": true,
-    "color": "#a855f7"
+    "color": "#7c3aed"
+  },
+  {
+    "id": "n8n-forms",
+    "namePt": "Formulários & Workflows n8n",
+    "nameEn": "n8n Forms & Workflows",
+    "taglinePt": "Automação de processos & dados",
+    "taglineEn": "Process automation & data flows",
+    "descPt": "Sistema de formulários corporativos dinâmicos e altamente personalizados integrados a bancos de dados PostgreSQL e ferramentas internas via pipelines no n8n. Automação de validação de dados, envio de notificações e sincronização por webhooks em tempo real.",
+    "descEn": "Custom dynamic corporate form system integrated with PostgreSQL databases and internal tools via n8n automation pipelines. Includes real-time data validation, notification triggers, and webhook synchronization.",
+    "tags": [
+      "saas",
+      "n8n",
+      "PostgreSQL",
+      "Node.js"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#ea580c"
+  },
+  {
+    "id": "chatwoot-custom",
+    "namePt": "Chatwoot Customizado",
+    "nameEn": "Custom Chatwoot Integration",
+    "taglinePt": "Solução corporativa / atendimento",
+    "taglineEn": "Corporate customer service solution",
+    "descPt": "Integração e personalização da plataforma omnichannel Chatwoot para atendimento corporativo em empresas. Customização de fluxos de triagem, distribuição de conversas, webhooks, relatórios de produtividade e conexão direta com canais como WhatsApp (Evolution API) e CRM.",
+    "descEn": "Omnichannel Chatwoot platform integration and customization for enterprise customer service. Features custom routing workflows, chat distribution, webhooks, productivity reports, and direct integration with WhatsApp (Evolution API) and CRM.",
+    "tags": [
+      "saas",
+      "Chatwoot",
+      "Docker",
+      "Node.js"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#0284c7"
+  },
+  {
+    "id": "etl-cnpj",
+    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
+    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
+    "taglinePt": "Engenharia de dados",
+    "taglineEn": "Data engineering",
+    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
+    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
+    "tags": [
+      "dados",
+      "Python",
+      "Pandas",
+      "NumPy"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#06b6d4"
+  },
+  {
+    "id": "serrasafe",
+    "namePt": "SerraSafe",
+    "nameEn": "SerraSafe",
+    "taglinePt": "Projeto do IFSP",
+    "taglineEn": "IFSP project",
+    "descPt": "Sistema embarcado com ESP32-S3 e sensores ambientais que classifica o risco de queimada na Serra da Paulista em baixo, moderado ou alto. Fiquei com a análise e o tratamento dos dados.",
+    "descEn": "Embedded ESP32-S3 system with environmental sensors that rates wildfire risk in Serra da Paulista as low, moderate, or high. I handled the data analysis and cleaning.",
+    "tags": [
+      "dados",
+      "ESP32",
+      "IoT",
+      "Sensores"
+    ],
+    "link": "https://serra-safe.netlify.app/",
+    "featured": false,
+    "color": "#e8772e"
+  },
+  {
+    "id": "drone-autonomo",
+    "namePt": "Game of Drones",
+    "nameEn": "Game of Drones",
+    "taglinePt": "Projeto acadêmico extracurricular",
+    "taglineEn": "Extracurricular academic project",
+    "descPt": "Software de visão computacional, inteligência embarcada e Machine Learning desenvolvido pela equipe Game of Drones do IFSP para um quadricóptero autônomo no contexto da Competição EletroQuad SAE BRASIL. Incluiu leitura de trajetórias, controle PID, desvio de obstáculos, integração com telemetria e otimização em Raspberry Pi/Linux para missões sem piloto.",
+    "descEn": "Computer vision, embedded intelligence, and machine learning software developed by IFSP's Game of Drones team for an autonomous quadrotor in the EletroQuad SAE BRASIL competition. It covered track reading, PID control, obstacle avoidance, telemetry integration, and Raspberry Pi/Linux optimization for uncrewed missions.",
+    "tags": [
+      "app",
+      "Python",
+      "OpenCV",
+      "NumPy"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#10b981"
+  },
+  {
+    "id": "escriba",
+    "namePt": "Escriba AI",
+    "nameEn": "Escriba AI",
+    "taglinePt": "Pesquisa aplicada",
+    "taglineEn": "Applied research",
+    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
+    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
+    "tags": [
+      "saas",
+      "Python",
+      "Streamlit",
+      "Maritaca AI"
+    ],
+    "link": "https://escriba.streamlit.app/",
+    "featured": true,
+    "color": "#f59e0b"
+  },
+  {
+    "id": "cvpearl",
+    "namePt": "CVPearl",
+    "nameEn": "CVPearl",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Surgiu do CVMaker, o MVP original. Gerador de currículos sob medida: analisa a vaga e escreve o currículo de uma página e a mensagem pro recrutador a partir de um perfil revisado, usando o Claude Code local. Servidor em Go e PDF pelo Chromium.",
+    "descEn": "Grew out of CVMaker, the original MVP. Tailored résumé generator: analyzes the job posting and writes a one-page résumé and recruiter message from a reviewed profile using local Claude Code. Go server and Chromium PDF output.",
+    "tags": [
+      "ia",
+      "Go",
+      "LLM",
+      "JavaScript"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "cvmaker",
+    "namePt": "CVMaker",
+    "nameEn": "CVMaker",
+    "taglinePt": "Aplicação pública",
+    "taglineEn": "Public application",
+    "descPt": "MVP, aperfeiçoado depois no CVPearl (projeto particular). Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
+    "descEn": "MVP, later refined into CVPearl (a private project). Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
+    "tags": [
+      "saas",
+      "Python",
+      "Streamlit",
+      "Sabiá-4"
+    ],
+    "link": "https://cvmaker-ty.streamlit.app/",
+    "featured": false,
+    "color": "#3b82f6"
+  },
+  {
+    "id": "calcite",
+    "namePt": "Calcite",
+    "nameEn": "Calcite",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
+    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
+    "tags": [
+      "app",
+      "Go",
+      "React",
+      "LLM"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "laplayer-jade",
+    "namePt": "LaPlayer Jade",
+    "nameEn": "LaPlayer Jade",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Surgiu do LaPlayer, o MVP original, refeito do zero: app em Flutter para Android e Linux com servidor próprio em Python que baixa as músicas (YouTube Music com metadados do Deezer). Biblioteca, playlist e histórico iguais no celular e no PC via Syncthing.",
+    "descEn": "Grew out of LaPlayer, the original MVP, rebuilt from scratch: a Flutter app for Android and Linux with its own Python server that downloads the songs (YouTube Music with Deezer metadata). Library, playlist, and history stay the same on phone and PC through Syncthing.",
+    "tags": [
+      "app",
+      "Flutter",
+      "Python",
+      "Syncthing"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "laplayer",
+    "namePt": "LaPlayer",
+    "nameEn": "LaPlayer",
+    "taglinePt": "Aplicativo mobile serverless",
+    "taglineEn": "Serverless mobile application",
+    "descPt": "MVP, aperfeiçoado depois no LaPlayer Jade (projeto particular). Cliente de música em Dart/Flutter com interface inspirada no Spotify. Arquitetura 100% Serverless (client-side), rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.",
+    "descEn": "MVP, later refined into LaPlayer Jade (a private project). Dart/Flutter music client inspired by Spotify with 100% Serverless (client-side) architecture. Refactored with the music-tracker engine (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.",
+    "tags": [
+      "app",
+      "Flutter",
+      "Dart",
+      "Serverless"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6",
+    "apk": "https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
+  },
+  {
+    "id": "vitals",
+    "namePt": "Vitals",
+    "nameEn": "Vitals",
+    "taglinePt": "Infraestrutura pessoal",
+    "taglineEn": "Personal infrastructure",
+    "descPt": "Gerenciador que mantém ligados todos os meus sites, APIs, bots e servidores de jogo: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local que o Calcite usa para ligar, desligar e ver logs ao vivo.",
+    "descEn": "Manager that keeps all my sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a local API that Calcite uses to start, stop, and stream logs.",
+    "tags": [
+      "infra",
+      "Python",
+      "Bash",
+      "Cloudflare"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#22c55e"
+  },
+  {
+    "id": "amethist",
+    "namePt": "Amethist",
+    "nameEn": "Amethist",
+    "taglinePt": "Ferramenta pessoal",
+    "taglineEn": "Personal tool",
+    "descPt": "Gerenciador de arquivos próprio com cara de drive: galeria, prévias de documentos, espelho dos projetos de hora em hora, backup diário pro Google Drive e rotinas agendadas. Servidor em Go e app Android.",
+    "descEn": "My own drive-like file manager: gallery, document previews, hourly project mirroring, daily Google Drive backup, and scheduled routines. Go server and Android app.",
+    "tags": [
+      "app",
+      "Go",
+      "rclone",
+      "Flutter"
+    ],
+    "link": null,
+    "featured": false,
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "whatsapp-bot",
+    "namePt": "Bot de WhatsApp",
+    "nameEn": "WhatsApp Bot",
+    "taglinePt": "Automação e IA para WhatsApp",
+    "taglineEn": "WhatsApp automation and AI",
+    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
+    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
+    "tags": [
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "whatsapp-web.js"
+    ],
+    "link": "https://github.com/PietroTy/bot-whatsapp",
+    "featured": false,
+    "color": "#22c55e"
+  },
+  {
+    "id": "garimpo-sp",
+    "namePt": "GarimpoSP",
+    "nameEn": "GarimpoSP",
+    "taglinePt": "Projeto pessoal",
+    "taglineEn": "Personal project",
+    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
+    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
+    "tags": [
+      "site",
+      "Curadoria",
+      "Mapa"
+    ],
+    "link": null,
+    "featured": true,
+    "color": "#c2410c"
   },
   {
     "id": "bleach-co",
@@ -54,295 +325,6 @@ export const PROJECTS = [
     "color": "#16a34a"
   },
   {
-    "id": "crm-engaja",
-    "namePt": "Lápis CRM",
-    "nameEn": "Lápis CRM",
-    "taglinePt": "Produto em desenvolvimento",
-    "taglineEn": "Product in development",
-    "descPt": "CRM white-label e multiempresa: cada empresa usa o mesmo sistema com a própria marca e os próprios dados isolados. Feito em Node.js (Fastify), React e PostgreSQL, com contatos, empresas, funil de vendas, tarefas, projetos, pedidos, produtos, estoque, financeiro, logística, auditoria e relatórios de BI. Em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.",
-    "descEn": "White-label, multi-tenant CRM: each company uses it with its own brand and its own isolated data. Built with Node.js (Fastify), React, and PostgreSQL, covering contacts, companies, sales pipeline, tasks, projects, orders, products, inventory, finance, logistics, audit logs, and BI reports. In development; Engaja Soluções Corporativas is the first company using it.",
-    "tags": [
-      "saas",
-      "Node.js",
-      "React",
-      "PostgreSQL",
-      "BI"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#7c3aed"
-  },
-  {
-    "id": "laplayer",
-    "namePt": "LaPlayer",
-    "nameEn": "LaPlayer",
-    "taglinePt": "Aplicativo mobile serverless",
-    "taglineEn": "Serverless mobile application",
-    "descPt": "MVP, aperfeiçoado depois no LaPlayer Jade (projeto particular). Cliente de música em Dart/Flutter com interface inspirada no Spotify. Arquitetura 100% Serverless (client-side), rearquitetado com a engine do projeto music-tracker (por Vitor Cordeiro de Souza), conectando via librespot direto aos servidores do Spotify em .ogg Vorbis de alta qualidade. Conta com narração Vocaloid TTS do Android, banco de dados otimizado, cache criptografado e modo offline.",
-    "descEn": "MVP, later refined into LaPlayer Jade (a private project). Dart/Flutter music client inspired by Spotify with 100% Serverless (client-side) architecture. Refactored with the music-tracker engine (by Vitor Cordeiro de Souza), streaming native high-quality .ogg Vorbis audio directly from Spotify via librespot. Features Android Vocaloid TTS narration, optimized database, encrypted cache, and offline mode.",
-    "tags": [
-      "app",
-      "Flutter",
-      "Dart",
-      "Serverless"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#8b5cf6",
-    "apk": "https://github.com/PietroTy/laplayer/releases/latest/download/app-release.apk"
-  },
-  {
-    "id": "laplayer-jade",
-    "namePt": "LaPlayer Jade",
-    "nameEn": "LaPlayer Jade",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Surgiu do LaPlayer, o MVP original, refeito do zero: app em Flutter para Android e Linux com servidor próprio em Python que baixa as músicas (YouTube Music com metadados do Deezer). Biblioteca, playlist e histórico iguais no celular e no PC via Syncthing.",
-    "descEn": "Grew out of LaPlayer, the original MVP, rebuilt from scratch: a Flutter app for Android and Linux with its own Python server that downloads the songs (YouTube Music with Deezer metadata). Library, playlist, and history stay the same on phone and PC through Syncthing.",
-    "tags": [
-      "app",
-      "Flutter",
-      "Python",
-      "Syncthing"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#8b5cf6"
-  },
-  {
-    "id": "calcite",
-    "namePt": "Calcite",
-    "nameEn": "Calcite",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Segundo cérebro web compatível com o Obsidian: notas em Markdown, kanban, pipeline de projetos que se reorganiza sozinho, planilhas e um agente com LLM que propõe edições. Servidor em Go com front em React embutido no binário.",
-    "descEn": "Obsidian-compatible web second brain: Markdown notes, kanban, a self-organizing project pipeline, spreadsheets, and an LLM agent that proposes edits. Go server with the React front end embedded in the binary.",
-    "tags": [
-      "app",
-      "Go",
-      "React",
-      "LLM"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#8b5cf6"
-  },
-  {
-    "id": "cvmaker",
-    "namePt": "CVMaker",
-    "nameEn": "CVMaker",
-    "taglinePt": "Aplicação pública",
-    "taglineEn": "Public application",
-    "descPt": "MVP, aperfeiçoado depois no CVPearl (projeto particular). Gerador e adaptador inteligente de currículos em Python/Streamlit. Analisa a estrutura OOXML de arquivos DOCX, reescreve seções com Sabiá-4 conforme uma vaga, preserva a formatação original e exporta para PDF com LibreOffice headless.",
-    "descEn": "MVP, later refined into CVPearl (a private project). Intelligent resume generator and adapter in Python/Streamlit. It analyzes DOCX OOXML, rewrites sections with Sabiá-4 for a target role, preserves the original formatting, and exports to PDF through headless LibreOffice.",
-    "tags": [
-      "saas",
-      "Python",
-      "Streamlit",
-      "Sabiá-4"
-    ],
-    "link": "https://cvmaker-ty.streamlit.app/",
-    "featured": false,
-    "color": "#3b82f6"
-  },
-  {
-    "id": "cvpearl",
-    "namePt": "CVPearl",
-    "nameEn": "CVPearl",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Surgiu do CVMaker, o MVP original. Gerador de currículos sob medida: analisa a vaga e escreve o currículo de uma página e a mensagem pro recrutador a partir de um perfil revisado, usando o Claude Code local. Servidor em Go e PDF pelo Chromium.",
-    "descEn": "Grew out of CVMaker, the original MVP. Tailored résumé generator: analyzes the job posting and writes a one-page résumé and recruiter message from a reviewed profile using local Claude Code. Go server and Chromium PDF output.",
-    "tags": [
-      "ia",
-      "Go",
-      "LLM",
-      "JavaScript"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#8b5cf6"
-  },
-  {
-    "id": "etl-cnpj",
-    "namePt": "Pipeline ETL e Engine de Análise de CNPJs Públicos",
-    "nameEn": "ETL Pipeline & Public CNPJ Analysis Engine",
-    "taglinePt": "Engenharia de dados",
-    "taglineEn": "Data engineering",
-    "descPt": "Pipeline para extração, tratamento, higienização, cruzamento e carga da base de dados abertos da Receita Federal, incluindo CNPJs, sócios e CNAEs. Projetado para processar milhões de registros e suportar inteligência de mercado, análise empresarial e detecção de padrões.",
-    "descEn": "Pipeline for extracting, cleaning, joining, and loading Brazilian Federal Revenue open data, including companies, partners, and economic activity codes. Designed to process millions of records for market intelligence, business analysis, and pattern detection.",
-    "tags": [
-      "dados",
-      "Python",
-      "Pandas",
-      "NumPy"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#06b6d4"
-  },
-  {
-    "id": "amethist",
-    "namePt": "Amethist",
-    "nameEn": "Amethist",
-    "taglinePt": "Ferramenta pessoal",
-    "taglineEn": "Personal tool",
-    "descPt": "Gerenciador de arquivos próprio com cara de drive: galeria, prévias de documentos, espelho dos projetos de hora em hora, backup diário pro Google Drive e rotinas agendadas. Servidor em Go e app Android.",
-    "descEn": "My own drive-like file manager: gallery, document previews, hourly project mirroring, daily Google Drive backup, and scheduled routines. Go server and Android app.",
-    "tags": [
-      "app",
-      "Go",
-      "rclone",
-      "Flutter"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#8b5cf6"
-  },
-  {
-    "id": "serrasafe",
-    "namePt": "SerraSafe",
-    "nameEn": "SerraSafe",
-    "taglinePt": "Projeto do IFSP",
-    "taglineEn": "IFSP project",
-    "descPt": "Sistema embarcado com ESP32-S3 e sensores ambientais que classifica o risco de queimada na Serra da Paulista em baixo, moderado ou alto. Fiquei com a análise e o tratamento dos dados.",
-    "descEn": "Embedded ESP32-S3 system with environmental sensors that rates wildfire risk in Serra da Paulista as low, moderate, or high. I handled the data analysis and cleaning.",
-    "tags": [
-      "dados",
-      "ESP32",
-      "IoT",
-      "Sensores"
-    ],
-    "link": "https://serra-safe.netlify.app/",
-    "featured": false,
-    "color": "#e8772e"
-  },
-  {
-    "id": "escriba",
-    "namePt": "Escriba AI",
-    "nameEn": "Escriba AI",
-    "taglinePt": "Pesquisa aplicada",
-    "taglineEn": "Applied research",
-    "descPt": "Plataforma de geração e adaptação de textos acadêmicos usando múltiplos LLMs especializados em português, com engenharia de prompt multicamada, checagem cruzada, mitigação de alucinações e formatação ABNT. Criada no COSAIC/IFSP-ENAP e utilizada em consultoria para pesquisa de doutorado na PUC.",
-    "descEn": "Academic writing and adaptation platform using multiple Portuguese-specialized LLMs, multi-layer prompt engineering, cross-checking, hallucination mitigation, and ABNT formatting. Created during the COSAIC/IFSP-ENAP research project and used in consulting for PUC doctoral research.",
-    "tags": [
-      "saas",
-      "Python",
-      "Streamlit",
-      "Maritaca AI"
-    ],
-    "link": "https://escriba.streamlit.app/",
-    "featured": true,
-    "color": "#f59e0b"
-  },
-  {
-    "id": "whatsapp-bot",
-    "namePt": "Bot de WhatsApp",
-    "nameEn": "WhatsApp Bot",
-    "taglinePt": "Automação e IA para WhatsApp",
-    "taglineEn": "WhatsApp automation and AI",
-    "descPt": "Ecossistema modular de automação e IA para WhatsApp. Foi usado comercialmente em 3 empresas para atendimento, envio de notificações e engajamento. Inclui boletins automáticos (PitmuNews), minijogos (Termo/Dueto), agente inteligente por LLM e integrações via whatsapp-web.js e Evolution API.",
-    "descEn": "Modular WhatsApp automation and AI ecosystem. It was used commercially by 3 companies for customer service, notifications, and engagement. Features automated digests (PitmuNews), mini-games (Termo/Dueto), LLM intelligent agents, and integrations via whatsapp-web.js and Evolution API.",
-    "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "whatsapp-web.js"
-    ],
-    "link": "https://github.com/PietroTy/bot-whatsapp",
-    "featured": false,
-    "color": "#22c55e"
-  },
-  {
-    "id": "drone-autonomo",
-    "namePt": "Game of Drones",
-    "nameEn": "Game of Drones",
-    "taglinePt": "Projeto acadêmico extracurricular",
-    "taglineEn": "Extracurricular academic project",
-    "descPt": "Software de visão computacional, inteligência embarcada e Machine Learning desenvolvido pela equipe Game of Drones do IFSP para um quadricóptero autônomo no contexto da Competição EletroQuad SAE BRASIL. Incluiu leitura de trajetórias, controle PID, desvio de obstáculos, integração com telemetria e otimização em Raspberry Pi/Linux para missões sem piloto.",
-    "descEn": "Computer vision, embedded intelligence, and machine learning software developed by IFSP's Game of Drones team for an autonomous quadrotor in the EletroQuad SAE BRASIL competition. It covered track reading, PID control, obstacle avoidance, telemetry integration, and Raspberry Pi/Linux optimization for uncrewed missions.",
-    "tags": [
-      "app",
-      "Python",
-      "OpenCV",
-      "NumPy"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#10b981"
-  },
-  {
-    "id": "vitals",
-    "namePt": "Vitals",
-    "nameEn": "Vitals",
-    "taglinePt": "Infraestrutura pessoal",
-    "taglineEn": "Personal infrastructure",
-    "descPt": "Gerenciador que mantém ligados todos os meus sites, APIs, bots e servidores de jogo: sobe tudo junto, monitora, reinicia o que cair (watchdog via cron) e publica tudo por um único túnel da Cloudflare. Expõe uma API local que o Calcite usa para ligar, desligar e ver logs ao vivo.",
-    "descEn": "Manager that keeps all my sites, APIs, bots, and game servers running: starts everything together, monitors it, restarts whatever goes down (cron watchdog), and publishes everything through a single Cloudflare tunnel. Exposes a local API that Calcite uses to start, stop, and stream logs.",
-    "tags": [
-      "infra",
-      "Python",
-      "Bash",
-      "Cloudflare"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#22c55e"
-  },
-  {
-    "id": "erium",
-    "namePt": "Erium TCC",
-    "nameEn": "Erium TCC",
-    "taglinePt": "TCC - Técnico em Desenvolvimento de Sistemas (CPS / ETEC)",
-    "taglineEn": "Capstone - Systems Development Tech Degree (CPS / ETEC)",
-    "descPt": "Trabalho de Conclusão de Curso (TCC) do Ensino Técnico em Desenvolvimento de Sistemas no Centro Paula Souza (ETEC). Toolkit full-stack para auxílio a passageiros de viagens aéreas (cálculo de bagagem, validação de passaporte e normas de voo), com frontend em TypeScript/Vite/React e backend API em Node.js/Express hospedado na Vercel (erium-api.vercel.app), desenvolvido em equipe com Anthony Chukwudi.",
-    "descEn": "Capstone project (TCC) for the Systems Development Tech Degree at Centro Paula Souza (ETEC). Full-stack air travel passenger toolkit with a TypeScript/Vite/React frontend and a Node.js/Express API backend hosted on Vercel (erium-api.vercel.app), developed in a team with Anthony Chukwudi.",
-    "tags": [
-      "app",
-      "TypeScript",
-      "React",
-      "Node.js"
-    ],
-    "link": "https://erium-api.vercel.app",
-    "featured": false,
-    "color": "#10b981"
-  },
-  {
-    "id": "bot-figurinhas",
-    "namePt": "Stickers Bot",
-    "nameEn": "Stickers Bot",
-    "taglinePt": "Serviço para WhatsApp",
-    "taglineEn": "WhatsApp service",
-    "descPt": "Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas (WebP via FFmpeg e sharp). Inspirado originalmente em um projeto no GitHub de Matheus Toniolli (matheust3) e reconstruído do zero em uma versão muito mais estável, rápida e polida em microserviço.",
-    "descEn": "Real-time service converting images, GIFs, and videos into static/animated WhatsApp stickers (WebP via FFmpeg and sharp). Originally inspired by Matheus Toniolli's (matheust3) GitHub repo and rebuilt from scratch into a far more stable, fast, and polished standalone microservice.",
-    "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "FFmpeg"
-    ],
-    "link": "https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8",
-    "featured": false,
-    "color": "#14b8a6"
-  },
-  {
-    "id": "garimpo-sp",
-    "namePt": "GarimpoSP",
-    "nameEn": "GarimpoSP",
-    "taglinePt": "Projeto pessoal",
-    "taglineEn": "Personal project",
-    "descPt": "Curadoria de brechós de São Paulo, plotados num site para quem gosta de garimpar roupa.",
-    "descEn": "A curated selection of São Paulo thrift stores, plotted on a website for people who love thrifting.",
-    "tags": [
-      "site",
-      "Curadoria",
-      "Mapa"
-    ],
-    "link": null,
-    "featured": true,
-    "color": "#c2410c"
-  },
-  {
     "id": "magik-tarot",
     "namePt": "MagikTarot",
     "nameEn": "MagikTarot",
@@ -357,116 +339,8 @@ export const PROJECTS = [
       "Mercado Pago"
     ],
     "link": "https://magiktarot.com.br/",
-    "featured": false,
+    "featured": true,
     "color": "#7c3aed"
-  },
-  {
-    "id": "tv2",
-    "namePt": "TV2",
-    "nameEn": "TV2",
-    "taglinePt": "Aplicação web em tempo real",
-    "taglineEn": "Real-time web application",
-    "descPt": "Plataforma Node.js de TV/streaming idealizada como uma vitrine alternativa para arte, música, animações e desenhos (antigos e novos) do YouTube, curados por amigos entusiastas da arte. Possui sincronização de reprodução em tempo real via Socket.io, chat retro e Google OAuth.",
-    "descEn": "Node.js TV/streaming platform designed as an alternative showcase for visual art, music, classic & modern cartoons from YouTube, curated by art-loving friends. Features real-time multi-user playback sync via Socket.io, retro chat, and Google OAuth.",
-    "tags": [
-      "site",
-      "Node.js",
-      "Socket.io",
-      "JavaScript"
-    ],
-    "link": "https://tv2.pietroty.com.br/",
-    "featured": false,
-    "color": "#0ea5e9"
-  },
-  {
-    "id": "dshub",
-    "namePt": "Data Science Hub",
-    "nameEn": "Data Science Hub",
-    "taglinePt": "Portfólio de dados",
-    "taglineEn": "Data portfolio",
-    "descPt": "Portal em Streamlit que centraliza soluções de Business Intelligence, Big Data e Machine Learning para casos de fintech, modelagem de risco, growth/marketing analytics e saúde preditiva.",
-    "descEn": "Streamlit portal centralizing Business Intelligence, Big Data, and Machine Learning solutions for fintech, risk modeling, growth/marketing analytics, and predictive health use cases.",
-    "tags": [
-      "dados",
-      "Python",
-      "Streamlit",
-      "Pandas"
-    ],
-    "link": "https://datascienceh.streamlit.app/",
-    "featured": true,
-    "color": "#0ea5e9"
-  },
-  {
-    "id": "discord-bot",
-    "namePt": "Bot de Discord",
-    "nameEn": "Discord Bot",
-    "taglinePt": "Projeto público",
-    "taglineEn": "Public project",
-    "descPt": "Bot de administração e entretenimento com comandos de moderação, economia virtual e minijogos, desenvolvido com Node.js e Discord.js.",
-    "descEn": "Administration and entertainment bot with moderation commands, a virtual economy, and minigames, built with Node.js and Discord.js.",
-    "tags": [
-      "bot",
-      "JavaScript",
-      "Node.js",
-      "Discord.js"
-    ],
-    "link": "https://github.com/PietroTy/bot-discord",
-    "featured": false,
-    "color": "#5865f2"
-  },
-  {
-    "id": "portfolio",
-    "namePt": "Portfólio",
-    "nameEn": "Portfolio",
-    "taglinePt": "Site público",
-    "taglineEn": "Public website",
-    "descPt": "Portfólio bilíngue em React com identidade pixel/cyberpunk, chatbot Ty integrado a LLM e base biográfica, páginas detalhadas de projetos, design responsivo e deploy automatizado por GitHub Actions.",
-    "descEn": "Bilingual React portfolio with a pixel/cyberpunk identity, Ty chatbot connected to an LLM and biographical knowledge base, detailed project pages, responsive design, and automated GitHub Actions deployment.",
-    "tags": [
-      "site",
-      "React",
-      "JavaScript",
-      "LLM API"
-    ],
-    "link": "https://pietroty.com.br/",
-    "featured": false,
-    "color": "#9d5cfc"
-  },
-  {
-    "id": "pitcraft",
-    "namePt": "PitCraft",
-    "nameEn": "PitCraft",
-    "taglinePt": "Infraestrutura e comunidade",
-    "taglineEn": "Infrastructure and community",
-    "descPt": "Infraestrutura Linux para servidores Minecraft Java/Forge/Fabric/NeoForge/Spigot por temporadas, com automações Bash, sincronização de modpacks, DNS dinâmico, backups, plugins, crossplay via Geyser e chat de voz por proximidade.",
-    "descEn": "Linux infrastructure for seasonal Minecraft Java/Forge/Fabric/NeoForge/Spigot servers with Bash automation, modpack synchronization, dynamic DNS, backups, plugins, Geyser crossplay, and proximity voice chat.",
-    "tags": [
-      "infra",
-      "Linux",
-      "Java",
-      "Bash"
-    ],
-    "link": "https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh",
-    "featured": true,
-    "color": "#f43f5e"
-  },
-  {
-    "id": "chatwoot-custom",
-    "namePt": "Chatwoot Customizado",
-    "nameEn": "Custom Chatwoot Integration",
-    "taglinePt": "Solução corporativa / atendimento",
-    "taglineEn": "Corporate customer service solution",
-    "descPt": "Integração e personalização da plataforma omnichannel Chatwoot para atendimento corporativo em empresas. Customização de fluxos de triagem, distribuição de conversas, webhooks, relatórios de produtividade e conexão direta com canais como WhatsApp (Evolution API) e CRM.",
-    "descEn": "Omnichannel Chatwoot platform integration and customization for enterprise customer service. Features custom routing workflows, chat distribution, webhooks, productivity reports, and direct integration with WhatsApp (Evolution API) and CRM.",
-    "tags": [
-      "saas",
-      "Chatwoot",
-      "Docker",
-      "Node.js"
-    ],
-    "link": null,
-    "featured": false,
-    "color": "#0284c7"
   },
   {
     "id": "engaja-site",
@@ -487,22 +361,112 @@ export const PROJECTS = [
     "color": "#7c3aed"
   },
   {
-    "id": "n8n-forms",
-    "namePt": "Formulários & Workflows n8n",
-    "nameEn": "n8n Forms & Workflows",
-    "taglinePt": "Automação de processos & dados",
-    "taglineEn": "Process automation & data flows",
-    "descPt": "Sistema de formulários corporativos dinâmicos e altamente personalizados integrados a bancos de dados PostgreSQL e ferramentas internas via pipelines no n8n. Automação de validação de dados, envio de notificações e sincronização por webhooks em tempo real.",
-    "descEn": "Custom dynamic corporate form system integrated with PostgreSQL databases and internal tools via n8n automation pipelines. Includes real-time data validation, notification triggers, and webhook synchronization.",
+    "id": "portfolio",
+    "namePt": "Portfólio",
+    "nameEn": "Portfolio",
+    "taglinePt": "Site público",
+    "taglineEn": "Public website",
+    "descPt": "Portfólio bilíngue em React com identidade pixel/cyberpunk, chatbot Ty integrado a LLM e base biográfica, páginas detalhadas de projetos, design responsivo e deploy automatizado por GitHub Actions.",
+    "descEn": "Bilingual React portfolio with a pixel/cyberpunk identity, Ty chatbot connected to an LLM and biographical knowledge base, detailed project pages, responsive design, and automated GitHub Actions deployment.",
     "tags": [
-      "saas",
-      "n8n",
-      "PostgreSQL",
+      "site",
+      "React",
+      "JavaScript",
+      "LLM API"
+    ],
+    "link": "https://pietroty.com.br/",
+    "featured": false,
+    "color": "#9d5cfc"
+  },
+  {
+    "id": "dshub",
+    "namePt": "Data Science Hub",
+    "nameEn": "Data Science Hub",
+    "taglinePt": "Portfólio de dados",
+    "taglineEn": "Data portfolio",
+    "descPt": "Portal em Streamlit que centraliza soluções de Business Intelligence, Big Data e Machine Learning para casos de fintech, modelagem de risco, growth/marketing analytics e saúde preditiva.",
+    "descEn": "Streamlit portal centralizing Business Intelligence, Big Data, and Machine Learning solutions for fintech, risk modeling, growth/marketing analytics, and predictive health use cases.",
+    "tags": [
+      "dados",
+      "Python",
+      "Streamlit",
+      "Pandas"
+    ],
+    "link": "https://datascienceh.streamlit.app/",
+    "featured": true,
+    "color": "#0ea5e9"
+  },
+  {
+    "id": "erium",
+    "namePt": "Erium TCC",
+    "nameEn": "Erium TCC",
+    "taglinePt": "TCC - Técnico em Desenvolvimento de Sistemas (CPS / ETEC)",
+    "taglineEn": "Capstone - Systems Development Tech Degree (CPS / ETEC)",
+    "descPt": "Trabalho de Conclusão de Curso (TCC) do Ensino Técnico em Desenvolvimento de Sistemas no Centro Paula Souza (ETEC). Toolkit full-stack para auxílio a passageiros de viagens aéreas (cálculo de bagagem, validação de passaporte e normas de voo), com frontend em TypeScript/Vite/React e backend API em Node.js/Express hospedado na Vercel (erium-api.vercel.app), desenvolvido em equipe com Anthony Chukwudi.",
+    "descEn": "Capstone project (TCC) for the Systems Development Tech Degree at Centro Paula Souza (ETEC). Full-stack air travel passenger toolkit with a TypeScript/Vite/React frontend and a Node.js/Express API backend hosted on Vercel (erium-api.vercel.app), developed in a team with Anthony Chukwudi.",
+    "tags": [
+      "app",
+      "TypeScript",
+      "React",
       "Node.js"
     ],
+    "link": "https://erium-api.vercel.app",
+    "featured": false,
+    "color": "#10b981"
+  },
+  {
+    "id": "farmais",
+    "namePt": "Farmais",
+    "nameEn": "Farmais",
+    "taglinePt": "Trabalho acadêmico (IFSP)",
+    "taglineEn": "Academic project (IFSP)",
+    "descPt": "Catálogo online e consulta de produtos para farmácia desenvolvido como trabalho acadêmico no IFSP utilizando Vue.js e JavaScript. Consumo de API REST, sistema de busca em tempo real, navegação por categorias de medicamentos e filtros interativos.",
+    "descEn": "Online pharmacy catalog and product lookup platform developed as an academic project at IFSP using Vue.js and JavaScript. Integrates REST APIs, real-time search, medicine category navigation, and dynamic filtering.",
+    "tags": [
+      "app",
+      "Vue.js",
+      "JavaScript",
+      "REST API"
+    ],
     "link": null,
+    "featured": false,
+    "color": "#41b883"
+  },
+  {
+    "id": "chub",
+    "namePt": "cHUB",
+    "nameEn": "cHUB",
+    "taglinePt": "Projeto público",
+    "taglineEn": "Public project",
+    "descPt": "Hub com 29 minijogos, entre clones e originais, desenvolvidos integralmente em C com Raylib e compilados para WebAssembly. A arte é renderizada proceduralmente por código, com foco em performance, simplicidade e identidade retro coesa.",
+    "descEn": "Hub with 29 clone and original minigames built entirely in C with Raylib and compiled to WebAssembly. Art is rendered procedurally in code, with a focus on performance, simplicity, and cohesive retro design.",
+    "tags": [
+      "jogo",
+      "C",
+      "Raylib",
+      "WebAssembly"
+    ],
+    "link": "https://chub.pietroty.com.br/",
     "featured": true,
-    "color": "#ea580c"
+    "color": "#a855f7"
+  },
+  {
+    "id": "tv2",
+    "namePt": "TV2",
+    "nameEn": "TV2",
+    "taglinePt": "Aplicação web em tempo real",
+    "taglineEn": "Real-time web application",
+    "descPt": "Plataforma Node.js de TV/streaming idealizada como uma vitrine alternativa para arte, música, animações e desenhos (antigos e novos) do YouTube, curados por amigos entusiastas da arte. Possui sincronização de reprodução em tempo real via Socket.io, chat retro e Google OAuth.",
+    "descEn": "Node.js TV/streaming platform designed as an alternative showcase for visual art, music, classic & modern cartoons from YouTube, curated by art-loving friends. Features real-time multi-user playback sync via Socket.io, retro chat, and Google OAuth.",
+    "tags": [
+      "site",
+      "Node.js",
+      "Socket.io",
+      "JavaScript"
+    ],
+    "link": "https://tv2.pietroty.com.br/",
+    "featured": false,
+    "color": "#0ea5e9"
   },
   {
     "id": "imobsystem",
@@ -523,21 +487,57 @@ export const PROJECTS = [
     "color": "#512bd4"
   },
   {
-    "id": "farmais",
-    "namePt": "Farmais",
-    "nameEn": "Farmais",
-    "taglinePt": "Trabalho acadêmico (IFSP)",
-    "taglineEn": "Academic project (IFSP)",
-    "descPt": "Catálogo online e consulta de produtos para farmácia desenvolvido como trabalho acadêmico no IFSP utilizando Vue.js e JavaScript. Consumo de API REST, sistema de busca em tempo real, navegação por categorias de medicamentos e filtros interativos.",
-    "descEn": "Online pharmacy catalog and product lookup platform developed as an academic project at IFSP using Vue.js and JavaScript. Integrates REST APIs, real-time search, medicine category navigation, and dynamic filtering.",
+    "id": "pitcraft",
+    "namePt": "PitCraft",
+    "nameEn": "PitCraft",
+    "taglinePt": "Infraestrutura e comunidade",
+    "taglineEn": "Infrastructure and community",
+    "descPt": "Infraestrutura Linux para servidores Minecraft Java/Forge/Fabric/NeoForge/Spigot por temporadas, com automações Bash, sincronização de modpacks, DNS dinâmico, backups, plugins, crossplay via Geyser e chat de voz por proximidade.",
+    "descEn": "Linux infrastructure for seasonal Minecraft Java/Forge/Fabric/NeoForge/Spigot servers with Bash automation, modpack synchronization, dynamic DNS, backups, plugins, Geyser crossplay, and proximity voice chat.",
     "tags": [
-      "app",
-      "Vue.js",
-      "JavaScript",
-      "REST API"
+      "infra",
+      "Linux",
+      "Java",
+      "Bash"
     ],
-    "link": null,
+    "link": "https://chat.whatsapp.com/GQ1gUaywKX6CUQZtiItgEh",
+    "featured": true,
+    "color": "#f43f5e"
+  },
+  {
+    "id": "discord-bot",
+    "namePt": "Bot de Discord",
+    "nameEn": "Discord Bot",
+    "taglinePt": "Projeto público",
+    "taglineEn": "Public project",
+    "descPt": "Bot de administração e entretenimento com comandos de moderação, economia virtual e minijogos, desenvolvido com Node.js e Discord.js.",
+    "descEn": "Administration and entertainment bot with moderation commands, a virtual economy, and minigames, built with Node.js and Discord.js.",
+    "tags": [
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "Discord.js"
+    ],
+    "link": "https://github.com/PietroTy/bot-discord",
     "featured": false,
-    "color": "#41b883"
+    "color": "#5865f2"
+  },
+  {
+    "id": "bot-figurinhas",
+    "namePt": "Stickers Bot",
+    "nameEn": "Stickers Bot",
+    "taglinePt": "Serviço para WhatsApp",
+    "taglineEn": "WhatsApp service",
+    "descPt": "Serviço de conversão em tempo real de imagens, GIFs e vídeos em figurinhas estáticas ou animadas (WebP via FFmpeg e sharp). Inspirado originalmente em um projeto no GitHub de Matheus Toniolli (matheust3) e reconstruído do zero em uma versão muito mais estável, rápida e polida em microserviço.",
+    "descEn": "Real-time service converting images, GIFs, and videos into static/animated WhatsApp stickers (WebP via FFmpeg and sharp). Originally inspired by Matheus Toniolli's (matheust3) GitHub repo and rebuilt from scratch into a far more stable, fast, and polished standalone microservice.",
+    "tags": [
+      "bot",
+      "JavaScript",
+      "Node.js",
+      "FFmpeg"
+    ],
+    "link": "https://chat.whatsapp.com/KAg83JlOyWSGoHLBOLwrR8",
+    "featured": false,
+    "color": "#14b8a6"
   }
 ];
