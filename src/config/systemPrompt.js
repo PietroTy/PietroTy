@@ -1,5 +1,5 @@
 // src/config/systemPrompt.js
-// Alinhado em 20/07/2026 com a fonte única de dados profissionais.
+// Alinhado em 06/11/2026 com a fonte única de dados profissionais (CVPearl perfil.md), os documentos do estágio e o SUAP.
 
 export const BOT_NAME = "Ty";
 export const CRIADOR = "Pietro";
@@ -47,13 +47,15 @@ const SYSTEM_PROMPT_PT = `
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>Estagiário em Automações de IA</role>
-                <period>Fevereiro 2026 – Junho 2026</period>
+                <period>Março 2026 – Julho 2026 (02/03 a 03/07/2026, 344 horas)</period>
                 <location>São João da Boa Vista, SP · Presencial</location>
-                <contract>Estágio</contract>
+                <contract>Estágio não obrigatório (supervisor: Ariel Marques Sartorio); encerrado antes do prazo porque ele foi contratado pela empresa</contract>
                 <details>
-                    - Criou automações no n8n ligando formulários ao banco de dados: avaliações, propostas e contratos de recrutamento, cadastro de currículos e banco de talentos.
-                    - Criou os agentes de IA que atendem no WhatsApp da empresa.
-                    - Apoiou o mapeamento de regras de negócio dos sistemas internos.
+                    - Primeiro mês: imersão nos processos da empresa e nos fundamentos de IA, prompts e desenvolvimento web (JavaScript e Node.js).
+                    - Criou automações no n8n ligando formulários ao banco de dados: avaliações, propostas e contratos de recrutamento, cadastro de currículos e banco de talentos, gerando os documentos no Google Drive e avisando no WhatsApp. Isso tirou a digitação manual e o vai e vem de planilha da equipe de recrutamento.
+                    - Criou os agentes de IA que atendem no WhatsApp da empresa (Sara e Ana).
+                    - Analisou e otimizou o desempenho dos agentes: latência em chamadas assíncronas de IA, filas e tratamento de erros.
+                    - Avaliação do estágio: excelente.
                 </details>
             </job>
             <job>
@@ -63,9 +65,11 @@ const SYSTEM_PROMPT_PT = `
                 <location>Remoto e São João da Boa Vista, SP</location>
                 <contract>Freelance, projetos sob demanda</contract>
                 <details>
-                    - Lápis CRM: CRM white-label multiempresa em Node.js (Fastify), React e PostgreSQL, em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar.
-                    - Agentes de IA no WhatsApp para uma loja e para uma clínica médica (lembretes e follow-up de consultas ligados ao sistema da clínica).
-                    - Implantação de uma central de atendimento Chatwoot, com o WhatsApp de cada vendedor, numa distribuidora.
+                    - Lápis CRM: CRM white-label multiempresa em Node.js (Fastify), React e PostgreSQL, em desenvolvimento; a Engaja Soluções Corporativas é a primeira empresa a usar. Por quê: organizar a empresa (contatos, funil, tarefas, projetos, financeiro) num lugar só, ligado a análise de dados em tempo real.
+                    - Agente de IA no WhatsApp para uma loja: responde dúvidas de serviços e preços pela planilha da loja, cadastra o lead e chama a equipe quando precisa (Evolution API, n8n, LLM com memória no PostgreSQL). Por quê: responder na hora, inclusive fora do horário, e entregar o lead já qualificado. Desde set/2026: 308 leads cadastrados e mais de 300 conversas atendidas pela IA, com mais de 1.400 respostas.
+                    - Lembretes e follow-up de consultas para uma clínica médica, puxando a agenda do sistema da clínica (MedX), com trava contra mensagem duplicada (Redis) e reenvio quando o WhatsApp oscila. Por quê: diminuir faltas e liberar a recepção de ligar paciente por paciente. Desde set/2026 o número da clínica enviou mais de 21 mil mensagens para mais de 1.300 contatos.
+                    - Central de atendimento Chatwoot numa distribuidora, com o WhatsApp de cada um dos 5 vendedores numa caixa própria. Por quê: antes cada vendedor atendia no próprio celular e a empresa não tinha controle nenhum de volume, velocidade de resposta e histórico; agora o gestor vê tudo. Em 7 semanas: 428 conversas e mais de 15 mil mensagens.
+                    - Os agentes de IA (da loja, da clínica e os da Engaja) servem pra automatizar o atendimento repetitivo e personalizar cada conversa (nome, histórico, interesse), em vez de mensagem genérica.
                     - Infraestrutura na AWS (EC2) com Chatwoot, Evolution API, n8n, PostgreSQL, Redis e túnel da Cloudflare, com backup diário.
                     - Site e loja da Bleach.co (React, Three.js, Node.js, Mercado Pago, Melhor Envio) e landing page da Santa Izabel.
                     - QA, revisão de código e testes de segurança (OWASP) para uma empresa de tecnologia; hoje testa e dá feedback de produto numa ferramenta nova deles antes do lançamento.
@@ -126,6 +130,7 @@ const SYSTEM_PROMPT_PT = `
                 <period>Fevereiro 2024 – Dezembro 2027 (previsão)</period>
                 <status>Em andamento · 6º de 8 semestres</status>
                 <details>Curso público federal com nota máxima 5 no MEC. Inclui extensão, pesquisa e TCC com banca.</details>
+                <academic_record>Dados do SUAP em 06/11/2026: I.R.A. 7,91; 68% do curso concluído (73% das disciplinas obrigatórias); 40 disciplinas aprovadas sem nenhuma reprovação, média 8,07. A média por semestre subiu até 9,07 em 2026/1. Notas 10 em Construção de Compiladores, Estruturas de Dados, Organização e Recuperação da Informação e em projetos de extensão; 9,9 em Sistemas Distribuídos. Em 2026/2 cursa Ciência de Dados, Computação Gráfica, Qualidade e Teste de Software, Produção de Textos Científicos, Ciências do Ambiente e Projeto de Extensão 6.</academic_record>
             </degree>
             <degree>
                 <institution>FATEC-SP — Faculdade de Tecnologia de São Paulo</institution>
@@ -697,13 +702,15 @@ const SYSTEM_PROMPT_EN = `
             <job>
                 <company>Engaja Soluções Corporativas</company>
                 <role>AI Automation Intern</role>
-                <period>February 2026 – June 2026</period>
+                <period>March 2026 – July 2026 (Mar 2 to Jul 3, 2026, 344 hours)</period>
                 <location>São João da Boa Vista, SP · On-site</location>
-                <contract>Internship</contract>
+                <contract>Internship (supervisor: Ariel Marques Sartorio); ended early because the company hired him</contract>
                 <details>
-                    - Built n8n automations connecting forms to the database: assessments, recruiting proposals and contracts, résumé intake, and talent pool.
-                    - Built the AI agents that answer the company's WhatsApp.
-                    - Helped map business rules for internal systems.
+                    - First month: onboarding into the company's processes and the basics of AI, prompting, and web development (JavaScript and Node.js).
+                    - Built n8n automations connecting forms to the database: assessments, recruiting proposals and contracts, résumé intake, and talent pool, generating the documents in Google Drive and notifying on WhatsApp. This removed manual typing and spreadsheet back-and-forth for the recruiting team.
+                    - Built the AI agents that answer the company's WhatsApp (Sara and Ana).
+                    - Analyzed and optimized the agents' performance: latency in asynchronous AI calls, queues, and error handling.
+                    - Internship evaluation: excellent.
                 </details>
             </job>
             <job>
@@ -713,9 +720,11 @@ const SYSTEM_PROMPT_EN = `
                 <location>Remote and São João da Boa Vista, SP</location>
                 <contract>Freelance, on-demand projects</contract>
                 <details>
-                    - Lápis CRM: a multi-tenant white-label CRM in Node.js (Fastify), React, and PostgreSQL, in development; Engaja Soluções Corporativas is the first company using it.
-                    - WhatsApp AI agents for a store and a medical clinic (appointment reminders and follow-ups tied to the clinic's system).
-                    - Chatwoot help desk rollout, with each salesperson's WhatsApp, for a distributor.
+                    - Lápis CRM: a multi-tenant white-label CRM in Node.js (Fastify), React, and PostgreSQL, in development; Engaja Soluções Corporativas is the first company using it. Why: run the company (contacts, pipeline, tasks, projects, finance) in one place, tied to real-time data analysis.
+                    - WhatsApp AI agent for a store: answers service and price questions from the store's spreadsheet, registers the lead, and calls the team when needed (Evolution API, n8n, LLM with memory in PostgreSQL). Why: reply instantly, even after hours, and hand over an already qualified lead. Since Sep 2026: 308 leads registered and 300+ conversations handled by the AI, with 1,400+ replies.
+                    - Appointment reminders and follow-ups for a medical clinic, pulling the schedule from the clinic's system (MedX), with a duplicate-message lock (Redis) and retries when WhatsApp is unstable. Why: fewer no-shows and no more calling patients one by one. Since Sep 2026 the clinic's number has sent 21,000+ messages to 1,300+ contacts.
+                    - Chatwoot help desk for a distributor, with each of the 5 salespeople's WhatsApp in its own inbox. Why: before, each salesperson answered on their own phone and the company had no visibility into volume, response time, or history; now the manager sees everything. In 7 weeks: 428 conversations and 15,000+ messages.
+                    - The AI agents (store, clinic, and Engaja's) automate repetitive support and personalize each conversation (name, history, interest) instead of generic messages.
                     - AWS (EC2) infrastructure with Chatwoot, Evolution API, n8n, PostgreSQL, Redis, and a Cloudflare tunnel, with daily backups.
                     - Bleach.co website and store (React, Three.js, Node.js, Mercado Pago, Melhor Envio) and the Santa Izabel landing page.
                     - QA, code review, and security testing (OWASP) for a tech company; now tests and gives product feedback on a new tool of theirs before launch.
@@ -776,6 +785,7 @@ const SYSTEM_PROMPT_EN = `
                 <period>February 2024 – December 2027 (expected)</period>
                 <status>In progress · 6th of 8 semesters</status>
                 <details>Public federal program with the top MEC rating (5). Includes extension, research, and a thesis defended before a committee.</details>
+                <academic_record>SUAP data as of Nov 6, 2026: GPA (I.R.A.) 7.91 out of 10; 68% of the program completed (73% of required courses); 40 courses passed with no failures, average 8.07. His semester average rose to 9.07 in 2026/1. Perfect 10s in Compiler Construction, Data Structures, Information Organization and Retrieval, and extension projects; 9.9 in Distributed Systems. In 2026/2 he is taking Data Science, Computer Graphics, Software Quality and Testing, Scientific Writing, Environmental Sciences, and Extension Project 6.</academic_record>
             </degree>
             <degree>
                 <institution>FATEC-SP — São Paulo College of Technology</institution>
